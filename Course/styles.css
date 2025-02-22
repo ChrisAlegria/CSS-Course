@@ -1,3 +1,22 @@
 /* CSS: Es piel, ropa y maquillaje. */
 
-/* ^CSS */
+/*^CSS*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/* ~Conceptos Basicos Aplicados /*
+/* Todo - Estructura: La estructura es aquella que conforma la forma de declarar un estilo a una etiqueta */
+/* ?Propiedades:  
+? Selector: Es el elemento o clase al que se le aplicará el estilo.
+? Atributo: Es la propiedad que quieres cambiar (como color, tamaño, etc.).
+? Valor: Es el valor que asignas al atributo (por ejemplo, un color o tamaño específico). */ 
+.estructura{ /**Selector.**/       
+        color: /**Atributo.**/
+        red; /**Valor de atributo**/
+}
+
+/* Todo - Declaración: Una declaración es el conjunto de la estructura que incluye el **selector**, el **atributo** y el **valor del atributo**. En CSS, cada declaración se escribe entre llaves {}. */
+.declaracion{
+    color: red;  /** Declaración completa: selector + atributo + valor **/
+}
+
