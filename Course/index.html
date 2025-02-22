@@ -1,0 +1,30 @@
+<!-- ~Formas de aplicar estilos en HTML: Existen tres maneras de agregar estilos a una página web:  
+Todo - 1. Usando la etiqueta <style>: Se coloca dentro del archivo HTML, dentro de la sección <head>. Permite definir estilos para varias etiquetas o clases de manera global.  
+Todo - 2. Con el atributo style="": Se escribe directamente en una etiqueta HTML para aplicar estilos solo a ese elemento en particular.  
+Todo - 3. Mediante una hoja de estilos externa (CSS): Se crea un archivo aparte con extensión .css, que se enlaza al HTML con la etiqueta <link>. Es la mejor opción para organizar y mantener los estilos del sitio web. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- !Forma 3 - Hoja de estilos externa: Se crea un archivo CSS separado y se vincula al HTML usando la etiqueta <link>. Esto permite aplicar estilos de forma más organizada.* -->
+    <link rel="stylesheet" href="styles.css"> 
+    
+    <title>Curso CSS</title>
+
+    <!-- !Forma 1 - Uso de la etiqueta <style>: Se escriben los estilos dentro del archivo HTML, generalmente en la sección <head>.  -->
+    <style> 
+        p {
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- !Forma 2 - Atributo style="": Se aplica el estilo directamente en la etiqueta HTML, pero no es recomendable para mantener el código limpio. -->
+    <p style="font-size: 20px">Este texto es plano</p> 
+
+
+</body>
+</html>  
