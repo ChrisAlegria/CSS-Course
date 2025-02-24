@@ -28,6 +28,6 @@ red;" /**Valor**/
 
 /* Todo - Declaración: Una declaración es el conjunto de la estructura que incluye el **selector/propiedad**, el **atributo** y el **valor del atributo**. En CSS, cada declaración se escribe entre llaves {}. */
 .declaracion{
-    color: red;  /** Declaración completa: selector/propiedad + atributo + valor **/
+    color: red;  /** Declaración: selector/propiedad + atributo + valor **/
 }
 
