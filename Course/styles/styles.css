@@ -1,0 +1,41 @@
+/* CSS: Es piel, ropa y maquillaje. */
+/* El ";" indica unicamente el final de una declaración de atributo y su valor, si no se usa, el lenguaje interpretará que la declaración continúa. */
+
+/*^CSS*/
+/* ? Propiedades de cualquier declaración CSS:
+? {}: Toda declaración en CSS, fuera de los estilos directos en etiquetas mediante la propiedad "style", debe ir acompañada de llaves después del selector. Estas llaves permiten declarar los estilos dentro de ellas y actúan como delimitadores, indicando hasta dónde se aplican los estilos a un elemento, clase, etc. */
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/* ~Tipos de declaraciones CSS /*
+/* Todo - Declaración de estilos mediante una hoja CSS o etiqueta <style>: Los estilos pueden declararse mediante una hoja CSS externa o directamente dentro de la etiqueta <style> en el archivo HTML. En el caso de la hoja CSS, se vincula al HTML mediante un enlace <link>, permitiendo que el HTML lea y aplique todos los estilos definidos en ella. Por otro lado, la etiqueta <style> funciona de manera similar, pero los estilos se colocan directamente dentro del archivo HTML entre las etiquetas <style> y </style>, sin necesidad de archivo externo. */
+/* &Estructura de estilos en hoja CSS o etiqueta <style>. */
+/* ?Propiedades:  
+? Selector: Es el elemento o clase al que se le aplicará el estilo. Por ejemplo, si usas "p", seleccionas todos los párrafos para aplicarles el estilo. Si usas una clase como ".mi-clase", solo los elementos con esa clase recibirán el estilo.
+? Atributo: Es la característica que quieres cambiar en un elemento. Por ejemplo, "color" te permite cambiar el color de algo, y "font-size" te permite cambiar el tamaño del texto. Cada atributo controla un aspecto diferente del elemento. 
+? Valor: Es lo que asignas a un atributo para definir cómo se comporta. Por ejemplo para "color", usas un valor como "red" para indicar un color, para "font-size", usas un valor como "10px" para indicar el tamaño. Cada atributo requiere un tipo específico de valor según su función. */ 
+.estructura{ /**Selector.**/       
+    color: /**Atributo.**/
+    red; /**Valor de atributo**/
+}
+
+/* Todo - Declaración de estilos en etiqueta HTML mediante la propiedad "style":  Los estilos declarados con la propiedad style="" se aplican exclusivamente a la etiqueta en la que se especifica la propiedad. Dentro de esta propiedad no es necesario usar un selector, ya que el estilo se asigna directamente al elemento en cuestión. */
+/* &Estructura de estilos en etiquta HTML mediante la propiedad "style". */
+/* ?Propiedades:  
+? Propiedad: Es la parte dentro de una etiqueta HTML que se usa para declarar estilos directamente. Por ejemplo, en <p style="">, "style" es la propiedad que indica que dentro de las comillas se escribirán los estilos. 
+? Atributo: Es la característica que quieres cambiar en un elemento. Por ejemplo, "color" te permite cambiar el color de algo, y "font-size" te permite cambiar el tamaño del texto. Cada atributo controla un aspecto diferente del elemento. 
+? Valor: Es lo que asignas a un atributo para definir cómo se comporta. Por ejemplo para "color", usas un valor como "red" para indicar un color, para "font-size", usas un valor como "10px" para indicar el tamaño. Cada atributo requiere un tipo específico de valor según su función. */ /*
+style=" /**Propiedad.*
+color: /**Atributo*
+red;" /**Valor**/
+
+/* Todo - Declaración: Una declaración es el conjunto de la estructura que incluye el **selector/propiedad**, el **atributo** y el **valor del atributo**. En CSS, cada declaración se escribe entre llaves {}. */
+.declaracion{
+color: red;  /** Declaración: selector/propiedad + atributo + valor **/
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/* ~Selectores /*
+/* Todo - Selectores por elemento: Los selectores por elemento se utilizan para aplicar estilos a todas las instancias de una etiqueta HTML específica. Esto significa que, cuando usas el nombre de una etiqueta, como "h1{}", los estilos dentro de ese selector afectarán a todos los elementos de ese tipo en la página. Por ejemplo, si escribes "h1 { color: red; }", todas las etiquetas <h1> en la página se pondrán rojas. */
+h1{ /**Declaracion de selector por elemento, en este caso se declara la etiqueta <h1>.**/
+    color: red;
+}
