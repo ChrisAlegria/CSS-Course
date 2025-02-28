@@ -47,6 +47,16 @@ h1{ /**Declaracion de selector por elemento, en este caso se declara la etiqueta
     /**Aqui se especifican los atributos de estilos.**/
 }   /**Cierre de la declaración de selector por clase.**/
 
+/* Todo - Selectores combinados (nombreElemento.nombreClase{}): Los selectores combinados se utilizan para aplicar estilos a un elemento específico que tenga una clase determinada. Esto significa que, cuando usas el nombre de un elemento seguido de un punto y un nombre de clase, como "h2.mi-clase{}", los estilos dentro de ese selector afectarán únicamente a los elementos que tengan esa clase y sean del tipo de elemento especificado. Por ejemplo, si escribes "h2.mi-clase { color: blue; }", solo los elementos <h2> con la clase "mi-clase" tendrán un color azul. */
+h2.mi-clase{ /**Declaracion de selector combinado, en este caso se declara la etiqueta <h2> con la clase "mi-clase".**/
+    /**Aqui se especifican los atributos de estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+
+/* Todo - Selector de identificador (#nombreIdentificador): Los selectores de identificador se utilizan para aplicar estilos a un elemento específico que tenga un identificador único, el cual se establece en las etiquetas mediante la propiedad `id=""`. Esto significa que cuando usas un signo de almohadilla seguido de un nombre de identificador, como "#titulo{}", los estilos dentro de ese selector afectarán únicamente al elemento que tenga ese identificador en la página. Por ejemplo, si escribes "#titulo { color: blue; }", solo el elemento con el identificador "titulo" tendrá un color azul. Cabe destacar que, aunque CSS permite aplicar estilos a varios elementos con el mismo ID, esto no semanticamente recomendable, ya que los ID están diseñados para ser únicos e irrepetibles dentro de un documento HTML. */
+#titulo{ /**Declaracion de selector por identificador, en este caso se declara el identificador "titulo".**/
+    /**Aqui se especifican los atributos de estilos.**/
+}   /**Cierre de la declaración de selector por identificador.**/
+
 /* Todo - Selectores de cuerpo (body{}): Los selectores de cuerpo se utilizan para aplicar estilos al cuerpo base de la página, como el color de fondo, el margen del cuerpo, el tipo de fuente, el tamaño de fuente, entre otros. Esto significa que, cuando declaras un estilo en "body{}", todos los elementos dentro del cuerpo de la página heredarán esos estilos, a excepción de aquellos que tengan estilos específicos definidos. Es decir, este selector solo afecta el texto o contenido general del cuerpo, pero no las etiquetas que se encuentren dentro de él si tienen sus propios estilos. Por ejemplo, si escribes "body { background-color: lightgray; }", el fondo de toda la página será gris claro, pero si tienes un elemento `<h1>` con un color específico, ese color no cambiará. */
 body{ /**Declaracion de selector por cuerpo, en este caso se declara el cuerpo de la página.**/
     /**Aqui se especifican los atributos de estilos.**/
@@ -57,10 +67,35 @@ body{ /**Declaracion de selector por cuerpo, en este caso se declara el cuerpo d
     /**Aqui se especifican los atributos de estilos.**/
 }   /**Cierre de la declaración de selector universal.**/
 
-/* Todo - Selector de identificador (#nombreIdentificador): Los selectores de identificador se utilizan para aplicar estilos a un elemento específico que tenga un identificador único, el cual se establece en las etiquetas mediante la propiedad `id=""`. Esto significa que cuando usas un signo de almohadilla seguido de un nombre de identificador, como "#titulo{}", los estilos dentro de ese selector afectarán únicamente al elemento que tenga ese identificador en la página. Por ejemplo, si escribes "#titulo { color: blue; }", solo el elemento con el identificador "titulo" tendrá un color azul. Cabe destacar que, aunque CSS permite aplicar estilos a varios elementos con el mismo ID, esto no semanticamente recomendable, ya que los ID están diseñados para ser únicos e irrepetibles dentro de un documento HTML. */
-#titulo{ /**Declaracion de selector por identificador, en este caso se declara el identificador "titulo".**/
-    /**Aqui se especifican los atributos de estilos.**/
-}   /**Cierre de la declaración de selector por identificador.**/
-
-
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/* ~Prioridad de Aplicación de Estilos Segun el Selector /*
+/* Todo - Prioridad de aplicación de estilos: La prioridad de aplicación de estilos en CSS depende de la especificidad de los selectores. Esto significa que cada selector tiene un nivel de importancia al momento de aplicar estilos. Aunque varios selectores puedan aplicar estilos a un mismo elemento, algunos tendrán mayor relevancia que otros. En caso de que varios selectores afecten la misma propiedad de un elemento, el selector con mayor especificidad sobrescribirá los estilos definidos por los selectores con menor prioridad. */
+/* &Prioridad baja */
+* { /**Selector universal.**/
+    /** Aplica a todos los elementos de la página.**/
+} /**Cierre de selector universal.**/
+
+/* &Prioridad semi baja */
+body { /**Selector de cuerpo.**/
+    /**Aplica al cuerpo de la página.**/
+} /**Cierre de selector de cuerpo.**/
+
+/* &Prioridad media */
+h1 { /**Selector de elemento.**/
+    /**Aplica solo a los elementos <h1>.**/
+} /**Cierre de selector de elemento.**/
+
+/* &Prioridad media-alta */
+.mi-clase { /**Selector de clase.**/
+    /**Aplica solo a los elementos con la clase "mi-clase".**/
+} /**Cierre de selector de clase.**/
+
+/* &Prioridad alta */
+h1.mi-clase { /**Selector combinado.**/
+    /**Aplica a los elementos <h1> que tengan la clase "mi-clase".**/
+} /**Cierre de selector combinado.**/
+
+/* &Prioridad muy alta */
+#titulo { /**Selector de identificador.**/
+    /**Aplica solo al elemento con el ID "titulo".**/
+} /**Cierre de selector de identificador.**/
