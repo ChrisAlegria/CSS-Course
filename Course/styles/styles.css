@@ -23,19 +23,37 @@
 /* ?Propiedades:  
 ? Propiedad: Es la parte dentro de una etiqueta HTML que se usa para declarar estilos directamente. Por ejemplo, en <p style="">, "style" es la propiedad que indica que dentro de las comillas se escribirán los estilos. 
 ? Atributo: Es la característica que quieres cambiar en un elemento. Por ejemplo, "color" te permite cambiar el color de algo, y "font-size" te permite cambiar el tamaño del texto. Cada atributo controla un aspecto diferente del elemento. 
-? Valor: Es lo que asignas a un atributo para definir cómo se comporta. Por ejemplo para "color", usas un valor como "red" para indicar un color, para "font-size", usas un valor como "10px" para indicar el tamaño. Cada atributo requiere un tipo específico de valor según su función. */ /*
+? Valor: Es lo que asignas a un atributo para definir cómo se comporta. Por ejemplo para "color", usas un valor como "red" para indicar un color, para "font-size", usas un valor como "10px" para indicar el tamaño. Cada atributo requiere un tipo específico de valor según su función. *//*
 style=" /**Propiedad.*
 color: /**Atributo*
 red;" /**Valor**/
 
 /* Todo - Declaración: Una declaración es el conjunto de la estructura que incluye el **selector/propiedad**, el **atributo** y el **valor del atributo**. En CSS, cada declaración se escribe entre llaves {}. */
 .declaracion{
-color: red;  /** Declaración: selector/propiedad + atributo + valor **/
+color: red; /** Declaración: selector/propiedad + atributo + valor **/
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
 /* ~Selectores /*
 /* Todo - Selectores por elemento: Los selectores por elemento se utilizan para aplicar estilos a todas las instancias de una etiqueta HTML específica. Esto significa que, cuando usas el nombre de una etiqueta, como "h1{}", los estilos dentro de ese selector afectarán a todos los elementos de ese tipo en la página. Por ejemplo, si escribes "h1 { color: red; }", todas las etiquetas <h1> en la página se pondrán rojas. */
 h1{ /**Declaracion de selector por elemento, en este caso se declara la etiqueta <h1>.**/
-    color: red;
-}
+    /**Aqui se especifican los atributos de estilos**/
+} /**Cierre de la declaración de selector por elemento**/
+
+/* Todo - Selectores por clase: Los selectores por clase se utilizan para aplicar estilos a un grupo específico de elementos que comparten la misma clase (la cual se establece en las etiquetas mediante la propiedad class=""). Esto significa que, cuando usas un punto seguido de un nombre de clase, como ".mi-clase{}", los estilos dentro de ese selector afectarán a todos los elementos que tengan esa clase en la página. Por ejemplo, si escribes ".mi-clase { font-size: 20px; }", todos los elementos con la clase "mi-clase" tendrán un tamaño de fuente de 20 píxeles, por lo que uno o varios elementos pueden tener la misma clase a los cuales se les aplicaran los mimos estilos. */
+.mi-clase{ /**Declaracion de selector por clase, en este caso se declara la clase "mi-clase".**/
+    /**Aqui se especifican los atributos de estilos**/
+}   /**Cierre de la declaración de selector por clase**/
+
+/* Todo - Selectores por cuerpo "body{}": Los selectores por cuerpo se utilizan para aplicar estilos al cuerpo base de la página, como el color de fondo, el margen del cuerpo, el tipo de fuente, el tamaño de fuente, entre otros. Esto significa que, cuando declaras un estilo en "body{}", todos los elementos dentro del cuerpo de la página heredarán esos estilos, a excepción de aquellos que tengan estilos específicos definidos. Es decir, este selector solo afecta el texto o contenido general del cuerpo, pero no las etiquetas que se encuentren dentro de él si tienen sus propios estilos. Por ejemplo, si escribes "body { background-color: lightgray; }", el fondo de toda la página será gris claro, pero si tienes un elemento `<h1>` con un color específico, ese color no cambiará. */
+body{ /**Declaracion de selector por cuerpo, en este caso se declara el cuerpo de la página.**/
+    /**Aqui se especifican los atributos de estilos**/
+} /**Cierre de la declaración de selector por cuerpo**/
+
+/* Todo - Selectores universales "*{}": El selector universal "*" se utiliza para aplicar estilos a todos los elementos dentro de la página, sin excepción. Esto incluye todo el contenido, como el texto, las imágenes, las etiquetas, etc. A diferencia del selector "body{}", que solo afecta el área del cuerpo de la página, el selector "*" aplica los estilos a todos los elementos, incluidos aquellos fuera del cuerpo (por ejemplo, elementos de encabezado o barra de navegación). Sin embargo, si un elemento tiene estilos específicos definidos por otro selector, estos prevalecerán sobre los estilos del selector universal. Por ejemplo, si escribes "* { margin: 0; padding: 0; }", todos los elementos de la página perderán márgenes y rellenos, sin importar qué tipo de contenido sean. */
+*{  /**Declaracion de selector universal, en este caso se declara el selector universal "*".**/
+    /**Aqui se especifican los atributos de estilos**/
+}   /**Cierre de la declaración de selector universal**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+
