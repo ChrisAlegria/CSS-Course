@@ -1,5 +1,6 @@
 /* CSS: Es piel, ropa y maquillaje. */
 /* El ";" indica unicamente el final de una declaración de atributo y su valor, si no se usa, el lenguaje interpretará que la declaración continúa. */
+/* CamelCase: El camelCase es una convención de escritura que se utiliza en programación para nombrar variables, funciones, clases, etc. Se escribe en minúsculas y cada palabra adicional comienza con mayúscula. Por ejemplo, "miVariable", "miFuncion", "miClasePersonalizada". */
 
 /*^CSS*/
 /* ? Propiedades de cualquier declaración CSS:
@@ -47,8 +48,17 @@ h1{ /**Declaracion de selector por elemento, en este caso se declara la etiqueta
     /**Aqui se especifican los atributos de estilos.**/
 }   /**Cierre de la declaración de selector por clase.**/
 
-/* Todo - Selectores combinados (nombreElemento.nombreClase{}): Los selectores combinados se utilizan para aplicar estilos a un elemento específico que tenga una clase determinada. Esto significa que, cuando usas el nombre de un elemento seguido de un punto y un nombre de clase, como "h2.mi-clase{}", los estilos dentro de ese selector afectarán únicamente a los elementos que tengan esa clase y sean del tipo de elemento especificado. Por ejemplo, si escribes "h2.mi-clase { color: blue; }", solo los elementos <h2> con la clase "mi-clase" tendrán un color azul. */
+/* Todo - Selectores combinados ("nombreElemento.nombreClase{}", "nombreElemento#nombreIdentificador{}", ".mi-clase.mi-clase2{}", ".mi-clase#miIdentificador{}"): Los selectores combinados se usan para aplicar estilos a elementos específicos que tienen una combinación de etiquetas, clases e identificadores. Esto significa que, cuando usas un selector que combina un tipo de elemento, una clase o un ID, como "h1.mi-clase{}", los estilos dentro de ese selector afectarán solo a los elementos que cumplas con ambas especificaciones. Por ejemplo, si escribes "h1.mi-clase { color: blue; }", solo los elementos `<h1>` con la clase "mi-clase" tendrán el color azul. De la misma manera, puedes combinar clases, identificadores o elementos para hacer más específicos los estilos aplicados. */
 h2.mi-clase{ /**Declaracion de selector combinado, en este caso se declara la etiqueta <h2> con la clase "mi-clase".**/
+    /**Aqui se especifican los atributos de estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+h2#miIdentificador{ /**Declaracion de selector combinado, en este caso se declara la etiqueta <h2> con el identificador "miIdentificador".**/
+    /**Aqui se especifican los atributos de estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+.mi-clase.mi-clase2{ /**Declaracion de selector combinado, en este caso se declara la clase "mi-clase" con la clase "mi-clase2".**/
+    /**Aqui se especifican los atributos de estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+.mi-clase#miIdentificador{ /**Declaracion de selector combinado, en este caso se declara la clase "mi-clase" con el identificador "miIdentificador".**/
     /**Aqui se especifican los atributos de estilos.**/
 }   /**Cierre de la declaración de selector combinado.**/
 
