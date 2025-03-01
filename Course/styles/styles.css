@@ -1,6 +1,7 @@
 /* CSS: Es piel, ropa y maquillaje. */
-/* El ";" indica unicamente el final de una declaración de atributo y su valor, si no se usa, el lenguaje interpretará que la declaración continúa. */
 /* CamelCase: El camelCase es una convención de escritura que se utiliza en programación para nombrar variables, funciones, clases, etc. Se escribe en minúsculas y cada palabra adicional comienza con mayúscula. Por ejemplo, "miVariable", "miFuncion", "miClasePersonalizada". */
+/* Comentario: Texto o codigo que solamente el desarrollador puede ver, ademas estos no tendran ningun efecto en lo que visualiza el usuario, por lo que de manera global y en cualquier lenguaje se puede generar un comentarios con Ctrl + }. */
+/* ";": El ";" indica unicamente el final de una declaración de atributo y su valor, si no se usa, el lenguaje interpretará que la declaración continúa. */
 
 /*^CSS*/
 /* ? Propiedades de cualquier declaración CSS:
