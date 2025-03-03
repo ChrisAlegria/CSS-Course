@@ -9,22 +9,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    
-    <!-- !Forma 3 - Hoja de estilos externa: Se crea un archivo CSS separado y se vincula al HTML usando la etiqueta <link>. Esto permite aplicar estilos de forma más organizada.* -->
-    <link rel="stylesheet" href="styles/styles.css"> 
-    
     <title>Curso CSS</title>
+    
+    <!-- !Forma 3 - Hoja de estilos externa: Se crea un archivo CSS separado y se vincula al HTML usando la etiqueta <link>. Esto permite que el HTML aplique los estilos definidos en el archivo CSS a sus elementos. -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- *Se abre la etiqueta link donde se especifica la ruta del archivo CSS, del cual el  HTML aplicará los estilos a sus elementos. -->
 
-    <!-- !Forma 1 - Uso de la etiqueta <style>: Se escriben los estilos dentro del archivo HTML, generalmente en la sección <head>.  -->
-    <style> 
+    <!-- !Forma 1 - Uso de la etiqueta <style>: Se escriben los estilos dentro del archivo HTML, generalmente en la sección <head>, por lo que dentro de esta etiqueta se declaran los estilos de la misma forma que en un archivo CSS. -->
+    <style> /**Se abre la etiqueta de estilos, donde dentro de esta se especifican los estilos de la misma manera que un archivo CSS.**/
     </style>
 </head>
 <body>
     
     <!-- !Forma 2 - Atributo style="": Este método aplica estilos directamente en una etiqueta HTML, afectando solo a ese elemento en particular. Sin embargo, no se recomienda su uso para mantener el código limpio y organizado. Si deseas aplicar más de una clase, puedes hacerlo separando los valores por punto y coma, como en `style="mi-clase1; mi-clase2;"`, o mediante espacios, `style="mi-clase1 mi-clase2"`, aunque esta última opción también es desaconsejable por motivos de claridad y mantenimiento del código. -->
-    <p style="">Este texto es plano</p> 
+    <p style=""></p> <!-- *Se declara en una etiqueta de parrado un estilo mediante el atributo style="", el cual solo afecta a ese elemento en particular. -->
+    <ul>
 
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+        <!-- ~Colores -->
+        <li class="color-por-nombre">Texto con color por nombre</li> 
+        <li class="color-por-hexadecimal">Texto con color por hexadecimal</li>
+        <li class="color-por-rgb">Texto con color por RGB</li>
+    </ul>
 </body>
 </html>  
