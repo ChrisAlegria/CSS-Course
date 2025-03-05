@@ -11,7 +11,7 @@
 ? ":": Se usan los ":" en la propiedad de la declaracion para separar la propiedad de su valor. Por ejemplo, "color: red;". 
 ? ";": Se usan los ";" al final de cada declaración para indicar que la declaración ha finalizado. Por ejemplo, "color: red;". */
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Tipos de declaraciones CSS /*
 /* Todo - Declaración de estilos mediante una hoja CSS o etiqueta <style>: Los estilos pueden declararse mediante una hoja CSS externa o directamente dentro de la etiqueta <style> en el archivo HTML. En el caso de la hoja CSS, se vincula al HTML mediante un enlace <link>, permitiendo que el HTML lea y aplique todos los estilos definidos en ella. Por otro lado, la etiqueta <style> funciona de manera similar, pero los estilos se colocan directamente dentro del archivo HTML entre las etiquetas <style> y </style>, sin necesidad de archivo externo. */
 /* &Estructura de estilos en hoja CSS o etiqueta <style>. */
@@ -39,7 +39,7 @@ red;" /**Valor**/
 color: red; /** Declaración: propiedad + valor **/
 }
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Selectores /*
 /* Todo - Selectores de elemento (nombreElemento{}): Los selectores de elemento se utilizan para aplicar estilos a todas las instancias de una etiqueta HTML específica. Esto significa que, cuando usas el nombre de una etiqueta, como "h1{}", los estilos dentro de ese selector afectarán a todos los elementos de ese tipo en la página. Por ejemplo, si escribes "h1 { color: red; }", todas las etiquetas <h1> en la página se pondrán rojas. */
 h1{ /**Declaracion de selector por elemento, en este caso se declara la etiqueta <h1>.**/
@@ -80,7 +80,7 @@ body{ /**Declaracion de selector por cuerpo, en este caso se declara el cuerpo d
     /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
 }   /**Cierre de la declaración de selector universal.**/
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Prioridad de Aplicación de Estilos Segun el Selector /*
 /* Todo - Prioridad de aplicación de estilos: La prioridad de aplicación de estilos en CSS depende de la especificidad de los selectores. Esto significa que cada selector tiene un nivel de importancia al momento de aplicar estilos. Aunque varios selectores puedan aplicar estilos a un mismo elemento, algunos tendrán mayor relevancia que otros. En caso de que varios selectores afecten la misma propiedad de un elemento, el selector con mayor especificidad sobrescribirá los estilos definidos por los selectores con menor prioridad. */
 /* &Prioridad baja */
@@ -113,7 +113,7 @@ h1.mi-clase { /**Selector combinado.**/
     /**Las propiedades especificadas aqui aplicaran solo al elemento con el ID "titulo".**/
 } /**Cierre de selector de identificador.**/
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Colores */
 /* Todo - Colores por nombre: Los colores por nombre son una forma de especificar un color como valor de una propiedad utilizando su nombre en inglés. Existen 147 colores predefinidos que pueden ser utilizados por nombre. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "red" en la propiedad "color", pero por el momento solo existe un conjunto limitado de colores que se pueden especificar por nombre. */
 .color-por-nombre{
@@ -134,7 +134,10 @@ h1.mi-clase { /**Selector combinado.**/
     color: rgb(55, 127, 0);
 }
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
     **RGB: red, green, blue.
