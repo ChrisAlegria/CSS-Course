@@ -52,20 +52,6 @@ h1{ /**Declaracion de selector por elemento, en este caso se declara la etiqueta
     /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
 }   /**Cierre de la declaración de selector por clase.**/
 
-/* Todo - Selectores combinados ("nombreElemento.nombreClase{}", "nombreElemento#nombreIdentificador{}", ".mi-clase.mi-clase2{}", ".mi-clase#miIdentificador{}"): Los selectores combinados se usan para aplicar estilos a elementos específicos que tienen una combinación de etiquetas, clases e identificadores. Esto significa que, cuando usas un selector que combina un tipo de elemento, una clase o un ID, como "h1.mi-clase{}", los estilos dentro de ese selector afectarán solo a los elementos que cumplas con ambas especificaciones. Por ejemplo, si escribes "h1.mi-clase { color: blue; }", solo los elementos `<h1>` con la clase "mi-clase" tendrán el color azul. De la misma manera, puedes combinar clases, identificadores o elementos para hacer más específicos los estilos aplicados. */
-h2.mi-clase{ /**Declaracion de selector combinado, en este caso se declara la etiqueta <h2> con la clase "mi-clase".**/
-    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
-}   /**Cierre de la declaración de selector combinado.**/
-h2#miIdentificador{ /**Declaracion de selector combinado, en este caso se declara la etiqueta <h2> con el identificador "miIdentificador".**/
-    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
-}   /**Cierre de la declaración de selector combinado.**/
-.mi-clase.mi-clase2{ /**Declaracion de selector combinado, en este caso se declara la clase "mi-clase" con la clase "mi-clase2".**/
-    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
-}   /**Cierre de la declaración de selector combinado.**/
-.mi-clase#miIdentificador{ /**Declaracion de selector combinado, en este caso se declara la clase "mi-clase" con el identificador "miIdentificador".**/
-    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
-}   /**Cierre de la declaración de selector combinado.**/
-
 /* Todo - Selector de identificador (#nombreIdentificador): Los selectores de identificador se utilizan para aplicar estilos a un elemento específico que tenga un identificador único, el cual se establece en las etiquetas mediante la propiedad `id=""`. Esto significa que cuando usas un signo de almohadilla seguido de un nombre de identificador, como "#titulo{}", los estilos dentro de ese selector afectarán únicamente al elemento que tenga ese identificador en la página. Por ejemplo, si escribes "#titulo { color: blue; }", solo el elemento con el identificador "titulo" tendrá un color azul. Cabe destacar que, aunque CSS permite aplicar estilos a varios elementos con el mismo ID, esto no semanticamente recomendable, ya que los ID están diseñados para ser únicos e irrepetibles dentro de un documento HTML. */
 #titulo{ /**Declaracion de selector por identificador, en este caso se declara el identificador "titulo".**/
     /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
@@ -81,8 +67,34 @@ body{ /**Declaracion de selector por cuerpo, en este caso se declara el cuerpo d
     /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
 }   /**Cierre de la declaración de selector universal.**/
 
+/* Todo - Selectores combinados ("nombreElemento.nombreClase{}", "nombreElemento#nombreIdentificador{}", ".mi-clase.mi-clase2{}", ".mi-clase#miIdentificador{}"): Los selectores combinados se usan para aplicar estilos a elementos específicos que tienen una combinación de etiquetas, clases e identificadores. Esto significa que, cuando usas un selector que combina un tipo de elemento, una clase o un ID, como "h1.mi-clase{}", los estilos dentro de ese selector afectarán solo a los elementos que cumplas con ambas especificaciones. Por ejemplo, si escribes "h1.mi-clase { color: blue; }", solo los elementos `<h1>` con la clase "mi-clase" tendrán el color azul. De la misma manera, puedes combinar clases, identificadores o elementos para hacer más específicos los estilos aplicados. */
+h2.mi-clase{ /**Declaracion de selector combinado, en este caso se declara la etiqueta <h2> con la clase "mi-clase".**/
+    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+h2#miIdentificador{ /**Declaracion de selector combinado, en este caso se declara la etiqueta <h2> con el identificador "miIdentificador".**/
+    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+.mi-clase.mi-clase2{ /**Declaracion de selector combinado, en este caso se declara la clase "mi-clase" con la clase "mi-clase2".**/
+    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+.mi-clase#miIdentificador{ /**Declaracion de selector combinado, en este caso se declara la clase "mi-clase" con el identificador "miIdentificador".**/
+    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
+}   /**Cierre de la declaración de selector combinado.**/
+
 /* Todo - Selector multiple (h1, h2, h3{}): Los selectores múltiples se utilizan para aplicar estilos a varios elementos al mismo tiempo, ya sea del mismo tipo o de diferentes tipos de selectores, como lo son: clase, elemento, identificador y cuerpo. Esto significa que, cuando declaras un estilo en "h1, h2, h3{}", todos los elementos `<h1>`, `<h2>` y `<h3>` en la página heredarán esos estilos. Por ejemplo, si escribes "h1, .mi-clase, #titulo { color: blue; }", todos los elementos <h1>, los elemntos con la clase "mi-clase" y el elemento con el identificador "titulo" tendrán un color de texto azul. */
 h1, h2, h3{ /**Declaracion de selector multiple, en este caso se declaran los elementos <h1>, <h2> y <h3>.**/
+    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
+} /**Cierre de la declaración de selector multiple.**/
+
+h1,.mi-clase{ /**Declaracion de selector multiple, en este caso se declaran los elementos <h1> y la clase "mi-clase".**/
+    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
+} /**Cierre de la declaración de selector multiple.**/
+
+h1,#titulo{ /**Declaracion de selector multiple, en este caso se declaran los elementos <h1> y el identificador "titulo".**/
+    /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
+} /**Cierre de la declaración de selector multiple.**/
+
+.mi-clase,#titulo{ /**Declaracion de selector multiple, en este caso se declaran la clase "mi-clase" y el identificador "titulo".**/
     /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
 } /**Cierre de la declaración de selector multiple.**/
 
