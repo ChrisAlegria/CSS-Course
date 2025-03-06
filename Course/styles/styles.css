@@ -3,7 +3,8 @@
 /* Comentario y comentario multilinea: Texto o codigo que solamente el desarrollador puede ver, ademas estos no tendran ningun efecto en lo que visualiza el usuario, por lo que de manera global y en cualquier lenguaje se puede generar un comentarios con Ctrl + }. */
 /* ";": El ";" indica unicamente el final de una declaración, si no se usa, el lenguaje interpretará que la declaración continúa. */
 /* Hexadecimal: Es un codigo de 6 letras y numeros que se utilizan para representar colores. */
-/* RGB: Es un modelo de color que se basa en la mezcla de los colores rojo, verde y azul, los cuales se combinan en diferentes proporciones para crear una amplia gama de colores. */
+/* RGB: Es un modelo de color que se basa en la mezcla de los colores rojo, verde y azul, los cuales se combinan en diferentes proporciones para crear una amplia gama de colores. A diferencia de la mezcla de colores en pinturas o tintas, donde los colores se oscurecen al combinarse, en RGB los colores se iluminan más al mezclarse. Este modelo fue diseñado para pantallas y dispositivos digitales, ya que funciona mediante la emisión de luz, donde el color blanco se obtiene combinando los tres colores al máximo nivel y el negro se obtiene con la ausencia de luz. */ 
+/* HSL: El modelo de color HSL (Hue, Saturation, Lightness) se basa en tres componentes: tonalidad, saturación y luminosidad, que se combinan en diferentes proporciones para generar una amplia gama de colores. A diferencia del modelo RGB, que se basa en la mezcla de colores primarios, HSL se enfoca en cómo percibimos los colores, lo que lo hace más intuitivo y fácil de usar. En HSL, la tonalidad (Hue) representa el color básico, la saturación (Saturation) define la intensidad o pureza del color, y la luminosidad (Lightness) indica qué tan claro o oscuro es el color. Este modelo es útil para diseñar colores de manera más visual y cercana a cómo los humanos percibimos las variaciones de color. */  
 /* Funciones transparencia de colores: La transparencia en los colores permite que un color no sea completamente sólido, sino que se mezcle con el fondo o con otros colores. Esto significa que, si un elemento con color transparente se coloca encima de otro color, ambos se combinarán visualmente, haciendo que el elemento transparente se vea como si mezcláramos su color con el del fondo. Además, un elemento con transparencia también deja ver parcialmente los elementos que están detrás de él. Por ejemplo, si colocas un cuadro rojo semitransparente sobre una imagen de fondo, el cuadro se verá rojo pero permitirá ver la imagen detrás de él. */
 
 /*^CSS*/
@@ -155,7 +156,7 @@ h1.mi-clase { /**Selector combinado.**/
     background-color: #fffb005e;
 }
 
-/* Todo- Colores por RGB: Los colores por RGB son una forma de especificar un color como valor de una propiedad utilizando el modelo de color RGB. Este modelo se basa en la mezcla de los colores rojo, verde y azul en diferentes proporciones para crear una amplia gama de colores. Cada color se define con un valor entre 0 y 255 para cada uno de los tres colores primarios, por lo que para la seleccion de colores solidos por RGB se utiliza la función rgb(). En caso de seleccionar un color RGB con transparencia, se utiliza la función rgba(). Por ejemplo, si se desea un color solido en un texto se puede especificar el color "rgb(255, 0, 0)" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "rgba(255, 0, 0, 0.5)". */
+/* Todo - Colores por RGB: Los colores por RGB son una forma de especificar un color como valor de una propiedad utilizando el modelo de color RGB. Este modelo se basa en la mezcla de los colores rojo, verde y azul en diferentes proporciones para crear una amplia gama de colores. Cada color se define con un valor entre 0 y 255 para cada uno de los tres colores primarios, por lo que para la seleccion de colores solidos por RGB se utiliza la función rgb(). En caso de seleccionar un color RGB con transparencia, se utiliza la función rgba(). Por ejemplo, si se desea un color solido en un texto se puede especificar el color "rgb(255, 0, 0)" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "rgba(255, 0, 0, 0.5)". */
 /* &RGB estandar */
 /* ?Propiedades:  
 ? rgb(): Función que permite especificar un color mediante los valores de rojo, verde y azul. Cada valor debe estar entre 0 y 255. */
@@ -165,9 +166,24 @@ h1.mi-clase { /**Selector combinado.**/
 
 /* &RGB con transparencia */
 /* ?Propiedades:
-? rgba(): Función que permite especificar un color mediante los valores de rojo, verde, azul y un valor de transparencia. Cada valor de color debe estar entre 0 y 255 mas el valor de transparencia que debe estar entre 0 y 1. */
+? rgba(): Función que permite especificar un color mediante los valores de rojo, verde, azul y un valor de transparencia. Cada valor de color debe estar entre 0 y 255,  mas el valor de transparencia "alpha" el cual debe estar entre 0 y 1. */
 .color-por-rgb-con-transparencia{
     background-color: rgba(125, 0, 127, 0.324);
+}
+
+/* Todo - Colores por HSL: Los colores por HSL son una forma de especificar un color como valor de una propiedad utilizando el modelo de color HSL. Este modelo se basa en tres componentes la tonalidad (Hue) que representa el color básico, la saturación (Saturation) define la intensidad o pureza del color, y la luminosidad (Lightness) indica qué tan claro o oscuro es el color. Cada color se define con un valor entre 0 y 360 para la tonalidad, entre 0% y 100% para la saturación y la luminosidad, por lo que para la seleccion de colores solidos por RGB se utiliza la función hsl(). En caso de seleccionar un color HSL con transparencia, se utiliza la función hsla(). Por ejemplo, si se desea un color solido en un texto se puede especificar el color "hsl(0, 100%, 50%)" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "hsla(0, 100%, 50%, 0.5)". */
+/* &HSL estandar */
+/* ?Propiedades:
+? hsl(): Función que permite especificar un color mediante los valores de tonalidad, saturación y luminosidad. La tonalidad se mide en grados (0 a 360), mientras que la saturación y la luminosidad se miden en porcentajes (0% a 100%). */
+.color-por-hsl-estandar{
+    background-color: hsl(173, 100%, 50%);
+}
+
+/* &HSL con transparencia */
+/* ?Propiedades:
+? hsla(): Función que permite especificar un color mediante los valores de tonalidad, saturación, luminosidad y un valor de transparencia. La tonalidad se mide en grados (0 a 360), mientras que la saturación y la luminosidad se miden en porcentajes (0% a 100%), mas el valor de transparencia "alpha" el cual debe estar entre 0 y 1. */
+.color-por-hsl-con-transparencia{
+    background-color: hsla(0, 100%, 50%, 0.219);
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
