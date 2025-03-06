@@ -4,6 +4,7 @@
 /* ";": El ";" indica unicamente el final de una declaración, si no se usa, el lenguaje interpretará que la declaración continúa. */
 /* Hexadecimal: Es un codigo de 6 letras y numeros que se utilizan para representar colores. */
 /* RGB: Es un modelo de color que se basa en la mezcla de los colores rojo, verde y azul, los cuales se combinan en diferentes proporciones para crear una amplia gama de colores. */
+/* Funciones transparencia de colores: La transparencia en los colores permite que un color no sea completamente sólido, sino que se mezcle con el fondo o con otros colores. Esto significa que, si un elemento con color transparente se coloca encima de otro color, ambos se combinarán visualmente, haciendo que el elemento transparente se vea como si mezcláramos su color con el del fondo. Además, un elemento con transparencia también deja ver parcialmente los elementos que están detrás de él. Por ejemplo, si colocas un cuadro rojo semitransparente sobre una imagen de fondo, el cuadro se verá rojo pero permitirá ver la imagen detrás de él. */
 
 /*^CSS*/
 /* ? Propiedades de cualquier declaración CSS:
@@ -117,21 +118,35 @@ h1.mi-clase { /**Selector combinado.**/
 /* ~Colores */
 /* Todo - Colores por nombre: Los colores por nombre son una forma de especificar un color como valor de una propiedad utilizando su nombre en inglés. Existen 147 colores predefinidos que pueden ser utilizados por nombre. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "red" en la propiedad "color", pero por el momento solo existe un conjunto limitado de colores que se pueden especificar por nombre. */
 .color-por-nombre{
-    color: red;
+    background-color: crimson;
 }
 
-/* Todo - Colores por hexadecimal: Los colores por hexadecimal son una forma de especificar un color como valor de una propiedad utilizandoun código hexadecimal. Cada color tiene un código hexadecimal único que se compone de una combinación de seis caracteres alfanuméricos. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "#FF0000" en la propiedad "color". */
+/* Todo - Colores por hexadecimal: Los colores por hexadecimal son una forma de especificar un color como valor de una propiedad utilizandoun código hexadecimal. Cada color tiene un código hexadecimal único que se compone de una combinación de seis caracteres alfanuméricos o en su caso si se selecciona un color hexadecimal con transparencia, se compone de ocho caracteres alfanuméricos. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "#ff0000" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "#ff0000ff". */
 /* ?Propiedades:  
 ? #: Propiedad que define que el color a asignar en el valor de la propiedad será declarado mediante hexadecimal. */
-.color-por-hexadecimal{
-    color: #0024c4;
+/* &Hexadecimal estandar */
+.color-por-hexadecimal-estandar{
+    background-color: #007bff;
 }
 
-/* Todo- Colores por RGB: Los colores por RGB son una forma de especificar un color como valor de una propiedad utilizando el modelo de color RGB. Este modelo se basa en la mezcla de los colores rojo, verde y azul en diferentes proporciones para crear una amplia gama de colores. Cada color se define con un valor entre 0 y 255 para cada uno de los tres colores primarios. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "rgb(255, 0, 0)" en la propiedad "color". */
+/* &Hexadecimal con transparencia */
+.color-por-hexadecimal-con-transparencia{
+    background-color: #007bff80;
+}
+
+/* Todo- Colores por RGB: Los colores por RGB son una forma de especificar un color como valor de una propiedad utilizando el modelo de color RGB. Este modelo se basa en la mezcla de los colores rojo, verde y azul en diferentes proporciones para crear una amplia gama de colores. Cada color se define con un valor entre 0 y 255 para cada uno de los tres colores primarios, por lo que para la seleccion de colores solidos por RGB se utiliza la función rgb(). En caso de seleccionar un color RGB con transparencia, se utiliza la función rgba(). Por ejemplo, si se desea un color solido en un texto se puede especificar el color "rgb(255, 0, 0)" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "rgba(255, 0, 0, 0.5)". */
+/* &RGB estandar */
 /* ?Propiedades:  
 ? rgb(): Función que permite especificar un color mediante los valores de rojo, verde y azul. Cada valor debe estar entre 0 y 255. */
-.color-por-rgb{
-    color: rgb(55, 127, 0);
+.color-por-rgb-estandar{
+    background-color: rgb(107, 247, 0);
+}
+
+/* &RGB con transparencia */
+/* ?Propiedades:
+? rgba(): Función que permite especificar un color mediante los valores de rojo, verde, azul y un valor de transparencia. Cada valor de color debe estar entre 0 y 255 mas el valor de transparencia que debe estar entre 0 y 1. */
+.color-por-rgb-con-transparencia{
+    background-color: rgba(125, 0, 127, 0.324);
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
