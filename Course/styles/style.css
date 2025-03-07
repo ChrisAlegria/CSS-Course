@@ -139,55 +139,66 @@ h1.mi-clase { /**Selector combinado.**/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Colores */
 /* Todo - Colores por nombre: Los colores por nombre son una forma de especificar un color solido como valor de una propiedad utilizando su nombre en inglés. Existen 147 colores predefinidos que pueden ser utilizados por nombre. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "red" en la propiedad "color", pero por el momento solo existe un conjunto limitado de colores que se pueden especificar por nombre. */
-.color-por-nombre{
-    background-color: crimson;
-}
+.color-por-nombre{ /**Se declara un selector por clase llamado "color-por-nombre".**/
+    background-color: crimson; /**Se asigna una propiedad de color de fondo con el valor por nombre "crimson".**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Colores por hexadecimal: Los colores por hexadecimal son una forma de especificar un color como valor de una propiedad utilizandoun código hexadecimal. Cada color tiene un código hexadecimal único que se compone de una combinación de seis caracteres alfanuméricos o en su caso si se selecciona un color hexadecimal con transparencia, se compone de ocho caracteres alfanuméricos. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "#ff0000" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "#ff0000ff". */
 /* ?Propiedades:  
 ? #: Propiedad que define que el color a asignar en el valor de la propiedad será declarado mediante hexadecimal. */
 /* &Hexadecimal estandar */
-.color-por-hexadecimal-estandar{
-    background-color: #007bff;
-}
+.color-por-hexadecimal-estandar{ /**Se declara un selector por clase llamado "color-por-hexadecimal-estandar".**/
+    background-color: #007bff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#007bff".**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /* &Hexadecimal con transparencia */
-.color-por-hexadecimal-con-transparencia{
-    background-color: #fffb005e;
-}
+.color-por-hexadecimal-con-transparencia{ /**Se declara un selector por clase llamado "color-por-hexadecimal-con-transparencia".**/
+    background-color: #fffb005e; /**Se asigna una propiedad de color de fondo con el valor hexadecimal con transparencia "#fffb005e".**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Colores por RGB: Los colores por RGB son una forma de especificar un color como valor de una propiedad utilizando el modelo de color RGB. Este modelo se basa en la mezcla de los colores rojo, verde y azul en diferentes proporciones para crear una amplia gama de colores. Cada color se define con un valor entre 0 y 255 para cada uno de los tres colores primarios, por lo que para la seleccion de colores solidos por RGB se utiliza la función rgb(). En caso de seleccionar un color RGB con transparencia, se utiliza la función rgba(). Por ejemplo, si se desea un color solido en un texto se puede especificar el color "rgb(255, 0, 0)" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "rgba(255, 0, 0, 0.5)". */
 /* &RGB estandar */
-/* ?Propiedades:  
+/* ?Propiedades:   
 ? rgb(): Función que permite especificar un color mediante los valores de rojo, verde y azul. Cada valor debe estar entre 0 y 255. */
-.color-por-rgb-estandar{
-    background-color: rgb(107, 247, 0);
-}
+.color-por-rgb-estandar{ /**Se declara un selector por clase llamado "color-por-rgb-estandar".**/
+    background-color: rgb(107, 247, 0); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(107, 247, 0)".**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /* &RGB con transparencia */
 /* ?Propiedades:
 ? rgba(): Función que permite especificar un color mediante los valores de rojo, verde, azul y un valor de transparencia. Cada valor de color debe estar entre 0 y 255,  mas el valor de transparencia "alpha" el cual debe estar entre 0 y 1. */
-.color-por-rgb-con-transparencia{
-    background-color: rgba(125, 0, 127, 0.324);
-}
+.color-por-rgb-con-transparencia{ /**Se declara un selector por clase llamado "color-por-rgb-con-transparencia".**/
+    background-color: rgba(125, 0, 127, 0.324); /**Se asigna una propiedad de color de fondo con el valor RGB con transparencia "rgba(125, 0, 127, 0.324)".**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Colores por HSL: Los colores por HSL son una forma de especificar un color como valor de una propiedad utilizando el modelo de color HSL. Este modelo se basa en tres componentes la tonalidad (Hue) que representa el color básico, la saturación (Saturation) define la intensidad o pureza del color, y la luminosidad (Lightness) indica qué tan claro o oscuro es el color. Cada color se define con un valor entre 0 y 360 para la tonalidad, entre 0% y 100% para la saturación y la luminosidad, por lo que para la seleccion de colores solidos por RGB se utiliza la función hsl(). En caso de seleccionar un color HSL con transparencia, se utiliza la función hsla(). Por ejemplo, si se desea un color solido en un texto se puede especificar el color "hsl(0, 100%, 50%)" en la propiedad "color", pero en caso de un color con transparencia se puede especificar el color "hsla(0, 100%, 50%, 0.5)". */
 /* &HSL estandar */
 /* ?Propiedades:
 ? hsl(): Función que permite especificar un color mediante los valores de tonalidad, saturación y luminosidad. La tonalidad se mide en grados (0 a 360), mientras que la saturación y la luminosidad se miden en porcentajes (0% a 100%). */
-.color-por-hsl-estandar{
-    background-color: hsl(173, 100%, 50%);
-}
+.color-por-hsl-estandar{ /**Se declara un selector por clase llamado "color-por-hsl-estandar".**/
+    background-color: hsl(173, 100%, 50%); /**Se asigna una propiedad de color de fondo con el valor HSL "hsl(173, 100%, 50%)".**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /* &HSL con transparencia */
 /* ?Propiedades:
 ? hsla(): Función que permite especificar un color mediante los valores de tonalidad, saturación, luminosidad y un valor de transparencia. La tonalidad se mide en grados (0 a 360), mientras que la saturación y la luminosidad se miden en porcentajes (0% a 100%), mas el valor de transparencia "alpha" el cual debe estar entre 0 y 1. */
-.color-por-hsl-con-transparencia{
-    background-color: hsla(0, 100%, 50%, 0.219);
-}
+.color-por-hsl-con-transparencia{ /**Se declara un selector por clase llamado "color-por-hsl-con-transparencia".**/
+    background-color: hsla(0, 100%, 50%, 0.219); /**Se asigna una propiedad de color de fondo con el valor HSL con transparencia "hsla(0, 100%, 50%, 0.219)".**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Background */
+/* Todo - Background con solido/con transparencia (background-color{}): El color de fondo sólido o con transparencia se utiliza para cambiar el color de fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. Por lo que se puede especificar un color sólido o un color con transparencia para el fondo de un elemento, ya sea usando colores por nombre, hexadecimal, RGB, HSL, entre otros. */
+.background-con-color-solido-transparente{ /**Se declara un selector por clase llamado "background-con-color-solido-transparente".**/
+    background-color: orange; /**Se declara una propiedad de color de fondo con el color solido "orange".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Background con colores degradados (background: linear-gradient()): Los colores degradados se utilizan para crear un efecto visual en el que un color se mezcla gradualmente con otro, podiendo crear transiciónes suaves o abruptas entre dos o más colores. Para crear un degradado de colores, se utiliza la propiedad "background" con la función "linear-gradient()", la cual permite especificar la dirección hacia donde ira el degradado y los colores que se mezclaran, podiendo usar colores por nombre, hexadecimal, RGB, HSL, entre otros. */
+/* ?Propiedades:
+? linear-gradient(deg, color1, color2, ...): Función que permite crear un degradado de colores en una dirección específica. Se pueden especificar uno o más colores para crear la transición entre ellos. Para definir el degradado se tiene que especificar la dirección del degradado, se utiliza un ángulo en grados (0deg a 360deg), posteriormente de declara el primer color y la posición en la que se encontrara, seguido de una coma y el segundo color con su posición, y así sucesivamente. */
+.background-con-colores-degradados{ /**Se declara un selector por clase llamado "background-con-colores-degradados".**/
+    background: linear-gradient(90deg, GreenYellow 10%, rgb(0, 132, 255) 60%, #f048ff 100%); /**Se declara una propiedad de color de fondo con un degradado de colores, usando un color por nombre "green", un color en hexadecimal "#0084ff" y un color RGB "rgb(240, 72, 255)".**/;
+} /**Cierre de la declaracion de selector por clase.**/
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
