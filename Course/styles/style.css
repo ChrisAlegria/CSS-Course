@@ -195,12 +195,15 @@ h1.mi-clase { /**Selector combinado.**/
 
 /* Todo - Background con colores degradados (background: linear-gradient()): Los colores degradados se utilizan para crear un efecto visual en el que un color se mezcla gradualmente con otro, podiendo crear transiciónes suaves o abruptas entre dos o más colores. Para crear un degradado de colores, se utiliza la propiedad "background" con la función "linear-gradient()", la cual permite especificar la dirección hacia donde ira el degradado y los colores que se mezclaran, podiendo usar colores por nombre, hexadecimal, RGB, HSL, entre otros. */
 /* ?Propiedades:
-? linear-gradient(deg, color1, color2, ...): Función que permite crear un degradado de colores en una dirección específica. Se pueden especificar uno o más colores para crear la transición entre ellos. Para definir el degradado se tiene que especificar la dirección del degradado, se utiliza un ángulo en grados (0deg a 360deg), posteriormente de declara el primer color y la posición en la que se encontrara, seguido de una coma y el segundo color con su posición, y así sucesivamente. */
+? linear-gradient(deg, color1, color2, ...): Función que permite crear un degradado de colores en una dirección específica. Se pueden especificar uno o más colores para crear la transición entre ellos. Para definir el degradado se debe especificar la dirección del degradado, usando un ángulo en grados (0deg a 360deg), seguido de los colores que formarán la transición y las posiciones en las que se encontrarán. La posición de cada color se determina en porcentaje, el cual representa el espacio del fondo en base a la dirección del degradado. Por ejemplo, si usas 60% para el primer color, significa que a partir del 60% del fondo del elemento comenzará ese color. Si el siguiente color tiene 62%, el 2% restante (de la diferencia entre 60% y 62%) se utilizará para aplicar el degradado entre los dos colores. Este proceso permite crear transiciones suaves entre los colores a medida que se avanza en el fondo del elemento. */
 .background-con-colores-degradados{ /**Se declara un selector por clase llamado "background-con-colores-degradados".**/
     background: linear-gradient(270deg, GreenYellow 0%, rgb(0, 132, 255) 60%, #f048ff 100%); /**Se declara una propiedad de color de fondo con un degradado de colores, usando un color por nombre "green", un color en hexadecimal "#0084ff" y un color RGB "rgb(240, 72, 255)".**/;
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - */
+/* Todo - Background con imágenes (background-image{}): Las imágenes de fondo se utilizan para agregar una imagen a un elemento HTML, como un contenedor, una sección o el cuerpo de la página web. Para agregar una imagen de fondo, se usa la propiedad `background-image{}` junto con la función `url()`, donde se coloca la dirección de la imagen que se quiere utilizar. Por defecto, la imagen se insertará con su tamaño original. Si la imagen es muy pequeña para cubrir el ancho o alto del elemento, se repetirá automáticamente para llenar el espacio disponible. De la misma manera, si la imagen es más grande pero no cubre toda la altura del elemento, también se repetirá. */
+.background-con-imagen{
+    background-image: url('../assets/images/kimetsu.jpeg');
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
