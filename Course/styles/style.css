@@ -201,10 +201,17 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Background con imágenes (background-image{}): Las imágenes de fondo se utilizan para agregar una imagen a un elemento HTML, como un contenedor, una sección o el cuerpo de la página web. Para agregar una imagen de fondo, se usa la propiedad `background-image{}` junto con la función `url()`, donde se coloca la dirección de la imagen que se quiere utilizar. Por defecto, la imagen se insertará con su tamaño original. Si la imagen es muy pequeña para cubrir el ancho o alto del elemento, se repetirá automáticamente para llenar el espacio disponible. De la misma manera, si la imagen es más grande pero no cubre toda la altura del elemento, también se repetirá. */
-.background-con-imagen{
-    background-image: url('../assets/images/kimetsu.jpeg');
-}
+.background-con-imagen{ /**Se declara un selector por clase llamado "background-con-imagen".**/
+    background-image: url('../assets/images/kimetsu.jpeg'); /**Se declara una propiedad de imagen de fondo con la imagen "kimetsu.jpeg".**/
+} /**Cierre de la declaracion de selector por clase.**/
 
+/* Todo - Background con modificacion de repeticion de imagenes (background-repeat{}): La propiedad `background-repeat{}` se utiliza para controlar la repetición de una imagen de fondo en un elemento HTML. Por defecto, las imágenes de fondo se repiten tanto horizontal como verticalmente para cubrir todo el espacio disponible. Sin embargo, esta propiedad permite modificar este comportamiento y definir si la imagen se repite solo en una dirección, en ambas direcciones o no se repite en absoluto. Para definir que solo se repita en X o Y, se puede usar los valores "repeat-x" o "repeat-y", respectivamente. En caso de que no se quiera que la imagen se repita, se puede usar el valor "no-repeat". */
+.background-con-modificacion-de-repeticion-de-imagen{ /**Se declara un selector por clase llamado "background-con-modificacion-de-repeticion-de-imagenes".**/
+    background-image: url('../assets/images/Sunset.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "Sunset.jpg".**/
+    background-repeat: no-repeat;  /**Se declara una propiedad de repeticion de imagen de fondo con el valor "no-repeat", ocacionando que la imagen no se repita.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo */
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
