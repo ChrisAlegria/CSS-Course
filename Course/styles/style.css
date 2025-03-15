@@ -138,6 +138,7 @@ h1.mi-clase { /**Selector combinado.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Colores */
+/* ~Los colores en CSS se pueden especificar de varias formas, como por nombre, hexadecimal, RGB, HSL, entre otros. Cada forma tiene sus propias características y ventajas, ademas estos pueden ser usados en propiedades como color de texto, color de fondo, color de borde, entre otros. */
 /* Todo - Colores por nombre: Los colores por nombre son una forma de especificar un color solido como valor de una propiedad utilizando su nombre en inglés. Existen 147 colores predefinidos que pueden ser utilizados por nombre. Por ejemplo, si se desea que un texto sea rojo, se puede especificar el color "red" en la propiedad "color", pero por el momento solo existe un conjunto limitado de colores que se pueden especificar por nombre. */
 .color-por-nombre{ /**Se declara un selector por clase llamado "color-por-nombre".**/
     background-color: crimson; /**Se asigna una propiedad de color de fondo con el valor por nombre "crimson".**/
@@ -188,6 +189,7 @@ h1.mi-clase { /**Selector combinado.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Background */
+/* ~El fondo de un elemento (background) en CSS se utiliza para personalizar el fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. El fondo puede ser un color sólido, un degradado de colores, una imagen, o una combinación de estos elementos. */
 /* Todo - Background con solido/con transparencia (background-color{}): El color de fondo sólido o con transparencia se utiliza para cambiar el color de fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. Por lo que se puede especificar un color sólido o un color con transparencia para el fondo de un elemento, ya sea usando colores por nombre, hexadecimal, RGB, HSL, entre otros. */
 .background-con-color-solido-transparente{ /**Se declara un selector por clase llamado "background-con-color-solido-transparente".**/
     background-color: orange; /**Se declara una propiedad de color de fondo con el color solido "orange".**/
@@ -202,26 +204,26 @@ h1.mi-clase { /**Selector combinado.**/
 
 /* Todo - Background con imágenes (background-image{}): Las imágenes de fondo se utilizan para agregar una imagen a un elemento HTML, como un contenedor, una sección o el cuerpo de la página web. Para agregar una imagen de fondo, se usa la propiedad `background-image{}` junto con la función `url()`, donde se coloca la dirección de la imagen que se quiere utilizar. Por defecto, la imagen se insertará con su tamaño original. Si la imagen es muy pequeña para cubrir el ancho o alto del elemento esta se colocara en la esquina superior izquierda del elementp y ademas se repetirá automáticamente para llenar el espacio disponible. De la misma manera, si la imagen es más grande pero no cubre toda la altura del elemento, también se repetirá. */
 .background-con-imagen{ /**Se declara un selector por clase llamado "background-con-imagen".**/
-    background-image: url('../assets/images/kimetsu.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "kimetsu.jpeg".**/
+    background-image: url('../assets/images/Background_Image_1.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "kimetsu.jpeg".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Background con modificacion de repeticion de imagenes (background-repeat{}): La propiedad `background-repeat{}` se utiliza para controlar la repetición de una imagen de fondo en un elemento HTML. Por defecto, las imágenes de fondo se repiten tanto horizontal como verticalmente para cubrir todo el espacio disponible. Sin embargo, esta propiedad permite modificar este comportamiento y definir si la imagen se repite solo en una dirección, en ambas direcciones o no se repite en absoluto. Para definir que solo se repita en X o Y, se puede usar los valores "repeat-x" o "repeat-y", respectivamente. En caso de que no se quiera que la imagen se repita, se puede usar el valor "no-repeat". */
 .background-con-modificacion-de-repeticion-de-imagen{ /**Se declara un selector por clase llamado "background-con-modificacion-de-repeticion-de-imagenes".**/
-    background-image: url('../assets/images/Sunset.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "Sunset.jpg".**/
+    background-image: url('../assets/images/Background_Image_2.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "Sunset.jpg".**/
     background-repeat: no-repeat;  /**Se declara una propiedad de repeticion de imagen de fondo con el valor "no-repeat", ocacionando que la imagen no se repita.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Posición de fondo (background-position{}): La propiedad `background-position{}` se utiliza para controlar la posición del fondo en un elemento. Aunque se usa comúnmente con `background-image`, también puede aplicarse a cualquier tipo de fondo, como colores sólidos, degradados, imágenes, entre otros, los cuales no abarquen todo el espacio del elemento. Esta propiedad permite especificar la ubicación exacta donde se mostrará el fondo dentro del elemento HTML. Se puede definir la posición usando valores como arriba (top), abajo (bottom), izquierda (left), derecha (right), centro (center), o en valores personalizados como porcentajes o píxeles. */
 .background-con-posicion-de-fondo{ /**Se declara un selector por clase llamado "background-con-posicion-de-imagen".**/
-    background-image: url('../assets/images/Sky.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "landscape.jpg".**/
-    background-color: rgb(201, 201, 201);  /**Se declara una propiedad de color de fondo con el color solido por rgb.**/
+    background-image: url('../assets/images/Background_Image_3.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "landscape.jpg".**/
+    background-color: rgb(205, 218, 239);  /**Se declara una propiedad de color de fondo con el color solido por rgb.**/
     background-repeat: no-repeat;  /**Se declara una propiedad de repeticion de imagen de fondo con el valor "no-repeat", ocacionando que la imagen no se repita.**/
     background-position: center; /**Se declara una propiedad de posicion de imagen de fondo con el valor "center", ocacionando que la imagen se posicione en el centro del elemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Fondo con seguimiento (background-attachment{}): La propiedad `background-attachment{}` se utiliza para controlar el comportamiento de un fondo en relación al desplazamiento del contenido de un elemento. Por defecto, el fondo se desplaza junto con el contenido, lo que significa que si el contenido se mueve, el fondo también lo hará. Sin embargo, con esta propiedad puedes modificar ese comportamiento y hacer que el fondo permanezca fijo en su lugar, independientemente de cómo se desplace el contenido. Para mantener el fondo fijo, se utiliza el valor "fixed" el cual mantiene el fondo fijo en relación con la página web, no al elemento en sí. También se puede usar el valor "scroll" (por defecto), que hace que el fondo se desplace con el contenido. */
 .background-con-seguimiento-de-fondo{ /**Se declara un selector por clase llamado "background-con-seguimiento-de-fondo".**/
-    background-image: url('../assets/images/Sky.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "Forest.jpg".**/
+    background-image: url('../assets/images/Background_Image_4.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "Forest.jpg".**/
     background-repeat: no-repeat;  /**Se declara una propiedad de repeticion de imagen de fondo con el valor "no-repeat", ocacionando que la imagen no se repita.**/
     background-position: center; /**Se declara una propiedad de posicion de imagen de fondo con el valor "center", ocacionando que la imagen se posicione en el centro del elemento.**/
     background-attachment: fixed; /**Se declara una propiedad de seguimiento de imagen de fondo con el valor "fixed", ocacionando que la imagen se mantenga fija en su lugar.**/
@@ -229,13 +231,81 @@ h1.mi-clase { /**Selector combinado.**/
 
 /* Todo - Short-hand de background (background{}): Es una propiedad que engloba todas las propiedades de fondo en una sola declaración. Esto permite definir el color, la imagen, la repetición, la posición y el seguimiento del fondo en un solo lugar en este orden (color, image, repeat, position, attachment). Por lo que nos permite declarar todas estas propiedas sin usar propiedades separadas, lo que facilita la escritura y la lectura del código. Ademas no es necesario integrar todas las propiedades, ya que se pueden omitir algunas si no se desean aplicar. Por lo que la estructura de short-hand de background usando todas las propiedades podria ser background: #000000 url('imagen.jpg') no-repeat center fixed; Por lo que podemos ver que unicamente se usaron los valores de las propiedades que se desean aplicar. */
 .background-con-short-hand-de-background{ /**Se declara un selector por clase llamado "background-con-short-hand-de-background".**/
-    background: rgb(201, 201, 201) url('../assets/images/City.jpg') no-repeat center scroll; /**Se declara una propiedad de fondo con todas las propiedades en una sola declaración.**/
+    background: rgb(205, 218, 239) url('../assets/images/Background_Image_5.jpg') no-repeat center scroll; /**Se declara una propiedad de fondo con todas las propiedades en una sola declaración.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Bordes */
+/* Todo - Estilo de bordes (border-style{}): La propiedad `border-style{}` se utiliza para definir el estilo de los bordes de un elemento HTML. Donde mediante valores podemos definir el tipo de borde que se desea aplicar, como sólido, punteado, discontinuo, doble, entre otros. */
+.elemento-con-borde{ /**Se declara un selector por clase llamado "elemento-con-borde-solido".**/
+    border-style: solid; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
+/* &Dotted */
+/* &Declara un estilo de borde punteado, lo que significa que el borde es una línea discontinua con puntos pequeños y espacios entre ellos. */
+.elemento-con-borde-tipo-Dotted{ /**Se declara un selector por clase llamado "elemento-con-borde-punteado".**/
+    border-style: dotted; /**Se declara una propiedad de estilo de borde con el valor "dotted", ocacionando que el borde sea punteado.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
+/* &Dashed */
+/* &Declara un estilo de borde discontinuo, lo que significa que el borde es una línea discontinua con segmentos cortos y espacios entre ellos. */
+.elemento-con-borde-tipo-dashed{ /**Se declara un selector por clase llamado "elemento-con-borde-discontinuo".**/
+    border-style: dashed; /**Se declara una propiedad de estilo de borde con el valor "dashed", ocacionando que el borde sea discontinuo.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Solid */
+/* &Declara un estilo de borde solido, lo que significa que el borde es una línea continua y uniforme. */
+.elemento-con-borde-tipo-solido{ /**Se declara un selector por clase llamado "elemento-con-borde-solido".**/
+    border-style: solid; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Double */
+/* &Declara un estilo de borde doble, lo que significa que el borde tiene dos líneas paralelas que se ejecutan una al lado de la otra. */
+.elemento-con-borde-tipo-double{ /**Se declara un selector por clase llamado "elemento-con-borde-doble".**/
+    border-style: double; /**Se declara una propiedad de estilo de borde con el valor "double", ocacionando que el borde sea doble.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Groove */
+/* &Declara un estilo de borde surcado, lo que significa que el borde tiene un efecto en relieve que da la apariencia de estar tallado en el elemento. */
+.elemento-con-borde-tipo-groove{ /**Se declara un selector por clase llamado "elemento-con-borde-surcado".**/
+    border-style: groove; /**Se declara una propiedad de estilo de borde con el valor "groove", ocacionando que el borde sea surcado.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Ridge */
+/* &Declara un estilo de borde en relieve, lo que significa que el borde tiene un efecto en relieve que da la apariencia de estar sobresalido del elemento. */
+.elemento-con-borde-tipo-ridge{ /**Se declara un selector por clase llamado "elemento-con-borde-en-relieve".**/
+    border-style: ridge; /**Se declara una propiedad de estilo de borde con el valor "ridge", ocacionando que el borde sea en relieve.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Inset */
+/* &Declara un estilo de borde encajado, lo que significa que el borde tiene un efecto en relieve que da la apariencia de estar hundido en el elemento. */
+.elemento-con-borde-tipo-inset{ /**Se declara un selector por clase llamado "elemento-con-borde-encajado".**/
+    border-style: inset; /**Se declara una propiedad de estilo de borde con el valor "inset", ocacionando que el borde sea encajado.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Outset */
+/* &Declara un estilo de borde saliente, lo que significa que el borde tiene un efecto en relieve que da la apariencia de estar sobresalido del elemento. */
+.elemento-con-borde-tipo-outset{ /**Se declara un selector por clase llamado "elemento-con-borde-saliente".**/
+    border-style: outset; /**Se declara una propiedad de estilo de borde con el valor "outset", ocacionando que el borde sea saliente.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Hidden */
+/* &Declara un estilo de borde oculto, lo que significa que el borde no es visible en el elemento. */
+.elemento-con-borde-tipo-hidden{ /**Se declara un selector por clase llamado "elemento-con-borde-oculto".**/
+    border-style: hidden; /**Se declara una propiedad de estilo de borde con el valor "hidden", ocacionando que el borde sea oculto.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &None */
+/* &Declara un estilo de borde nulo, lo que significa que el borde no se aplica al elemento. */
+.elemento-con-borde-tipo-none{ /**Se declara un selector por clase llamado "elemento-con-borde-nulo".**/
+    border-style: none; /**Se declara una propiedad de estilo de borde con el valor "none", ocacionando que el borde sea nulo.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Mixed */
+/* &Declara un estilo de borde mixto, lo que significa que el borde tiene diferentes estilos en cada lado del elemento. Por lo cual podemos definir cualquier estilo de borde para cada lado del elemento, podiendo ser uno diferente para cada lado. asignando un maximo de cuatro comenzando por el lado superior y siguiendo en sentido horario. Quedando de esta manera (arriba, derecha, abajo, izquierda). En caso de que se definan menos de cuatro estilos, los estilos restantes se repetirán en el orden en que se definieron, por lo que si se definen solo dos estilos, el primero se aplicarán al lado superior y derecho, y el segundo en el lado inferior y izquierdo. */
+.elemento-con-borde-tipo-mixto{ /**Se declara un selector por clase llamado "elemento-con-borde-mixto".**/
+    border-style: solid ridge dashed double; /**Se declara una propiedad de estilo de borde con el valor "solid dotted dashed double", ocacionando que el borde sea solido en el lado superior, punteado en el lado derecho, discontinuo en el lado inferior y doble en el lado izquierdo.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
