@@ -243,7 +243,7 @@ h1.mi-clase { /**Selector combinado.**/
 
 /* &Dotted */
 /* &Declara un estilo de borde punteado, lo que significa que el borde es una línea discontinua con puntos pequeños y espacios entre ellos. */
-.elemento-con-borde-tipo-Dotted{ /**Se declara un selector por clase llamado "elemento-con-borde-punteado".**/
+.elemento-con-borde-tipo-dotted{ /**Se declara un selector por clase llamado "elemento-con-borde-punteado".**/
     border-style: dotted; /**Se declara una propiedad de estilo de borde con el valor "dotted", ocacionando que el borde sea punteado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
@@ -303,8 +303,20 @@ h1.mi-clase { /**Selector combinado.**/
 
 /* &Mixed */
 /* &Declara un estilo de borde mixto, lo que significa que el borde tiene diferentes estilos en cada lado del elemento. Por lo cual podemos definir cualquier estilo de borde para cada lado del elemento, podiendo ser uno diferente para cada lado. asignando un maximo de cuatro comenzando por el lado superior y siguiendo en sentido horario. Quedando de esta manera (arriba, derecha, abajo, izquierda). En caso de que se definan menos de cuatro estilos, los estilos restantes se repetirán en el orden en que se definieron, por lo que si se definen solo dos estilos, el primero se aplicarán al lado superior y derecho, y el segundo en el lado inferior y izquierdo. */
-.elemento-con-borde-tipo-mixto{ /**Se declara un selector por clase llamado "elemento-con-borde-mixto".**/
+.elemento-con-borde-tipo-mixto{ /**Se declara un selector por clase llamado "elemento-con-borde-tipo-mixto".**/
     border-style: solid ridge dashed double; /**Se declara una propiedad de estilo de borde con el valor "solid dotted dashed double", ocacionando que el borde sea solido en el lado superior, punteado en el lado derecho, discontinuo en el lado inferior y doble en el lado izquierdo.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Color de bordes (border-color{}): La propiedad `border-color{}` se utiliza para definir el color de los bordes de un elemento HTML. Donde mediante valores podemos definir el color que se desea aplicar a los bordes, ya sea por nombre, hexadecimal, RGB, HSL, entre otros. Ademas de que este color se puede aplicar a cualquier tipo de borde, menos al borde nulo, asi como a cualquier grosor de borde. */
+.elemento-con-borde-con-color{ /**Se declara un selector por clase llamado "elemento-con-borde-con-color".**/
+    border-style: solid; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+    border-color: #ee00ff; /**Se declara una propiedad de color de borde con el valor hexadecimal "#ff0000".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Grosor de bordes (border-width{}): La propiedad `border-width{}` se utiliza para definir el grosor de los bordes de un elemento HTML. Donde mediante valores podemos definir el grosor que se desea aplicar a los bordes,en cualquier unidad de medida. Ademas de que este grosor se puede aplicar a cualquier tipo de borde, menos al borde nulo, asi como a cualquier color de borde. */
+.elemento-con-borde-con-grosor{ /**Se declara un selector por clase llamado "elemento-con-borde-con-grosor".**/
+    border-style: solid; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+    border-width: 6px; /**Se declara una propiedad de grosor de borde con el valor "5px".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
