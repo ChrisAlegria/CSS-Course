@@ -200,9 +200,9 @@ h1.mi-clase { /**Selector combinado.**/
     background: linear-gradient(270deg, GreenYellow 0%, rgb(0, 132, 255) 60%, #f048ff 100%); /**Se declara una propiedad de color de fondo con un degradado de colores, usando un color por nombre "green", un color en hexadecimal "#0084ff" y un color RGB "rgb(240, 72, 255)".**/;
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - Background con imágenes (background-image{}): Las imágenes de fondo se utilizan para agregar una imagen a un elemento HTML, como un contenedor, una sección o el cuerpo de la página web. Para agregar una imagen de fondo, se usa la propiedad `background-image{}` junto con la función `url()`, donde se coloca la dirección de la imagen que se quiere utilizar. Por defecto, la imagen se insertará con su tamaño original. Si la imagen es muy pequeña para cubrir el ancho o alto del elemento, se repetirá automáticamente para llenar el espacio disponible. De la misma manera, si la imagen es más grande pero no cubre toda la altura del elemento, también se repetirá. */
+/* Todo - Background con imágenes (background-image{}): Las imágenes de fondo se utilizan para agregar una imagen a un elemento HTML, como un contenedor, una sección o el cuerpo de la página web. Para agregar una imagen de fondo, se usa la propiedad `background-image{}` junto con la función `url()`, donde se coloca la dirección de la imagen que se quiere utilizar. Por defecto, la imagen se insertará con su tamaño original. Si la imagen es muy pequeña para cubrir el ancho o alto del elemento esta se colocara en la esquina superior izquierda del elementp y ademas se repetirá automáticamente para llenar el espacio disponible. De la misma manera, si la imagen es más grande pero no cubre toda la altura del elemento, también se repetirá. */
 .background-con-imagen{ /**Se declara un selector por clase llamado "background-con-imagen".**/
-    background-image: url('../assets/images/kimetsu.jpeg'); /**Se declara una propiedad de imagen de fondo con la imagen "kimetsu.jpeg".**/
+    background-image: url('../assets/images/kimetsu.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "kimetsu.jpeg".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Background con modificacion de repeticion de imagenes (background-repeat{}): La propiedad `background-repeat{}` se utiliza para controlar la repetición de una imagen de fondo en un elemento HTML. Por defecto, las imágenes de fondo se repiten tanto horizontal como verticalmente para cubrir todo el espacio disponible. Sin embargo, esta propiedad permite modificar este comportamiento y definir si la imagen se repite solo en una dirección, en ambas direcciones o no se repite en absoluto. Para definir que solo se repita en X o Y, se puede usar los valores "repeat-x" o "repeat-y", respectivamente. En caso de que no se quiera que la imagen se repita, se puede usar el valor "no-repeat". */
@@ -211,7 +211,30 @@ h1.mi-clase { /**Selector combinado.**/
     background-repeat: no-repeat;  /**Se declara una propiedad de repeticion de imagen de fondo con el valor "no-repeat", ocacionando que la imagen no se repita.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo */
+/* Todo - Posición de fondo (background-position{}): La propiedad `background-position{}` se utiliza para controlar la posición del fondo en un elemento. Aunque se usa comúnmente con `background-image`, también puede aplicarse a cualquier tipo de fondo, como colores sólidos, degradados, imágenes, entre otros, los cuales no abarquen todo el espacio del elemento. Esta propiedad permite especificar la ubicación exacta donde se mostrará el fondo dentro del elemento HTML. Se puede definir la posición usando valores como arriba (top), abajo (bottom), izquierda (left), derecha (right), centro (center), o en valores personalizados como porcentajes o píxeles. */
+.background-con-posicion-de-fondo{ /**Se declara un selector por clase llamado "background-con-posicion-de-imagen".**/
+    background-image: url('../assets/images/Sky.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "landscape.jpg".**/
+    background-color: rgb(201, 201, 201);  /**Se declara una propiedad de color de fondo con el color solido por rgb.**/
+    background-repeat: no-repeat;  /**Se declara una propiedad de repeticion de imagen de fondo con el valor "no-repeat", ocacionando que la imagen no se repita.**/
+    background-position: center; /**Se declara una propiedad de posicion de imagen de fondo con el valor "center", ocacionando que la imagen se posicione en el centro del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Fondo con seguimiento (background-attachment{}): La propiedad `background-attachment{}` se utiliza para controlar el comportamiento de un fondo en relación al desplazamiento del contenido de un elemento. Por defecto, el fondo se desplaza junto con el contenido, lo que significa que si el contenido se mueve, el fondo también lo hará. Sin embargo, con esta propiedad puedes modificar ese comportamiento y hacer que el fondo permanezca fijo en su lugar, independientemente de cómo se desplace el contenido. Para mantener el fondo fijo, se utiliza el valor "fixed" el cual mantiene el fondo fijo en relación con la página web, no al elemento en sí. También se puede usar el valor "scroll" (por defecto), que hace que el fondo se desplace con el contenido. */
+.background-con-seguimiento-de-fondo{ /**Se declara un selector por clase llamado "background-con-seguimiento-de-fondo".**/
+    background-image: url('../assets/images/Sky.jpg'); /**Se declara una propiedad de imagen de fondo con la imagen "Forest.jpg".**/
+    background-repeat: no-repeat;  /**Se declara una propiedad de repeticion de imagen de fondo con el valor "no-repeat", ocacionando que la imagen no se repita.**/
+    background-position: center; /**Se declara una propiedad de posicion de imagen de fondo con el valor "center", ocacionando que la imagen se posicione en el centro del elemento.**/
+    background-attachment: fixed; /**Se declara una propiedad de seguimiento de imagen de fondo con el valor "fixed", ocacionando que la imagen se mantenga fija en su lugar.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Short-hand de background (background{}): Es una propiedad que engloba todas las propiedades de fondo en una sola declaración. Esto permite definir el color, la imagen, la repetición, la posición y el seguimiento del fondo en un solo lugar en este orden (color, image, repeat, position, attachment). Por lo que nos permite declarar todas estas propiedas sin usar propiedades separadas, lo que facilita la escritura y la lectura del código. Ademas no es necesario integrar todas las propiedades, ya que se pueden omitir algunas si no se desean aplicar. Por lo que la estructura de short-hand de background usando todas las propiedades podria ser background: #000000 url('imagen.jpg') no-repeat center fixed; Por lo que podemos ver que unicamente se usaron los valores de las propiedades que se desean aplicar. */
+.background-con-short-hand-de-background{ /**Se declara un selector por clase llamado "background-con-short-hand-de-background".**/
+    background: rgb(201, 201, 201) url('../assets/images/City.jpg') no-repeat center scroll; /**Se declara una propiedad de fondo con todas las propiedades en una sola declaración.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Bordes */
+
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
