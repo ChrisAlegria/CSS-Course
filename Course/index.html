@@ -16,6 +16,9 @@
 
     <!-- !Forma 1 - Uso de la etiqueta <style>: Se escriben los estilos dentro del archivo HTML, generalmente en la sección <head>, por lo que dentro de esta etiqueta se declaran los estilos de la misma forma que en un archivo CSS. -->
     <style> /**Se abre la etiqueta de estilos, donde dentro de esta se especifican los estilos de la misma manera que un archivo CSS.**/
+        li{
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -61,14 +64,14 @@
                 <br>
                 <p>Background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen.</p> 
             </li>
-            <li class="background-con-posicion-de-fondo"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen y una modificacion de repeticion de la misma. -->
+            <li class="background-con-posicion-de-fondo"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen y posicion. -->
                 <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
                 <br>
                 <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
                 <br>
                 <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
             </li>
-            <li class="background-con-seguimiento-de-fondo"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen. -->
+            <li class="background-con-seguimiento-de-fondo"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen y seguimiento de fondo. -->
                 <p>Background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo.</p> 
                 <br>
                 <p>Background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo.</p> 
@@ -77,7 +80,7 @@
                 <br>
                 <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
             </li>
-            <li class="background-con-short-hand-de-background"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen. -->
+            <li class="background-con-shorthand-de-background"> <!-- *Se declaran elementos de la lista con una clase que aplica un background con shorthand. -->
                 <p>Background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background.</p> 
                 <br>
                 <p>Background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background.</p> 
@@ -93,20 +96,22 @@
         <h2>Bordes</h2>
         <ul>
             <li>
-                <p class="elemento-con-borde-tipo-dotted">Elemento con borde tipo dotted</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dotted. -->
-                <p class="elemento-con-borde-tipo-dashed">Elemento con borde tipo dashed</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dashed. -->
-                <p class="elemento-con-borde-tipo-solido">Elemento con borde tipo solido</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo solido. -->
-                <p class="elemento-con-borde-tipo-double">Elemento con borde tipo double</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo double. -->
-                <p class="elemento-con-borde-tipo-groove">Elemento con borde tipo groove</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo groove. -->
-                <p class="elemento-con-borde-tipo-ridge">Elemento con borde tipo ridge</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo ridge. -->
-                <p class="elemento-con-borde-tipo-inset">Elemento con borde tipo inset</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo inset. -->
-                <p class="elemento-con-borde-tipo-outset">Elemento con borde tipo outset</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo outset. -->
-                <p class="elemento-con-borde-tipo-hidden">Elemento con borde tipo hidden</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo hidden. -->
-                <p class="elemento-con-borde-tipo-none">Elemento con borde tipo none</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo none. -->
-                <p class="elemento-con-borde-tipo-mixto">Elemento con borde tipo mixto</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo mixto. -->
+                <p class="elemento-con-borde-tipo-dotted">Elemento con borde tipo dotted.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dotted. -->
+                <p class="elemento-con-borde-tipo-dashed">Elemento con borde tipo dashed.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dashed. -->
+                <p class="elemento-con-borde-tipo-solido">Elemento con borde tipo solido.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo solido. -->
+                <p class="elemento-con-borde-tipo-double">Elemento con borde tipo double.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo double. -->
+                <p class="elemento-con-borde-tipo-groove">Elemento con borde tipo groove.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo groove. -->
+                <p class="elemento-con-borde-tipo-ridge">Elemento con borde tipo ridge.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo ridge. -->
+                <p class="elemento-con-borde-tipo-inset">Elemento con borde tipo inset.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo inset. -->
+                <p class="elemento-con-borde-tipo-outset">Elemento con borde tipo outset.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo outset. -->
+                <p class="elemento-con-borde-tipo-hidden">Elemento con borde tipo hidden.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo hidden. -->
+                <p class="elemento-con-borde-tipo-none">Elemento con borde tipo none.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo none. -->
+                <p class="elemento-con-borde-tipo-mixto">Elemento con borde tipo mixto.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo mixto. -->
             </li>
-            <li class="elemento-con-borde-con-color">Elemento con borde con color</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con color. -->
-            <li class="elemento-con-borde-con-grosor">Elemento con borde con grosor</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con grosor. -->
+            <li class="elemento-con-borde-con-color">Elemento con borde con color.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con color. -->
+            <li class="elemento-con-borde-con-grosor">Elemento con borde con grosor.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con grosor. -->
+            <li class="elemento-con-borde-shorthand">Elemento con borde con shorthand</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con shorthand. -->
+            <li class="elemento-con-modificacion-de-bordes-individuales">Elemento con modificacion de bordes individuales.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con modificacion de bordes individuales. -->
         </ul>
 </body>
 </html>  

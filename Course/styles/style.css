@@ -229,8 +229,8 @@ h1.mi-clase { /**Selector combinado.**/
     background-attachment: fixed; /**Se declara una propiedad de seguimiento de imagen de fondo con el valor "fixed", ocacionando que la imagen se mantenga fija en su lugar.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - Short-hand de background (background{}): Es una propiedad que engloba todas las propiedades de fondo en una sola declaración. Esto permite definir el color, la imagen, la repetición, la posición y el seguimiento del fondo en un solo lugar en este orden (color, image, repeat, position, attachment). Por lo que nos permite declarar todas estas propiedas sin usar propiedades separadas, lo que facilita la escritura y la lectura del código. Ademas no es necesario integrar todas las propiedades, ya que se pueden omitir algunas si no se desean aplicar. Por lo que la estructura de short-hand de background usando todas las propiedades podria ser background: #000000 url('imagen.jpg') no-repeat center fixed; Por lo que podemos ver que unicamente se usaron los valores de las propiedades que se desean aplicar. */
-.background-con-short-hand-de-background{ /**Se declara un selector por clase llamado "background-con-short-hand-de-background".**/
+/* Todo - Shorthand de background (background{}): Es una propiedad que engloba todas las propiedades de fondo en una sola declaración. Esto permite definir el color, la imagen, la repetición, la posición y el seguimiento del fondo en un solo lugar en este orden (color, image, repeat, position, attachment). Por lo que nos permite declarar todas estas propiedas sin usar propiedades separadas, lo que facilita la escritura y la lectura del código. Ademas no es necesario integrar todas las propiedades, ya que se pueden omitir algunas si no se desean aplicar. Por lo que la estructura de short-hand de background usando todas las propiedades podria ser background: #000000 url('imagen.jpg') no-repeat center fixed; Por lo que podemos ver que unicamente se usaron los valores de las propiedades que se desean aplicar. */
+.background-con-shorthand-de-background{ /**Se declara un selector por clase llamado "background-con-shorthand-de-background".**/
     background: rgb(205, 218, 239) url('../assets/images/Background_Image_5.jpg') no-repeat center scroll; /**Se declara una propiedad de fondo con todas las propiedades en una sola declaración.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
@@ -317,6 +317,19 @@ h1.mi-clase { /**Selector combinado.**/
 .elemento-con-borde-con-grosor{ /**Se declara un selector por clase llamado "elemento-con-borde-con-grosor".**/
     border-style: solid; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
     border-width: 6px; /**Se declara una propiedad de grosor de borde con el valor "5px".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Shorthand de bordes (border{}): Es una propiedad que engloba todas las propiedades de borde en una sola declaración. Esto permite definir el estilo, el grosor y el color de los bordes de un elemento HTML en un solo lugar en este orden (width, style, color). Por lo que nos permite declarar todas estas propiedas sin usar propiedades separadas, lo que facilita la escritura y la lectura del código. Ademas no es necesario integrar todas las propiedades, ya que se pueden omitir algunas si no se desean aplicar. Por lo que la estructura de short-hand de border usando todas las propiedades podria ser border: 5px solid #000000; Por lo que podemos ver que unicamente se usaron los valores de las propiedades que se desean aplicar. */
+.elemento-con-borde-shorthand{ /**Se declara un selector por clase llamado "elemento-con-borde-shorthand".**/
+    border: 5px dotted yellowgreen; /**Se declara una propiedad de borde con todas las propiedades en una sola declaración.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Nodificacion de bordes individuales (border-top{}, border-right{}, border-bottom{}, border-left{}): Las propiedades `border-top{}`, `border-right{}`, `border-bottom{}` y `border-left{}` se utilizan para definir el estilo, el grosor y el color de los bordes individuales de un elemento HTML, ya que a diferencia del estilo mix ya que este es unicamente para definir estilo por lado, estas propiedades permiten definir el estilo, grosor y color de cada borde de manera individual. Donde al igual que en shorhant podemos declarar el estilo, el grosor y el color de cada borde en una sola declaración. */
+.elemento-con-modificacion-de-bordes-individuales{ /**Se declara un selector por clase llamado "elemento-con-modificacion-de-bordes-individuales".**/
+    border-top: 2px dashed purple; /**Se declara una propiedad de borde superior con todas las propiedades en una sola declaración.**/
+    border-right: 5px dotted blue; /**Se declara una propiedad de borde derecho con todas las propiedades en una sola declaración.**/
+    border-bottom: 7px double red; /**Se declara una propiedad de borde inferior con todas las propiedades en una sola declaración.**/
+    border-left: 6px solid orange;
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
