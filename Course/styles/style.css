@@ -188,6 +188,24 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Unidades de medida */
+/* ~Las unidades de medida son valores que se utilizan para definir tamaños, distancias, espacios, entre otros aspectos en CSS. Estas unidades permiten especificar dimensiones de manera precisa y relativa, adaptándose a las necesidades de diseño de la página web. */ 
+/* &Relativas */
+/* &Las unidades de medida relativas son valores que se basan en el tamaño de otros elementos, como el tamaño de la fuente, el ancho del contenedor o el tamaño de la ventana del navegador. Estas unidades permiten crear diseños flexibles y adaptables, ya que se ajustan automáticamente a los cambios en el tamaño de la pantalla o del contenido. */
+/* Todo - Unidad de medida relativa a el elemento padre (%): La unidad de medida porcentual (%) se utiliza para especificar un tamaño o una posición en relación con el tamaño del elemento padre. Esto significa que, si se asigna un valor de 50% a un ancho, altura o margen, el elemento se ajustará al 50% del tamaño del elemento padre. Por ejemplo, si el elemento padre tiene un ancho de 100px, un elemento hijo con un ancho de 50% tendrá un ancho de 50px. Por ejemplo si un div esta dentro de un section y se establece un ancho de 50% al div, este tendra un ancho de la mitad del section. */
+.unidad-de-medida-relativa-porcentual{ /**Se declara un selector por clase llamado "unidad-de-medida-porcentual".**/
+    width: 50%; /**Se asigna una propiedad de ancho con el valor de medida porcentual "50%".**/
+    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
+/* Todo - Unidad de medida relativa al font size del elemento (em): La unidad de medida "em" se utiliza para especificar un tamaño o una posición en relación con el tamaño de la fuente del elemento. Esto significa que, si se asigna un valor de 2em a un ancho, altura o margen, el elemento se ajustará al doble del tamaño de la fuente del elemento. Por ejemplo, si el tamaño de la fuente es de 16px, un elemento con un ancho de 2em tendrá un ancho de 32px. Por ejemplo si se establece un tamaño de fuente de 16px a un parrafo y se establece un margen de 2em, este tendra un margen de 32px. */
+.unidad-de-medida-relativa-em{ /**Se declara un selector por clase llamado "unidad-de-medida-em".**/
+    font-size: 16px; /**Se asigna una propiedad de tamaño de fuente con el valor de medida en pixeles "16px".**/
+    margin: 2em; /**Se asigna una propiedad de margen con el valor de medida relativa "2em".**/
+    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Background */
 /* ~El fondo de un elemento (background) en CSS se utiliza para personalizar el fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. El fondo puede ser un color sólido, un degradado de colores, una imagen, o una combinación de estos elementos. */
 /* Todo - Background con solido/con transparencia (background-color{}): El color de fondo sólido o con transparencia se utiliza para cambiar el color de fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. Por lo que se puede especificar un color sólido o un color con transparencia para el fondo de un elemento, ya sea usando colores por nombre, hexadecimal, RGB, HSL, entre otros. */
@@ -332,6 +350,12 @@ h1.mi-clase { /**Selector combinado.**/
     border-left: 6px solid orange;
 } /**Cierre de la declaracion de selector por clase.**/
 
+/* Todo - Radio de bordes (border-radius{}): La propiedad `border-radius{}` se utiliza para definir el radio de los bordes de un elemento HTML. Lo que significa redondear las esquinas de un elemento con un borde visible aplicado, ya sea un contenedor, una sección o el cuerpo de la página web. Donde mediante valores podemos definir el radio que se desea aplicar a los bordes, en cualquier unidad de medida. Ademas de que este radio se puede aplicar a cualquier tipo de borde, menos al borde nulo, asi como a cualquier color de borde. */
+.elemento-con-borde-con-radio{ /**Se declara un selector por clase llamado "elemento-con-borde-con-radio".**/
+    border: solid rgb(0, 71, 79); /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+    border-radius: 15px; /**Se declara una propiedad de radio de borde con el valor "15px".**/
+} /**Cierre de la declaracion de selector por clase.**/
+    
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
