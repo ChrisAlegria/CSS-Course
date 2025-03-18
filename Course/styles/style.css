@@ -201,7 +201,7 @@ h1.mi-clase { /**Selector combinado.**/
 /* Todo - Unidad de medida relativa al font size del elemento (em): La unidad de medida "em" se utiliza para especificar un tamaño o una posición en relación con el tamaño de la fuente del elemento. Esto significa que, si se asigna un valor de 2em a un ancho, altura o margen, el elemento se ajustará al doble del tamaño de la fuente del elemento. Por ejemplo, si el tamaño de la fuente es de 16px, un elemento con un ancho de 2em tendrá un ancho de 32px. Por ejemplo si se establece un tamaño de fuente de 16px a un parrafo y se establece un margen de 2em, este tendra un margen de 32px. */
 .unidad-de-medida-relativa-em{ /**Se declara un selector por clase llamado "unidad-de-medida-em".**/
     font-size: 16px; /**Se asigna una propiedad de tamaño de fuente con el valor de medida en pixeles "16px".**/
-    margin: 2em; /**Se asigna una propiedad de margen con el valor de medida relativa "2em".**/
+    height: 4em; /**Se asigna una propiedad de margen con el valor de medida relativa "2em".**/
     background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
