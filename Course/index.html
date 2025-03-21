@@ -44,6 +44,14 @@
     <!-- ~Unidades de medida -->
     <hr>
     <h2>Unidades de medida</h2>
+    <p class="unidad-de-medida-no-relativa-pixeles"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida no relativa "pixeles". --> 
+        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 700px.
+        Este tamaño no cambiará, independientemente de las dimensiones de la ventana o del tamaño del texto.
+    </p>
+    <p class="unidad-de-medida-no-relativa-ex"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida no relativa "ex". --> 
+        Este es un párrafo <code>p</code>, se ha establecido que la altura| de este <code>p</code> sea de 2ex.
+        Como 1ex equivale a la altura de la letra "x" (16px), entonces 2ex equivale a 32px (2 veces 16px).
+    </p>
     <section>
         <div class="unidad-de-medida-relativa-porcentual"> <!-- *Se declara un elemento div dentro de una sección con una clase que aplica una unidad de medida relativa porcentual. -->
             Este es un <code>div</code> dentro de un <code>section</code>.  
@@ -63,7 +71,26 @@
         Como 1rem equivale al tamaño del texto de la etiqueta raiz <code>html</code> (16px), entonces 3rem equivale a 48px (3 veces 16px).
         Si el tamaño del texto raiz cambia, la altura también cambiará automáticamente, ya que depende de él.
     </p>
-
+    <p class="unidad-de-medida-relativa-vw"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida relativa "vw". --> 
+        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 30vw.  
+        Como 1vw equivale al 1% del ancho de la ventana, entonces 50vw equivale al 30% del ancho de la ventana.
+        Si el tamaño del ancho de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
+    </p>
+    <p class="unidad-de-medida-relativa-vh"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida relativa "vh". --> 
+        Este es un párrafo <code>p</code>, se ha establecido que la altura de este <code>p</code> sea de 20vh.  
+        Como 1vh equivale al 1% de la altura de la ventana, entonces 20vh equivale al 20% de la altura de la ventana.
+        Si el tamaño de la altura de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
+    </p>    
+    <p class="unidad-de-medida-relativa-vmax">
+        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 20vmax.  
+        Como 1vmax equivale al 1% del tamaño del lado más grande de la ventana, entonces 20vmax equivale al 20% del tamaño del lado más grande de la ventana.
+        Si el tamaño del lado más grande de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
+    </p>
+    <p class="unidad-de-medida-relativa-vmin">
+        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 30vmin.  
+        Como 1vmin equivale al 1% del tamaño del lado más pequeño de la ventana, entonces 30vmin equivale al 30% del tamaño del lado más pequeño de la ventana.
+        Si el tamaño del lado más pequeño de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
+    </p>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Background -->

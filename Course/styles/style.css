@@ -190,6 +190,21 @@ h1.mi-clase { /**Selector combinado.**/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Unidades de medida */
 /* ~Las unidades de medida son valores que se utilizan para definir tamaños, distancias, espacios, entre otros aspectos en CSS. Estas unidades permiten especificar dimensiones de manera precisa y relativa, adaptándose a las necesidades de diseño de la página web. */ 
+/* &No Relativas */
+/* &Las unidades de medida no relativas son valores fijos que se utilizan para definir tamaños, distancias, espacios, entre otros aspectos en CSS. Estas unidades permiten especificar dimensiones de manera precisa y constante, sin importar el tamaño de la pantalla o del contenido. Por lo que estas unidades no se ajustan automáticamente a los cambios en el tamaño de la pantalla o del contenido. */
+/* Todo - Unidad de medida no relativa de pixeles (px): La unidad de medida en pixeles (px) es una unidad fija que se utiliza para especificar tamaños, distancias, espacios, entre otros aspectos en CSS. Por lo que un pixel es la unidad más pequeña de medida en una pantalla, y se utiliza para definir tamaños precisos y constantes. Por ejemplo, si se asigna un ancho de 100px a un elemento, este tendrá un ancho de 100 píxeles, independientemente del tamaño de la pantalla o del contenido. */
+.unidad-de-medida-no-relativa-pixeles{ /**Se declara un selector por clase llamado "unidad-de-medida-no-relativa-pixeles".**/
+    width: 700px; /**Se asigna una propiedad de ancho con el valor de medida en pixeles "100px".**/
+    background-color: rgb(155, 255, 118); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
+/* Todo - Unidad de medida no relativa de altura de tamaño de fuente de letra (ex): La unidad de medida "ex" se utiliza para especificar un tamaño o una posición en relación con la altura de letra "x" segun la fuente del elemento. Esto significa que, si se asigna un valor de 2ex a un ancho, altura o margen, el elemento se ajustará al doble de la altura de letra "x" de la fuente del elemento. Por ejemplo, si la altura de letra "x" es de 16px, un elemento con un ancho de 2ex tendrá un ancho de 32px. */
+.unidad-de-medida-no-relativa-ex{ /**Se declara un selector por clase llamado "unidad-de-medida-ex".**/
+    font-size: 16px; /**Se asigna una propiedad de tamaño de fuente con el valor de medida en pixeles "16px".**/
+    height: 2ex; /**Se asigna una propiedad de margen con el valor de medida no relativa "2ex".**/
+    background-color: rgb(155, 255, 118); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
 /* &Relativas */
 /* &Las unidades de medida relativas son valores que se basan en el tamaño de otros elementos, como el tamaño de la fuente, el ancho del contenedor o el tamaño de la ventana del navegador. Estas unidades permiten crear diseños flexibles y adaptables, ya que se ajustan automáticamente a los cambios en el tamaño de la pantalla o del contenido. */
 /* Todo - Unidad de medida relativa a el elemento padre (%): La unidad de medida porcentual (%) se utiliza para especificar un tamaño o una posición en relación con el tamaño del elemento padre. Esto significa que, si se asigna un valor de 50% a un ancho, altura o margen, el elemento se ajustará al 50% del tamaño del elemento padre. Por ejemplo, si el elemento padre tiene un ancho de 100px, un elemento hijo con un ancho de 50% tendrá un ancho de 50px. Por ejemplo si un div esta dentro de un section y se establece un ancho de 50% al div, este tendra un ancho de la mitad del section. */
@@ -210,6 +225,31 @@ h1.mi-clase { /**Selector combinado.**/
     height: 3rem; /**Se asigna una propiedad de margen con el valor de medida relativa "2rem".**/
     background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
 }
+
+/* Todo - Unidad de medida relativa al 1% de ancho del viewport (vw): La unidad de medida "vw" se utiliza para especificar un tamaño o una posición en relación con el ancho del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vw a un ancho, altura o margen, el elemento se ajustará al 2% del ancho de la ventana del navegador. Por ejemplo, si el ancho de la ventana del navegador es de 1000px, un elemento con un ancho de 2vw tendrá un ancho de 20px. Por ejemplo si se establece un ancho de 50vw a un div, este tendra un ancho de la mitad del ancho de la ventana del navegador. */
+.unidad-de-medida-relativa-vw{ /**Se declara un selector por clase llamado "unidad-de-medida-vw".**/
+    width: 30vw; /**Se asigna una propiedad de ancho con el valor de medida relativa "50vw".**/
+    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
+/* Todo - Unidad de medida relativa al 1% de alto del viewport (vh): La unidad de medida "vh" se utiliza para especificar un tamaño o una posición en relación con el alto del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vh a un ancho, altura o margen, el elemento se ajustará al 2% del alto de la ventana del navegador. Por ejemplo, si el alto de la ventana del navegador es de 500px, un elemento con un alto de 2vh tendrá un alto de 10px. Por ejemplo si se establece un alto de 50vh a un div, este tendra un alto de la mitad del alto de la ventana del navegador. */
+.unidad-de-medida-relativa-vh{ /**Se declara un selector por clase llamado "unidad-de-medida-vh".**/
+    height: 15vh; /**Se asigna una propiedad de margen con el valor de medida relativa "50vh".**/
+    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
+/* Todo - Unidad de medida relativa al 1% del lado mas grande del viewport (vmax): La unidad de medida "vmax" se utiliza para especificar un tamaño o una posición en relación con el lado más grande del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vmax a un ancho, altura o margen, el elemento se ajustará al 2% del lado más grande de la ventana del navegador. Por ejemplo, si el lado más grande de la ventana del navegador es de 1000px, un elemento con un ancho de 2vmax tendrá un ancho de 20px. Por ejemplo si se establece un ancho de 50vmax a un div, este tendra un ancho de la mitad del lado más grande de la ventana del navegador. */
+.unidad-de-medida-relativa-vmax{ /**Se declara un selector por clase llamado "unidad-de-medida-vmax".**/
+    width: 20vmax; /**Se asigna una propiedad de ancho con el valor de medida relativa "50vmax".**/
+    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
+/* Todo - Unidad de medida relativa al 1% del lado mas pequeño del viewport (vmin): La unidad de medida "vmin" se utiliza para especificar un tamaño o una posición en relación con el lado más pequeño del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vmin a un ancho, altura o margen, el elemento se ajustará al 2% del lado más pequeño de la ventana del navegador. Por ejemplo, si el lado más pequeño de la ventana del navegador es de 500px, un elemento con un ancho de 2vmin tendrá un ancho de 10px. Por ejemplo si se establece un ancho de 50vmin a un div, este tendra un ancho de la mitad del lado más pequeño de la ventana del navegador. */
+.unidad-de-medida-relativa-vmin{ /**Se declara un selector por clase llamado "unidad-de-medida-vmin".**/
+    width: 30vmin; /**Se asigna una propiedad de ancho con el valor de medida relativa "50vmin".**/
+    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+} /**Cierre de la declaración de selector por clase.**/
+
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Background */
