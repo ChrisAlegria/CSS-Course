@@ -250,7 +250,6 @@ h1.mi-clase { /**Selector combinado.**/
     background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
-
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Background */
 /* ~El fondo de un elemento (background) en CSS se utiliza para personalizar el fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. El fondo puede ser un color sólido, un degradado de colores, una imagen, o una combinación de estos elementos. */
@@ -300,6 +299,7 @@ h1.mi-clase { /**Selector combinado.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Bordes */
+/* ~Los bordes en CSS son líneas que rodean los elementos HTML, como contenedores, secciones, imágenes, entre otros. Los bordes se utilizan para definir los límites de un elemento y para separarlo visualmente de otros elementos en la página web. Los bordes pueden tener diferentes estilos, anchos y colores, lo que permite personalizar su apariencia y darle un aspecto único a los elementos. */
 /* Todo - Estilo de bordes (border-style{}): La propiedad `border-style{}` se utiliza para definir el estilo de los bordes de un elemento HTML. Donde mediante valores podemos definir el tipo de borde que se desea aplicar, como sólido, punteado, discontinuo, doble, entre otros. */
 .elemento-con-borde{ /**Se declara un selector por clase llamado "elemento-con-borde-solido".**/
     border-style: solid; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
@@ -388,7 +388,7 @@ h1.mi-clase { /**Selector combinado.**/
     border: 5px dotted yellowgreen; /**Se declara una propiedad de borde con todas las propiedades en una sola declaración.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - Nodificacion de bordes individuales (border-top{}, border-right{}, border-bottom{}, border-left{}): Las propiedades `border-top{}`, `border-right{}`, `border-bottom{}` y `border-left{}` se utilizan para definir el estilo, el grosor y el color de los bordes individuales de un elemento HTML, ya que a diferencia del estilo mix ya que este es unicamente para definir estilo por lado, estas propiedades permiten definir el estilo, grosor y color de cada borde de manera individual. Donde al igual que en shorhant podemos declarar el estilo, el grosor y el color de cada borde en una sola declaración. */
+/* Todo - Bordes individuales (border-top{}, border-right{}, border-bottom{}, border-left{}): Las propiedades `border-top{}`, `border-right{}`, `border-bottom{}` y `border-left{}` se utilizan para definir el estilo, el grosor y el color de los bordes individuales de un elemento HTML, ya que a diferencia del estilo mix ya que este es unicamente para definir estilo por lado, estas propiedades permiten definir el estilo, grosor y color de cada borde de manera individual. Donde al igual que en shorhant podemos declarar el estilo, el grosor y el color de cada borde en una sola declaración. */
 .elemento-con-modificacion-de-bordes-individuales{ /**Se declara un selector por clase llamado "elemento-con-modificacion-de-bordes-individuales".**/
     border-top: 2px dashed purple; /**Se declara una propiedad de borde superior con todas las propiedades en una sola declaración.**/
     border-right: 5px dotted blue; /**Se declara una propiedad de borde derecho con todas las propiedades en una sola declaración.**/
@@ -401,7 +401,36 @@ h1.mi-clase { /**Selector combinado.**/
     border: solid rgb(0, 71, 79); /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
     border-radius: 15px; /**Se declara una propiedad de radio de borde con el valor "15px".**/
 } /**Cierre de la declaracion de selector por clase.**/
-    
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Margenes */
+/*  ~Los márgenes en CSS se utilizan para definir el espacio exterior de un elemento, es decir, la distancia entre un elemento y los que lo rodean. Esto ayuda a separar visualmente los elementos y a crear espacios en blanco para mejorar la organización del contenido. Los márgenes pueden aplicarse a cualquier elemento HTML, como contenedores, secciones, imágenes, botones, etc. Se pueden definir de forma individual para cada lado o aplicar un margen general en todas las direcciones. */
+/* Todo - Margenes individuales (margin-top{}, margin-right{}, margin-bottom{}, margin-left{}): Las propiedades `margin-top{}`, `margin-right{}`, `margin-bottom{}` y `margin-left{}` se utilizan para definir el margen de un elemento HTML en cada lado de manera individual, modificando de esta manera un lado especifico del elemento. Donde mediante valores podemos definir el margen que se desea aplicar a cada lado, en cualquier unidad de medida. */
+.elemento-con-margenes-individuales{
+    background-color: #fffd80;
+    margin-top: 10px; /**Se declara una propiedad de margen superior con el valor "10px".**/
+    margin-right: 250px; /**Se declara una propiedad de margen derecho con el valor "20px".**/
+    margin-bottom: 30px; /**Se declara una propiedad de margen inferior con el valor "30px".**/
+    margin-left: 20px; /**Se declara una propiedad de margen izquierdo con el valor "40px".**/
+}
+
+/* Todo - Margenes con shorthand (margin{}): La propiedad `margin{}` se utiliza para definir el margen de un elemento HTML en todas las direcciones de manera general, modificando de esta manera todos los lados del elemento. Donde mediante valores podemos definir el margen que se desea aplicar a todos los lados, en cualquier unidad de medida. Por lo que para asignar el margen de los cuatro lados se debe seguir el siguiente orden (arriba, derecha, abajo, izquierda). Podiendo quedar de la siguiente manera margin: 10px 20px 30px 40px; haciendo que el margen superior sea de 10px, el margen derecho de 20px, el margen inferior de 30px y el margen izquierdo de 40px. Pero si se ingresa un solo valor, este se aplicará a todos los lados, si se ingresan dos valores, el primero se aplicará al margen superior e inferior, y el segundo al margen derecho e izquierdo, y si se ingresan tres valores, el primero se aplicará al margen superior, el segundo al margen derecho e izquierdo, y el tercero al margen inferior. */
+.elemento-con-margenes-shorthand-con-un-valor{
+    background-color: #fffd80;
+    margin: 50px; /**Se declara una propiedad de margen con el valor "10px 20px 30px 40px".**/
+}
+
+.elemento-con-margenes-shorthand-con-dos-valores{
+    background-color: #fffd80;
+    margin: 20px 100px; /**Se declara una propiedad de margen con el valor "10px 20px 30px 40px".**/
+}
+
+.elemento-con-margenes-shorthand{
+    background-color: #fffd80;
+    margin: 50px 60px 30px 170px; /**Se declara una propiedad de margen con el valor "10px 20px 30px 40px".**/
+}
+
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
