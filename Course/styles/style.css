@@ -210,44 +210,44 @@ h1.mi-clase { /**Selector combinado.**/
 /* Todo - Unidad de medida relativa a el elemento padre (%): La unidad de medida porcentual (%) se utiliza para especificar un tamaño o una posición en relación con el tamaño del elemento padre. Esto significa que, si se asigna un valor de 50% a un ancho, altura o margen, el elemento se ajustará al 50% del tamaño del elemento padre. Por ejemplo, si el elemento padre tiene un ancho de 100px, un elemento hijo con un ancho de 50% tendrá un ancho de 50px. Por ejemplo si un div esta dentro de un section y se establece un ancho de 50% al div, este tendra un ancho de la mitad del section. */
 .unidad-de-medida-relativa-porcentual{ /**Se declara un selector por clase llamado "unidad-de-medida-porcentual".**/
     width: 50%; /**Se asigna una propiedad de ancho con el valor de medida porcentual "50%".**/
-    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+    background-color: rgb(155, 195, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(155, 195, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Unidad de medida relativa al font size del elemento (em): La unidad de medida "em" se utiliza para especificar un tamaño o una posición en relación con el tamaño de la fuente del elemento. Esto significa que, si se asigna un valor de 2em a un ancho, altura o margen, el elemento se ajustará al doble del tamaño de la fuente del elemento. Por ejemplo, si el tamaño de la fuente es de 16px, un elemento con un ancho de 2em tendrá un ancho de 32px. Por ejemplo si se establece un tamaño de fuente de 16px a un parrafo y se establece un margen de 2em, este tendra un margen de 32px. */
 .unidad-de-medida-relativa-em{ /**Se declara un selector por clase llamado "unidad-de-medida-em".**/
     font-size: 15px; /**Se asigna una propiedad de tamaño de fuente con el valor de medida en pixeles "16px".**/
     height: 4em; /**Se asigna una propiedad de margen con el valor de medida relativa "2em".**/
-    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+    background-color: rgb(155, 195, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(155, 195, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Unidad de medida relativa al font size del elemento raiz (rem): La unidad de medida "rem" se utiliza para especificar un tamaño o una posición en relación con el tamaño de la fuente del elemento raíz (html). Esto significa que, si se asigna un valor de 2rem a un ancho, altura o margen, el elemento se ajustará al doble del tamaño de la fuente del elemento raíz. Por ejemplo, si el tamaño de la fuente del elemento raíz es de 16px, un elemento con un ancho de 2rem tendrá un ancho de 32px. Por ejemplo si se establece un tamaño de fuente de 16px al elemento raiz y se establece un margen de 2rem a un parrafo, este tendra un margen de 32px. */
 .unidad-de-medida-relativa-rem{
     height: 3rem; /**Se asigna una propiedad de margen con el valor de medida relativa "2rem".**/
-    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+    background-color: rgb(155, 195, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(155, 195, 255)".**/
 }
 
 /* Todo - Unidad de medida relativa al 1% de ancho del viewport (vw): La unidad de medida "vw" se utiliza para especificar un tamaño o una posición en relación con el ancho del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vw a un ancho, altura o margen, el elemento se ajustará al 2% del ancho de la ventana del navegador. Por ejemplo, si el ancho de la ventana del navegador es de 1000px, un elemento con un ancho de 2vw tendrá un ancho de 20px. Por ejemplo si se establece un ancho de 50vw a un div, este tendra un ancho de la mitad del ancho de la ventana del navegador. */
 .unidad-de-medida-relativa-vw{ /**Se declara un selector por clase llamado "unidad-de-medida-vw".**/
     width: 30vw; /**Se asigna una propiedad de ancho con el valor de medida relativa "50vw".**/
-    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+    background-color: rgb(155, 195, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(155, 195, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Unidad de medida relativa al 1% de alto del viewport (vh): La unidad de medida "vh" se utiliza para especificar un tamaño o una posición en relación con el alto del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vh a un ancho, altura o margen, el elemento se ajustará al 2% del alto de la ventana del navegador. Por ejemplo, si el alto de la ventana del navegador es de 500px, un elemento con un alto de 2vh tendrá un alto de 10px. Por ejemplo si se establece un alto de 50vh a un div, este tendra un alto de la mitad del alto de la ventana del navegador. */
 .unidad-de-medida-relativa-vh{ /**Se declara un selector por clase llamado "unidad-de-medida-vh".**/
     height: 15vh; /**Se asigna una propiedad de margen con el valor de medida relativa "50vh".**/
-    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+    background-color: rgb(155, 195, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(155, 195, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Unidad de medida relativa al 1% del lado mas grande del viewport (vmax): La unidad de medida "vmax" se utiliza para especificar un tamaño o una posición en relación con el lado más grande del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vmax a un ancho, altura o margen, el elemento se ajustará al 2% del lado más grande de la ventana del navegador. Por ejemplo, si el lado más grande de la ventana del navegador es de 1000px, un elemento con un ancho de 2vmax tendrá un ancho de 20px. Por ejemplo si se establece un ancho de 50vmax a un div, este tendra un ancho de la mitad del lado más grande de la ventana del navegador. */
 .unidad-de-medida-relativa-vmax{ /**Se declara un selector por clase llamado "unidad-de-medida-vmax".**/
     width: 20vmax; /**Se asigna una propiedad de ancho con el valor de medida relativa "50vmax".**/
-    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+    background-color: rgb(155, 195, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(155, 195, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /* Todo - Unidad de medida relativa al 1% del lado mas pequeño del viewport (vmin): La unidad de medida "vmin" se utiliza para especificar un tamaño o una posición en relación con el lado más pequeño del viewport (ventana del navegador). Esto significa que, si se asigna un valor de 2vmin a un ancho, altura o margen, el elemento se ajustará al 2% del lado más pequeño de la ventana del navegador. Por ejemplo, si el lado más pequeño de la ventana del navegador es de 500px, un elemento con un ancho de 2vmin tendrá un ancho de 10px. Por ejemplo si se establece un ancho de 50vmin a un div, este tendra un ancho de la mitad del lado más pequeño de la ventana del navegador. */
 .unidad-de-medida-relativa-vmin{ /**Se declara un selector por clase llamado "unidad-de-medida-vmin".**/
     width: 30vmin; /**Se asigna una propiedad de ancho con el valor de medida relativa "50vmin".**/
-    background-color: rgb(118, 173, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(118, 173, 255)".**/
+    background-color: rgb(155, 195, 255); /**Se asigna una propiedad de color de fondo con el valor RGB "rgb(155, 195, 255)".**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -430,6 +430,18 @@ h1.mi-clase { /**Selector combinado.**/
     margin: 50px 60px 30px 170px; /**Se declara una propiedad de margen con el valor "10px 20px 30px 40px".**/
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Padding */
+/*  ~El padding en CSS es muy similar a margin, pero en este caso se utiliza para definir el espacio interior de un elemento, es decir, la distancia entre el contenido de un elemento y su borde. Esto ayuda a separar visualmente el contenido del borde y a crear espacios en blanco dentro del elemento. El padding puede aplicarse a cualquier elemento HTML, como contenedores, secciones, imágenes, botones, etc. Se pueden definir de forma individual para cada lado o aplicar un padding general en todas las direcciones. */
+/* Todo - Paddings individuales (padding-top{}, padding-right{}, padding-bottom{}, padding-left{}): Las propiedades `padding-top{}`, `padding-right{}`, `padding-bottom{}` y `padding-left{}` se utilizan para definir el padding de un elemento HTML en cada lado de manera individual, modificando de esta manera un lado especifico del elemento. Donde mediante valores podemos definir el padding que se desea aplicar a cada lado, en cualquier unidad de medida. */
+.elemento-con-paddings-individuales{
+    background-color: #fffd80;
+    margin: solid black;
+    padding-top: 10px; /**Se declara una propiedad de padding superior con el valor "10px".**/
+    padding-right: 20px; /**Se declara una propiedad de padding derecho con el valor "20px".**/
+    padding-bottom: 30px; /**Se declara una propiedad de padding inferior con el valor "30px".**/
+    padding-left: 40px; /**Se declara una propiedad de padding izquierdo con el valor "40px".**/
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */

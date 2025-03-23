@@ -28,66 +28,78 @@
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Colores -->
-    <h2>Colores</h2>
-    <ol>
-        <li class="color-por-nombre">Texto con color de fondo por nombre.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por nombre. -->
-        <li class="color-por-hexadecimal-estandar">Texto con color de fondo por hexadecimal estándar.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por hexadecimal. -->
-        <li value="2" class="color-por-hexadecimal-con-transparencia">Texto con color de fondo por hexadecimal con transparencia.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por hexadecimal con transparencia. -->
-        <li class="color-por-rgb-estandar">Texto con color de fondo por RGB estándar.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por RGB estándar. -->
-        <li value="3" class="color-por-rgb-con-transparencia">Texto con color de fondo por RGB con transparencia.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por RGB con transparencia. -->
-        <li class="color-por-hsl-estandar">Texto con color de fondo por HLS estandar.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por HLS. -->
-        <li value="4" class="color-por-hsl-con-transparencia">Texto con color de fondo por HSLA con transparencia.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por HSLA. -->
-    </ol>
+    <h1 style="text-align: center">Colores</h1>
+    <ul>
+        <li>
+            <p class="color-por-nombre">Texto con color de fondo por nombre.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por nombre. -->
+        </li>
+        <li>
+            <p class="color-por-hexadecimal-estandar">Texto con color de fondo por hexadecimal estándar.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por hexadecimal. -->
+            <p class="color-por-hexadecimal-con-transparencia">Texto con color de fondo por hexadecimal con transparencia.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por hexadecimal con transparencia. -->
+        </li>
+        <li>
+            <p class="color-por-rgb-con-transparencia">Texto con color de fondo por RGB con transparencia.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por RGB con transparencia. -->
+            <p class="color-por-rgb-estandar">Texto con color de fondo por RGB estándar.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por RGB estándar. -->
+        </li>
+        <li>
+            <p class="color-por-hsl-estandar">Texto con color de fondo por HLS estandar.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por HLS. -->
+            <p class="color-por-hsl-con-transparencia">Texto con color de fondo por HSLA con transparencia.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por HSLA. -->
+        </li>
+    </ul>
     <br>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Unidades de medida -->
     <hr>
-    <h2>Unidades de medida</h2>
+    <h1 style="text-align: center">Unidades de medida</h1>
+    <div style="display: flex; justify-content: center; margin-bottom: 25px;">
+        <div style="width: 15px; height: 15px; background-color: rgb(155, 255, 118); margin-right: 10px;"></div><span style="margin-right: 20px;">No relativos</span> 
+        <div style="width: 15px; height: 15px; background-color: rgb(155, 195, 255); margin-right: 10px;"></div><span>Relativos</span> 
+    </div>
     <p class="unidad-de-medida-no-relativa-pixeles"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida no relativa "pixeles". --> 
-        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 700px.
+        <b>px:</b> Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 700px.
         Este tamaño no cambiará, independientemente de las dimensiones de la ventana o del tamaño del texto.
     </p>
     <p class="unidad-de-medida-no-relativa-ex"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida no relativa "ex". --> 
-        Este es un párrafo <code>p</code>, se ha establecido que la altura| de este <code>p</code> sea de 2ex.
+        <b>ex:</b> Este es un párrafo <code>p</code>, se ha establecido que la altura de este <code>p</code> sea de 2ex.
         Como 1ex equivale a la altura de la letra "x" (16px), entonces 2ex equivale a 32px (2 veces 16px).
     </p>
     <section>
         <div class="unidad-de-medida-relativa-porcentual"> <!-- *Se declara un elemento div dentro de una sección con una clase que aplica una unidad de medida relativa porcentual. -->
-            Este es un <code>div</code> dentro de un <code>section</code>.  
+            <b>%:</b> Este es un <code>div</code> dentro de un <code>section</code>.  
             Se ha establecido que el ancho de este <code>div</code> sea el 50% del ancho total del <code>section</code>.  
             Esto significa que si el <code>section</code> mide 400px de ancho, el <code>div</code> medirá 200px.  
             Si el tamaño del <code>section</code> cambia, el <code>div</code> también cambiará automáticamente para mantener siempre el 50%.
         </div>        
     </section>
     <p class="unidad-de-medida-relativa-em"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida relativa "em". --> 
-        Este es un párrafo <code>p</code> con texto que tiene un tamaño de 15px.  
+        <b>em:</b> Este es un párrafo <code>p</code> con texto que tiene un tamaño de 15px.  
         Se ha establecido que la altura de este <code>p</code> sea de 4em.  
         Como 1em equivale al tamaño del texto (16px), entonces 4em equivale a 60px (4 veces 15px).  
         Si el tamaño del texto cambia, la altura también cambiará automáticamente, ya que depende de él.
     </p>
     <p class="unidad-de-medida-relativa-rem"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida relativa "rem". --> 
-        Este es un párrafo <code>p</code>, en el cual se ha establecido que la altura de este <code>p</code> sea de 2rem.  
+        <b>rem:</b> Este es un párrafo <code>p</code>, en el cual se ha establecido que la altura de este <code>p</code> sea de 2rem.  
         Como 1rem equivale al tamaño del texto de la etiqueta raiz <code>html</code> (16px), entonces 3rem equivale a 48px (3 veces 16px).
         Si el tamaño del texto raiz cambia, la altura también cambiará automáticamente, ya que depende de él.
     </p>
     <p class="unidad-de-medida-relativa-vw"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida relativa "vw". --> 
-        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 30vw.  
+        <b>vw:</b> Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 30vw.  
         Como 1vw equivale al 1% del ancho de la ventana, entonces 50vw equivale al 30% del ancho de la ventana.
         Si el tamaño del ancho de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
     </p>
     <p class="unidad-de-medida-relativa-vh"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida relativa "vh". --> 
-        Este es un párrafo <code>p</code>, se ha establecido que la altura de este <code>p</code> sea de 20vh.  
+        <b>vh:</b> Este es un párrafo <code>p</code>, se ha establecido que la altura de este <code>p</code> sea de 20vh.  
         Como 1vh equivale al 1% de la altura de la ventana, entonces 20vh equivale al 20% de la altura de la ventana.
         Si el tamaño de la altura de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
     </p>    
     <p class="unidad-de-medida-relativa-vmax">
-        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 20vmax.  
+        <b>vmax:</b> Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 20vmax.  
         Como 1vmax equivale al 1% del tamaño del lado más grande de la ventana, entonces 20vmax equivale al 20% del tamaño del lado más grande de la ventana.
         Si el tamaño del lado más grande de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
     </p>
     <p class="unidad-de-medida-relativa-vmin">
-        Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 30vmin.  
+        <b>vmin:</b> Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 30vmin.  
         Como 1vmin equivale al 1% del tamaño del lado más pequeño de la ventana, entonces 30vmin equivale al 30% del tamaño del lado más pequeño de la ventana.
         Si el tamaño del lado más pequeño de la ventana cambia, la anchura de <code>p</code> también cambiará automáticamente, ya que depende de él.
     </p>
@@ -95,11 +107,10 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Background -->
     <hr>
-    <h2>Backgrounds</h2>
-    <ul>
-        <li class="background-con-color-solido-transparente">Background con color solido o con transparencia.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un background con un color solido o con transparencia. -->
-        <li class="background-con-colores-degradados">Background con colores degradados</li> <!-- *Se declara un elemento de la lista con una clase que aplica un background con colores degradados. -->
-        <li class="background-con-imagen"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen. -->
+    <h1 style="text-align: center">Backgrounds</h1>
+        <div class="background-con-color-solido-transparente" style="margin-bottom: 15px;">Background con color solido o con transparencia.</div> <!-- *Se declara un div con una clase que aplica un background con un color solido o con transparencia. -->
+        <div class="background-con-colores-degradados">Background con colores degradados</div> <!-- *Se declara un div con una clase que aplica un background con colores degradados. -->
+        <div class="background-con-imagen"> <!-- *Se declara un div con una clase que aplica un background con una imagen. -->
             <p>Background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen.</p> 
             <br>
             <p>Background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen.</p>
@@ -108,22 +119,22 @@
             <br>
             <p>Background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen.</p>
             <br>
-        </li>
-        <li class="background-con-modificacion-de-repeticion-de-imagen"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen y una modificacion de repeticion de la misma. -->
+        </div>
+        <div class="background-con-modificacion-de-repeticion-de-imagen"> <!-- *Se declara un div con una clase que aplica un background con una imagen y una modificacion de repeticion de la misma. -->
             <p>Background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen.</p> 
             <br>
             <p>Background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen.</p> 
             <br>
             <p>Background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen.</p> 
-        </li>
-        <li class="background-con-posicion-de-fondo"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen y posicion. -->
+        </div>
+        <div class="background-con-posicion-de-fondo"> <!-- *Se declara un div con una clase que aplica un background con una imagen y posicion. -->
             <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
             <br>
             <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
             <br>
             <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
-        </li>
-        <li class="background-con-seguimiento-de-fondo"> <!-- *Se declara un elemento de la lista con una clase que aplica un background con una imagen y seguimiento de fondo. -->
+        </div>
+        <div class="background-con-seguimiento-de-fondo"> <!-- *Se declara un div con una clase que aplica un background con una imagen y seguimiento de fondo. -->
             <p>Background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo.</p> 
             <br>
             <p>Background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo.</p> 
@@ -131,21 +142,20 @@
             <p>Background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo.</p> 
             <br>
             <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
-        </li>
-        <li class="background-con-shorthand-de-background"> <!-- *Se declaran elementos de la lista con una clase que aplica un background con shorthand. -->
-            <p>Background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background.</p> 
+        </div>
+        <div class="background-con-shorthand-de-background"> <!-- *Se declara un div con una clase que aplica un background con shorthand. -->
+            <p>Background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background.</p> 
             <br>
-            <p>Background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background.</p> 
+            <p>Background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background.</p> 
             <br>
-            <p>Background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background, background cvon shot-hunt de background.</p> 
-        </li>
-    </ul>
+            <p>Background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background.</p> 
+        </div>
     <br>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Bordes -->
     <hr>
-    <h2>Bordes</h2>
+    <h1 style="text-align: center">Bordes</h1>
     <ul>
         <li>
             <p class="elemento-con-borde-tipo-dotted">Elemento con borde tipo dotted.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dotted. -->
@@ -160,7 +170,6 @@
             <p class="elemento-con-borde-tipo-none">Elemento con borde tipo none.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo none. -->
             <p class="elemento-con-borde-tipo-mixto">Elemento con borde tipo mixed.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo mixto. -->
         </li>
-        
         <li class="elemento-con-borde-con-color">Elemento con borde con color.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con color. -->
         <li class="elemento-con-borde-con-grosor">Elemento con borde con grosor.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con grosor. -->
         <li class="elemento-con-borde-shorthand">Elemento con borde con shorthand</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con shorthand. -->
@@ -173,7 +182,7 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Margenes -->
     <hr>
-    <h2>Bordes</h2>
+    <h1 style="text-align: center">Margenes</h1>
     <div style="background-color: rgb(255, 183, 0);">Div sin estilos de margen</div> <!-- *Se declara un div con un color de fondo. -->
     <div class="elemento-con-margenes-individuales">Div con margenes individuales, con un margen izquierdo de 20px, un margen derecho de 250px, un margen superior de 10px y un margen inferior de 30px.</div> <!-- *Se declara un div con una clase que aplica margenes individuales. -->
     <div style="background-color: rgb(255, 183, 0);">Div sin estilos de margen</div> <!-- *Se declara un div con un color de fondo. -->
