@@ -435,12 +435,12 @@ h1.mi-clase { /**Selector combinado.**/
 /*  ~El padding en CSS es muy similar a margin, pero en este caso se utiliza para definir el espacio interior de un elemento, es decir, la distancia entre el contenido de un elemento y su borde. Esto ayuda a separar visualmente el contenido del borde y a crear espacios en blanco dentro del elemento. El padding puede aplicarse a cualquier elemento HTML, como contenedores, secciones, imágenes, botones, etc. Se pueden definir de forma individual para cada lado o aplicar un padding general en todas las direcciones. */
 /* Todo - Paddings individuales (padding-top{}, padding-right{}, padding-bottom{}, padding-left{}): Las propiedades `padding-top{}`, `padding-right{}`, `padding-bottom{}` y `padding-left{}` se utilizan para definir el padding de un elemento HTML en cada lado de manera individual, modificando de esta manera un lado especifico del elemento. Donde mediante valores podemos definir el padding que se desea aplicar a cada lado, en cualquier unidad de medida. */
 .elemento-con-paddings-individuales{
-    background-color: #fffd80;
+    background-color: #e880ff;
     margin: solid black;
     padding-top: 10px; /**Se declara una propiedad de padding superior con el valor "10px".**/
-    padding-right: 20px; /**Se declara una propiedad de padding derecho con el valor "20px".**/
-    padding-bottom: 30px; /**Se declara una propiedad de padding inferior con el valor "30px".**/
-    padding-left: 40px; /**Se declara una propiedad de padding izquierdo con el valor "40px".**/
+    padding-right: 30px; /**Se declara una propiedad de padding derecho con el valor "20px".**/
+    padding-bottom: 50px; /**Se declara una propiedad de padding inferior con el valor "30px".**/
+    padding-left: 70px; /**Se declara una propiedad de padding izquierdo con el valor "40px".**/
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
