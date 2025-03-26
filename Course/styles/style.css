@@ -298,7 +298,7 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/* ~Bordes */
+/* ~Borders */
 /* ~Los bordes en CSS son líneas que rodean los elementos HTML, como contenedores, secciones, imágenes, entre otros. Los bordes se utilizan para definir los límites de un elemento y para separarlo visualmente de otros elementos en la página web. Los bordes pueden tener diferentes estilos, anchos y colores, lo que permite personalizar su apariencia y darle un aspecto único a los elementos. */
 /* Todo - Estilo de bordes (border-style{}): La propiedad `border-style{}` se utiliza para definir el estilo de los bordes de un elemento HTML. Donde mediante valores podemos definir el tipo de borde que se desea aplicar, como sólido, punteado, discontinuo, doble, entre otros. */
 .elemento-con-borde{ /**Se declara un selector por clase llamado "elemento-con-borde-solido".**/
@@ -411,7 +411,7 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/* ~Margenes */
+/* ~Margins */
 /*  ~Los márgenes en CSS se utilizan para definir el espacio exterior de un elemento, es decir, la distancia entre un elemento y los que lo rodean. Esto ayuda a separar visualmente los elementos y a crear espacios en blanco para mejorar la organización del contenido. Los márgenes pueden aplicarse a cualquier elemento HTML, como contenedores, secciones, imágenes, botones, etc. Se pueden definir de forma individual para cada lado o aplicar un margen general en todas las direcciones. */
 /* Todo - Margenes individuales (margin-top{}, margin-right{}, margin-bottom{}, margin-left{}): Las propiedades `margin-top{}`, `margin-right{}`, `margin-bottom{}` y `margin-left{}` se utilizan para definir el margen de un elemento HTML en cada lado de manera individual, modificando de esta manera un lado especifico del elemento. Donde mediante valores podemos definir el margen que se desea aplicar a cada lado, en cualquier unidad de medida. */
 .elemento-con-margenes-individuales{ /**Se declara un selector por clase llamado "elemento-con-margenes-individuales".**/
