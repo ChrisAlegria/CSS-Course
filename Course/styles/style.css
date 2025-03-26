@@ -464,6 +464,12 @@ h1.mi-clase { /**Selector combinado.**/
     padding: 20px 40px; /**Se declara una propiedad de padding con el valor "10px 20px 30px 40px".**/
 }
 
+.elemento-con-paddings-shorthand{ /**Se declara un selector por clase llamado "elemento-con-paddings-shorthand".**/
+    background-color: #e880ff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#e880ff".**/
+    border: solid black; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+    padding: 10px 20px 30px 40px; /**Se declara una propiedad de padding con el valor "10px 20px 30px 40px".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
