@@ -178,7 +178,10 @@
         <li class="elemento-con-borde-con-grosor"><b>border-width</b>Elemento con borde con grosor.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con grosor. -->
         <li class="elemento-con-borde-shorthand"><b>shorthand</b>Elemento con borde con shorthand</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con shorthand. -->
         <li class="elemento-con-modificacion-de-bordes-individuales"><b>bordes individuales: </b>Elemento con modificacion de bordes individuales.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con modificacion de bordes individuales. -->
-        <li class="elemento-con-borde-con-radio"><b>border-radius</b>Elemento con borde con radio</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
+        <li>
+            <p class="elemento-con-borde-con-radio"><b>border-radius</b>Elemento con borde con radio</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
+            <p class="elemento-con-borde-con-radio-individual"><b>Border radius individuales: </b>Elemento con borde con radios individuales</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
+        </li>
     </ul>
     <br>
     
@@ -202,9 +205,19 @@
     <hr>
     <h1 style="text-align: center">Rellenos</h1>
     <section class="elemento-con-paddings-individuales"> <!-- *Se declara una sección con una clase que aplica paddings individuales. -->
-        <div style="background-color: yellow;">
-            <b>Paddings individuales: </b> <code>div</code> dentro de un <code>section</code> en el cual se especifican paddingas individuales, se ha establecido un padding izquierdo de 10px, un padding derecho de 30px, un padding superior de 50px y un padding inferior de 70px.
-        </div>
+        <p style="background-color: white;">
+            <b>Paddings individuales: </b><code>p</code> dentro de un <code>section</code> en el cual se especifican paddingas individuales, se ha establecido un padding izquierdo de 10px, un padding derecho de 30px, un padding superior de 50px y un padding inferior de 70px.
+        </p>
+    </section>
+    <section class="elemento-con-paddings-shorthand-con-un-valor" style="margin-top: 20px;">
+        <p style="background-color: white;">
+            <b>Shorthand con un valor: </b> <code>p</code> dentro de un <code>section</code> en el cual se especifica un solo valor 50px, por lo que al ser un solo valor, se aplicará a los cuatro lados del <code>p</code>.
+        </p>
+    </section>
+    <section class="elemento-con-paddings-shorthand-con-dos-valores" style="margin-top: 20px;">
+        <p style="background-color: white;">
+            <b>Shorthand con dos valores: </b> <code>p</code> dentro de un <code>section</code> en el cual se especifican 2 valores, uno de 20px y otro de 40px, por lo que el primer valor se aplicará al padding superior e inferior, y el segundo valor al padding derecho e izquierdo.
+        </p>
     </section>
 </body>
 </html>  

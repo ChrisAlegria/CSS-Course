@@ -396,54 +396,73 @@ h1.mi-clase { /**Selector combinado.**/
     border-left: 6px solid orange;
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - Radio de bordes (border-radius{}): La propiedad `border-radius{}` se utiliza para definir el radio de los bordes de un elemento HTML. Lo que significa redondear las esquinas de un elemento con un borde visible aplicado, ya sea un contenedor, una sección o el cuerpo de la página web. Donde mediante valores podemos definir el radio que se desea aplicar a los bordes, en cualquier unidad de medida. Ademas de que este radio se puede aplicar a cualquier tipo de borde, menos al borde nulo, asi como a cualquier color de borde. */
+/* Todo - Radio de bordes (border-radius{}): La propiedad `border-radius{}` se utiliza para definir el radio de los bordes de un elemento HTML. Lo que significa redondear las esquinas de un elemento con un borde visible aplicado, ya sea un contenedor, una sección o el cuerpo de la página web. Donde mediante valores podemos definir el radio que se desea aplicar a los bordes, en cualquier unidad de medida. Ademas de que este radio se puede aplicar a cualquier tipo de borde, menos al borde nulo, asi como a cualquier color de borde. Ademas de que podemos definir por separado el radio de cada esquina del elemento, ya sea superior izquierda, superior derecha, inferior izquierda o inferior derecha. Asi mismo se puede definir el radio de los bordes de manera individual usando las propiedades `border-top-left-radius{}`, `border-top-right-radius{}`, `border-bottom-left-radius{}` y `border-bottom-right-radius{}`. */
 .elemento-con-borde-con-radio{ /**Se declara un selector por clase llamado "elemento-con-borde-con-radio".**/
     border: solid rgb(0, 71, 79); /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
-    border-radius: 15px; /**Se declara una propiedad de radio de borde con el valor "15px".**/
+    border-radius: 50px 10px 0 30px; /**Se declara una propiedad de radio de borde con el valor "50px 10px 0 120px", ocacionando que el radio de las esquinas sea de 50px en la superior izquierda, 10px en la superior derecha, 0 en la inferior izquierda y 30px en la inferior derecha.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.elemento-con-borde-con-radio-individual{ /**Se declara un selector por clase llamado "elemento-con-borde-con-radio-individual".**/
+    border: solid rgb(0, 71, 79); /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+    border-top-left-radius: 50px; /**Se declara una propiedad de radio de borde superior izquierdo con el valor "50px", ocacionando que el radio de la esquina superior izquierda sea de 50px.**/
+    border-top-right-radius: 10px; /**Se declara una propiedad de radio de borde superior derecho con el valor "10px", ocacionando que el radio de la esquina superior derecha sea de 10px.**/
+    border-bottom-left-radius: 0; /**Se declara una propiedad de radio de borde inferior izquierdo con el valor "0", ocacionando que el radio de la esquina inferior izquierda sea de 0.**/
+    border-bottom-right-radius: 30px; /**Se declara una propiedad de radio de borde inferior derecho con el valor "30px", ocacionando que el radio de la esquina inferior derecha sea de 30px.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Margenes */
 /*  ~Los márgenes en CSS se utilizan para definir el espacio exterior de un elemento, es decir, la distancia entre un elemento y los que lo rodean. Esto ayuda a separar visualmente los elementos y a crear espacios en blanco para mejorar la organización del contenido. Los márgenes pueden aplicarse a cualquier elemento HTML, como contenedores, secciones, imágenes, botones, etc. Se pueden definir de forma individual para cada lado o aplicar un margen general en todas las direcciones. */
 /* Todo - Margenes individuales (margin-top{}, margin-right{}, margin-bottom{}, margin-left{}): Las propiedades `margin-top{}`, `margin-right{}`, `margin-bottom{}` y `margin-left{}` se utilizan para definir el margen de un elemento HTML en cada lado de manera individual, modificando de esta manera un lado especifico del elemento. Donde mediante valores podemos definir el margen que se desea aplicar a cada lado, en cualquier unidad de medida. */
-.elemento-con-margenes-individuales{
-    background-color: #fffd80;
+.elemento-con-margenes-individuales{ /**Se declara un selector por clase llamado "elemento-con-margenes-individuales".**/
+    background-color: #fffd80; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#fffd80".**/
     margin-top: 10px; /**Se declara una propiedad de margen superior con el valor "10px".**/
     margin-right: 250px; /**Se declara una propiedad de margen derecho con el valor "20px".**/
     margin-bottom: 30px; /**Se declara una propiedad de margen inferior con el valor "30px".**/
     margin-left: 20px; /**Se declara una propiedad de margen izquierdo con el valor "40px".**/
-}
+} /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Margenes con shorthand (margin{}): La propiedad `margin{}` se utiliza para definir el margen de un elemento HTML en todas las direcciones de manera general, modificando de esta manera todos los lados del elemento. Donde mediante valores podemos definir el margen que se desea aplicar a todos los lados, en cualquier unidad de medida. Por lo que para asignar el margen de los cuatro lados se debe seguir el siguiente orden (arriba, derecha, abajo, izquierda). Podiendo quedar de la siguiente manera margin: 10px 20px 30px 40px; haciendo que el margen superior sea de 10px, el margen derecho de 20px, el margen inferior de 30px y el margen izquierdo de 40px. Pero si se ingresa un solo valor, este se aplicará a todos los lados, si se ingresan dos valores, el primero se aplicará al margen superior e inferior, y el segundo al margen derecho e izquierdo, y si se ingresan tres valores, el primero se aplicará al margen superior, el segundo al margen derecho e izquierdo, y el tercero al margen inferior. */
-.elemento-con-margenes-shorthand-con-un-valor{
-    background-color: #fffd80;
+.elemento-con-margenes-shorthand-con-un-valor{ /**Se declara un selector por clase llamado "elemento-con-margenes-shorthand-con-un-valor".**/
+    background-color: #fffd80; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#fffd80".**/
     margin: 50px; /**Se declara una propiedad de margen con el valor "10px 20px 30px 40px".**/
-}
+} /**Cierre de la declaracion de selector por clase.**/
 
 .elemento-con-margenes-shorthand-con-dos-valores{
-    background-color: #fffd80;
+    background-color: #fffd80; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#fffd80".**/
     margin: 20px 100px; /**Se declara una propiedad de margen con el valor "10px 20px 30px 40px".**/
-}
+} /**Cierre de la declaracion de selector por clase.**/
 
-.elemento-con-margenes-shorthand{
-    background-color: #fffd80;
+.elemento-con-margenes-shorthand{ /**Se declara un selector por clase llamado "elemento-con-margenes-shorthand".**/
+    background-color: #fffd80;  /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#fffd80".**/
     margin: 50px 60px 30px 170px; /**Se declara una propiedad de margen con el valor "10px 20px 30px 40px".**/
-}
+} /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Padding */
 /*  ~El padding en CSS es muy similar a margin, pero en este caso se utiliza para definir el espacio interior de un elemento, es decir, la distancia entre el contenido de un elemento y su borde. Esto ayuda a separar visualmente el contenido del borde y a crear espacios en blanco dentro del elemento. El padding puede aplicarse a cualquier elemento HTML, como contenedores, secciones, imágenes, botones, etc. Se pueden definir de forma individual para cada lado o aplicar un padding general en todas las direcciones. */
 /* Todo - Paddings individuales (padding-top{}, padding-right{}, padding-bottom{}, padding-left{}): Las propiedades `padding-top{}`, `padding-right{}`, `padding-bottom{}` y `padding-left{}` se utilizan para definir el padding de un elemento HTML en cada lado de manera individual, modificando de esta manera un lado especifico del elemento. Donde mediante valores podemos definir el padding que se desea aplicar a cada lado, en cualquier unidad de medida. */
-.elemento-con-paddings-individuales{
-    background-color: #e880ff;
-    margin: solid black;
+.elemento-con-paddings-individuales{ /**Se declara un selector por clase llamado "elemento-con-paddings-individuales".**/
+    background-color: #e880ff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#e880ff".**/
+    border: solid black; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
     padding-top: 10px; /**Se declara una propiedad de padding superior con el valor "10px".**/
     padding-right: 30px; /**Se declara una propiedad de padding derecho con el valor "20px".**/
     padding-bottom: 50px; /**Se declara una propiedad de padding inferior con el valor "30px".**/
     padding-left: 70px; /**Se declara una propiedad de padding izquierdo con el valor "40px".**/
-}
+} /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo */
+/* Todo - Shorthand de paddings (padding{}): La propiedad `padding{}` se utiliza para definir el padding de un elemento HTML en todas las direcciones con diferentes valores al mismo tiempo, modificando de esta manera todos los lados del elemento. Donde mediante valores podemos definir el padding que se desea aplicar a todos los lados, en cualquier unidad de medida. Por lo que para asignar el padding de los cuatro lados se debe seguir el siguiente orden (arriba, derecha, abajo, izquierda). Podiendo quedar de la siguiente manera padding: 10px 20px 30px 40px; haciendo que el padding superior sea de 10px, el padding derecho de 20px, el padding inferior de 30px y el padding izquierdo de 40px. Pero si se ingresa un solo valor, este se aplicará a todos los lados, si se ingresan dos valores, el primero se aplicará al padding superior e inferior, y el segundo al padding derecho e izquierdo, y si se ingresan tres valores, el primero se aplicará al padding superior, el segundo al padding derecho e izquierdo, y el tercero al padding inferior. */
+.elemento-con-paddings-shorthand-con-un-valor{ /**Se declara un selector por clase llamado "elemento-con-paddings-shorthand-con-un-valor".**/
+    background-color: #e880ff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#e880ff".**/
+    border: solid black; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+    padding: 50px; /**Se declara una propiedad de padding con el valor "10px 20px 30px 40px".**/
+} /**Cierre de la declaracion de selector por clase.**/ 
+
+.elemento-con-paddings-shorthand-con-dos-valores{
+    background-color: #e880ff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#e880ff".**/
+    border: solid black; /**Se declara una propiedad de estilo de borde con el valor "solid", ocacionando que el borde sea solido.**/
+    padding: 20px 40px; /**Se declara una propiedad de padding con el valor "10px 20px 30px 40px".**/
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
