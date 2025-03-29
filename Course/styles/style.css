@@ -496,6 +496,11 @@ h1.mi-clase { /**Selector combinado.**/
     min-width: 200px; /**Se declara una propiedad de ancho minimo con el valor "300px".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
+.elemento-con-ancho-y-alto-minimo{
+    background-color: #ff8086; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    min-height: 100px; /**Se declara una propiedad de altura minima con el valor "200px".**/
+    min-width: 200px; /**Se declara una propiedad de ancho minimo con el valor "300px".**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
