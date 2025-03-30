@@ -475,31 +475,48 @@ h1.mi-clase { /**Selector combinado.**/
 /* ~El height y width en CSS se utilizan para definir el tamaño de un elemento HTML, es decir, la altura y el ancho del elemento. Esto permite controlar las dimensiones de un elemento y ajustar su tamaño para que se adapte a las necesidades del diseño. Los valores de height y width se pueden definir en diferentes unidades de medida, como píxeles, porcentajes, ems, entre otros. */
 /* Todo - Height (height{}): La propiedad `height{}` se utiliza para definir la altura de un elemento HTML. Donde mediante valores podemos definir la altura que se desea aplicar al elemento, en cualquier unidad de medida. */
 .elemento-con-altura{ /**Se declara un selector por clase llamado "elemento-con-altura".**/
-    background-color: #80ff80; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    background-color: #f7ff80; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
     height: 100px; /**Se declara una propiedad de altura con el valor "200px".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Width (width{}): La propiedad `width{}` se utiliza para definir el ancho de un elemento HTML. Donde mediante valores podemos definir el ancho que se desea aplicar al elemento, en cualquier unidad de medida. */
 .elemento-con-ancho{ /**Se declara un selector por clase llamado "elemento-con-ancho".**/
-    background-color: #80ff80; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    background-color: #f7ff80; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
     width: 400px; /**Se declara una propiedad de ancho con el valor "300px".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - Height y Width Minimos (min-height{}, min-width{}): Las propiedades `min-height{}` y `min-width{}` se utilizan para definir la altura y el ancho mínimos de un elemento HTML, respectivamente. Donde mediante valores podemos definir la altura y el ancho mínimos que se desea aplicar al elemento, en cualquier unidad de medida. Por lo que el tamaño minimo en el heght tomara dicho valor minimo si no hay contenido que lo haga crecer, y en el width tomara el maximo, esto debido a que es un elemento de bloque el cual se expandira hasta el maximo posible, siempre que pueda. */
+/* Todo - Height y Width Minimos (min-height{}, min-width{}): Las propiedades `min-height{}` y `min-width{}` se utilizan para definir la altura y el ancho mínimos de un elemento HTML, respectivamente. Donde mediante valores podemos definir la altura y el ancho mínimos que se desea aplicar al elemento, en cualquier unidad de medida. Por lo que el tamaño minimo en el heght tomara dicho valor minimo si no hay contenido que lo haga crecer, y el width tomara el maximo, esto debido a que es un elemento de bloque el cual se expandira hasta el maximo posible, siempre que pueda. */
 .elemento-con-altura-minima{ /**Se declara un selector por clase llamado "elemento-con-altura-minima".**/
-    background-color: #ff8086; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    background-color: #80ffb9; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
     min-height: 100px; /**Se declara una propiedad de altura minima con el valor "200px".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 .elemento-con-ancho-minimo{ /**Se declara un selector por clase llamado "elemento-con-ancho-minimo".**/
-    background-color: #ff8086; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    background-color: #80ffb9; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
     min-width: 200px; /**Se declara una propiedad de ancho minimo con el valor "300px".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 .elemento-con-ancho-y-alto-minimo{
-    background-color: #ff8086; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    background-color: #80ffb9; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
     min-height: 100px; /**Se declara una propiedad de altura minima con el valor "200px".**/
     min-width: 200px; /**Se declara una propiedad de ancho minimo con el valor "300px".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Heigh y Width Maximos (max-height{}, max-width{}): Las propiedades `max-height{}` y `max-width{}` se utilizan para definir la altura y el ancho máximos de un elemento HTML, respectivamente. Donde mediante valores podemos definir la altura y el ancho máximos que se desea aplicar al elemento, en cualquier unidad de medida. Por lo que el tamaño maximo en el heght tomara dicho valor maximo si no hay contenido que lo haga crecer, y el width tomara el maximo, esto debido a que es un elemento de bloque el cual se expandira hasta el maximo posible, siempre que pueda. Por lo que si el contenido supera el maximo, el contenido se saldra del elemento ya que este no se expandira mas, ademas si no se establece un min y no hay contenido dentro del elemento este se reducira hasta tocar sus bordes, por ejemplo si se establece un max en height y no hay contenido dentro del elemento, este se reducira hasta tocar sus bordes en el borde superior e inferior e igualmente pasa con el width, por lo que si se establece un max en height y no hay contenido dentro del elemento, este se reducira hasta tocar sus bordes en el borde izquierdo y derecho. */
+.elemento-con-altura-maxima{ /**Se declara un selector por clase llamado "elemento-con-altura-maxima".**/
+    background-color: #d0a2ff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    max-height: 200px; /**Se declara una propiedad de altura maxima con el valor "200px".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.elemento-con-ancho-maximo{ /**Se declara un selector por clase llamado "elemento-con-ancho-maximo".**/
+    background-color: #d0a2ff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    max-width: 700px; /**Se declara una propiedad de ancho maxima con el valor "300px".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.elemento-con-ancho-y-alto-maximo{ /**Se declara un selector por clase llamado "elemento-con-ancho-y-altura-maxima".**/
+    background-color: #d0a2ff; /**Se asigna una propiedad de color de fondo con el valor hexadecimal "#80ff80".**/
+    max-height: 25px; /**Se declara una propiedad de altura maxima con el valor "200px".**/
+    max-width: 300px; /**Se declara una propiedad de ancho maxima con el valor "300px".**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
