@@ -28,7 +28,7 @@
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Colores -->
-    <h1 style="text-align: center">Colores</h1>
+    <h1 style="text-align: center">Colores</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
     <ul>
         <li>
             <p class="color-por-nombre"><b>Nombre: </b>Texto con color de fondo por nombre.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un color de fondo por nombre. -->
@@ -50,10 +50,10 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Unidades de medida -->
     <hr>
-    <h1 style="text-align: center">Unidades de medida</h1>
-    <div style="display: flex; justify-content: center; margin-bottom: 25px;">
-        <div style="width: 15px; height: 15px; background-color: rgb(155, 255, 118); margin-right: 10px;"></div><span style="margin-right: 20px;">No relativos</span> 
-        <div style="width: 15px; height: 15px; background-color: rgb(155, 195, 255); margin-right: 10px;"></div><span>Relativos</span> 
+    <h1 style="text-align: center">Unidades de medida</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un div con un display flex y un centrado de contenido. -->
+        <div style="width: 15px; height: 15px; background-color: rgb(155, 255, 118); margin-right: 10px;"></div><span style="margin-right: 20px;">No relativos</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+        <div style="width: 15px; height: 15px; background-color: rgb(155, 195, 255); margin-right: 10px;"></div><span>Relativos</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
     </div>
     <p class="unidad-de-medida-no-relativa-pixeles"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una unidad de medida no relativa "pixeles". --> 
         <b>px:</b> Este es un párrafo <code>p</code>, se ha establecido que la anchura de este <code>p</code> sea de 700px.
@@ -106,11 +106,15 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Backgrounds -->
     <hr>
-    <h1 style="text-align: center">Backgrounds</h1>
-    <div class="background-con-color-solido-transparente" style="margin-bottom: 15px;"><b>background-color: </b>Background con color solido o con transparencia.</div> <!-- *Se declara un div con una clase que aplica un background con un color solido o con transparencia. -->
-    <div class="background-con-colores-degradados"><b>linear-gradient: </b>Background con colores degradados</div> <!-- *Se declara un div con una clase que aplica un background con colores degradados. -->
+    <h1 style="text-align: center">Backgrounds</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div class="background-con-color-solido-transparente" style="margin-bottom: 15px;"> <!-- *Se declara un div con una clase que aplica un background con un color solido o con transparencia. -->
+        <b>background-color: </b>Background con color solido o con transparencia.
+    </div> 
+    <div class="background-con-colores-degradados"> <!-- *Se declara un div con una clase que aplica un background con colores degradados. -->
+        <b>linear-gradient: </b>Background con colores 
+    </div> 
     <div class="background-con-imagen"> <!-- *Se declara un div con una clase que aplica un background con una imagen. -->
-        <p style="text-align: center; padding-top: 20px;"><b>background-image</b></p>
+        <p style="text-align: center; padding-top: 20px;"><b>background-image</b></p> <!-- *Se declara un parrafo con un texto centrado y un padding superior de 20px. -->
         <p>Background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen.</p> 
         <br>
         <p>Background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen.</p>
@@ -120,7 +124,7 @@
         <p>Background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen, background con imagen.</p>
     </div>
     <div class="background-con-modificacion-de-repeticion-de-imagen"> <!-- *Se declara un div con una clase que aplica un background con una imagen y una modificacion de repeticion de la misma. -->
-        <p style="text-align: center; padding-top: 20px;"><b>background-repeat</b></p>
+        <p style="text-align: center; padding-top: 20px;"><b>background-repeat</b></p> <!-- *Se declara un parrafo con un texto centrado y un padding superior de 20px. -->
         <p>Background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen.</p> 
         <br>
         <p>Background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen.</p> 
@@ -128,7 +132,7 @@
         <p>Background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen, background con modificacion de repeticion de imagen.</p> 
     </div>
     <div class="background-con-posicion-de-fondo"> <!-- *Se declara un div con una clase que aplica un background con una imagen y posicion. -->
-        <p style="text-align: center; padding-top: 20px;"><b>background-position</b></p>
+        <p style="text-align: center; padding-top: 20px;"><b>background-position</b></p> <!-- *Se declara un parrafo con un texto centrado y un padding superior de 20px. -->
         <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
         <br>
         <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
@@ -136,7 +140,7 @@
         <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
     </div>
     <div class="background-con-seguimiento-de-fondo"> <!-- *Se declara un div con una clase que aplica un background con una imagen y seguimiento de fondo. -->
-        <p style="text-align: center; padding-top: 20px;"><b>background-attachment</b></p>
+        <p style="text-align: center; padding-top: 20px;"><b>background-attachment</b></p> <!-- *Se declara un parrafo con un texto centrado y un padding superior de 20px. -->
         <p>Background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo.</p> 
         <br>
         <p>Background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo, background con seguimiento de fondo.</p> 
@@ -146,7 +150,7 @@
         <p>Background con posicion de fondo, background con posicion de fondo, background con posicion de fondo,  background con posicion de fondo, background con posicion de fondo, background con posicion de fondo.</p> 
     </div>
     <div class="background-con-shorthand-de-background"> <!-- *Se declara un div con una clase que aplica un background con shorthand. -->
-        <p style="text-align: center; padding-top: 20px;"><b>background</b></p>
+        <p style="text-align: center; padding-top: 20px;"><b>background</b></p> <!-- *Se declara un parrafo con un texto centrado y un padding superior de 20px. -->
         <p>Background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background.</p> 
         <br>
         <p>Background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background, background con shot-hunt de background.</p> 
@@ -158,65 +162,117 @@
     <!-- ~Borders -->
     <hr>
     <h1 style="text-align: center">Borders</h1>
+    <p><b>border-style: </b></p>
     <ul>
-        <li>
-            <p class="elemento-con-borde-tipo-dotted"><b>dotted: </b>Elemento con borde tipo dotted.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dotted. -->
-            <p class="elemento-con-borde-tipo-dashed"><b>dashed: </b>Elemento con borde tipo dashed.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dashed. -->
-            <p class="elemento-con-borde-tipo-solido"><b>solid: </b>Elemento con borde tipo solido.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo solido. -->
-            <p class="elemento-con-borde-tipo-double"><b>double: </b>Elemento con borde tipo double.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo double. -->
-            <p class="elemento-con-borde-tipo-groove"><b>groove:</b>Elemento con borde tipo groove.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo groove. -->
-            <p class="elemento-con-borde-tipo-ridge"><b>ridge: </b>Elemento con borde tipo ridge.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo ridge. -->
-            <p class="elemento-con-borde-tipo-inset"><b>inset: </b>Elemento con borde tipo inset.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo inset. -->
-            <p class="elemento-con-borde-tipo-outset"><b>outset: </b>Elemento con borde tipo outset.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo outset. -->
-            <p class="elemento-con-borde-tipo-hidden"><b>hidden: </b>Elemento con borde tipo hidden.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo hidden. -->
-            <p class="elemento-con-borde-tipo-none"><b>none: </b>Elemento con borde tipo none.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo none. -->
-            <p class="elemento-con-borde-tipo-mixto"><b>mixed</b>Elemento con borde tipo mixed.</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo mixto. -->
+        <li class="elemento-con-borde-tipo-dotted"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dotted. -->
+                <b>dotted: </b>Elemento con borde tipo dotted.
         </li>
-        <li class="elemento-con-borde-con-color"><b>border-color: </b>Elemento con borde con color.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con color. -->
-        <li class="elemento-con-borde-con-grosor"><b>border-width</b>Elemento con borde con grosor.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con grosor. -->
-        <li class="elemento-con-borde-shorthand"><b>shorthand</b>Elemento con borde con shorthand</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con shorthand. -->
-        <li class="elemento-con-modificacion-de-bordes-individuales"><b>bordes individuales: </b>Elemento con modificacion de bordes individuales.</li> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con modificacion de bordes individuales. -->
-        <li>
-            <p class="elemento-con-borde-con-radio"><b>border-radius</b>Elemento con borde con radio</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
-            <p class="elemento-con-borde-con-radio-individual"><b>Border radius individuales: </b>Elemento con borde con radios individuales</p> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
+        <li class="elemento-con-borde-tipo-dashed"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dashed. -->
+                <b>dashed: </b>Elemento con borde tipo dashed.
+        </li>
+        <li class="elemento-con-borde-tipo-solido"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo solido. -->
+                <b>solid: </b>Elemento con borde tipo solido.
+        </li>
+        <li class="elemento-con-borde-tipo-double"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo double. -->
+                <b>double: </b>Elemento con borde tipo double.
+        </li> 
+        <li class="elemento-con-borde-tipo-groove"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo groove. -->
+                <b>groove:</b>Elemento con borde tipo groove.
+        </li> 
+        <li class="elemento-con-borde-tipo-ridge"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo ridge. -->
+                <b>ridge: </b>Elemento con borde tipo ridge.
+        </li> 
+        <li class="elemento-con-borde-tipo-inset"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo inset. -->
+                <b>inset: </b>Elemento con borde tipo inset.
+        </li> 
+        <li class="elemento-con-borde-tipo-outset"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo outset. -->
+                <b>outset: </b>Elemento con borde tipo outset.
+        </li> 
+        <li class="elemento-con-borde-tipo-hidden"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo hidden. -->
+                <b>hidden: </b>Elemento con borde tipo hidden.
+        </li> 
+        <li class="elemento-con-borde-tipo-none"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo none. -->
+                <b>none: </b>Elemento con borde tipo none.
+        </li> 
+        <li class="elemento-con-borde-tipo-mixto"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo mixto. -->
+                <b>mixed</b>Elemento con borde tipo mixed.
+        </li> 
+        <li class="elemento-con-borde-con-color"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con color. -->
+            <b>border-color: </b>Elemento con borde con color.
+        </li> 
+        <li class="elemento-con-borde-con-grosor"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con grosor. -->
+            <b>border-width</b>Elemento con borde con grosor.
+        </li> 
+        <li class="elemento-con-borde-shorthand"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con shorthand. -->
+            <b>shorthand</b>Elemento con borde con shorthand
+        </li>
+        <li class="elemento-con-modificacion-de-bordes-individuales"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con modificacion de bordes individuales. -->
+            <b>bordes individuales: </b>Elemento con modificacion de bordes individuales.
+        </li> 
+    </ul>
+    <p><b>border-radius</b></p>
+    <ul>
+        <li class="elemento-con-borde-con-radio"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
+            <b>border-radius: </b>Elemento con borde con radio
+        </li> 
+        <li class="elemento-con-borde-con-radio-individual"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
+            <b>Border radius individuales: </b>Elemento con borde con radios individuales
         </li>
     </ul>
     
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Margins -->
     <hr>
-    <h1 style="text-align: center">Margins</h1>
-    <div style="background-color: rgb(255, 183, 0);">Div sin estilos de margen</div> <!-- *Se declara un div con un color de fondo. -->
-    <div class="elemento-con-margenes-individuales"><b>Margenes individuales: </b>Div con margenes individuales, con un margen izquierdo de 20px, un margen derecho de 250px, un margen superior de 10px y un margen inferior de 30px.</div> <!-- *Se declara un div con una clase que aplica margenes individuales. -->
-    <div style="background-color: rgb(255, 183, 0);">Div sin estilos de margen</div> <!-- *Se declara un div con un color de fondo. -->
-    <div class="elemento-con-margenes-shorthand-con-un-valor"><b>Shorthand con un valor: </b>Div con margen mediante shorthand, con un margen de 50px.</div> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand con un solo valor. -->
-    <div style="background-color: rgb(255, 183, 0);">Div sin estilos de margen</div> <!-- *Se declara un div con un color de fondo. -->
-    <div class="elemento-con-margenes-shorthand-con-dos-valores"><b>Shorthand con 2 valores: </b>Div con margen mediante shorthand, con un margen superior e inferior de 20px y un margen derecho e izquierdo de 100px.</div> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand con dos valores. -->
-    <div style="background-color: rgb(255, 183, 0);">Div sin estilos de margen</div> <!-- *Se declara un div con un color de fondo. -->
-    <div class="elemento-con-margenes-shorthand"><b>shorthand: </b>Div con margen mediante shorthand, con un margen superior de 80px, un margen derecho de 60px, un margen inferior de 100px y un margen izquierdo de 140px.</div> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand. -->
-    <div style="background-color: rgb(255, 183, 0);">Div sin estilos de margen</div> <!-- *Se declara un div con un color de fondo. -->
+    <h1 style="text-align: center">Margins</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
+        Div sin estilos de margen
+    </div> 
+    <div class="elemento-con-margenes-individuales"> <!-- *Se declara un div con una clase que aplica margenes individuales. -->
+        <b>Margenes individuales: </b>Div con margenes individuales, con un margen izquierdo de 20px, un margen derecho de 250px, un margen superior de 10px y un margen inferior de 30px.
+    </div>
+    <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
+        Div sin estilos de margen
+    </div> 
+    <div class="elemento-con-margenes-shorthand-con-un-valor"> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand con un solo valor. -->
+        <b>Shorthand con un valor: </b>Div con margen mediante shorthand, con un margen de 50px.
+    </div> 
+    <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
+        Div sin estilos de margen
+    </div>
+    <div class="elemento-con-margenes-shorthand-con-dos-valores"> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand con dos valores. -->
+        <b>Shorthand con 2 valores: </b>Div con margen mediante shorthand, con un margen superior e inferior de 20px y un margen derecho e izquierdo de 100px.
+    </div> 
+    <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
+        Div sin estilos de margen
+    </div> 
+    <div class="elemento-con-margenes-shorthand"> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand. -->
+        <b>shorthand: </b>Div con margen mediante shorthand, con un margen superior de 80px, un margen derecho de 60px, un margen inferior de 100px y un margen izquierdo de 140px.
+    </div>
+    <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
+        Div sin estilos de margen
+    </div> 
         
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Paddings -->
     <hr>
-    <h1 style="text-align: center">Paddings</h1>
+    <h1 style="text-align: center">Paddings</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
     <section class="elemento-con-paddings-individuales"> <!-- *Se declara una sección con una clase que aplica paddings individuales. -->
-        <p style="background-color: white;">
+        <p style="background-color: white;"> <!-- *Se declara un elemento de parrado "p" con un color de fondo blanco. -->
             <b>Paddings individuales: </b><code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifican paddingas individuales, se ha establecido un padding izquierdo de 10px, un padding derecho de 30px, un padding superior de 50px y un padding inferior de 70px.
         </p>
     </section>
-    <section class="elemento-con-paddings-shorthand-con-un-valor" style="margin-top: 20px;">
-        <p style="background-color: white;">
+    <section class="elemento-con-paddings-shorthand-con-un-valor" style="margin-top: 20px;"> <!-- *Se declara una sección con una clase que aplica paddings mediante shorthand con un solo valor. -->
+        <p style="background-color: white;"> <!-- *Se declara un elemento de parrado "p" con un color de fondo blanco. -->
             <b>Shorthand con un valor: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifica un solo valor 50px, por lo que al ser un solo valor, se aplicará a los cuatro lados del <code>p</code>.
         </p>
     </section>
-    <section class="elemento-con-paddings-shorthand-con-dos-valores" style="margin-top: 20px;">
-        <p style="background-color: white;">
+    <section class="elemento-con-paddings-shorthand-con-dos-valores" style="margin-top: 20px;"> <!-- *Se declara una sección con una clase que aplica paddings mediante shorthand con dos valores. -->
+        <p style="background-color: white;"> <!-- *Se declara un elemento de parrado "p" con un color de fondo blanco. -->
             <b>Shorthand con dos valores: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifican 2 valores, uno de 20px y otro de 40px, por lo que el primer valor se aplicará al padding superior e inferior, y el segundo valor al padding derecho e izquierdo.
         </p>
     </section>
-    <section class="elemento-con-paddings-shorthand" style="margin-top: 20px;">
-        <p style="background-color: white;">
+    <section class="elemento-con-paddings-shorthand" style="margin-top: 20px;"> <!-- *Se declara una sección con una clase que aplica paddings mediante shorthand. -->
+        <p style="background-color: white;"> <!-- *Se declara un elemento de parrado "p" con un color de fondo blanco. -->
             <b>Shorthand: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifican 4 valores, uno de 10px, otro de 20px, otro de 30px y otro de 40px, por lo que el primer valor se aplicará al padding superior, el segundo al padding derecho, el tercero al padding inferior y el cuarto al padding izquierdo.
         </p>
     </section>
@@ -224,35 +280,59 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Height/Width -->
     <hr>
-    <h1 style="text-align: center">Height/Width</h1>
-    <div style="display: flex; justify-content: center; margin-bottom: 25px;">
-        <div style="width: 15px; height: 15px; background-color: #f7ff80; margin-right: 10px;"></div><span style="margin-right: 20px;">Height/Width</span> 
-        <div style="width: 15px; height: 15px; background-color: #80ffb9; margin-right: 10px;"></div><span style="margin-right: 20px;">Min</span>
-        <div style="width: 15px; height: 15px; background-color: #d0a2ff; margin-right: 10px;"></div><span style="margin-right: 20px;">Max</span>  
+    <h1 style="text-align: center">Height/Width</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un div con un display flex y un centrado de contenido. -->
+        <div style="width: 15px; height: 15px; background-color: #f7ff80; margin-right: 10px;"></div> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+        <span style="margin-right: 20px;">Height/Width</span> <!-- *Se declara un span con un margen derecho de 20px. -->
+        <div style="width: 15px; height: 15px; background-color: #80ffb9; margin-right: 10px;"></div> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+        <span style="margin-right: 20px;">Min</span> <!-- *Se declara un span con un margen derecho de 20px. -->
+        <div style="width: 15px; height: 15px; background-color: #d0a2ff; margin-right: 10px;"></div> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+        <span style="margin-right: 20px;">Max</span> <!-- *Se declara un span con un margen derecho de 20px. -->
     </div>
-    <div class="elemento-con-altura" style="margin-bottom: 25px;">
+    <div class="elemento-con-altura" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica una altura. -->
         <b>height: </b> Este es un <code>div</code> con una altura de 100px.
     </div>
-    <div class="elemento-con-ancho" style="margin-bottom: 25px;">
+    <div class="elemento-con-ancho" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica un ancho. -->
         <b>width: </b> Este es un <code>div</code> con una anchura de 400px.
     </div>
-    <div class="elemento-con-altura-minima" style="margin-bottom: 25px;">
+    <div class="elemento-con-altura-minima" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica una altura minima. -->
         <b>min-height: </b> Este es un <code>div</code> con una altura mínima de 100px.
     </div>
-    <div class="elemento-con-ancho-minimo" style="margin-bottom: 25px;">
+    <div class="elemento-con-ancho-minimo" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica un ancho minimo. -->
         <b>min-width: </b> Este es un <code>div</code> con un ancho mínimo de 200px.
     </div>
-    <div class="elemento-con-ancho-y-alto-minimo" style="margin-bottom: 25px;">
+    <div class="elemento-con-ancho-y-alto-minimo" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica un ancho y alto minimo. -->
         <b>min-width y min-height: </b> Este es un <code>div</code> con un ancho mínimo de 200px y una altura mínima de 100px.
     </div>
-    <div class="elemento-con-altura-maxima" style="margin-bottom: 25px;">
+    <div class="elemento-con-altura-maxima" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica una altura maxima. -->
         <b>max-height: </b> Este es un <code>div</code> con una altura mínima de 100px.
     </div>
-    <div class="elemento-con-ancho-maximo" style="margin-bottom: 25px;">
+    <div class="elemento-con-ancho-maximo" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica un ancho maximo. -->
         <b>max-width: </b> Este es un <code>div</code> con un ancho mínimo de 200px.
     </div>
-    <div class="elemento-con-ancho-y-alto-maximo" style="margin-bottom: 25px;">
+    <div class="elemento-con-ancho-y-alto-maximo" style="margin-bottom: 25px;"> <!-- *Se declara un div con una clase que aplica un ancho y alto maximo. -->
         <b>max-width y max-height: </b> Este es un <code>div</code> con un ancho mínimo de 300px y una altura mínima de 20px.
     </div>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <!-- ~Texto -->
+    <hr>
+    <h1 style="text-align: center">Texto</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <p class="elemento-con-color-de-texto"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica un color al texto. -->
+        <b>color:</b> Este es un <code>p</code>, en el cual se ha establecido que el color del texto sea naranja.
+    </p> 
+    <p><b>text-align: </b></p>
+    <ul>
+        <li class="elemento-con-alineacion-de-texto-a-la-izquierda"> <!-- *Se declara un elemento de la lista con una clase que aplica una alineacion al texto. -->
+            <b>left:</b> Este es un <code>li</code>, en el cual se ha establecido que la alineación del texto sea a la izquierda.</p>
+        </li>
+        <li class="elemento-con-alineacion-de-texto-centrado"> <!-- *Se declara un elemento de la lista con una clase que aplica una alineacion al texto. -->
+            <b>center:</b> Este es un <code>p</code>, en el cual se ha establecido que la alineación del texto sea centrada.</p>
+        </li>
+        <li class="elemento-con-alineacion-a-la-derecha">
+            <!-- *Se declara un elemento de la lista con una clase que aplica una alineacion al texto. -->
+            <b>right:</b> Este es un <code>p</code>, en el cual se ha establecido que la alineación del texto sea a la derecha.</p>
+        </li>
+    </ul>
 </body>
 </html>  

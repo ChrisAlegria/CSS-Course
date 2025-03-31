@@ -520,6 +520,27 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Texto */
+/* ~El texto en CSS se refiere a la forma en que se presenta el contenido textual en una página web. Esto incluye la tipografía, el tamaño, el color, el espaciado y otros aspectos visuales del texto. CSS permite personalizar la apariencia del texto para que se ajuste al diseño y estilo de la página web. */
+/* Todo -  Color de texto (color{}): La propiedad `color{}` se utiliza para definir el color del texto de un elemento HTML. Donde mediante valores podemos definir el color que se desea aplicar al texto, ya sea por nombre, hexadecimal, RGB, HSL, entre otros. */
+.elemento-con-color-de-texto{ /**Se declara un selector por clase llamado "elemento-con-color-de-texto".**/
+    color: #ff7700; /**Se declara una propiedad de color de texto con el valor hexadecimal "#ff0000".**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Alineamiento de texto (text-align{}): Por defecto el texto siempre se alinea a la izquierda, pero mediante la propiedad `text-align{}` podemos definir la alineación del texto de un elemento HTML. Donde mediante valores podemos definir la alineación que se desea aplicar al texto, como izquierda, derecha, centro o justificar. */
+.elemento-con-alineacion-de-texto-a-la-izquierda{ /**Se declara un selector por clase llamado "elemento-con-alineacion-de-texto".**/
+    text-align: left; /**Se declara una propiedad de alineación de texto con el valor "center", ocacionando que el texto se alinee al centro.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.elemento-con-alineacion-de-texto-centrado{ /**Se declara un selector por clase llamado "elemento-con-alineacion-de-texto".**/
+    text-align: center; /**Se declara una propiedad de alineación de texto con el valor "center", ocacionando que el texto se alinee al centro.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.elemento-con-alineacion-a-la-derecha{ /**Se declara un selector por clase llamado "elemento-con-alineacion-a-la-derecha".**/
+    text-align: right; /**Se declara una propiedad de alineación de texto con el valor "center", ocacionando que el texto se alinee al centro.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
     **RGB: red, green, blue.
