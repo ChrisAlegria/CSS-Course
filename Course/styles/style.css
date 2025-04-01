@@ -540,6 +540,18 @@ h1.mi-clase { /**Selector combinado.**/
     text-align: right; /**Se declara una propiedad de alineación de texto con el valor "center", ocacionando que el texto se alinee al centro.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
+/* Todo - Subrayado de texto (text-decoration{}): La propiedad `text-decoration{}` se utiliza para definir el subrayado del texto de un elemento HTML. Donde mediante valores podemos definir el tipo de subrayado que se desea aplicar al texto, como subrayado, tachado, subrayado doble, entre otros. */
+.elemento-con-text-decoration{
+    text-decoration: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+}
+
+/* &Underline */
+/* &Declara un estilo de subrayado, lo que significa que el texto tendrá una línea debajo de él. */
+.elemento-con-text-decoration-underline{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-underline".**/
+    text-decoration: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
