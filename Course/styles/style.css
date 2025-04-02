@@ -540,16 +540,71 @@ h1.mi-clase { /**Selector combinado.**/
     text-align: right; /**Se declara una propiedad de alineación de texto con el valor "center", ocacionando que el texto se alinee al centro.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - Subrayado de texto (text-decoration{}): La propiedad `text-decoration{}` se utiliza para definir el subrayado del texto de un elemento HTML. Donde mediante valores podemos definir el tipo de subrayado que se desea aplicar al texto, como subrayado, tachado, subrayado doble, entre otros. */
-.elemento-con-text-decoration{
-    text-decoration: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
-}
-
+/* Todo - Formato de subrayado de texto: El formato de subrayado de texto se refiere a la forma en que se aplica el subrayado a un texto en CSS. Esto incluye la aplicación de diferentes estilos de subrayado, como subrayado simple, doble, tachado, sobrelineado, asi como las porpiedades del mismo, como el color y el grosor. */
+/* ^Subrayado de texto (text-decoration-line{}): La propiedad `text-decoration-line{}` se utiliza para definir el estilo de subrayado de un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar al subrayado, como subrayado simple, doble, tachado, sobrelineado, entre otros. */
 /* &Underline */
 /* &Declara un estilo de subrayado, lo que significa que el texto tendrá una línea debajo de él. */
 .elemento-con-text-decoration-underline{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-underline".**/
-    text-decoration: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
 } /**Cierre de la declaracion de selector por clase.**/
+
+/* &Line-through */
+/* &Declara un estilo de tachado, lo que significa que el texto tendrá una línea a través de él. */ 
+.elemento-con-text-decoration-line-throught{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-line-throught".**/
+    text-decoration-line: line-through; /**Se declara una propiedad de tachado de texto con el valor "line-through", ocacionando que el texto se tache.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Overline */
+/* &Declara un estilo de sobrelineado, lo que significa que el texto tendrá una línea encima de él. */
+.elemento-con-text-decoration-overline{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-overline".**/
+    text-decoration-line: overline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* ^Color de subrayado de texto (text-decoration-color{}): La propiedad `text-decoration-color{}` se utiliza para definir el color del subrayado de un elemento HTML. Donde mediante valores podemos definir el color que se desea aplicar al subrayado, ya sea por nombre, hexadecimal, RGB, HSL, entre otros. */
+.elemento-con-text-decoration-con-color{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-de-color".**/
+    text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-color: rgb(255, 0, 0); /**Se declara una propiedad de color de subrayado de texto con el valor "red", ocacionando que el subrayado sea rojo.**/
+}
+
+/* ^Estilo del subrayado de texto(text-decoration-style{}): La propiedad `text-decoration-style{}` se utiliza para definir el estilo del subrayado de un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar al subrayado, donde algunos de estos estilos son similares a los de borders, podiendo utilizar solido, punteado, discontinuo, entre otros. */
+/* &Dotted */
+/* &Declara un estilo de subrayado punteado, lo que significa que el subrayado será una serie de puntos. */
+.elemento-con-text-decoration-style-dashed{ /** Se declara un selector por clase llamado "elemento-con-text-decoration-style-dashed".**/
+    text-decoration-line: underline; /***Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-style: dashed; /**Se declara una propiedad de estilo de subrayado de texto con el valor "dashed", ocacionando que el subrayado sea discontinuo.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Dashed */
+/* &Declara un estilo de subrayado discontinuo, lo que significa que el subrayado será una serie de líneas discontinuas. */
+.elemento-con-text-decoration-style-dotted{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-style-dotted".**/
+    text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-style: dotted; /**Se declara una propiedad de estilo de subrayado de texto con el valor "dotted", ocacionando que el subrayado sea punteado.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Solid */
+/* &Declara un estilo de subrayado solido, lo que significa que el subrayado será una línea continua. */
+.elemento-con-text-decoration-style-solid{
+    text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-style: solid; /**Se declara una propiedad de estilo de subrayado de texto con el valor "solid", ocacionando que el subrayado sea solido.**/
+}
+
+/* &Double */
+/* &Declara un estilo de subrayado doble, lo que significa que el subrayado será una serie de dos líneas continuas. */
+.elemento-con-text-decoration-style-double{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-style-double".**/
+    text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-style: double; /**Se declara una propiedad de estilo de subrayado de texto con el valor "double", ocacionando que el subrayado sea doble.**/
+} /**Cierre de la declaracion de selector por clase.**/
+/* &Groove */
+
+/* &Ridge */
+
+/* &Inset */
+
+/* &Outset */
+
+/* &Hidden */
+
+/* &None */
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
