@@ -205,7 +205,7 @@
             <b>border-width</b>Elemento con borde con grosor.
         </li> 
         <li class="elemento-con-borde-shorthand"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con shorthand. -->
-            <b>shorthand: </b>Elemento con borde con shorthand
+            <b>Border shorthand: </b>Elemento con borde con shorthand
         </li>
         <li class="elemento-con-modificacion-de-bordes-individuales"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con modificacion de bordes individuales. -->
             <b>bordes individuales: </b>Elemento con modificacion de bordes individuales.
@@ -235,19 +235,19 @@
         Div sin estilos de margen
     </div> 
     <div class="elemento-con-margenes-shorthand-con-un-valor"> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand con un solo valor. -->
-        <b>Shorthand con un valor: </b>Div con margen mediante shorthand, con un margen de 50px.
+        <b>Margin Shorthand con un valor: </b>Div con margen mediante shorthand, con un margen de 50px.
     </div> 
     <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
         Div sin estilos de margen
     </div>
     <div class="elemento-con-margenes-shorthand-con-dos-valores"> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand con dos valores. -->
-        <b>Shorthand con 2 valores: </b>Div con margen mediante shorthand, con un margen superior e inferior de 20px y un margen derecho e izquierdo de 100px.
+        <b>Margin Shorthand con 2 valores: </b>Div con margen mediante shorthand, con un margen superior e inferior de 20px y un margen derecho e izquierdo de 100px.
     </div> 
     <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
         Div sin estilos de margen
     </div> 
     <div class="elemento-con-margenes-shorthand"> <!-- *Se declara un div con una clase que aplica margenes mediante shorthand. -->
-        <b>shorthand: </b>Div con margen mediante shorthand, con un margen superior de 80px, un margen derecho de 60px, un margen inferior de 100px y un margen izquierdo de 140px.
+        <b>Margin shorthand: </b>Div con margen mediante shorthand, con un margen superior de 80px, un margen derecho de 60px, un margen inferior de 100px y un margen izquierdo de 140px.
     </div>
     <div style="background-color: rgb(255, 183, 0);"> <!-- *Se declara un div con un color de fondo. -->
         Div sin estilos de margen
@@ -264,17 +264,17 @@
     </section>
     <section class="elemento-con-paddings-shorthand-con-un-valor" style="margin-top: 20px;"> <!-- *Se declara una sección con una clase que aplica paddings mediante shorthand con un solo valor. -->
         <p style="background-color: white;"> <!-- *Se declara un elemento de parrado "p" con un color de fondo blanco. -->
-            <b>Shorthand con un valor: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifica un solo valor 50px, por lo que al ser un solo valor, se aplicará a los cuatro lados del <code>p</code>.
+            <b>Padding Shorthand con un valor: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifica un solo valor 50px, por lo que al ser un solo valor, se aplicará a los cuatro lados del <code>p</code>.
         </p>
     </section>
     <section class="elemento-con-paddings-shorthand-con-dos-valores" style="margin-top: 20px;"> <!-- *Se declara una sección con una clase que aplica paddings mediante shorthand con dos valores. -->
         <p style="background-color: white;"> <!-- *Se declara un elemento de parrado "p" con un color de fondo blanco. -->
-            <b>Shorthand con dos valores: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifican 2 valores, uno de 20px y otro de 40px, por lo que el primer valor se aplicará al padding superior e inferior, y el segundo valor al padding derecho e izquierdo.
+            <b>Padding Shorthand con dos valores: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifican 2 valores, uno de 20px y otro de 40px, por lo que el primer valor se aplicará al padding superior e inferior, y el segundo valor al padding derecho e izquierdo.
         </p>
     </section>
     <section class="elemento-con-paddings-shorthand" style="margin-top: 20px;"> <!-- *Se declara una sección con una clase que aplica paddings mediante shorthand. -->
         <p style="background-color: white;"> <!-- *Se declara un elemento de parrado "p" con un color de fondo blanco. -->
-            <b>Shorthand: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifican 4 valores, uno de 10px, otro de 20px, otro de 30px y otro de 40px, por lo que el primer valor se aplicará al padding superior, el segundo al padding derecho, el tercero al padding inferior y el cuarto al padding izquierdo.
+            <b>Padding Shorthand: </b> <code>p</code> dentro de un <code>section</code>, por lo que en dicho <code>section</code> se especifican 4 valores, uno de 10px, otro de 20px, otro de 30px y otro de 40px, por lo que el primer valor se aplicará al padding superior, el segundo al padding derecho, el tercero al padding inferior y el cuarto al padding izquierdo.
         </p>
     </section>
 
@@ -355,22 +355,30 @@
             <li class="elemento-con-text-decoration-con-color" style="margin-top: 20px;"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
                 <b>text-decoration-color: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea de color rojo.
             </li>
-        </ul>
-    </div>
-    <div style="background-color: #ebd5ff;"> <!-- *Se declara un div con un color de fondo. -->
-        <p><b>text-decoration-style: </b></p>
-        <ul>
-            <li class="elemento-con-text-decoration-style-dashed"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
-                <b>dashed: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea discontinua.
+            <li  style="margin-top: 20px;"><b>text-decoration-style: </b></li> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+            <ul>
+                <li class="elemento-con-text-decoration-style-dashed"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                    <b>dashed: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea discontinua.
+                </li>
+                <li class="elemento-con-text-decoration-style-dotted"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                    <b>dotted: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea punteada.
+                </li>
+                <li class="elemento-con-text-decoration-style-solid"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                    <b>solid: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea solido.
+                </li>
+                <li class="elemento-con-text-decoration-style-double"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                    <b>double: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea doble.
+                </li>
+                <li class="elemento-con-text-decoration-style-wavy"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                    <b>wavy: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea ondulado.
+                </li>
+            </ul>
+            <li class="elemento-con-text-decoration-con-grosor" style="margin-top: 20px;"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                <b>text-decoration-thickness: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto tenga un grosor de 5px.
             </li>
-            <li class="elemento-con-text-decoration-style-dotted"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
-                <b>dotted: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea punteada.
-            </li>
-            <li class="elemento-con-text-decoration-style-solid"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
-                <b>solid: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea solido.
-            </li>
-            <li class="elemento-con-text-decoration-style-double"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
-                <b>double: </b>Este es un <code>li</code>, en el cual se ha establecido que la decoración del subrayado del texto sea doble.
+            <li class="elemento-con-text-decoration-shorthand" style="margin-top: 20px;"> <!-- *Se declara un elemento de la lista con una clase que aplica una decoracion al texto. -->
+                <b>text-decoration: </b>Este es un <code>li</code> con subrayado mediante shorthand, el cual se ha establecido que el subrayado sea superior y que tenga un grosor de 2px, un color morado y un estilo punteado.
             </li>
         </ul>
     </div>

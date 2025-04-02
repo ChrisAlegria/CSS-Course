@@ -566,7 +566,7 @@ h1.mi-clase { /**Selector combinado.**/
     text-decoration-color: rgb(255, 0, 0); /**Se declara una propiedad de color de subrayado de texto con el valor "red", ocacionando que el subrayado sea rojo.**/
 }
 
-/* ^Estilo del subrayado de texto(text-decoration-style{}): La propiedad `text-decoration-style{}` se utiliza para definir el estilo del subrayado de un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar al subrayado, donde algunos de estos estilos son similares a los de borders, podiendo utilizar solido, punteado, discontinuo, entre otros. */
+/* ^Estilo del subrayado de texto(text-decoration-style{}): La propiedad `text-decoration-style{}` se utiliza para definir el estilo del subrayado de un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar al subrayado podiendo utilizar solido, punteado, discontinuo, entre otros. */
 /* &Dotted */
 /* &Declara un estilo de subrayado punteado, lo que significa que el subrayado será una serie de puntos. */
 .elemento-con-text-decoration-style-dashed{ /** Se declara un selector por clase llamado "elemento-con-text-decoration-style-dashed".**/
@@ -594,18 +594,23 @@ h1.mi-clase { /**Selector combinado.**/
     text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
     text-decoration-style: double; /**Se declara una propiedad de estilo de subrayado de texto con el valor "double", ocacionando que el subrayado sea doble.**/
 } /**Cierre de la declaracion de selector por clase.**/
-/* &Groove */
+/* &wavy */
+/* &Declara un estilo de subrayado ondulado, lo que significa que el subrayado será una serie de líneas onduladas. */
+.elemento-con-text-decoration-style-wavy{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-style-gavy".**/
+    text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-style: wavy; /**Se declara una propiedad de estilo de subrayado de texto con el valor "wavy", ocacionando que el subrayado sea ondulado.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
-/* &Ridge */
+/* ^Grosor del subrayado de texto (text-decoration-thickness{}): La propiedad `text-decoration-thickness{}` se utiliza para definir el grosor del subrayado de un elemento HTML. Donde mediante valores podemos definir el grosor que se desea aplicar al subrayado, en cualquier unidad de medida. */
+.elemento-con-text-decoration-con-grosor{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-thickness".**/
+    text-decoration-line: underline; /**Se declara una propiedad de subrayado de texto con el valor "underline", ocacionando que el texto se subraye.**/
+    text-decoration-thickness: 5px; /**Se declara una propiedad de grosor de subrayado de texto con el valor "5px", ocacionando que el subrayado sea de 5px.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
-/* &Inset */
-
-/* &Outset */
-
-/* &Hidden */
-
-/* &None */
-
+/* ^Formato de subrayado de texto con shorthand (text-decoration{}): La propiedad `text-decoration{}` se utiliza para definir el formato del subrayado de un elemento HTML. Donde se puede definir lo antes mencionado, como el tipo del subrayado, el color del subrayado, el grosor del subrayado y el estilo de subrayado. Por lo que mediante valores podemos definir el formato que se desea aplicar al subrayado, en cualquier unidad de medida. Por ende se debe de declarar el formato de subrayado de la siguiente manera: text-decoration: underline red 5px solid; donde el primer valor es el tipo de subrayado, el segundo valor es el color del subrayado, el tercer valor es el grosor del subrayado y el cuarto valor es el estilo del subrayado. */
+.elemento-con-text-decoration-shorthand{ /**Se declara un selector por clase llamado "elemento-con-text-decoration-shorthand".**/
+    text-decoration: overline rgb(200, 0, 255) 3px dotted; /**Se declara una propiedad de formato de subrayado de texto con el valor "underline red 5px solid", ocacionando que el subrayado sea de tipo subrayado, color rojo, grosor de 5px y estilo solido.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
