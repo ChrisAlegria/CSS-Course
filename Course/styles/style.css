@@ -612,6 +612,9 @@ h1.mi-clase { /**Selector combinado.**/
     text-decoration: overline dotted rgb(200, 0, 255) 3px ; /**Se declara una propiedad de formato de subrayado de texto con el valor "underline red 5px solid", ocacionando que el subrayado sea de tipo subrayado, color rojo, grosor de 5px y estilo solido.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
+/* Todo - Transformacion de texto (text-transform{}): La propiedad `text-transform{}` se utiliza para definir la transformación del texto de un elemento HTML. Donde mediante valores podemos convertir el texto elemento a mayúsculas, minúsculas, capitalizar la primera letra de cada palabra o dejarlo sin transformación. Esto aplica incluso si se usaron tanto mayusculas como minusculas al mismo tiempo en el texto del elemento. */
+
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
