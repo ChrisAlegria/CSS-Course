@@ -614,6 +614,38 @@ h1.mi-clase { /**Selector combinado.**/
 
 /* Todo - Transformacion de texto (text-transform{}): La propiedad `text-transform{}` se utiliza para definir la transformación del texto de un elemento HTML. Donde mediante valores podemos convertir el texto elemento a mayúsculas, minúsculas, capitalizar la primera letra de cada palabra o dejarlo sin transformación. Esto aplica incluso si se usaron tanto mayusculas como minusculas al mismo tiempo en el texto del elemento. */
 /* &Uppercase */
+/* &Declara un estilo de texto en mayúsculas, lo que significa que el texto se mostrará en mayúsculas. */
+.elemento-con-text-transform-uppercase{ /**Se declara un selector por clase llamado "elemento-con-text-transform-uppercase".**/
+    text-transform: uppercase; /**Se declara una propiedad de transformación de texto con el valor "uppercase", ocacionando que el texto se muestre en mayúsculas.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Lowercase */
+/* &Declara un estilo de texto en minúsculas, lo que significa que el texto se mostrará en minúsculas. */
+.elemento-con-text-transform-lowercase{
+    text-transform: lowercase; /**Se declara una propiedad de transformación de texto con el valor "lowercase", ocacionando que el texto se muestre en minúsculas.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Capitalize */
+/* &Declara un estilo de texto capitalizado, lo que significa que la primera letra de cada palabra se mostrará en mayúsculas. */
+.elemento-con-text-transform-capitalize{ /**Se declara un selector por clase llamado "elemento-con-text-transform-capitalize".**/
+    text-transform: capitalize; /**Se declara una propiedad de transformación de texto con el valor "capitalize", ocacionando que la primera letra de cada palabra se muestre en mayúsculas.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Sangria de texto (text-indent{}): La propiedad `text-indent{}` se utiliza para definir la sangría del texto de un elemento HTML. Donde mediante valores podemos definir la sangría que se desea aplicar al texto, en cualquier unidad de medida. Por lo que la sangria se aplicara al primer renglon del texto del elemento. Dicha sangria afecta unicamente a la primera linea del texto del elemento. */
+.elemento-con-text-indent{ /**Se declara un selector por clase llamado "elemento-con-text-indent".**/
+    text-indent: 50px; /**Se declara una propiedad de sangria de texto con el valor "50px", ocacionando que la sangria del texto sea de 50px.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Espaciado entre letras (letter-spacing{}): La propiedad `letter-spacing{}` se utiliza para definir el espaciado entre letras de un elemento HTML. Donde mediante valores podemos definir el espaciado que se desea aplicar entre letras, en cualquier unidad de medida. Asi mismo se podran utilizar valores negativos, lo que hara que el espaciado entre letras sea menor al normal. */
+.elemento-con-letter-spacing-positivo{ /**Se declara un selector por clase llamado "elemento-con-letter-spacing-positivo".**/
+    letter-spacing: 10px; /**Se declara una propiedad de espaciado entre letras con el valor "10px", ocacionando que el espaciado entre letras sea de 10px.**/
+} /**Cierre de la declaracion de selector por clase.**/  
+
+.elemento-con-letter-spacing-negativo{ /**Se declara un selector por clase llamado "elemento-con-letter-spacing-negativo".**/ 
+    letter-spacing: -2px; /**Se declara una propiedad de espaciado entre letras con el valor "-10px", ocacionando que el espaciado entre letras sea de -2px.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Espaciado entre palabras (word-spacing{}): La propiedad `word-spacing{}` se utiliza para definir el espaciado entre palabras de un elemento HTML. Donde mediante valores podemos definir el espaciado que se desea aplicar entre palabras, en cualquier unidad de medida. */
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
