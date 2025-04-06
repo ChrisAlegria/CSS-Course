@@ -163,7 +163,7 @@
     <!-- !Modificar descripciones a como se hizo en text-decoration-style -->
     <hr>
     <h1 style="text-align: center">Borders</h1>
-    <p><b>border-style: </b></p>
+    <b>border-style: </b>
     <ul>
         <li class="elemento-con-borde-tipo-dotted"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde tipo dotted. -->
             <b>dotted: </b>Elemento con borde tipo dotted.
@@ -211,7 +211,7 @@
             <b>bordes individuales: </b>Elemento con modificacion de bordes individuales.
         </li> 
     </ul>
-    <p><b>border-radius</b></p>
+    <b>border-radius</b>
     <ul>
         <li class="elemento-con-borde-con-radio"> <!-- *Se declara un elemento de la lista con una clase que aplica un borde con radio. -->
             <b>border-radius: </b>Elemento con borde con radio
@@ -324,7 +324,7 @@
         <b>color:</b> Este es un <code>p</code>, en el cual se ha establecido que el color del texto sea naranja.
     </p> 
     <div style="background-color: rgb(255, 246, 190);">
-        <p><b>text-align: </b></p>
+        <b>text-align: </b>
         <ul>
             <li class="elemento-con-alineacion-de-texto-a-la-izquierda"> <!-- *Se declara un elemento de la lista con una clase que aplica una alineacion al texto. -->
                 <b>left:</b> Este es un <code>li</code>, en el cual se ha establecido que la alineación del texto sea a la izquierda.</p>
@@ -339,7 +339,7 @@
         </ul>
     </div>
     <div style="background-color: rgb(195, 239, 255);"> <!-- *Se declara un div con un color de fondo. -->
-        <p><b>text-decoration:</b></p>
+        <b>text-decoration:</b></p>
         <ul>
             <li><b>text-decoration-line</b></li>
             <ul>
@@ -384,7 +384,7 @@
         </ul>
     </div>
     <div style="background-color: #ffd4e9;">
-        <p><b>text-transform:</b></p>
+        <b>text-transform:</b>
         <ul>
             <li class="elemento-con-text-transform-uppercase" style="margin-bottom: 25px;"> <!-- *Se declara un elemento de la lista con una clase que aplica una transformacion al texto. -->
                 <b>uppercase: </b>Este es un <code style="text-transform: lowercase;">li</code>, en el cual se ha establecido que la transformación del texto sea mayúscula, aunque en codigo el texto sea minusculas.
@@ -397,17 +397,32 @@
             </li>
         </ul>
     </div>
-    <p class="elemento-con-text-indent" style="background-color: rgb(203, 255, 192);"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una indentacion al texto. -->
+    <p class="elemento-con-text-indent" style="background-color: rgb(193, 255, 180);"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica una indentacion al texto. -->
         <b>indent: </b>Este es un <code>p</code>, en el cual se ha establecido que la indentación del texto sea de 50px. El cual la sangria aplicara unicamernte al primer renglon del parrafo. Haciendo que los demás renglones no tengan sangria y se mantengan en la misma alineación.
     </p> 
-    <div>
-        <p>letter-spacing:</p>
+    <div style="background-color: rgb(255, 196, 134);">
+        <b>letter-spacing:</b>
         <ul>
             <li class="elemento-con-letter-spacing-positivo"> <!-- *Se declara un elemento de la lista con una clase que aplica un espaciado entre letras. -->
-                <b>letter spacing con valores positivos: </b>Este es un <code>li</code>, en el cual se ha establecido que el espaciado entre letras sea de 5px, ocacionando que el texto se vea más separado.
+                <b style="letter-spacing: normal;">Letter spacing con valores positivos: </b> <!-- ! -->
+                Este es un <code>li</code>, en el cual se ha establecido que el espaciado entre letras sea de 5px, ocacionando que el texto se vea más separado.
             </li>
             <li class="elemento-con-letter-spacing-negativo"> <!-- *Se declara un elemento de la lista con una clase que aplica un espaciado entre letras. -->
-                <b>letter spacing con valores negativos: </b>Este es un <code>li</code>, en el cual se ha establecido que el espaciado entre letras sea de -2px, ocacionando que el texto se vea más junto.
+                <b style="letter-spacing: normal;">Letter spacing con valores negativos: </b> <!-- *Se declara un elemento de la lista con una clase que aplica un espaciado entre letras. -->
+                Este es un <code>li</code>, en el cual se ha establecido que el espaciado entre letras sea de -2px, ocacionando que el texto se vea más junto. 
+            </li>
+        </ul>
+    </div>
+    <div>
+        <b>word-spacing:</b>
+        <ul>
+            <li class="elemento-con-word-spacing-positivo"> <!-- *Se declara un elemento de la lista con una clase que aplica un espaciado entre palabras. -->
+                <b style="word-spacing: normal;">Word spacing con valores positivos: </b> <!-- ! -->
+                Este es un <code>li</code>, en el cual se ha establecido que el espaciado entre palabras sea de 5px, ocacionando que el texto se vea más separado.
+            </li>
+            <li class="elemento-con-word-spacing-negativo"> <!-- *Se declara un elemento de la lista con una clase que aplica un espaciado entre palabras. -->
+                <b>Word spacing con valores negativos: </b> <!-- ! -->
+                Este es un <code>li</code>, en el cual se ha establecido que el espaciado entre palabras sea de -2px, ocacionando que el texto se vea más junto.
             </li>
         </ul>
     </div>

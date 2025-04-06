@@ -646,6 +646,13 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Espaciado entre palabras (word-spacing{}): La propiedad `word-spacing{}` se utiliza para definir el espaciado entre palabras de un elemento HTML. Donde mediante valores podemos definir el espaciado que se desea aplicar entre palabras, en cualquier unidad de medida. */
+.elemento-con-word-spacing-positivo{ /**Se declara un selector por clase llamado "elemento-con-word-spacing-positivo".**/
+    word-spacing: 10px; /**Se declara una propiedad de espaciado entre palabras con el valor "10px", ocacionando que el espaciado entre palabras sea de 10px.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.elemento-con-word-spacing-negativo{ /**Se declara un selector por clase llamado "elemento-con-word-spacing-negativo".**/
+    word-spacing: -2px; /**Se declara una propiedad de espaciado entre palabras con el valor "-10px", ocacionando que el espaciado entre palabras sea de -2px.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
