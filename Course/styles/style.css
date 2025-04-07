@@ -651,7 +651,31 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 .elemento-con-word-spacing-negativo{ /**Se declara un selector por clase llamado "elemento-con-word-spacing-negativo".**/
-    word-spacing: -2px; /**Se declara una propiedad de espaciado entre palabras con el valor "-10px", ocacionando que el espaciado entre palabras sea de -2px.**/
+    word-spacing: -4px; /**Se declara una propiedad de espaciado entre palabras con el valor "-4px", ocacionando que el espaciado entre palabras sea de -2px.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Espaciado entre lineas (line-height{}): La propiedad `line-height{}` se utiliza para definir el espaciado entre una linea y otra de un elemento HTML. Donde mediante valores podemos definir el espaciado que se desea aplicar entre lineas, en cualquier unidad de medida. Por lo que el espaciado entre lineas se aplicara a todas las lineas del texto del elemento. */
+.elemento-con-line-height{
+    line-height: 50px;
+}
+
+/* Todo- Texto no limitado a contenedor (white-space{}): La propiedad `white-space{}` se utiliza para definir el comportamiento del texto dentro de un elemento HTML. Donde mediante valores podemos definir el comportamiento que se desea aplicar al texto, como por ejemplo si se desea que el texto se ajuste al ancho del contenedor, si se desea que el texto se mantenga en una sola línea, si se desea que el texto se ajuste al ancho del contenedor y se mantenga en una sola línea, entre otros. */
+/* &Nowrap */
+/* &Declara un comportamiento de texto sin ajuste, lo que significa que el texto no se ajustará al ancho del contenedor y se mantendrá en una sola línea siempre. */
+.elemento-con-white-space-nowrap{ /**Se declara un selector por clase llamado "elemento-con-white-space-nowrap".**/
+    white-space: nowrap; /**Se declara una propiedad de comportamiento de texto con el valor "nowrap", ocacionando que el texto no se ajuste al ancho del contenedor y se mantenga en una sola línea.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Pre */
+/* &Declara un comportamiento de texto preformateado, lo que significa que el texto se mostrará tal como se escribió en el código HTML, incluyendo espacios y saltos de línea. */
+.elemento-con-white-space-pre{ /**Se declara un selector por clase llamado "elemento-con-white-space-pre".**/
+    white-space: pre; /**Se declara una propiedad de comportamiento de texto con el valor "pre", ocacionando que el texto se muestre tal como se escribió en el código HTML, incluyendo espacios y saltos de línea.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Pre-wrap */
+/* &Declara un comportamiento de texto preformateado con ajuste, lo que significa que el texto se mostrará tal como se escribió en el código HTML, incluyendo espacios y saltos de línea, pero se ajustará al ancho del contenedor. */
+.elemento-con-white-space-prewrap{ /**Se declara un selector por clase llamado "elemento-con-white-space-prewrap".**/
+    white-space: pre-wrap; /**Se declara una propiedad de comportamiento de texto con el valor "pre-wrap", ocacionando que el texto se muestre tal como se escribió en el código HTML, incluyendo espacios y saltos de línea, pero se ajustará al ancho del contenedor.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
