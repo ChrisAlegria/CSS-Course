@@ -678,6 +678,11 @@ h1.mi-clase { /**Selector combinado.**/
     white-space: pre-wrap; /**Se declara una propiedad de comportamiento de texto con el valor "pre-wrap", ocacionando que el texto se muestre tal como se escribió en el código HTML, incluyendo espacios y saltos de línea, pero se ajustará al ancho del contenedor.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
+/* Todo - Sombra de texto (text-shadow{}): La propiedad `text-shadow{}` se utiliza para definir la sombra de un texto de un elemento HTML. Donde mediante valores podemos definir la sombra que se desea aplicar al texto, en cualquier unidad de medida. Por lo que la sombra se aplicara a todo el texto del elemento. Declaracion de la sombra cuenta con cuatro valores, donde el primer valor es el desplazamiento horizontal de la sombra, el segundo valor es el desplazamiento vertical de la sombra, el tercer valor es el difuminado de la sombra y el cuarto valor es el color de la sombra. Por lo que si se desea una sombra sin difuminado se puede omitir el tercer valor. */
+.elemento-con-text-shadow{
+    text-shadow: 7px 7px 4px black;
+}
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
