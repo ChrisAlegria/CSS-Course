@@ -679,19 +679,62 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Sombra de texto (text-shadow{}): La propiedad `text-shadow{}` se utiliza para definir la sombra de un texto de un elemento HTML. Donde mediante valores podemos definir la sombra que se desea aplicar al texto, en cualquier unidad de medida. Por lo que la sombra se aplicara a todo el texto del elemento. Declaracion de la sombra cuenta con cuatro valores, donde el primer valor es el desplazamiento horizontal de la sombra, el segundo valor es el desplazamiento vertical de la sombra, el tercer valor es el difuminado de la sombra y el cuarto valor es el color de la sombra. Por lo que si se desea una sombra sin difuminado se puede omitir el tercer valor. De igual manera se pueden estrablecer mas de una sombra al mismo tiempo, separando cada sombra con una coma y declarando cada sombra con los cuatro valores antes mencionados. */
-.elemento-con-un-text-shadow{
-    text-shadow: 7px 7px 4px black;
-}
+.elemento-con-un-text-shadow{ /**Se declara un selector por clase llamado "elemento-con-un-text-shadow".**/
+    text-shadow: 7px 7px 4px black; /**Se declara una propiedad de de sombreado de texto con el valor "text-shadow" , ocacionando que el texto tenga una sombra de 7px de desplazamiento horizontal, 7px de desplazamiento vertical y 4px de difuminado.**/
+} /**Cierre de la declaración de selector por clase.**/
 
-.elemento-con-dos-text-shadow{
-    text-shadow: 5px 5px 5px black, 10px 10px 2px red;
-}
+.elemento-con-dos-text-shadow{ /**Se declara un selector por clase llamado "elemento-con-dos-text-shadow".**/
+    text-shadow: 5px 25px 5px black, 10px 10px 2px red; /**Se declara una propiedad de de sombreado de texto con el valor "text-shadow" , ocacionando que el texto tenga dos sombras, la primera sombra tiene un desplazamiento horizontal de 5px, un desplazamiento vertical de 25px y un difuminado de 5px, y la segunda sombra tiene un desplazamiento horizontal de 10px, un desplazamiento vertical de 10px y un difuminado de 2px.**/
+} /**Cierre de la declaración de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Fuentes */
-/* ~La fuentes en los textos en CSS se refiere al tipo de estilo o diseño del texto en una página web. */
-/* Todo -  Fuente de texto: */
+/* ~La fuente en CSS se refiere al estilo y apariencia del texto en una página web. Esto incluye la elección de la familia de fuentes, el tamaño, el peso, el estilo y otros aspectos visuales de la tipografía. CSS permite personalizar la apariencia de las fuentes para que se ajusten al diseño y estilo de la página web. */
+/* Todo -  Familia de fuente de texto (font-family{}): La propiedad `font-family{}` se utiliza para definir la familia de fuente de un elemento HTML. Donde mediante valores podemos definir la familia de fuente que se desea aplicar al texto, como Arial, Helvetica, Times New Roman, entre otros. Cabe mencionar que cada opcion contiene varias fuentes, por lo que si no se encuentra la fuente especifica, el navegador buscara la siguiente en la lista. Por lo que si se desea utilizar una fuente personalizada, se debe de importar la fuente desde un archivo externo o desde una URL. */
+.elemento-con-font-family{ /**Se declara un selector por clase llamado "elemento-con-font-family".**/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /**Se declara una propiedad de familia de fuente con el valor "Arial", ocacionando que la fuente del texto sea Arial. Adicionalmente se agregan otras fuentes como respaldo, en caso de que la fuente principal no esté disponible.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
+/* Todo - Estilo de fuente (font-style{}): La propiedad `font-style{}` se utiliza para definir el estilo de fuente de un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar a la fuente, como normal o cursiva. */
+/* &Italic */
+/* &Declara un estilo de fuente en cursiva, lo que significa que el texto se mostrará en cursiva. */
+.elemento-con-font-style-italic{ /**Se declara un selector por clase llamado "elemento-con-font-style-italic".**/
+    font-style: italic; /**Se declara una propiedad de estilo de fuente con el valor "italic", ocacionando que la fuente del texto sea en cursiva.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Normal */
+/* &Declara un estilo de fuente normal, lo que significa que el texto se mostrara con el estilo por defecto. */
+.elemento-con-font-style-normal{ /**Se declara un selector por clase llamado "elemento-con-font-style-normal".**/
+    font-style: normal; /**Se declara una propiedad de estilo de fuente con el valor "normal", ocacionando que la fuente del texto sea normal.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Peso de fuente (font-weight{}): La propiedad `font-weight{}` se utiliza para definir el peso de fuente de un elemento HTML. Donde mediante valores podemos definir el peso que se desea aplicar a la fuente, como normal o negrita */
+/* &Bold */
+/* &Declara un peso de fuente en negrita, lo que significa que el texto se mostrará en negrita. */
+.elemento-con-font-weight-bold{ /**Se declara un selector por clase llamado "elemento-con-font-weight-bold".**/
+    font-weight: bold; /**Se declara una propiedad de peso de fuente con el valor "bold", ocacionando que la fuente del texto sea en negrita.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Normal */
+/* &Declara un peso de fuente normal, lo que significa que el texto se mostrara con el peso por defecto. */
+.elemento-con-font-weight-normal{ /**Se declara un selector por clase llamado "elemento-con-font-weight-normal".**/
+    font-weight: normal; /**Se declara una propiedad de peso de fuente con el valor "normal", ocacionando que la fuente del texto sea normal.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Variante de fuente (font-variant{}): La propiedad `font-variant{}` se utiliza para definir la variante de fuente de un elemento HTML. Donde mediante valores podemos definir la variante que se desea aplicar a la fuente, como normal o pequeña mayúscula. Esto significa que el texto se mostrará en mayúsculas, pero con un tamaño de fuente más pequeño que el resto del texto. */
+/* &Small-caps */
+/* &Declara una variante de fuente en mayúsculas pequeñas, lo que significa que el texto se mostrará en mayúsculas pequeñas. */
+.elemento-con-font-variant-small-caps{ /**Se declara un selector por clase llamado "elemento-con-font-variant-small-caps".**/
+    font-variant: small-caps; /**Se declara una propiedad de variante de fuente con el valor "small-caps", ocacionando que la fuente del texto sea en mayúsculas pequeñas.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Normal */
+/* &Declara una variante de fuente normal, lo que significa que el texto se mostrara con la variante por defecto. */
+.elemento-con-font-variant-normal{ /**Se declara un selector por clase llamado "elemento-con-font-variant-normal".**/
+    font-variant: normal; /**Se declara una propiedad de variante de fuente con el valor "normal", ocacionando que la fuente del texto sea normal.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Tamaño de fuente (font-size{}): La propiedad `font-size{}` se utiliza para definir el tamaño de fuente de un elemento HTML. Donde mediante valores podemos definir el tamaño que se desea aplicar a la fuente, en cualquier unidad de medida. Por lo que el tamaño de fuente se aplicara a todo el texto del elemento. */
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
