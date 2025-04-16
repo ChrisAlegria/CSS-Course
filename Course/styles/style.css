@@ -691,9 +691,17 @@ h1.mi-clase { /**Selector combinado.**/
 /* ~Fuentes */
 /* ~La fuente en CSS se refiere al estilo y apariencia del texto en una página web. Esto incluye la elección de la familia de fuentes, el tamaño, el peso, el estilo y otros aspectos visuales de la tipografía. CSS permite personalizar la apariencia de las fuentes para que se ajusten al diseño y estilo de la página web. */
 /* Todo -  Familia de fuente de texto (font-family{}): La propiedad `font-family{}` se utiliza para definir la familia de fuente de un elemento HTML. Donde mediante valores podemos definir la familia de fuente que se desea aplicar al texto, como Arial, Helvetica, Times New Roman, entre otros. Cabe mencionar que cada opcion contiene varias fuentes, por lo que si no se encuentra la fuente especifica, el navegador buscara la siguiente en la lista. Por lo que si se desea utilizar una fuente personalizada, se debe de importar la fuente desde un archivo externo o desde una URL. */
-.elemento-con-font-family{ /**Se declara un selector por clase llamado "elemento-con-font-family".**/
+/* &Disponible en el sistema */
+/* &Declara una familia de fuente disponible en el sistema, lo que significa que el texto se mostrará con la fuente especificada. */
+.elemento-con-font-family-del-sistema{ /**Se declara un selector por clase llamado "elemento-con-font-family".**/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /**Se declara una propiedad de familia de fuente con el valor "Arial", ocacionando que la fuente del texto sea Arial. Adicionalmente se agregan otras fuentes como respaldo, en caso de que la fuente principal no esté disponible.**/
 } /**Cierre de la declaracion de selector por clase.**/
+
+/*&Externa */
+/* &Declara una familia de fuente externa, lo que significa que el texto se mostrará con la fuente especificada. */
+.elemento-con-font-family-externa{
+    font-family: "Dancing Script", cursive;
+}
 
 /* Todo - Estilo de fuente (font-style{}): La propiedad `font-style{}` se utiliza para definir el estilo de fuente de un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar a la fuente, como normal o cursiva. */
 /* &Italic */
@@ -734,7 +742,15 @@ h1.mi-clase { /**Selector combinado.**/
     font-variant: normal; /**Se declara una propiedad de variante de fuente con el valor "normal", ocacionando que la fuente del texto sea normal.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* Todo - Tamaño de fuente (font-size{}): La propiedad `font-size{}` se utiliza para definir el tamaño de fuente de un elemento HTML. Donde mediante valores podemos definir el tamaño que se desea aplicar a la fuente, en cualquier unidad de medida. Por lo que el tamaño de fuente se aplicara a todo el texto del elemento. */
+/* Todo - Tamaño de fuente (font-size{}): La propiedad `font-size{}` se utiliza para definir el tamaño de fuente de un elemento HTML. Donde mediante valores podemos definir el tamaño que se desea aplicar a la fuente, en cualquier unidad de medida. Por lo que el tamaño de fuente se aplicara a todo el texto del elemento. Dicho tamaño se puede declarar mediante cualquier unidad de medida, como px, em, rem, %, entre otros, ademas de poder utilizar palabras reservadas como "large", "medium", "small", entre otros. Que significan grande, mediano y pequeño respectivamente. */
+.elemento-con-font-size{ /**Se declara un selector por clase llamado "elemento-con-font-size".**/
+    font-size: smaller; /**Se declara una propiedad de tamaño de fuente con el valor "large", ocacionando que la fuente del texto sea grande.**/
+} /**Se declara una propiedad de tamaño de fuente con el valor "large", ocacionando que la fuente del texto sea grande.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Iconos */
+/* ~Los iconos en CSS se refieren a pequeños gráficos o símbolos que se utilizan para representar acciones, objetos o conceptos en una página web. Los iconos pueden ser imágenes, fuentes de iconos o SVGs, y se utilizan para mejorar la usabilidad y la estética del diseño. */
+
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
