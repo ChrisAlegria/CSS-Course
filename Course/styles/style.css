@@ -749,6 +749,20 @@ h1.mi-clase { /**Selector combinado.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Listas */
+/* ~Las listas en CSS se refieren a la forma en que se presentan los elementos de una lista en una página web. Esto incluye la elección del tipo de lista, el estilo de los elementos de la lista, el espaciado y otros aspectos visuales de las listas. CSS permite personalizar la apariencia de las listas para que se ajusten al diseño y estilo de la página web. */
+/* Todo - Tipo de estilo de lista (list-style-type{}): La propiedad `list-style-type{}` se utiliza para definir el estilo de una lista en un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar a la lista, como ninguno, disc, circle, square, entre otros. Esto va mas enfocado a el tipo de simbolo o numeracion que se desea aplicar a la lista. Por defecto las listas desordenadas utilizan un simbolo de punto, y las listas ordenadas utilizan una numeracion decimal. */
+.elemento-con-list-style-type{ /**Se declara un selector por clase llamado "elemento-con-list-style-type".**/
+    list-style-type: disc; /**Se declara una propiedad de estilo de lista con el valor "disc", ocacionando que la lista tenga un simbolo de punto.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Tipo de estilo de lista con imagen (list-style-image{}): La propiedad `list-style-image{}` se utiliza para definir el estilo de una lista en un elemento HTML. Donde mediante valores podemos definir el estilo que se desea aplicar a la lista, como ninguno, disc, circle, square, entre otros. Esto va mas enfocado a el tipo de simbolo o numeracion que se desea aplicar a la lista. Por defecto las listas desordenadas utilizan un simbolo de punto, y las listas ordenadas utilizan una numeracion decimal. */
+.elemento-con-list-style-image{ /**Se declara un selector por clase llamado "elemento-con-list-style-image".**/
+    list-style-image: url(../assets/icons/The_Legend_Of_Zelda_Icon.png) /**Se declara una propiedad de estilo de lista con el valor "url(../assets/icons/The_Legend_Of_Zelda_Icon.png)", ocacionando que la lista tenga un simbolo de imagen.**/
+}  /**Cierre de la declaracion de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Tablas */
+/* ~Las tablas en CSS se refieren a la forma en que se presentan los datos tabulares en una página web. Esto incluye la elección del estilo de la tabla, el espaciado, el borde, el color de fondo y otros aspectos visuales de las tablas. CSS permite personalizar la apariencia de las tablas para que se ajusten al diseño y estilo de la página web. */
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
