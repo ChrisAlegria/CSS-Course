@@ -18,7 +18,7 @@
     <!-- ^Declaracion de iconos externos -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!-- *Se declaran los iconos de google externos que se utilizarán en el documento. -->
     <script src="https://kit.fontawesome.com/95f46d577d.js" crossorigin="anonymous"></script> <!-- *Se declaran los iconos de fontawesome externos que se utilizarán en el documento. -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- *Se declaran los iconos de bootstrap externos que se utilizarán en el documento. -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> *Se declaran los iconos de bootstrap externos que se utilizarán en el documento. -->
     
     <title>Curso CSS</title>
     
@@ -542,7 +542,7 @@
     <p>
         <b>Bootstrap Icons: </b>Para declarar un icono de Bootstrap, es necesario insertar en el HTML el <code>link</code>, el cual se encuentra en la parte superior del archivo <code>index.html</code>, en la sección de <code>head</code>. Posteriormente, se utiliza la clase correspondiente al icono deseado dentro de una etiqueta HTML, como un <code>span</code> o <code>i</code>. Por ejemplo:
         <li>
-            <i class="glyphicon glyphicon-headphones"></i> Icono de auriculares <!-- *Se declara un elemento de la lista con un icono de Bootstrap. -->       
+            <i class="glyphicon glyphicon-headphones"></i> Icono de auriculares (desabilitado por temas de estilos) <!-- *Se declara un elemento de la lista con un icono de Bootstrap. -->       
         </li>
     </p>
 
@@ -563,6 +563,37 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Tablas -->
     <hr>
-    <h1 style="text-align: center;">Listas</h1>
+    <h1 style="text-align: center;">Tablas</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <table class="elemento-con-border-collapse-separate"> <!-- *Se declara una tabla con una clase que aplica un estilo de borde separate. -->
+        <tr>
+            <th colspan="2"> <!-- *Se declara una celda de encabezado que ocupa dos columnas. -->
+                <b>Border Collapse Separate</b> 
+            </th>
+        </tr>
+        <tr>
+            <th><b>Separate</b></th>
+            <th><b>Separate</b></th>
+        </tr>
+        <tr>
+            <td>Este es una celda de una tabla, en la cual se ha establecido que las celdas tenga un un estilo de borde separate (por defecto).</td>
+            <td>Este es una celda de una tabla, en la cual se ha establecido que las celdas tenga un un estilo de borde separate (por defecto).</td>
+        </tr>
+    </table>
+    <br><br>
+    <table class="elemento-con-border-collapse"> <!-- *Se declara una tabla con una clase que aplica un estilo de borde collapse. -->
+        <tr>
+            <th colspan="2"> <!-- *Se declara una celda de encabezado que ocupa dos columnas. -->
+                <b>Border Collapse</b> 
+            </th>
+        </tr>
+        <tr>
+            <th><b>Collapse</b></th>
+            <th><b>Collapse</b></th>
+        </tr>
+        <tr>
+            <td>Este es una celda de una tabla, en la cual se ha establecido que las celdas tenga un un estilo de borde collapse, lo que ocaciona que las celdas se vean unidas.</td>
+            <td>Este es una celda de una tabla, en la cual se ha establecido que las celdas tenga un un estilo de borde collapse, lo que ocaciona que las celdas se vean unidas.</td>
+        </tr>
+    </table>
 </body>
 </html>  

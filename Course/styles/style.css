@@ -763,7 +763,26 @@ h1.mi-clase { /**Selector combinado.**/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Tablas */
 /* ~Las tablas en CSS se refieren a la forma en que se presentan los datos tabulares en una página web. Esto incluye la elección del estilo de la tabla, el espaciado, el borde, el color de fondo y otros aspectos visuales de las tablas. CSS permite personalizar la apariencia de las tablas para que se ajusten al diseño y estilo de la página web. */
+/* Todo - Colapso de bordes (border-collapse{}): La propiedad `border-collapse{}` se utiliza para definir el colapso de bordes de una tabla en un elemento HTML. Donde mediante valores podemos definir el colapso que se desea aplicar a la tabla, como separado o colapsado. Esto significa que los bordes de las celdas de la tabla se mostrarán separados o colapsados entre sí. Esti significa que por defecto cada celda tiene  su propio borde, pero si se desea que los bordes de las celdas se unan, se debe de utilizar la propiedad `border-collapse: collapse;`. Para que esto sea visible es necesario que la tabla tenga un borde definido. */
+table,th,tr,td{
+    border: 1px solid black;
+}
 
+/* &Separate */
+/* &Declara un colapso de bordes separado, lo que significa que los bordes de las celdas de la tabla se mostrarán separados. */
+.elemento-con-border-collapse-separate{
+    border-collapse: separate;
+}
+
+/* &Collapse */
+/* &Declara un colapso de bordes colapsado, lo que significa que los bordes de las celdas de la tabla se mostrarán colapsados entre sí. (juntas) */
+.elemento-con-border-collapse{
+    border-collapse: collapse;
+}
+
+
+
+/* !Pseudo elementos tablas!!! */
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
