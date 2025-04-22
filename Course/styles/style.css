@@ -780,6 +780,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     border-collapse: collapse; /**Se declara una propiedad de colapso de bordes con el valor "collapse", ocacionando que los bordes de las celdas de la tabla se muestren colapsados entre sí.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Display & Visibility */
 /* ~La propiedad `display{}` se utiliza para definir la forma en que se muestra un elemento HTML. Donde mediante valores podemos definir el comportamiento que se desea aplicar a un elemento podiendo forzar a un elemento en bloque a ser un elemento en linea, en bloque o ninguno ocacionando que el elemento no se muestre y no ocupe espacio (similar a como si no se ubiera declarado). Por otra parte visibility se utiliza para definir la visibilidad de un elemento HTML. Donde mediante valores podemos definir la visibilidad que se desea aplicar a un elemento, como visible o hidden. Esto significa que el elemento se mostrará o no se mostrará, pero ocupará espacio en la página. */
 /* Todo - Display (display{}): La propiedad `display{}` se utiliza para definir la forma en que se muestra un elemento HTML. Donde mediante valores podemos definir el comportamiento que se desea aplicar a un elemento podiendo forzar a un elemento en bloque a ser un elemento en linea, en bloque o ninguno ocacionando que el elemento no se muestre y no ocupe espacio (similar a como si no se ubiera declarado). */
@@ -823,6 +824,20 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     height: 20vh; /**Se declara un ancho con el valor "3vh", ocacionando que el elemento tenga un ancho de 3vh.**/
     visibility: hidden; /**Se declara una propiedad de visibilidad con el valor "hidden", ocacionando que el elemento no se muestre, pero ocupe espacio en la pagina.**/
 } 
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Position */
+/* ~La propiedad `position{}` se utiliza para definir la posición de un elemento HTML. Donde mediante valores podemos definir la posicion que se desea aplicar a un elemento, como static, relative, absolute, fixed o sticky. Esto significa que el elemento se posicionará de acuerdo a su flujo normal en el documento o se posicionará de acuerdo a su posición especificada. Podiendo ser relativo a su posición original, a su posición absoluta o a la ventana del navegador. */
+/* Todo - Position (position{}): La propiedad `position{}` se utiliza para definir la posición de un elemento HTML. Donde mediante valores podemos definir la posicion que se desea aplicar a un elemento, como static, relative, absolute, fixed o sticky. Esto significa que el elemento se posicionará de acuerdo a su flujo normal en el documento o se posicionará de acuerdo a su posición especificada. Podiendo ser relativo a su posición original, a su posición absoluta o a la ventana del navegador. */
+/* &Static */
+/* &Declara una posición estática, lo que significa que el elemento se posicionará de acuerdo a su flujo normal en el documento. Este estilo es el valor por defecto de la propiedad. */
+.elemento-con-position-static{ /**Se declara un selector por clase llamado "elemento-con-position-static".**/
+    height: 5vh; /**Se declara un ancho con el valor "3vw", ocacionando que el elemento tenga un ancho de 3vw.**/
+    border: 2px solid red; /**Se declara un borde con el valor "2px solid red", ocacionando que el elemento tenga un borde de 2px de grosor, solido y rojo.**/
+    position: static; /**Se declara una propiedad de posicion con el valor "static", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/*
 
 /* !Pseudo elementos tablas!!! */
 
