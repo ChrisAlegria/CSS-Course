@@ -764,23 +764,65 @@ h1.mi-clase { /**Selector combinado.**/
 /* ~Tablas */
 /* ~Las tablas en CSS se refieren a la forma en que se presentan los datos tabulares en una página web. Esto incluye la elección del estilo de la tabla, el espaciado, el borde, el color de fondo y otros aspectos visuales de las tablas. CSS permite personalizar la apariencia de las tablas para que se ajusten al diseño y estilo de la página web. */
 /* Todo - Colapso de bordes (border-collapse{}): La propiedad `border-collapse{}` se utiliza para definir el colapso de bordes de una tabla en un elemento HTML. Donde mediante valores podemos definir el colapso que se desea aplicar a la tabla, como separado o colapsado. Esto significa que los bordes de las celdas de la tabla se mostrarán separados o colapsados entre sí. Esti significa que por defecto cada celda tiene  su propio borde, pero si se desea que los bordes de las celdas se unan, se debe de utilizar la propiedad `border-collapse: collapse;`. Para que esto sea visible es necesario que la tabla tenga un borde definido. */
-table,th,tr,td{
-    border: 1px solid black;
-}
+table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encabezado de la tabla, la fila de la tabla y la celda de la tabla.**/
+    border: 1px solid black; /**Se declara un borde con el valor "1px solid black", ocacionando que la tabla tenga un borde de 1px de grosor, solido.**/
+} /**Se declara un borde con el valor "1px solid black", ocacionando que la tabla tenga un borde de 1px de grosor, solido
 
 /* &Separate */
 /* &Declara un colapso de bordes separado, lo que significa que los bordes de las celdas de la tabla se mostrarán separados. */
-.elemento-con-border-collapse-separate{
-    border-collapse: separate;
-}
+.elemento-con-border-collapse-separate{ /**Se declara un selector por clase llamado "elemento-con-border-collapse-separate".**/
+    border-collapse: separate; /**Se declara una propiedad de colapso de bordes con el valor "separate", ocacionando que los bordes de las celdas de la tabla se muestren separados.**/
+} /**Se declara un selector por clase llamado "elemento-con-border-collapse-separate".**/
 
 /* &Collapse */
 /* &Declara un colapso de bordes colapsado, lo que significa que los bordes de las celdas de la tabla se mostrarán colapsados entre sí. (juntas) */
-.elemento-con-border-collapse{
-    border-collapse: collapse;
-}
+.elemento-con-border-collapse{ /**Se declara un selector por clase llamado "elemento-con-border-collapse".**/
+    border-collapse: collapse; /**Se declara una propiedad de colapso de bordes con el valor "collapse", ocacionando que los bordes de las celdas de la tabla se muestren colapsados entre sí.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /* ~Display & Visibility */
+/* ~La propiedad `display{}` se utiliza para definir la forma en que se muestra un elemento HTML. Donde mediante valores podemos definir el comportamiento que se desea aplicar a un elemento podiendo forzar a un elemento en bloque a ser un elemento en linea, en bloque o ninguno ocacionando que el elemento no se muestre y no ocupe espacio (similar a como si no se ubiera declarado). Por otra parte visibility se utiliza para definir la visibilidad de un elemento HTML. Donde mediante valores podemos definir la visibilidad que se desea aplicar a un elemento, como visible o hidden. Esto significa que el elemento se mostrará o no se mostrará, pero ocupará espacio en la página. */
+/* Todo - Display (display{}): La propiedad `display{}` se utiliza para definir la forma en que se muestra un elemento HTML. Donde mediante valores podemos definir el comportamiento que se desea aplicar a un elemento podiendo forzar a un elemento en bloque a ser un elemento en linea, en bloque o ninguno ocacionando que el elemento no se muestre y no ocupe espacio (similar a como si no se ubiera declarado). */
+/* &Block */
+/* &Declara un elemento en bloque, lo que significa que el elemento ocupará todo el ancho disponible y comenzará en una nueva línea. */
+.elemento-con-display-inline{
+    background-color: rgb(128, 255, 0); /**Se declara un color de fondo con el valor "rgb(128, 255, 0)", ocacionando que el fondo del elemento sea de color verde.**/
+    display: inline; /**Se declara una propiedad de visualizacion con el valor "inline", ocacionando que el elemento ocupe solo el ancho necesario y no comience en una nueva linea.**/
+}
+
+/* &Inline */  
+/* &Declara un elemento en linea, lo que significa que el elemento ocupará solo el ancho necesario y no comenzará en una nueva línea. */
+.elemento-con-display-block{
+    width: 17vw; /**Se declara un ancho con el valor "15vw", ocacionando que el elemento tenga un ancho de 15vw.**/
+    height: 17vh; /**Se declara un ancho con el valor "15vw", ocacionando que el elemento tenga un ancho de 15vw.**/
+    margin-top: 3vh; /**Se declara un margen superior con el valor "3vh", ocacionando que el elemento tenga un margen superior de 3vh.**/
+    background-color: #ff009d; /**Se declara un color de fondo con el valor "rgb(255, 0, 157)", ocacionando que el fondo del elemento sea de color rosa.**/
+    display: block; /**Se declara una propiedad de visualizacion con el valor "block", ocacionando que el elemento ocupe todo el ancho disponible y comience en una nueva linea.**/
+} /**Se declara una propiedad de visualizacion con el valor "block", ocacionando que el elemento ocupe todo el ancho disponible y comience en una nueva linea.**/
+
+/* &None */
+/* &Declara un elemento que no se mostrará y no ocupará espacio en la página. */
+.elemento-con-display-none{ /**Se declara un selector por clase llamado "elemento-con-display-none".**/
+    display: none; /**Se declara una propiedad de visualizacion con el valor "none", ocacionando que el elemento no se muestre y no ocupe espacio en la pagina.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Visibility (visibility{}): La propiedad `visibility{}` se utiliza para definir la visibilidad de un elemento HTML. Donde mediante valores podemos definir la visibilidad que se desea aplicar a un elemento, como visible o hidden. Esto significa que el elemento se mostrará o no se mostrará, pero ocupará espacio en la página. */
+/* &Visible */
+/* &Declara un elemento visible, lo que significa que el elemento se mostrará y ocupará espacio en la página. */
+.elemento-con-visibility-visible{  
+    width: 20vw; /**Se declara un ancho con el valor "3vw", ocacionando que el elemento tenga un ancho de 3vw.**/
+    height: 20vh; /**Se declara un ancho con el valor "3vh", ocacionando que el elemento tenga un ancho de 3vh.**/
+    background-color: #00bbff; /**Se declara un color de fondo con el valor "rgb(255, 119, 0)", ocacionando que el fondo del elemento sea de color naranja.**/ 
+    visibility: visible; /**Se declara una propiedad de visibilidad con el valor "visible", ocacionando que el elemento se muestre y ocupe espacio en la pagina.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Hidden */
+/* &Declara un elemento oculto, lo que significa que el elemento no se mostrará, pero ocupará espacio en la página. */
+.elemento-con-visibility-hidden{ /**Se declara un selector por clase llamado "elemento-con-visibility-hidden".**/
+    width: 20vw; /**Se declara un ancho con el valor "3vw", ocacionando que el elemento tenga un ancho de 3vw.**/
+    height: 20vh; /**Se declara un ancho con el valor "3vh", ocacionando que el elemento tenga un ancho de 3vh.**/
+    visibility: hidden; /**Se declara una propiedad de visibilidad con el valor "hidden", ocacionando que el elemento no se muestre, pero ocupe espacio en la pagina.**/
+} 
 
 /* !Pseudo elementos tablas!!! */
 

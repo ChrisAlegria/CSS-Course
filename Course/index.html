@@ -473,7 +473,7 @@
     <!-- ~Fuentes -->
     <hr>
     <h1 style="text-align: center;">Fuentes</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
-    <div>
+    <div style="background-color: #ececec;">
         <b>font-family:</b>
         <ul>
             <li  class="elemento-con-font-family-del-sistema"> <!-- *Se declara un elemento de parrado con una clase que aplica una familia de fuente al texto* -->
@@ -497,7 +497,7 @@
             </li>
         </ul>
     </div>
-    <div>
+    <div style="background-color: #ececec;">
         <b>font-weight:</b>
         <ul>
             <li class="elemento-con-font-weight-bold"> <!-- *Se declara un elemento de la lista con una clase que aplica un peso de fuente. -->
@@ -519,7 +519,7 @@
             </li>
         </ul>
     </div>
-    <p class="elemento-con-font-size"> <!-- *Se declara un elemento de parrado con una clase que aplica un tamaño de fuente. -->
+    <p class="elemento-con-font-size" style="background-color: #ececec;"> <!-- *Se declara un elemento de parrado con una clase que aplica un tamaño de fuente. -->
         <b>font-size: </b>Este es un elemento de la lista, en el cual se ha establecido que el texto tenga un tamaño de fuente smaller, o bien podria declararse con 12px.
     </p>
 
@@ -527,7 +527,7 @@
     <!-- ~Iconos -->
     <hr>
     <h1 style="text-align: center;">Iconos</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
-    <p>
+    <p style="background-color: #ffcbfb;">
         <b>Google Icons: </b>Para declarar un icono de Google, es necesario insertar en el HTML el <code>link</code>, el cual se encuentra en la parte superior del archivo <code>index.html</code>, en la sección de <code>head</code>. Posteriormente, se utiliza la clase <code>material-symbols-outlined</code> dentro de una etiqueta HTML, como un <code>span</code> o <code>i</code>, y se escribe el nombre del icono deseado como contenido de la etiqueta. Por ejemplo:
         <li>
             <i class="material-symbols-outlined">home</i> Icono de casa <!-- *Se declara un elemento de la lista con un icono de Google. -->
@@ -599,6 +599,24 @@
     <!-- ~Display & Visibility -->
     <hr>
     <h1 style="text-align: center;">Display & Visibility</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
-    
+    <div style="background-color: #c3ffde; padding: 3vh 0;"> <!-- *Se declara un div con un color de fondo y un padding. -->
+        <div class="elemento-con-display-inline"> <!-- *Se declara un div con una clase que aplica un display inline. -->
+            <b>inline: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga un display inline, lo que ocaciona que el contenedor en bloque se comporte como un contenedor en linea. 
+        </div>
+        <span class="elemento-con-display-block"> <!-- *Se declara un div con una clase que aplica un display block. -->
+            <b>block: </b>Este es un contenedor en linea <code>span</code>, en el cual se ha establecido que el contenedor tenga un display block, lo que ocaciona que el contenedor en linea se comporte como un contenedor en bloque.
+        </span>
+    </div>
+    <div style="background-color: #fffab6; margin-top: 3vh; padding-top: 3vh;"> <!-- *Se declara un div con un color de fondo y un padding. -->
+        <div class="elemento-con-visibility-visible"> <!-- *Se declara un div con una clase que aplica una visibilidad visible. -->
+            <b>visible: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una visibilidad visible, lo que ocaciona que el contenedor sea visible.
+        </div>
+        <div class="elemento-con-visibility-hidden"> <!-- *Se declara un div con una clase que aplica una visibilidad hidden. -->
+            <b>hidden: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una visibilidad hidden, lo que ocaciona que el contenedor sea invisible, pero ocupe espacio la pagina.
+        </div>
+        <div class="elemento-con-visibility-visible"> <!-- *Se declara un div con una clase que aplica una visibilidad visible. -->
+            <b>visible: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una visibilidad visible, lo que ocaciona que el contenedor sea visible.
+        </div>
+    </div>
 </body>
 </html>  
