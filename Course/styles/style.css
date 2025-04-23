@@ -794,8 +794,8 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Inline */  
 /* &Declara un elemento en linea, lo que significa que el elemento ocupará solo el ancho necesario y no comenzará en una nueva línea. */
 .elemento-con-display-block{
-    width: 17vw; /**Se declara un ancho con el valor "15vw", ocacionando que el elemento tenga un ancho de 15vw.**/
-    height: 17vh; /**Se declara un ancho con el valor "15vw", ocacionando que el elemento tenga un ancho de 15vw.**/
+    width: 17vw; /**Se declara un ancho con el valor "17vw", ocacionando que el elemento tenga un ancho de 15vw.**/
+    height: 17vh; /**Se declara un ancho con el valor "17vw", ocacionando que el elemento tenga un ancho de 15vw.**/
     margin-top: 3vh; /**Se declara un margen superior con el valor "3vh", ocacionando que el elemento tenga un margen superior de 3vh.**/
     background-color: #ff009d; /**Se declara un color de fondo con el valor "rgb(255, 0, 157)", ocacionando que el fondo del elemento sea de color rosa.**/
     display: block; /**Se declara una propiedad de visualizacion con el valor "block", ocacionando que el elemento ocupe todo el ancho disponible y comience en una nueva linea.**/
@@ -811,8 +811,8 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Visible */
 /* &Declara un elemento visible, lo que significa que el elemento se mostrará y ocupará espacio en la página. */
 .elemento-con-visibility-visible{  
-    width: 20vw; /**Se declara un ancho con el valor "3vw", ocacionando que el elemento tenga un ancho de 3vw.**/
-    height: 20vh; /**Se declara un ancho con el valor "3vh", ocacionando que el elemento tenga un ancho de 3vh.**/
+    width: 20vw; /**Se declara un ancho con el valor "20vw", ocacionando que el elemento tenga un ancho de 3vw.**/
+    height: 20vh; /**Se declara un ancho con el valor "20vh", ocacionando que el elemento tenga un ancho de 3vh.**/
     background-color: #00bbff; /**Se declara un color de fondo con el valor "rgb(255, 119, 0)", ocacionando que el fondo del elemento sea de color naranja.**/ 
     visibility: visible; /**Se declara una propiedad de visibilidad con el valor "visible", ocacionando que el elemento se muestre y ocupe espacio en la pagina.**/
 } /**Cierre de la declaracion de selector por clase.**/
@@ -820,8 +820,8 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Hidden */
 /* &Declara un elemento oculto, lo que significa que el elemento no se mostrará, pero ocupará espacio en la página. */
 .elemento-con-visibility-hidden{ /**Se declara un selector por clase llamado "elemento-con-visibility-hidden".**/
-    width: 20vw; /**Se declara un ancho con el valor "3vw", ocacionando que el elemento tenga un ancho de 3vw.**/
-    height: 20vh; /**Se declara un ancho con el valor "3vh", ocacionando que el elemento tenga un ancho de 3vh.**/
+    width: 20vw; /**Se declara un ancho con el valor "20vw", ocacionando que el elemento tenga un ancho de 3vw.**/
+    height: 20vh; /**Se declara un ancho con el valor "20vh", ocacionando que el elemento tenga un ancho de 3vh.**/
     visibility: hidden; /**Se declara una propiedad de visibilidad con el valor "hidden", ocacionando que el elemento no se muestre, pero ocupe espacio en la pagina.**/
 } 
 
@@ -832,12 +832,17 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Static */
 /* &Declara una posición estática, lo que significa que el elemento se posicionará de acuerdo a su flujo normal en el documento. Este estilo es el valor por defecto de la propiedad. */
 .elemento-con-position-static{ /**Se declara un selector por clase llamado "elemento-con-position-static".**/
-    height: 5vh; /**Se declara un ancho con el valor "3vw", ocacionando que el elemento tenga un ancho de 3vw.**/
     border: 2px solid red; /**Se declara un borde con el valor "2px solid red", ocacionando que el elemento tenga un borde de 2px de grosor, solido y rojo.**/
     position: static; /**Se declara una propiedad de posicion con el valor "static", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/*
+/* &Relative */
+/* &Declara una posición relativa, lo que significa que el elemento se posicionará de acuerdo a su posición original en el documento. */
+.elemento-con-position-relative{
+    border: 2px solid blue;
+    position: relative;
+}
+
 
 /* !Pseudo elementos tablas!!! */
 
