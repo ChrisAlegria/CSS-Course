@@ -438,7 +438,7 @@
         </ul>
     </div>
     <p class="elemento-con-line-height" style="background-color: rgb(255, 134, 134);"> <!-- *Se declara un elemento de parrafo "p" con una clase que aplica un espaciado entre lineas. -->
-        <b>line-height: </b>Este es un <code>p</code>, en el cual se ha establecido que el espaciado entre cada una de las lineas sea de 10px, ocacionando que el texto se vea más separado entre cada una de las lineas que contiene el elemento <code>p</code>
+        <b>line-height: </b>Este es un <code>p</code>, en el cual se ha establecido que el espaciado entre cada una de las lineas sea de 10px, ocacionando que el texto se vea más separado entre cada una de las lineas que contiene el elemento <code>p</code>, esto implica separar el texto entre lineas.
     </p>
     <div style="background-color: rgb(134, 194, 255);">
         <b>white-space:</b>
@@ -600,6 +600,10 @@
     <!-- ~Display & Visibility -->
     <hr>
     <h1 style="text-align: center;">Display & Visibility</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un div con un display flex y un centrado de contenido. -->
+        <div style="width: 15px; height: 15px; background-color: #c3ffde; margin-right: 10px;"></div><span style="margin-right: 20px;">Display</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+        <div style="width: 15px; height: 15px; background-color: #f2b6ff; margin-right: 10px;"></div><span>Visibility</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+    </div>
     <div style="background-color: #c3ffde; padding: 3vh 0;"> <!-- *Se declara un div con un color de fondo y un padding. -->
         <div class="elemento-con-display-inline"> <!-- *Se declara un div con una clase que aplica un display inline. -->
             <b>inline: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga un display inline, lo que ocaciona que el contenedor en bloque se comporte como un contenedor en linea. 
@@ -608,7 +612,7 @@
             <b>block: </b>Este es un contenedor en linea <code>span</code>, en el cual se ha establecido que el contenedor tenga un display block, lo que ocaciona que el contenedor en linea se comporte como un contenedor en bloque.
         </span>
     </div>
-    <div style="background-color: #fffab6; margin-top: 3vh; padding-top: 3vh;"> <!-- *Se declara un div con un color de fondo y un padding. -->
+    <div style="background-color: #f2b6ff; margin-top: 3vh; padding-top: 3vh;"> <!-- *Se declara un div con un color de fondo y un padding. -->
         <div class="elemento-con-visibility-visible"> <!-- *Se declara un div con una clase que aplica una visibilidad visible. -->
             <b>visible: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una visibilidad visible, lo que ocaciona que el contenedor sea visible.
         </div>
@@ -627,11 +631,21 @@
     <div class="elemento-con-position-static"> <!-- *Se declara un div con una clase que aplica una posicion static. -->
         <b>static: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una posicion static, lo que ocaciona que el contenedor se comporte como un contenedor en bloque normal ya que es el valor por defecto.
     </div>
-    <div class="elemento-con-position-relative"> <!-- *Se declara un div con una clase que aplica una posicion relative. -->
-        <b>relative: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position relative, lo que permite que el elemento se pueda mover hacia arriba, abajo, izquierda o derecha, sin afectar el flujo del documento. Por lo que en este caso se uso un  top de 20px y un left de 20px, lo que ocaciona que el contenedor se mueva 20px hacia abajo y 20px hacia la derecha, cosa que no sucede con la posicion static.
+    <div style="color: rgb(181, 181, 181); margin-top: 20px; border: 3px solid black;"> <!-- *Se declara un div con un color de fondo y un padding. -->
+        Este es un texto de fondo que demuestra que el relative genera un espacio en el documento, por lo que el texto de fondo no se superpone al contenedor. Este es un texto de fondo que demuestra que el relative genera un espacio en el documento, por lo que el texto de fondo no se superpone al contenedor.
+        <div class="elemento-con-position-relative"> <!-- *Se declara un div con una clase que aplica una posicion relative. -->
+            <b>relative: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position relative, lo que permite que el elemento se pueda mover hacia arriba, abajo, izquierda o derecha, sin afectar el flujo del documento. Por lo que en este caso se uso un  top de 20px y un left de 20px, lo que ocaciona que el contenedor se mueva 20px hacia abajo y 20px hacia la derecha, cosa que no sucede con la posicion static.
+        </div>
+        Este es un texto de fondo que demuestra que el relative genera un espacio en el documento, por lo que el texto de fondo no se superpone al contenedor. Este es un texto de fondo que demuestra que el relative genera un espacio en el documento, por lo que el texto de fondo no se superpone al contenedor.
     </div>
-    <div class="elemento-con-position-fixed">
+    <div class="elemento-con-position-fixed"> <!-- *Se declara un div con una clase que aplica una posicion fixed. -->
         <b>fixed: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position fixed, lo que permite que el elemento se mantenga en la misma posicion al hacer scroll, por lo que en este caso se uso un  top de 20px y un left de 20px, lo que ocaciona que el contenedor se mantenga 20px hacia abajo y 20px hacia la derecha, sin importar el scroll. <span style="color: red;">(Se cambio el valor del position a fixed para que no para que el elemento no se mantenga en la misma posicion al hacer scroll y afecte el diseño, contenido del curso.)</span> 
+    </div>
+    <div style="margin-top: 20px; color: rgb(181, 181, 181); border: 3px solid black;"> <!-- *Se declara un div con un color de fondo y un padding. -->
+        <div class="elemento-con-position-absolute"> <!-- *Se declara un div con una clase que aplica una posicion absolute. -->
+            <b>absolute: </b>Este es un contenedor de bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position absolute, lo que permite que el elemento se mantenga en la misma posicion al hacer scroll y a diferencia de relative este no genera un espacio en el documento.
+        </div>
+        Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor. Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor. Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor. Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor.
     </div>
 </body>
 </html>  
