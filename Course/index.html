@@ -623,12 +623,15 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Position -->
     <hr>
-    <h1 style="text-align: center;">Position</h1>
-    <div class="elemento-con-position-static">
+    <h1 style="text-align: center;">Position</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div class="elemento-con-position-static"> <!-- *Se declara un div con una clase que aplica una posicion static. -->
         <b>static: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una posicion static, lo que ocaciona que el contenedor se comporte como un contenedor en bloque normal ya que es el valor por defecto.
     </div>
-    <div class="elemento-con-position-relative">
-        <b>relative: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position relative, lo que ocaciona que el 
+    <div class="elemento-con-position-relative"> <!-- *Se declara un div con una clase que aplica una posicion relative. -->
+        <b>relative: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position relative, lo que permite que el elemento se pueda mover hacia arriba, abajo, izquierda o derecha, sin afectar el flujo del documento. Por lo que en este caso se uso un  top de 20px y un left de 20px, lo que ocaciona que el contenedor se mueva 20px hacia abajo y 20px hacia la derecha, cosa que no sucede con la posicion static.
+    </div>
+    <div class="elemento-con-position-fixed">
+        <b>fixed: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position fixed, lo que permite que el elemento se mantenga en la misma posicion al hacer scroll, por lo que en este caso se uso un  top de 20px y un left de 20px, lo que ocaciona que el contenedor se mantenga 20px hacia abajo y 20px hacia la derecha, sin importar el scroll. <span style="color: red;">(Se cambio el valor del position a fixed para que no para que el elemento no se mantenga en la misma posicion al hacer scroll y afecte el diseño, contenido del curso.)</span> 
     </div>
 </body>
 </html>  

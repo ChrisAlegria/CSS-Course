@@ -829,23 +829,37 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* ~Position */
 /* ~La propiedad `position{}` se utiliza para definir la posición de un elemento HTML. Donde mediante valores podemos definir la posicion que se desea aplicar a un elemento, como static, relative, absolute, fixed o sticky. Esto significa que el elemento se posicionará de acuerdo a su flujo normal en el documento o se posicionará de acuerdo a su posición especificada. Podiendo ser relativo a su posición original, a su posición absoluta o a la ventana del navegador. */
 /* Todo - Position (position{}): La propiedad `position{}` se utiliza para definir la posición de un elemento HTML. Donde mediante valores podemos definir la posicion que se desea aplicar a un elemento, como static, relative, absolute, fixed o sticky. Esto significa que el elemento se posicionará de acuerdo a su flujo normal en el documento o se posicionará de acuerdo a su posición especificada. Podiendo ser relativo a su posición original, a su posición absoluta o a la ventana del navegador. */
+/* ^Posicion de elemento con position relative (top, right, bottom, left): La propiedad `top{}`, `right{}`, `bottom{}` y `left{}` se utilizan para definir la posición de un elemento HTML. Donde mediante cualquier unidad de medida podemos definir la posicion que se desea aplicar a un elemento con una posicion relativa, fixed o absolute, como por ejemplo si se desea mover el elemento hacia arriba, hacia la derecha, hacia abajo o hacia la izquierda. Esto significa que el elemento se moverá de acuerdo a su posición original en el documento. Cabe mencionar que las propiedades no moveran el elemento a dicha posicion, si no que generara un espacio en blanco en dicha ubicacion, un ejemplo de esto es que top no movera el elemento hacia arriba, si no que generara un espacio en blanco en la parte superior del elemento ocacionando que el elemento se mueva hacia abajo. Para el caso de position fixed es obligatorio declarar las propiedades top, right, bottom o left, ya que de lo contrario el elemento no se mostrara. */
 /* &Static */
 /* &Declara una posición estática, lo que significa que el elemento se posicionará de acuerdo a su flujo normal en el documento. Este estilo es el valor por defecto de la propiedad. */
 .elemento-con-position-static{ /**Se declara un selector por clase llamado "elemento-con-position-static".**/
-    border: 2px solid red; /**Se declara un borde con el valor "2px solid red", ocacionando que el elemento tenga un borde de 2px de grosor, solido y rojo.**/
+    border: 3px solid red; /**Se declara un borde con el valor "2px solid red", ocacionando que el elemento tenga un borde de 2px de grosor, solido y rojo.**/
     position: static; /**Se declara una propiedad de posicion con el valor "static", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Relative */
 /* &Declara una posición relativa, lo que significa que el elemento se posicionará de acuerdo a su posición original en el documento. */
 .elemento-con-position-relative{
-    border: 2px solid blue;
-    position: relative;
+    border: 3px solid blue; /**Se declara un borde con el valor "2px solid blue", ocacionando que el elemento tenga un borde de 2px de grosor, solido y azul.**/
+    position: relative; /**Se declara una propiedad de posicion con el valor "relative", ocacionando que el elemento se posicione de acuerdo a su posicion original en el documento.**/
+    left: 30px; /**Se declara una propiedad de posicion con el valor "30px", ocacionando que el elemento se mueva 30px hacia la derecha.**/
+    top: 30px; /**Se declara una propiedad de posicion con el valor "30px", ocacionando que el elemento se mueva 30px hacia abajo.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Fixed */
+/* &Declara una posición fija, lo que significa que el elemento se posicionará de acuerdo a su posición absoluta en la ventana del navegador. Esto significa que el elemento no se moverá al hacer scroll en la página y se mantendrá en la misma posición. */
+.elemento-con-position-fixed{
+    border: 3px solid rgb(153, 255, 0);
+    position: static; /**Se declara una propiedad de posicion con el valor "fixed", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento.**/
+    /* !Se cambio el valor de la propiedad position de fixed a static, para que el elemento no se mantenga en la misma posicion al hacer scroll y afecte el diseño, contenido del curso.**/
+    margin-top: 50px;
 }
 
+/* &Absolute */
+/* &Declara una posición absoluta, lo que significa que el elemento se posicionará de acuerdo a su posición absoluta en el documento. Esto significa que el elemento sera igual que el elemento de posicion relative, pero en este caso el elemento se posicionara de acuerdo a su posicion absoluta en el documento. */
 
 /* !Pseudo elementos tablas!!! */
-
+    
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
