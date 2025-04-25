@@ -838,35 +838,35 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Relative */
-/* &Declara una posición relativa, lo que significa que el elemento se posicionará de acuerdo a su posición original en el documento. */
+/* &Declara una posición relativa, lo que significa que el elemento se posicionará de acuerdo a su posición original en el documento. El cual podra mover su ubicacion usando top, right, bottom o left, pero este generara un espacio en blanco en la parte donde este fue declarado. */
 .elemento-con-position-relative{
-  
     border: 1px solid blue; /**Se declara un borde con el valor "2px solid blue", ocacionando que el elemento tenga un borde de 2px de grosor, solido y azul.**/
     color: black; /**Se declara un color de texto con el valor "black", ocacionando que el texto del elemento sea negro */
-    position: relative; /**Se declara una propiedad de posicion con el valor "relative", ocacionando que el elemento se posicione de acuerdo a su posicion original en el documento.**/
+    position: relative; /**Se declara una propiedad de posicion con el valor "relative".
     left: 30px; /**Se declara una propiedad de posicion con el valor "30px", ocacionando que el elemento se mueva 30px hacia la derecha.**/
     top: 30px; /**Se declara una propiedad de posicion con el valor "30px", ocacionando que el elemento se mueva 30px hacia abajo.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Fixed */
-/* &Declara una posición fija, lo que significa que el elemento se posicionará de acuerdo a su posición absoluta en la ventana del navegador. Esto significa que el elemento no se moverá al hacer scroll en la página y se mantendrá en la misma posición. Por lo que fixed a comparacion de los demas positions, este no tomara su ubicacion base de donde fue declarada, por lo que */
+/* &Declara una posición fija, lo que significa que el elemento se posicionará de acuerdo a su posición absoluta en la ventana del navegador. Esto significa que el elemento no se moverá al hacer scroll en la página y se mantendrá en la misma posición. Por lo que fixed a comparacion de los demas positions, este no tomara su ubicacion base de donde fue declarada, por lo que no generara un campo o generara un espacio en blanco en la pagina. Ademas de que es obligatorio declarar las propiedades top, right, bottom o left, ya que de lo contrario el elemento no se mostrara. */
 .elemento-con-position-fixed{ /**Se declara un selector por clase llamado "elemento-con-position-fixed".**/
     border: 3px solid rgb(153, 255, 0); /**Se declara un borde con el valor "2px solid rgb(153, 255, 0)", ocacionando que el elemento tenga un borde de 2px de grosor, solido y verde.**/
-    position: static; /**Se declara una propiedad de posicion con el valor "fixed", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento.**/
+    position: static; /**Se declara una propiedad de posicion con el valor "fixed", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento. El cual quedara pegado a la pantalla y sin generar un espacio en el documento al hacer scroll.**/
     /* !Se cambio el valor de la propiedad position de fixed a static, para que el elemento no se mantenga en la misma posicion al hacer scroll y afecte el diseño, contenido del curso.**/
     margin-top: 20px; /**Se declara un margen superior con el valor "20px", ocacionando que el elemento tenga un margen superior de 20px.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Absolute */
-/* &Declara una posición absoluta, lo que significa que el elemento se posicionará de acuerdo a su posición absoluta en el documento. Esto significa que el elemento sera igual que el elemento de posicion relative, pero en este caso el elemento se posicionara de acuerdo a su posicion absoluta en el documento. Este a diferencia de fixed y relative, lo que hace es obreponerse encima de los elementos pero sin estar fijo en la ventana del navegador. Por lo que el elemento se movera al hacer scroll en la pagina. Ademas a diferencia de relative no se generara un espacio en el documento, el cual si lo movemos con top, left, bottom o right, se mantendra el espacio donde estaba originalmente el elemento, dejando asi un espacio en blanco. */
+/* &Declara una posición absoluta, lo que significa que el elemento se posicionará de acuerdo a su posición absoluta en el documento. Esto significa que el elemento sera igual que el elemento de posicion relative, pero en este caso el elemento se posicionara de acuerdo a su posicion absoluta en el documento. Este a diferencia de fixed y relative, lo que hace es sobreponerse encima de los elementos pero sin que este este fijo en la ventana del navegador. Por lo que el elemento se movera al hacer scroll en la pagina quedandose donde fue declarado. Ademas a diferencia de relative no se generara un espacio en el documento, pese a si lo movemos con top, left, bottom o right. */
 .elemento-con-position-absolute{ /**Se declara un selector por clase llamado "elemento-con-position-absolute".**/
     margin-top: 18px; /**Se declara un margen superior con el valor "18px", ocacionando que el elemento tenga un margen superior de 18px.**/
     color: black; /**Se declara un color de texto con el valor "black", ocacionando que el texto sea de color negro */
-    border: 1px solid purple;
-    position: absolute; 
-}
+    border: 1px solid purple; /**Se declara un borde con el valor "1px solid purple", ocacionando que el elemento tenga un borde de 1px de grosor, solido y morado.**/
+    position: absolute; /**Se declara una propiedad de posicion con el valor "absolute", ocacionando que el elemento se sobreponga al contenido, pero a diferencia de fix, este se mantendra donde se declare y admeas no genenrara un campo en blanco en el docuento**/
+} /**Cierre de la declaracion de selector por clase**/
 
 /* &Sticky */
+/* &Declara una posicion */
 .elemento-con-position-sticky{ 
     position: sticky; 
 }
