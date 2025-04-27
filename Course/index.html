@@ -639,13 +639,29 @@
         Este es un texto de fondo que demuestra que el relative genera un espacio en el documento, por lo que el texto de fondo no se superpone al contenedor. Este es un texto de fondo que demuestra que el relative genera un espacio en el documento, por lo que el texto de fondo no se superpone al contenedor.
     </div>
     <div class="elemento-con-position-fixed"> <!-- *Se declara un div con una clase que aplica una posicion fixed. -->
-        <b>fixed: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position fixed, lo que permite que el elemento se mantenga en la misma posicion al hacer scroll, por lo que en este caso se uso un  top de 20px y un left de 20px, lo que ocaciona que el contenedor se mantenga 20px hacia abajo y 20px hacia la derecha, sin importar el scroll. <span style="color: red;">(Se cambio el valor del position a fixed para que no para que el elemento no se mantenga en la misma posicion al hacer scroll y afecte el diseño, contenido del curso.)</span> 
+        <b>fixed: </b>Este es un contenedor en bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position fixed, lo que permite que el elemento se mantenga en la misma posicion al hacer scroll, por lo que en este caso se uso un  top de 20px y un left de 20px, lo que ocaciona que el contenedor se mantenga 20px hacia abajo y 20px hacia la derecha, sin importar el scroll. Esto indica que el elemento se quedara fijo en la pantalla, sin importar el scroll. <span style="color: red;">(Se cambio el valor del position a fixed en el arrchivo CSS para que el elemento no se mantenga en la misma posicion al hacer scroll y afecte el diseño, contenido del curso.)</span> 
     </div>
     <div style="margin-top: 20px; color: rgb(181, 181, 181); border: 3px solid black;"> <!-- *Se declara un div con un color de fondo y un padding. -->
         <div class="elemento-con-position-absolute"> <!-- *Se declara un div con una clase que aplica una posicion absolute. -->
             <b>absolute: </b>Este es un contenedor de bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position absolute, lo que permite que el elemento se mantenga en la misma posicion al hacer scroll y a diferencia de relative este no genera un espacio en el documento.
         </div>
         Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor. Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor. Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor. Este es un texto de fondo que demuestra como el absolute no genera un espacio en el documento, por lo que el texto de fondo se superpone al contenedor.
+    </div>
+    <div style="margin-top: 20px; border: 3px solid black; color: rgb(181, 181, 181);"> <!-- *Se declara un div con un color de fondo y un padding. -->
+        <div class="elemento-con-position-sticky"> <!-- *Se declara un div con una clase que aplica una posicion sticky. -->
+            <b>sticky: </b>Este es un contenedor de bloque <code>div</code>, en el cual se ha establecido que el contenedor tenga una position sticky, lo que permite que el elemento ocupe un espacio en el documento y este se mantenga en la misma posicion, a menos que se haga scroll y el elemento salga de la pantalla, ocacionando que el elemento se mantenga en la parte superior de la pantalla, pero solo dentro de su contenedor padre.
+        </div>
+        Este es un texto de fondo que demuestra como el sticky genera un espacio en el documento, ademas de que cuando se hace scroll hasta un punto que desaparece el elemento de la pantalla, este se quedara en el top de la pantalla, pero solo dentro de su contenedor padre. Este es un texto de fondo que demuestra como el sticky genera un espacio en el documento, ademas de que cuando se hace scroll hasta un punto que desaparece el elemento de la pantalla, este se quedara en el top de la pantalla, pero solo dentro de su contenedor padre. Este es un texto de fondo que demuestra como el sticky genera un espacio en el documento, ademas de que cuando se hace scroll hasta un punto que desaparece el elemento de la pantalla, este se quedara en el top de la pantalla, pero solo dentro de su contenedor padre.
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <!-- ~Z-Index -->
+    <hr>
+    <h1 style="text-align: center;">Z-Index</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div style="position: relative;" >
+        <img class="elemento-con-z-index-1" src="./assets/images/Link_TOTK.png">     
+        <p style="position: absolute; font-size: 25px; top: 20%; z-index: 0;"><b>Z-Index:</b> Este es un texto que indica el orden de apilamiento de los elementos, en este caso el elemento con z-index 1 se superpone al elemento con z-index -1. </p> <!-- *Se declara un parrafo con un texto que indica el orden de apilamiento de los elementos. -->
+        <img class="elemento-con-z-index-menos-1" src="./assets/images/Link_TOTK.png">     
     </div>
 </body>
 </html>  
