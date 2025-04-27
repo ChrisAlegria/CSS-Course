@@ -831,7 +831,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* Todo - Position (position{}): La propiedad `position{}` se utiliza para definir la posición de un elemento HTML. Donde mediante valores podemos definir la posicion que se desea aplicar a un elemento, como static, relative, absolute, fixed o sticky. Esto significa que el elemento se posicionará de acuerdo a su flujo normal en el documento o se posicionará de acuerdo a su posición especificada. Podiendo ser relativo a su posición original, a su posición absoluta o a la ventana del navegador. 
 /* ^Posicion de elemento con position relative (top, right, bottom, left): La propiedad `top{}`, `right{}`, `bottom{}` y `left{}` se utilizan para definir la posición de un elemento HTML. Donde mediante cualquier unidad de medida podemos definir la posicion que se desea aplicar a un elemento con una posicion relativa, fixed o absolute, como por ejemplo si se desea mover el elemento hacia arriba, hacia la derecha, hacia abajo o hacia la izquierda. Esto significa que el elemento se moverá de acuerdo a su posición original en el documento. Cabe mencionar que las propiedades no moveran el elemento a dicha posicion, si no que generara un espacio en blanco en dicha ubicacion, un ejemplo de esto es que top no movera el elemento hacia arriba, si no que generara un espacio en blanco en la parte superior del elemento ocacionando que el elemento se mueva hacia abajo. Para el caso de position fixed es obligatorio declarar las propiedades top, right, bottom o left, ya que de lo contrario el elemento no se mostrara.
 /* &Static */
-/* &Declara una posición estática, lo que significa que el elemento se posicionará de acuerdo a su flujo normal en el documento. Este estilo es el valor por defecto de la propiedad. */
+/* &Declara una posición estática, lo que significa que el elemento se posicionará de acuerdo a su flujo normal en el documento. Este estilo es el valor por defecto de la propiedad. Ademas un elemento con posicion static no se puede mover con las propiedades top, right, bottom o left, ademas de que los elementos con position absolute no podran tomar como referencia de contenedor a un elemento con position static y por ultimo la propiedad z-index no tendra efecto en este tipo de elementos. */
 .elemento-con-position-static{ /**Se declara un selector por clase llamado "elemento-con-position-static".**/
     border: 3px solid red; /**Se declara un borde con el valor "2px solid red", ocacionando que el elemento tenga un borde de 2px de grosor, solido y rojo.**/
     position: static; /**Se declara una propiedad de posicion con el valor "static", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento.**/
@@ -877,9 +877,10 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Z-Index */
-/* ~La propiedad Z-Index se utiliza para definir la superposición de un elemento HTML en relación con otros elementos. Los valores más altos indican que el elemento estará más arriba en la pila de superposición, mientras que los valores más bajos indican que estará más abajo. Los valores pueden ser positivos, negativos o cero. Por lo que el valor por defecto es 0. Un ejempl oseria que se mostrara un elemento con un z-index de 1, por encima de otro elemento con un z-index de 0. y un elemento con un z-index de -1 se mostrara por debajo de un elemento con un z-index de 0. */
+/* ~La propiedad Z-Index se utiliza para definir la superposición de un elemento HTML en relación con otros elementos. Los valores más altos indican que el elemento estará más arriba en la pila de superposición, mientras que los valores más bajos indican que estará más abajo. Los valores pueden ser positivos, negativos o cero. Por lo que el valor por defecto es 0. Un ejemplo sería que se mostrará un elemento con un z-index de 1, por encima de otro elemento con un z-index de 0, y un elemento con un z-index de -1 se mostrará por debajo de un elemento con un z-index de 0. Cabe mencionar que para que z-index tenga efecto, el elemento debe tener una posición diferente a "static". */
 .elemento-con-z-index-1{ /**Se declara un selector por clase llamado "elemento-con-z-index-1".**/
     z-index: 1; /**Se declara una propiedad de z-index con el valor "1", ocacionando que el elemento se muestre por encima de los elementos con un z-index menor.**/
+    position: relative; /**Se declara una propiedad de posicion con el valor "relative", ocacionando que el elemento se posicione de acuerdo a su flujo normal en el documento.**/
     width: 20%;
 } /**Cierre de la declaracion de selector por clase.**/
 
@@ -888,6 +889,9 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     position: relative;
     width: 20%;
 }  /**Cierre de la declaracion de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Overflow */
 
 /* !Pseudo elementos tablas!!! */
 

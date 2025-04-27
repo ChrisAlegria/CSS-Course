@@ -658,10 +658,17 @@
     <!-- ~Z-Index -->
     <hr>
     <h1 style="text-align: center;">Z-Index</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
-    <div style="position: relative;" >
-        <img class="elemento-con-z-index-1" src="./assets/images/Link_TOTK.png">     
-        <p style="position: absolute; font-size: 25px; top: 20%; z-index: 0;"><b>Z-Index:</b> Este es un texto que indica el orden de apilamiento de los elementos, en este caso el elemento con z-index 1 se superpone al elemento con z-index -1. </p> <!-- *Se declara un parrafo con un texto que indica el orden de apilamiento de los elementos. -->
-        <img class="elemento-con-z-index-menos-1" src="./assets/images/Link_TOTK.png">     
+    <div style="position: relative;"> <!-- *Se declara un div con una posicion relativa. -->
+        <img class="elemento-con-z-index-1" src="./assets/images/Link_TOTK.png"> <!-- *Se declara una imagen con una clase que aplica un z-index de 1. -->
+        <img class="elemento-con-z-index-menos-1" src="./assets/images/Link_TOTK.png"> <!-- *Se declara una imagen con una clase que aplica un z-index de -1. -->  
+        <p style="position: absolute; font-size: 20px; top: 20%; z-index: 0; text-align: justify;"> <!-- *Se declara un parrafo con una posicion absoluta y un z-index de 0. -->
+            <b>Z-Index:</b> Este es un elemento de párrafo el cual cuenta con un Z-Index de 0, en el cual se definió que tendría una posición absolute y un top de 20%. Posteriormente se definieron 2 imágenes, ambas con una posición relativa, pero una con un Z-Index de 1 y otra con un Z-Index de -1. Todo esto ocaciona que el elemento de párrafo se superponga a la imagen con Z-Index de 1, pero no a la imagen con Z-Index de -1. Esto significa que el parrafo se mostrará por encima de la imagen con Z-Index de 1, pero por debajo de la imagen con Z-Index de -1. 
+        </p>
     </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <!-- ~Overflow -->
+    <hr>
+    <h1 style="text-align: center;">Overflow</h1>
 </body>
 </html>  
