@@ -892,6 +892,62 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Overflow */
+/* ~La propiedad overflow se utiliza para definir cómo se manejará el contenido que desborda el área de un elemento. Esto significa que si el contenido de un elemento es más grande que el área del elemento, se puede ocultar, mostrar una barra de desplazamiento o mostrar el contenido desbordado. Los valores pueden ser visible, hidden, scroll o auto. */
+/* &Visible */
+/* &Declara un desbordamiento visible, lo que significa que el contenido al no caber dentro del elemento si se han especificado en este ciertas dimenciones, se mostrará fuera del área del elemento. Este es el valor por defecto de la propiedad. */
+.elemento-con-overflow-visible{ /**Se declara un selector por clase llamado "elemento-con-overflow-visible".**/
+    overflow: visible; 
+    width: 20%; /**Se declara un ancho con el valor "20%", ocacionando que el elemento tenga un ancho de 20%.**/
+    height: 19vh; /**Se declara un alto con el valor "18vh", ocacionando que el elemento tenga un alto de 19vh.**/
+    background-color: rgb(255, 247, 0); /***Se declara un color de fondo con el valor "rgb(255, 247, 0)", ocacionando que el fondo del elemento sea de color amarillo.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Hidden */
+/* &Declara un desbordamiento oculto, lo que significa que el contenido al no caber dentro del elemento si se han especificado en este ciertas dimenciones, se ocultará y no se mostrará fuera del área del elemento, pero no permitira visualizar dicho contenido no mostrado */
+.elemento-con-overflow-hidden{
+    overflow: hidden; /**Se declara una propiedad de desbordamiento con el valor "hidden", ocacionando que el contenido que no quepa dentro del elemento se ocultara y no se mostrara fuera del area del elemento.**/
+    position: absolute; /**Se declara una propiedad de posicion con el valor "absolute", ocacionando que el elemento se sobreponga al contenido, pero a diferencia de fix, este se mantendra donde se declare y ademas no generara un campo en blanco en el docuento**/
+    background-color: #007bff; /**Se declara un color de fondo con el valor "rgb(0, 123, 255)", ocacionando que el fondo del elemento sea de color azul.**/
+    top: 0px; /**Se declara una propiedad de posicion con el valor "0px", ocacionando que el elemento se mantenga en la parte superior de la pantalla.**/
+    left: 25%; /**Se declara una propiedad de posicion con el valor "25%", ocacionando que el elemento se mantenga a 25% de la parte izquierda de la pantalla.**/
+    width: 20%; /**Se declara un ancho con el valor "20%", ocacionando que el elemento tenga un ancho de 20%.**/
+    height: 19vh; /**Se declara un alto con el valor "110px", ocacionando que el elemento tenga un alto de 19vh.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Scroll */
+/* &Declara un desbordamiento con barra de desplazamiento, lo que significa que el contenido al no caber dentro del elemento si se han especificado en este ciertas dimenciones, se mostrará una barra de desplazamiento para permitir ver el contenido desbordado. */
+.elemento-con-overflow-scroll{
+    overflow: scroll; /**Se declara una propiedad de desbordamiento con el valor "scroll", ocacionando que el contenido que no quepa dentro del elemento se mostrara una barra de desplazamiento para permitir ver el contenido desbordado.**/
+    position: absolute; /**Se declara una propiedad de posicion con el valor "absolute", ocacionando que el elemento se sobreponga al  contenido, pero a diferencia de fix, este se mantendra donde se declare y ademas no generara un campo en blanco en el docuento**/
+    top: 0; /**Se declara una propiedad de posicion con el valor "0", ocacionando que el elemento se mantenga en la parte superior de la pantalla.**/
+    left: 50%; /**Se declara una propiedad de posicion con el valor "50%", ocacionando que el elemento se mantenga a 50% de la parte izquierda de la pantalla.**/
+    background-color: #e880ff; /**Se declara un color de fondo con el valor "rgb(232, 128, 255)", ocacionando que el fondo del elemento sea de color morado.**/
+    width: 20%; /**Se declara un ancho con el valor "20%", ocacionando que el elemento tenga un ancho de 20%.**/
+    height: 21vh; /**Se declara un alto con el valor "21vh", ocacionando que el elemento tenga un alto de 21vh.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Ocultar barra de scroll (overflow-x{} y overflow-y{}): La propiedad `overflow-x{}` y `overflow-y{}` se utilizan para definir cómo se manejará el contenido que desborda el área de un elemento en el eje X o Y respectivamente. Esto significa que si el contenido de un elemento es más grande que el área del elemento, se puede ocultir, mostrar una barra de desplazamiento o mostrar el contenido desbordado. Los valores pueden ser visible, hidden, scroll o auto. */
+.elemento-con-overflow-x-hidden{ /**Se declara un selector por clase llamado "elemento-con-overflow-x-hidden".**/
+    overflow: scroll; /**Se declara una propiedad de desbordamiento con el valor "scroll", ocacionando que el contenido que no quepa dentro del elemento se mostrara una barra de desplazamiento para permitir ver el contenido desbordado.**/
+    overflow-x: hidden; /**Se declara una propiedad de desbordamiento con el valor "hidden", ocacionando que el contenido que no quepa dentro del elemento se ocultara y no se mostrara fuera del area del elemento.**/
+    position: absolute; /**Se declara una propiedad de posicion con el valor "absolute", ocacionando que el elemento se sobreponga al contenido, pero a diferencia de fix, este se mantendra donde se declare y ademas no generara un campo en blanco en el docuento**/
+    top: 0; /**Se declara una propiedad de posicion con el valor "0", ocacionando que el elemento se mantenga en la parte superior de la pantalla.**/
+    left: 75%; /**Se declara una propiedad de posicion con el valor "75%", ocacionando que el elemento se mantenga a 75% de la parte izquierda de la pantalla.**/
+    background-color: #8bff80; 
+    width: 20%; /**Se declara un ancho con el valor "20%", ocacionando que el elemento tenga un ancho de 20%.**/
+    height: 19vh; /**Se declara un alto con el valor "21vh", ocacionando que el elemento tenga un alto de 21vh.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.elemento-con-overflow-y-hidden{
+    overflow: scroll; /**Se declara una propiedad de desbordamiento con el valor "scroll", ocacionando que el contenido que no quepa dentro del elemento se mostrara una barra de desplazamiento para permitir ver el contenido desbordado.**/
+    overflow-y: hidden; /**Se declara una propiedad de desbordamiento con el valor "hidden", ocacionando que el contenido que no quepa dentro del elemento se ocultara y no se mostrara fuera del area del elemento.**/
+    position: relative; /**Se declara una propiedad de posicion con el valor "absolute", ocacionando que el elemento se sobreponga al contenido, pero a diferencia de fix, este se mantendra donde se declare y ademas no generara un campo en blanco en el docuento**/
+    background-color: #8bff80; 
+    margin-top: 70px; /**Se declara un margen superior con el valor "70px", ocacionando que el elemento tenga un margen superior de 70px.**/
+    width: 20%; /**Se declara un ancho con el valor "20%", ocacionando que el elemento tenga un ancho de 20%.**/
+    height: 21vh; /**Se declara un alto con el valor "21vh", ocacionando que el elemento tenga un alto de 21vh.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
 
 /* !Pseudo elementos tablas!!! */
 
