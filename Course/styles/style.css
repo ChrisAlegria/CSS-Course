@@ -799,7 +799,15 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     margin-top: 3vh; /**Se declara un margen superior con el valor "3vh", ocacionando que el elemento tenga un margen superior de 3vh.**/
     background-color: #ff009d; /**Se declara un color de fondo con el valor "rgb(255, 0, 157)", ocacionando que el fondo del elemento sea de color rosa.**/
     display: block; /**Se declara una propiedad de visualizacion con el valor "block", ocacionando que el elemento ocupe todo el ancho disponible y comience en una nueva linea.**/
+    margin-bottom: 30px; /**Se declara un margen inferior con el valor "30px", ocacionando que el elemento tenga un margen inferior de 30px.**/
 } /**Se declara una propiedad de visualizacion con el valor "block", ocacionando que el elemento ocupe todo el ancho disponible y comience en una nueva linea.**/
+
+/* &Flex */
+/* &Declara un elemento flexible, lo que significa que el elemento se comportará como un contenedor flexible y sus elementos secundarios se organizarán en una fila o columna. */
+.elemento-con-display-flex{ /**Se declara un selector por clase llamado "elemento-con-display-flex".**/
+    display: flex; /**Se declara una propiedad de visualizacion con el valor "flex", ocacionando que el elemento se comporte como un contenedor flexible y sus elementos secundarios se organicen en una fila o columna.**/
+    background-color: #ff8f2d; /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo del elemento sea de color naranja.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /* &None */
 /* &Declara un elemento que no se mostrará y no ocupará espacio en la página. */
@@ -950,6 +958,24 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Float */
+/* ~La propiedad float se utiliza para posicionar un elemento a la izquierda o derecha de su contenedor (left, right), permitiendo que el texto y otros elementos fluyan alrededor de él. Esto significa que los elementos con la propiedad de float hace que los elementos fluyan alrededor de ellos, permitiendo que el texto y otros elementos se coloquen a su alrededor. Los valores pueden ser left, right, none o inherit. */
+/* &Left */
+/* &Declara un elemento flotante a la izquierda, lo que significa que el elemento se posicionará a la izquierda de su contenedor y el texto y otros elementos fluirán alrededor de él. */
+.elemento-con-float-left{ /**Se declara un selector por clase llamado "elemento-con-float-left".**/
+    float: left; /**Se declara una propiedad de flotacion con el valor "left", ocacionando que el elemento se posicione a la izquierda de su contenedor.**/
+    width: 300px; /**Se declara un ancho con el valor "300px", ocacionando que el elemento tenga un ancho de 300px.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Right */
+/* &Declara un elemento flotante a la derecha, lo que significa que el elemento se posicionará a la derecha de su contenedor y el texto y otros elementos fluirán alrededor de él. */
+.elemento-con-float-right{ /**Se declara un selector por clase llamado "elemento-con-float-right".**/
+    float: right; /**Se declara una propiedad de flotacion con el valor "right", ocacionando que el elemento se posicione a la derecha de su contenedor.**/
+    width: 300px; /**Se declara un ancho con el valor "300px", ocacionando que el elemento tenga un ancho de 300px.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Selectores Combinados */
+
 
 /* !Pseudo elementos tablas!!! */
 

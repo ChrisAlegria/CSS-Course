@@ -609,6 +609,17 @@
         <span class="elemento-con-display-block"> <!-- *Se declara un div con una clase que aplica un display block. -->
             <b>block: </b>Este es un contenedor en linea <code>span</code>, en el cual se ha establecido que el contenedor tenga un display block, lo que ocaciona que el contenedor en linea se comporte como un contenedor en bloque.
         </span>
+        <div class="elemento-con-display-flex">
+            <div style="background-color: #ffffff; margin: 12px;">
+                <b>flex: </b> Este es un contenedor en bloque <code>div</code> el cual se encuentra dentro de otro contenedor de bloque con la propiedad de display flex, lo que ocaciona que los elementos dentro del contenedor padre se comporten como un contenedor en bloque normal, pero el contenedor padre se comporta como un contenedor en bloque con la propiedad de display flex. Esto significia que todos los elementos hijos dentro del contenedor padre se alinien de manera horizontal, en lugar de vertical como lo haría un contenedor en bloque normal. Ya que los elementosen bloque ocupan todo el ancho del contenedor padre, por lo que no se pueden alinear de manera horizontal. Ocacionando que elementos enbloque dentro de un contenedor en bloque con display flex se comporten como elementos en linea, pero el contenedor padre se comporta como un contenedor en bloque con la propiedad de display flex. Donde si los elementos hijos no se a especificado un ancho, entre mas elementos se iran autoajustando al contenedor padre, pero si se especifica un ancho, los elementos hijos no se ajustaran al contenedor.
+            </div>
+            <div style="background-color: #ffffff; margin: 12px;">
+                <b>flex: </b> Este es un contenedor en bloque <code>div</code> el cual se encuentra dentro de otro contenedor de bloque con la propiedad de display flex, lo que ocaciona que los elementos dentro del contenedor padre se comporten como un contenedor en bloque normal, pero el contenedor padre se comporta como un contenedor en bloque con la propiedad de display flex. Esto significia que todos los elementos hijos dentro del contenedor padre se alinien de manera horizontal, en lugar de vertical como lo haría un contenedor en bloque normal. Ya que los elementosen bloque ocupan todo el ancho del contenedor padre, por lo que no se pueden alinear de manera horizontal. Ocacionando que elementos enbloque dentro de un contenedor en bloque con display flex se comporten como elementos en linea, pero el contenedor padre se comporta como un contenedor en bloque con la propiedad de display flex. Donde si los elementos hijos no se a especificado un ancho, entre mas elementos se iran autoajustando al contenedor padre, pero si se especifica un ancho, los elementos hijos no se ajustaran al contenedor.
+            </div>
+            <div style="background-color: #ffffff; margin: 12px;">
+                <b>flex: </b> Este es un contenedor en bloque <code>div</code> el cual se encuentra dentro de otro contenedor de bloque con la propiedad de display flex, lo que ocaciona que los elementos dentro del contenedor padre se comporten como un contenedor en bloque normal, pero el contenedor padre se comporta como un contenedor en bloque con la propiedad de display flex. Esto significia que todos los elementos hijos dentro del contenedor padre se alinien de manera horizontal, en lugar de vertical como lo haría un contenedor en bloque normal. Ya que los elementosen bloque ocupan todo el ancho del contenedor padre, por lo que no se pueden alinear de manera horizontal. Ocacionando que elementos enbloque dentro de un contenedor en bloque con display flex se comporten como elementos en linea, pero el contenedor padre se comporta como un contenedor en bloque con la propiedad de display flex. Donde si los elementos hijos no se a especificado un ancho, entre mas elementos se iran autoajustando al contenedor padre, pero si se especifica un ancho, los elementos hijos no se ajustaran al contenedor.
+            </div>
+        </div>
     </div>
     <div style="background-color: #f2b6ff; margin-top: 3vh; padding-top: 3vh;"> <!-- *Se declara un div con un color de fondo y un padding. -->
         <div class="elemento-con-visibility-visible"> <!-- *Se declara un div con una clase que aplica una visibilidad visible. -->
@@ -690,8 +701,26 @@
     <!-- ~Float -->
     <hr>
     <h1 style="text-align: center;">Float</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
-    <div>
-        
+    <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un div con un display flex y un centrado de contenido. -->
+        <div style="width: 15px; height: 15px; background-color: #ffc3ed; margin-right: 10px;"></div><span style="margin-right: 20px;">left</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+        <div style="width: 15px; height: 15px; background-color: #fff78b; margin-right: 10px;"></div><span>right</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
     </div>
+    <div style="background-color: #ffc3ed;"> <!-- *Se declara un div con un color de fondo y un padding. -->
+        <img class="elemento-con-float-left" src="./assets/images/Chinchilla_1.jpg"> <!-- *Se declara una imagen con una clase que aplica un float left. -->
+        <p style="line-height: 25px;"> <!-- *Se declara un parrafo con un color de fondo y un padding. -->
+            Este es un elemento de párrafo, en el cual se ha establecido que el contenedor tenga un float left, lo que ocaciona que el contenedor se desplace hacia la izquierda y el texto fluya a su alrededor, por lo que en este caso se especifica una imagen con float left y un tamaño de 300px,  Esto significa que el texto se ajustará a la izquierda de la imagen, ocupando el espacio disponible a su alrededor y una vez que el texto supere el tamaño de la imagen, este se acomodará debajo de la imagen. Este es un elemento de párrafo, en el cual se ha establecido que el contenedor tenga un float left, lo que ocaciona que el contenedor se desplace hacia la izquierda y el texto fluya a su alrededor, por lo que en este caso se especifica una imagen con float left y un tamaño de 300px,  Esto significa que el texto se ajustará a la izquierda de la imagen, ocupando el espacio disponible a su alrededor y una vez que el texto supere el tamaño de la imagen, este se acomodará debajo de la imagen. Este es un elemento de párrafo, en el cual se ha establecido que el contenedor tenga un float left, lo que ocaciona que el contenedor se desplace hacia la izquierda y el texto fluya a su alrededor, por lo que en este caso se especifica una imagen con float left y un tamaño de 300px,  Esto significa que el texto se ajustará a la izquierda de la imagen, ocupando el espacio disponible a su alrededor y una vez que el texto supere el tamaño de la imagen, este se acomodará debajo de la imagen.
+        </p>
+    </div>
+    <div style="background-color: #fff78b;"> <!-- *Se declara un div con un color de fondo y un padding. -->
+        <img class="elemento-con-float-right" src="./assets/images/Chinchilla_2.jpg">
+        <p style="line-height: 25px;">
+            Este es un elemento de párrafo, en el cual se ha establecido que el contenedor tenga un float right, lo que ocaciona que el contenedor se desplace hacia la derecha y el texto fluya a su alrededor, por lo que en este caso se especifica una imagen con float right y un tamaño de 300px,  Esto significa que el texto se ajustará a la derecha de la imagen, ocupando el espacio disponible a su alrededor y una vez que el texto supere el tamaño de la imagen, este se acomodará debajo de la imagen. Este es un elemento de párrafo, en el cual se ha establecido que el contenedor tenga un float right, lo que ocaciona que el contenedor se desplace hacia la derecha y el texto fluya a su alrededor, por lo que en este caso se especifica una imagen con float right y un tamaño de 300px,  Esto significa que el texto se ajustará a la derecha de la imagen, ocupando el espacio disponible a su alrededor y una vez que el texto supere el tamaño de la imagen, este se acomodará debajo de la imagen. Este es un elemento de párrafo, en el cual se ha establecido que el contenedor tenga un float right, lo que ocaciona que el contenedor se desplace hacia la derecha y el texto fluya a su alrededor, por lo que en este caso se especifica una imagen con float right y un tamaño de 300px,  Esto significa que el texto se ajustará a la derecha de la imagen, ocupando el espacio disponible a su alrededor y una vez que el texto supere el tamaño de la imagen, este se acomodará debajo de la imagen.
+        </p>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <!-- ~Selectores Combinados -->
+    <hr>
+    <h1 style="text-align: center;">Selectores Combinados</h1>
 </body>
 </html>  
