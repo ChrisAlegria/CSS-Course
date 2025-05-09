@@ -722,5 +722,30 @@
     <!-- ~Selectores Combinados -->
     <hr>
     <h1 style="text-align: center;">Selectores Combinados</h1>
+      <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un div con un display flex y un centrado de contenido. -->
+        <div style="width: 15px; height: 15px; background-color: #ffc3ed; margin-right: 10px;"></div><span style="margin-right: 20px;">left</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+        <div style="width: 15px; height: 15px; background-color: #fff78b; margin-right: 10px;"></div><span>right</span> <!-- *Se declara un div con un color de fondo y un margen derecho de 10px. -->
+    </div>
+    <div class="elemento-con-selector-combinado-descendiente" style="background-color: #6387ff; padding: 10px; margin-bottom: 20px;">
+        <p>
+            Este es un elemento de párrafo en la raiz del elemento padre, en el cual se ha establecido que todos los elementos <code>p</code> dentro de un elemento con la clase <code>elemento-con-selector-combinado-descendiente</code> tengan un color de fondo blanco. Esto significa que todos los elementos <code>p</code> dentro de este elemento, sin importar que estos esten dentro de otros elementos o no se encuentren en la raiz del elemento padre, tendran un color de fondo blanco. Pero no afectará a los elementos <code>p</code> fuera de este elemento padre. 
+        </p>
+        <span>
+            <p>
+                Este es un elemento de párrafo dentro de un span dentro del elemento padre, en el cual se ha establecido que todos los elementos <code>p</code> dentro de un elemento con la clase <code>elemento-con-selector-combinado-descendiente</code> tengan un color de fondo blanco. Esto significa que todos los elementos <code>p</code> dentro de este elemento, sin importar que estos esten dentro de otros elementos o no se encuentren en la raiz del elemento padre, tendran un color de fondo blanco. Pero no afectará a los elementos <code>p</code> fuera de este elemento padre. 
+            </p>
+        </span>
+    </div>
+    <div class="elemento-con-selector-combinado-descendiente" style="background-color: #ff6363; padding: 10px; margin-bottom: 20px;">
+        <p>
+            Este es un elemento de párrafo en la raiz del elemento padre, en el cual se ha establecido que todos los elementos <code>p</code> dentro de un elemento con la clase <code>elemento-con-selector-combinado-descendiente</code> tengan un color de fondo blanco. Esto significa que todos los elementos <code>p</code> dentro de este elemento, sin importar que estos esten dentro de otros elementos o no se encuentren en la raiz del elemento padre, tendran un color de fondo blanco. Pero no afectará a los elementos <code>p</code> fuera de este elemento padre. 
+        </p>
+        <span>
+            <p>
+                Este es un elemento de párrafo dentro de un span dentro del elemento padre, en el cual se ha establecido que todos los elementos <code>p</code> dentro de un elemento con la clase <code>elemento-con-selector-combinado-descendiente</code> tengan un color de fondo blanco. Esto significa que todos los elementos <code>p</code> dentro de este elemento, sin importar que estos esten dentro de otros elementos o no se encuentren en la raiz del elemento padre, tendran un color de fondo blanco. Pero no afectará a los elementos <code>p</code> fuera de este elemento padre. 
+            </p>
+        </span>
+    </div>  
+    
 </body>
 </html>  

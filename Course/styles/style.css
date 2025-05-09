@@ -975,6 +975,14 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Selectores Combinados */
+/* ~Los selectores combinados se utilizan para seleccionar elementos HTML en función de su relación con otros elementos. Esto significa que los selectores combinados permiten seleccionar elementos en función de su jerarquía o relación con otros elementos. Los selectores combinados pueden ser descendientes, hijos, hermanos adyacentes o hermanos generales. */
+/* &Descendientes */
+/* &Declara un selector combinado descendiente, lo que significa que selecciona todos los elementos que son descendientes de un elemento padre. Ya que se especifica un elemento ya sea por etiqueta, clase o id, seguido de un espacio y el elemento descendiente. Quedan definidos como descendientes todos los elementos que se encuentran dentro del elemento padre teniendo como ejemplo que un elemento padre es un div y dentro de este se encuentran varios elementos como p, h1, h2, etc. Si se define un selector combinado descendiente como div p, se seleccionaran todos los elementos p que se encuentren dentro del elemento div sin importar cuántos niveles de anidación haya entre ellos o si estos se encuentran dentro de otros elementos que no sean en el elemento padre raiz. Por lo que para definir un selector combinado descendiente se utiliza el espacio entre el elemento padre y el elemento descendiente. */
+.elemento-con-selector-combinado-descendiente p{ /**Se declara un selector combinado descendiente, lo que significa que selecciona todos los elementos que son descendientes de un elemento padre.**/
+    background-color: rgb(255, 255, 255); /**Se declara un color de fondo con el valor "rgb(255, 255, 255)", ocacionando que el fondo del elemento sea de color blanco.**/
+} /**Cierre de la declaracion de selector combinado descendiente.**/
+
+/* &Hijos */
 
 
 /* !Pseudo elementos tablas!!! */
