@@ -983,11 +983,29 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector combinado descendiente.**/
 
 /* &Hijos */
+/* &Declara un selector combinado hijo, lo que significa que selecciona todos los elementos que son hijos directos de un elemento padre. Ya que se especifica un elemento ya sea por etiqueta, clase o id, seguido de un espacio y el elemento hijo. Quedan definidos como hijos todos los elementos que se encuentran dentro del elemento padre teniendo como ejemplo que un elemento padre es un div y dentro de este se encuentran varios elementos como p, h1, h2, etc. Si se define un selector combinado hijo como div > p, se seleccionaran todos los elementos p que sean hijos directos del elemento div sin importar cuántos niveles de anidación haya entre ellos o si estos se encuentran dentro de otros elementos que no sean en el elemento padre raiz. Por lo que para definir un selector combinado hijo se utiliza el simbolo mayor entre el elemento padre y el elemento hijo. */
+.elemento-con-selector-combinado-hijo>p{  /**Se declara un selector combinado hijo, lo que significa que selecciona todos los elementos que son hijos directos de un elemento padre.**/
+    background-color: rgb(255, 255, 255); /**Se declara un color de fondo con el valor "rgb(255, 255, 255)", ocacionando que el fondo del elemento sea de color blanco.**/
+} /**Cierre de la declaracion de selector combinado hijo.**/
 
+/* &Hermanos adyacentes */
+/* &Declara un selector combinado hermano adyacente, lo que significa que selecciona todos los elementos que son hermanos adyacentes de un elemento. Ya que se especifica un elemento ya sea por etiqueta, clase o id, seguido de un espacio y el elemento hermano adyacente. Quedan definidos como hermanos adyacentes todos los elementos que se encuentran dentro del mismo elemento padre que el elemento con la clase de hermano adyacente. Si se define un selector combinado hermano adyacente como div + p, se seleccionaran todos los elementos p que encuentre en el codigo en la parte inferior del elemento div, cabe resaltar que solamente se seleccionara el primer elemento p que encuentre en el codigo. Por lo que para definir un selector combinado hermano adyacente se utiliza el simbolo de suma entre el elemento padre y el elemento hermano adyacente. En resumen podemos decir que un selector combinado hermano adyacente selecciona el primer elemento que se encuentra despues del elemento con la clase de hermano adyacente en el codigo, ademas de solo deleccionar el primer elemento dentro del mismo elemento padre que el elemento con la clase de hermano adyacente. */
+.elemento-con-selector-combinado-hermano-adyacente+p{ /**Se declara un selector combinado hermano adyacente, lo que significa que selecciona todos los elementos que son hermanos adyacentes de un elemento.**/
+    background-color: rgb(255, 255, 255); /**Se declara un color de fondo con el valor "rgb(255, 255, 255)", ocacionando que el fondo del elemento sea de color blanco.**/
+} /**Cierre de la declaracion de selector combinado hermano adyacente.**/
+
+/* &Hermanos generales */
+/* &Declara un selector combinado hermano general, lo que significa que selecciona todos los elementos que son hermanos generales de un elemento. Ya que se especifica un elemento ya sea por etiqueta, clase o id, seguido de un espacio y el elemento hermano general. Quedan definidos como hermanos generales todos los elementos que se encuentran dentro del mismo elemento padre que el elemento con la clase de hermano general. Si se define un selector combinado hermano general como div ~ p, se seleccionaran todos los elementos p que encuentre en el codigo en la parte inferior del elemento div, cabe resaltar que a diferencia del hermano adyacente aqui se seleccionaran todos los elementos p que encuentre en el codigo dentro del mismo elemento padre que el elemento con la clase de hermano general y debajo de este. Por lo que para definir un selector combinado hermano general se utiliza el simbolo de tilde entre el elemento padre y el elemento hermano general. En resumen podemos decir que un selector combinado hermano general selecciona todos los elementos que se encuentran despues del elemento con la clase de hermano general en el codigo, ademas de solo deleccionar los elementos dentro del mismo elemento padre que el elemento con la clase de hermano general. */
+.elemento-con-selector-combinado-hermanos-generales~p{ /**Se declara un selector combinado hermano general, lo que significa que selecciona todos los elementos que son hermanos generales de un elemento.**/
+    background-color: rgb(255, 255, 255); /**Se declara un color de fondo con el valor "rgb(255, 255, 255)", ocacionando que el fondo del elemento sea de color blanco.**/
+} /**Cierre de la declaracion de selector combinado hermano general.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Pseudoclases */
 
 /* !Pseudo elementos tablas!!! */
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////z////////////////////////////////////////////////////////////////////////////////*/
 /* ~Glosario */
 /**
     **RGB: red, green, blue.
