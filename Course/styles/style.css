@@ -251,7 +251,7 @@ h1.mi-clase { /**Selector combinado.**/
 } /**Cierre de la declaración de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/* ~Background */
+/* ~Backgrounds */
 /* ~El fondo de un elemento (background) en CSS se utiliza para personalizar el fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. El fondo puede ser un color sólido, un degradado de colores, una imagen, o una combinación de estos elementos. */
 /* Todo - Background con solido/con transparencia (background-color{}): El color de fondo sólido o con transparencia se utiliza para cambiar el color de fondo de un elemento, como un contenedor, una sección o el cuerpo de la página web. Por lo que se puede especificar un color sólido o un color con transparencia para el fondo de un elemento, ya sea usando colores por nombre, hexadecimal, RGB, HSL, entre otros. */
 .background-con-color-solido-transparente{ /**Se declara un selector por clase llamado "background-con-color-solido-transparente".**/
