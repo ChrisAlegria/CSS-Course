@@ -15,6 +15,7 @@
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Tipos de declaraciones CSS /*
+/* ~Declaración de estilos: En CSS, los estilos se pueden declarar de diferentes maneras, dependiendo de cómo se desee aplicar el estilo a los elementos HTML. Existen tres formas principales de declarar estilos: mediante una hoja CSS externa, mediante una etiqueta <style> dentro del HTML y mediante la propiedad "style" directamente en las etiquetas HTML. Cada método tiene sus propias características y ventajas, y se puede elegir el que mejor se adapte a las necesidades del proyecto. */
 /* Todo - Declaración de estilos mediante una hoja CSS o etiqueta <style>: Los estilos pueden declararse mediante una hoja CSS externa o directamente dentro de la etiqueta <style> en el archivo HTML. En el caso de la hoja CSS, se vincula al HTML mediante un enlace <link>, permitiendo que el HTML lea y aplique todos los estilos definidos en ella. Por otro lado, la etiqueta <style> funciona de manera similar, pero los estilos se colocan directamente dentro del archivo HTML entre las etiquetas <style> y </style>, sin necesidad de archivo externo. */
 /* &Estructura de estilos en hoja CSS o etiqueta <style>. */
 /* ?Propiedades:  
@@ -37,12 +38,13 @@ color: /**Propiedad*
 red;" /**Valor**/
 
 /* Todo - Declaración: Una declaración es el conjunto de la estructura que incluye el "selector/atributo", la "propiedad" y el "valor de la propiedad**. En CSS, cada declaración se escribe entre llaves {}. */
-.declaracion{
+.declaracion{ /**Selector.**/
 color: red; /** Declaración: propiedad + valor **/
-}
+} /**Cierre de la declaración.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Selectores /*
+/* ~Selectores: Los selectores son patrones que se utilizan para seleccionar los elementos HTML a los que se les aplicarán los estilos. Existen diferentes tipos de selectores, cada uno con su propia función y especificidad. Los selectores pueden ser de tipo elemento, clase, identificador, cuerpo, universal, combinados o múltiples. */
 /* Todo - Selectores de elemento (nombreElemento{}): Los selectores de elemento se utilizan para aplicar estilos a todas las instancias de una etiqueta HTML específica. Esto significa que, cuando usas el nombre de una etiqueta, como "h1{}", los estilos dentro de ese selector afectarán a todos los elementos de ese tipo en la página. Por ejemplo, si escribes "h1 { color: red; }", todas las etiquetas <h1> en la página se pondrán rojas. */
 h1{ /**Declaracion de selector por elemento, en este caso se declara la etiqueta <h1>.**/
     /**Aqui se especifican las propiedades y sus valores para asigar estilos.**/
@@ -1002,6 +1004,17 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Pseudoclases */
+/* ~Las pseudoclases son aquellas que al realizar cierto tipo de accion en el elemento, este se comportar distinto. Por lo que podemos decir que las pseudoclases son palabras clave que se añaden a un selector para especificar un estado especial del elemento seleccionado. Esto significa que las pseudoclases permiten seleccionar elementos en función de su estado o posición en el documento. Las pseudoclases pueden ser hover, active, focus, visited, checked, entre otras. Lo que hace que los elementos por ejemplo cambien de color, tamaño o forma al pasar el mouse sobre ellos, al hacer clic en ellos o al recibir el foco (recibir foco significa que el elemento es seleccionado por el usuario, por ejemplo al hacer clic en un campo de formulario o al navegar a través de los elementos de la página con el teclado). */
+/* Todo - Declaración de pseudoclases: Para poder declarar una pseudoclase se utiliza el simbolo de dos puntos seguido del nombre de la pseudoclase. quedando la estructura como elemento:seudoelemento{propiedad:valor;}. Por ende para declarar una pseudoclase se ingresa el nombre del elemento, clase o id seguido de dos puntos y el nombre de la pseudoclase la cual se desea aplicar, seguido de llaves donde se declaran las propiedades y valores que se desean aplicar al elemento. Dichos valores a declarar dentro seran los que se aplicaran al elemento cuando este cumpla con la condicion de la pseudoclase. */
+.declaracion-pseudoclase:hover{ /**Se declara un selector por clase llamado "declaracion-pseudoclase", donde ademas se le aplica una pseudoclase llamada "hover", la cual se activara cuando el mouse pase por encima del elemento.**/
+    background-color: #ff8f2d; /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo del elemento sea de color naranja al pasar el mouse por encima del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Link */
+/* &Declara una pseudoclase de enlace, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando el elemento es un enlace. */
+.elemento-con-pseudoclase-link:link{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-link", donde ademas se le aplica una pseudoclase llamada "hover", la cual se activara cuando el mouse pase por encima del elemento.**/
+    background-color: #ffef5b; /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo del elemento sea de color naranja al pasar el mouse por encima del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /* !Pseudo elementos tablas!!! */
 
