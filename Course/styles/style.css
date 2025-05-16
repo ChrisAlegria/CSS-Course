@@ -1013,7 +1013,25 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Link */
 /* &Declara una pseudoclase de enlace, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando el elemento es un enlace. */
 .elemento-con-pseudoclase-link:link{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-link", donde ademas se le aplica una pseudoclase llamada "hover", la cual se activara cuando el mouse pase por encima del elemento.**/
-    background-color: #ffef5b; /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo del elemento sea de color naranja al pasar el mouse por encima del elemento.**/
+    background-color: rgb(147, 255, 255); /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo del elemento sea de color naranja solo si el elemento es un enlace.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Visited */
+/* &Declara una pseudoclase de enlace visitado, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando el elemento es un enlace y este ya ha sido visitado. Cabe destacar que por seguridad hay muy pocas propiedades que se pueden aplicar a un enlace visitado, como lo son color, outline-color, border-color, etc.. */
+.elemento-con-pseudoclase-visited:visited{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-visited", donde ademas se le aplica una pseudoclase llamada "visited", la cual se activara cuando el elemento sea un enlace y este ya ha sido visitado.**/
+    color: rgb(35, 162, 0); /**Se declara un color de fondo con el valor "firebrick", ocacionando que el fondo del elemento sea de color rojo solo si el elemento es un enlace y este ya ha sido visitado.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Hover */
+/* &Declara una pseudoclase de paso del mouse, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando el mouse pase por encima del elemento. */
+.elemento-con-pseudoclase-hover:hover{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-hover", donde ademas se le aplica una pseudoclase llamada "hover", la cual se activara cuando el mouse pase por encima del elemento.**/
+    background-color: rgb(248, 147, 255); /**Se declara un color de fondo con el valor "rgb(248, 147, 255)", ocacionando que el fondo del elemento sea de color morado al pasar el mouse por encima del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Active */
+/* &Declara una pseudoclase de elemento activo, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando se clickee sobre el elemento o se haga doble clic en el elemento manteniendo el clic. Esto significa que el elemento se mantendrá activo hasta que se suelte el clic. */
+.elemento-con-pseudoclase-active:active{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-active", donde ademas se le aplica una pseudoclase llamada "active", la cual se activara cuando el elemento sea un enlace y este ya ha sido visitado.**/
+    background-color: rgb(255, 238, 88); /**Se declara un color de fondo con el valor "rgb(255, 238, 88)", ocacionando que el fondo del elemento sea de color amarillo al pasar el mouse por encima del elemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* !Pseudo elementos tablas!!! */
