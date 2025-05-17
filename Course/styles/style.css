@@ -1023,7 +1023,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Hover */
-/* &Declara una pseudoclase de paso del mouse, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando el mouse pase por encima del elemento. */
+/* &Declara una pseudoclase de paso del mouse, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando el mouse pase por encima del elemento. Asi mismo hay que mencionar que la pseudoclase hoverpuede cambiar una condicion de otro elemento, un ejemplo de esto es que si un elemento externo al que tiene la pseudoclase con el hover, cuenta con un border azul, se puede declarar en la pseudoclase hover que el border de ese elemento externo cambie a uno diferente. Ocacionando que al hacer jover en un elemento otro completamente diferente tenga un cambio. */
 .elemento-con-pseudoclase-hover:hover{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-hover", donde ademas se le aplica una pseudoclase llamada "hover", la cual se activara cuando el mouse pase por encima del elemento.**/
     background-color: rgb(248, 147, 255); /**Se declara un color de fondo con el valor "rgb(248, 147, 255)", ocacionando que el fondo del elemento sea de color morado al pasar el mouse por encima del elemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
@@ -1032,6 +1032,12 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Declara una pseudoclase de elemento activo, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente cuando se clickee sobre el elemento o se haga doble clic en el elemento manteniendo el clic. Esto significa que el elemento se mantendrá activo hasta que se suelte el clic. */
 .elemento-con-pseudoclase-active:active{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-active", donde ademas se le aplica una pseudoclase llamada "active", la cual se activara cuando el elemento sea un enlace y este ya ha sido visitado.**/
     background-color: rgb(255, 238, 88); /**Se declara un color de fondo con el valor "rgb(255, 238, 88)", ocacionando que el fondo del elemento sea de color amarillo al pasar el mouse por encima del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &First-child */
+/* &Declara una pseudoclase de primer hijo, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente al primer hijo del elemento padre. Esto significa que esta pseudoclase se debe definir en un elemento que sea hijo de otro elemento, ya que si no es asi no se aplicara la pseudoclase, ya que esta pseudoclase no entre en el elemento y busca el primer hijo, si no que la pseudoclase evalua si el elemento es el primer hijo del elemento padre. */
+.elemento-con-pseudoclase-first-child:first-child{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-first-child", donde ademas se le aplica una pseudoclase llamada "first-child", la cual se activara cuando el elemento sea el primer hijo del elemento padre.**/
+    background-color: rgb(255, 0, 0); /**Se declara un color de fondo con el valor "rgb(255, 0, 0)", ocacionando que el fondo del elemento sea de color rojo al pasar el mouse por encima del elemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* !Pseudo elementos tablas!!! */
