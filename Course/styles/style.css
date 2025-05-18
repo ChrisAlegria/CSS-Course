@@ -1037,7 +1037,9 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &First-child */
 /* &Declara una pseudoclase de primer hijo, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente al primer hijo del elemento padre. Esto significa que esta pseudoclase se debe definir en un elemento que sea hijo de otro elemento, ya que si no es asi no se aplicara la pseudoclase, ya que esta pseudoclase no entre en el elemento y busca el primer hijo, si no que la pseudoclase evalua si el elemento es el primer hijo del elemento padre. */
 .elemento-con-pseudoclase-first-child:first-child{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-first-child", donde ademas se le aplica una pseudoclase llamada "first-child", la cual se activara cuando el elemento sea el primer hijo del elemento padre.**/
-    background-color: rgb(255, 0, 0); /**Se declara un color de fondo con el valor "rgb(255, 0, 0)", ocacionando que el fondo del elemento sea de color rojo al pasar el mouse por encima del elemento.**/
+    background-color: rgb(255, 184, 133); /**Se declara un color de fondo con el valor "rgb(255, 0, 0)", ocacionando que el fondo del elemento sea de color rojo al pasar el mouse por encima del elemento.**/
+    margin-bottom: 3px; /**Se declara un margen inferior con el valor "3px", ocacionando que el elemento tenga un margen inferior de 3px.**/
+    border: 1px solid black; /**Se declara un borde con el valor "1px solid black", ocacionando que el elemento tenga un borde de 1px de grosor, solido.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* !Pseudo elementos tablas!!! */
