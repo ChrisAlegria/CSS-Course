@@ -752,7 +752,7 @@
         <p>
             Este es un elemento de párrafo en la raiz del elemento padre, el cual este parrafo se encuentra antes de un elemento con la clase <code>elemento-con-selector-combinado-hermano-adyacente</code>, en el cual se ha establecido que el elemento hermano adyacente <code>p</code> (es decir, el elemento <code>p</code> que se encuentra justo después del elemento con la clase de hermano adyacente y dentro del mismo elemento padre) tenga un color de fondo blanco. Esto casiona que el siguiente <code>p</code> dentro del mismo elemento padre tenga fondo blanco, siempre y cuando esté justo después. Pero en este caso no se verá afectado, ya que este elemento <code>p</code> no es el hermano adyacente del elemento con la clase de hermano adyacente, ya que se encuentra antes de este elemento.
         </p>
-        <div class="elemento-con-selector-combinado-hermano-adyacente">
+        <div class="elemento-con-selector-combinado-hermano-adyacente"> <!-- *Se declara un div con una clase que aplica un selector combinado hermano adyacente. -->
             Este es un elemento <code>div</code> dentro de un elemento padre. En este <code>div</code>, mediante la clase <code>elemento-con-selector-combinado-hermano-adyacente</code>, se ha establecido que el elemento hermano adyacente <code>p</code> (es decir, el elemento <code>p</code> que se encuentra justo después del elemento con la clase de hermano adyacente y dentro del mismo elemento padre) tenga un color de fondo blanco. Esto significa que solo el elemento <code>p</code> que está después del <code>div</code> con esta clase será afectado. Los elementos <code>p</code> anteriores, externos o que no sea hermano adyacente no se verán afectados. Es decir, este <code>div</code> con la clase <code>elemento-con-selector-combinado-hermano-adyacente</code> ocasiona que el siguiente <code>p</code> dentro del mismo elemento padre tenga fondo blanco, siempre y cuando esté justo después.
         </div>
         <p>
@@ -780,11 +780,11 @@
     <h1 style="text-align: center;">Pseudoclases</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
     <ul>
         <li class="">
-            <a class="elemento-con-pseudoclase-link" href="#"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>a</code> dentro de el. -->
+            <a class="elemento-con-pseudoclase-link" href="#"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>a</code> dentro de el. En el cual se declara una pseudoclase <code>:link</code> -->
                 <b style="color: black;">:link:</b> Este es un elemento <code>li</code>, el cual contiene un elemento <code>a</code> dentro de el, en dicho elemento de enlace se ha declarado una pseudoclase <code>:link</code>, lo que ocaciona que el elemento <code>a</code> tenga un color de fondo amarillo Esto significa que esta pseudoclase solo afecta a los elementos <code>a</code>, o elementos que sean enlaces, los cuales al cumplir con dicho criterio se verán afectados por lo especificado en la pseudoclase. En este caso se especifica un color de fondo amarillo, lo que ocaciona que el elemento <code>a</code> tenga un color de fondo amarillo.
             </a>
         </li>
-        <li style="margin-top: 40px;">
+        <li style="margin-top: 40px;"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>a</code> dentro de el. -->
             <a class="elemento-con-pseudoclase-visited" href="https://watch.thechosen.tv/video/184683594341" target="_blank">
                 <b style="color: black;">:visited:</b> Este es un elemento <code>li</code>, el cual contiene un elemento <code>a</code> dentro de el, en dicho elemento de enlace se ha declarado una pseudoclase <code>:visited</code>, lo que ocaciona que el elemento <code>a</code> solamente cuando el enlace haya sido visitado, tenga un color de texto rojo. Esto significa que esta pseudoclase solo afecta a los elementos <code>a</code>, o elementos que sean enlaces y hayan sido visitados, los cuales al cumplir con dicho criterio se verán afectados por lo especificado en la pseudoclase. En este caso se especifica un color de texto rojo, lo que ocaciona que el elemento <code>a</code> tenga un color de texto rojo. <span style="color: rgb(255, 0, 0);">Advertencia: La pseudoclase de <code>:visited</code> por seguridad hay muy pocas propiedades que se pueden aplicar a un enlace visitado, como lo son color, outline-color, border-color, etc..</span>
             </a>
@@ -799,12 +799,30 @@
             </p>
         </li>
         <li>
-            <p class="elemento-con-pseudoclase-first-child"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
-                <b>:first-child: </b>
-            </p>
-            <p style="margin: 0; border: 1px solid black">
-                fd
-            </p>
+            <div style="background-color: rgb(242, 242, 242); padding: 2px 20px; border: 4px outset;"> <!-- *Se declara un div con un color de fondo, un padding y un borde. -->
+                <p class="elemento-con-pseudoclase-first-child"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
+                    <b>:first-child: </b>Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:first-child</code>, lo que ocaciona que el elemento <code>p</code> tenga un color de fondo azul cuando sea el primer hijo del elemento padre. Esto significa que la pseudoclase <code>:first-child</code> solo afecta al elemento con dicha clase cuando es el primer hijo del elemento padre, cabe destacar que esta pseudoclase no es para declarar el primer hijo dentro del elemento con dicha clase, sino que valida que el elemento con la pseudoclase sea el primer hijo del elemento padre. Por lo que en este caso se especifica un color de fondo azul, lo que ocaciona que este elemento <code>p</code> al ser el primer elemento hijo de el elemento padre tenga un color de fondo azul.
+                </p>
+                <p style="margin: 0; border: 1px solid black"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
+                    Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en este caso no se aplica la pseudoclase <code>:first-child</code>, ya que este elemento no es el primer hijo del elemento padre y no tiene declarada la pseudoclase, por lo que no se verá afectado por la pseudoclase. Esto significa que este elemento <code>p</code> no se verá afectado por la pseudoclase <code>:first-child</code>, ya que no es el primer hijo del elemento padre y no tiene declarada la pseudoclase <code>:first-child</code>.
+                </p>
+                <p style="margin-top: 3px; border: 1px solid black;"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
+                    Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en este caso no se aplica la pseudoclase <code>:first-child</code>, ya que este elemento no es el primer hijo del elemento padre y no tiene declarada la pseudoclase, por lo que no se verá afectado por la pseudoclase. Esto significa que este elemento <code>p</code> no se verá afectado por la pseudoclase <code>:first-child</code>, ya que no es el primer hijo del elemento padre y no tiene declarada la pseudoclase <code>:first-child</code>.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div style="background-color: rgb(242, 242, 242); padding: 2px 20px; border: 4px inset; margin-top: 20px;"> <!-- *Se declara un div con un color de fondo, un padding y un borde. -->  
+                <p style="margin-top: 3px; border: 1px solid black"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
+                    Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en este caso no se aplica la pseudoclase <code>:last-child</code>, ya que este elemento no es el último hijo del elemento padre y no tiene declarada la pseudoclase, por lo que no se verá afectado por la pseudoclase. Esto significa que este elemento <code>p</code> no se verá afectado por la pseudoclase <code>:last-child</code>, ya que no es el último hijo del elemento padre y no tiene declarada la pseudoclase <code>:last-child</code>.
+                </p>
+                <p style="margin-top: 3px; border: 1px solid black"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
+                    Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en este caso no se aplica la pseudoclase <code>:last-child</code>, ya que este elemento no es el último hijo del elemento padre y no tiene declarada la pseudoclase, por lo que no se verá afectado por la pseudoclase. Esto significa que este elemento <code>p</code> no se verá afectado por la pseudoclase <code>:last-child</code>, ya que no es el último hijo del elemento padre y no tiene declarada la pseudoclase <code>:last-child</code>.
+                </p>
+                <p class="elemento-con-pseudoclase-last-child"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
+                    <b>:last-child: </b>Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:last-child</code>, lo que ocaciona que el elemento <code>p</code> tenga un color de fondo azul cuando sea el último hijo del elemento padre. Esto significa que la pseudoclase <code>:last-child</code> solo afecta al elemento con dicha clase cuando es el último hijo del elemento padre, cabe destacar que esta pseudoclase no es para declarar el último hijo dentro del elemento con dicha clase, sino que valida que el elemento con la pseudoclase sea el último hijo del elemento padre. Por lo que en este caso se especifica un color de fondo azul, lo que ocaciona que este elemento <code>p</code> al ser el último elemento hijo de el elemento padre tenga un color de fondo azul.
+                </p>
+            </div>
         </li>
     </ul>
 </body>

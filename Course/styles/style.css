@@ -1035,12 +1035,24 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &First-child */
-/* &Declara una pseudoclase de primer hijo, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente al primer hijo del elemento padre. Esto significa que esta pseudoclase se debe definir en un elemento que sea hijo de otro elemento, ya que si no es asi no se aplicara la pseudoclase, ya que esta pseudoclase no entre en el elemento y busca el primer hijo, si no que la pseudoclase evalua si el elemento es el primer hijo del elemento padre. */
+/* &Declara una pseudoclase de primer hijo, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente al primer hijo del elemento padre. Esto significa que esta pseudoclase se debe definir en un elemento que sea hijo de otro elemento, ya que si no es asi no se aplicara la pseudoclase, ya que esta pseudoclase no entra en el elemento y busca el primer hijo, si no que la pseudoclase evalua si el elemento es el primer hijo del elemento padre. */
 .elemento-con-pseudoclase-first-child:first-child{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-first-child", donde ademas se le aplica una pseudoclase llamada "first-child", la cual se activara cuando el elemento sea el primer hijo del elemento padre.**/
     background-color: rgb(255, 184, 133); /**Se declara un color de fondo con el valor "rgb(255, 0, 0)", ocacionando que el fondo del elemento sea de color rojo al pasar el mouse por encima del elemento.**/
     margin-bottom: 3px; /**Se declara un margen inferior con el valor "3px", ocacionando que el elemento tenga un margen inferior de 3px.**/
     border: 1px solid black; /**Se declara un borde con el valor "1px solid black", ocacionando que el elemento tenga un borde de 1px de grosor, solido.**/
 } /**Cierre de la declaracion de selector por clase.**/
+
+/* &Last-child */
+/* &Declara una pseudoclase de ultimo hijo, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente al ultimo hijo del elemento padre. Esto significa que esta pseudoclase se debe definir en un elemento que sea hijo de otro elemento, ya que si no es asi no se aplicara la pseudoclase, ya que esta pseudoclase no entra en el elemento y busca al ultimo hijo, si no que la pseudoclase evalua si el elemento es el ultimo hijo del elemento padre. */
+.elemento-con-pseudoclase-last-child:last-child{ 
+    background-color: rgb(255, 184, 133);
+}
+
+/* &Nth-child */
+/* &Declara una pseudoclase de hijo en la posicion n, lo que significa que las propiedades declaradas en la pseudoclase se aplicaran unicamente al hijo en la posicion n del elemento padre. Esto significa que esta pseudoclase se debe definir en un elemento que sea hijo de otro elemento, ya que si no es asi no se aplicara la pseudoclase, ya que esta pseudoclase no entra en el elemento y busca al hijo en la posicion n, si no que la pseudoclase evalua si el elemento es el hijo en la posicion n del elemento padre. Por lo que al mencionar la posicion n se debe a que dentro de esta pseudoclase se puede definir hijos en posiciones pares, impares o especificas, ocacionando que se seleccionen los elementos que se encuentren en esas posiciones siempre y cuando estos sean hijos de un elemento padre y tengan la pseudoclase definida. */
+/* Todo - Declaración de nth-child de hijos en posiciones pares: Para poder declarar una pseudoclase nth-child de hijos en posiciones pares se utiliza el simbolo de dos puntos seguido del nombre de la pseudoclase nth-child y dentro de parentesis se define el valor de la posicion n. quedando la estructura como elemento:nth-child(n){propiedad:valor;}. Por ende para declarar una pseudoclase nth-child de hijos en posiciones pares se ingresa el nombre del elemento, clase o id seguido de dos puntos y el nombre de la pseudoclase nth-child, seguido de parentesis donde se declara el valor de la posicion n. Por lo que dicho valor a declarar dentro de los parentesis para hijos pares sera el valor "even". */
+.elemento-con-pseudoclase-nth-child:nth-child(even){
+}
 
 /* !Pseudo elementos tablas!!! */
 
