@@ -819,8 +819,39 @@
                 <p style="margin-top: 3px; border: 1px solid black"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
                     Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en este caso no se aplica la pseudoclase <code>:last-child</code>, ya que este elemento no es el último hijo del elemento padre y no tiene declarada la pseudoclase, por lo que no se verá afectado por la pseudoclase. Esto significa que este elemento <code>p</code> no se verá afectado por la pseudoclase <code>:last-child</code>, ya que no es el último hijo del elemento padre y no tiene declarada la pseudoclase <code>:last-child</code>.
                 </p>
-                <p class="elemento-con-pseudoclase-last-child"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
+                <p class="elemento-con-pseudoclase-last-child"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. Ademas de tener declarara un pseudoclase last-child* -->
                     <b>:last-child: </b>Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:last-child</code>, lo que ocaciona que el elemento <code>p</code> tenga un color de fondo azul cuando sea el último hijo del elemento padre. Esto significa que la pseudoclase <code>:last-child</code> solo afecta al elemento con dicha clase cuando es el último hijo del elemento padre, cabe destacar que esta pseudoclase no es para declarar el último hijo dentro del elemento con dicha clase, sino que valida que el elemento con la pseudoclase sea el último hijo del elemento padre. Por lo que en este caso se especifica un color de fondo azul, lo que ocaciona que este elemento <code>p</code> al ser el último elemento hijo de el elemento padre tenga un color de fondo azul.
+                </p>
+            </div>
+        </li>
+        <li style="background-color: rgb(230, 230, 230); padding: 0px 20px; border: 4px outset;"> <!-- *Se declara un elemento <li> con estilos de fondo, padding y borde. -->
+            <p style="text-align: center; font-weight: bold;">:nth-child</p> <!-- *Se declara un elemento de párrafo "p" centrado y en negrita, que indica el uso de la pseudoclase :nth-child. -->
+            <div style="border: 1px solid black;"> <!-- *Se declara un div con un borde solido de 1px de color negro. -->
+                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
+                    <b>even: </b>Este es un elemento <code>div</code> dentro de un elemento <code>div</code>, en dicho elemento 
+                </p>
+                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
+                    f
+                </p>
+                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
+                    g
+                </p>
+                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
+                    f
+                </p>
+            </div>
+            <div style="border: 1px solid black; margin-top: 20px; margin-bottom: 20px;">
+                <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
+                    <b>odd: </b>
+                </p>
+                <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
+                    f
+                </p>
+                <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
+                    g
+                </p>
+                <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
+                    f
                 </p>
             </div>
         </li>
