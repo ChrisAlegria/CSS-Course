@@ -1058,9 +1058,9 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /* Todo - Declaración de nth-child de hijos en posiciones impares (odd): Para poder declarar una pseudoclase nth-child de hijos en posiciones impares se utiliza el símbolo de dos puntos seguido del nombre de la pseudoclase nth-child y dentro de paréntesis se define el valor de la posición n, quedando la estructura como elemento:nth-child(n){propiedad:valor;}. Por ende, para declarar una pseudoclase nth-child de hijos en posiciones impares se ingresa el nombre del elemento, clase o id seguido de dos puntos y el nombre de la pseudoclase nth-child, seguido de paréntesis donde se declara el valor de la posición n. El valor a declarar dentro de los paréntesis para hijos impares será "odd". */
 .elemento-con-pseudoclase-nth-child-odd:nth-child(odd){ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-nth-child-odd" con la pseudoclase "nth-child(odd)", aplicando estilos a los hijos en posiciones impares**/
-    background-color: red; 
-    margin: 5px 0;
-}
+    background-color: rgb(251, 255, 4); /**Se declara un color de fondo con el valor RGB "251, 255, 4".**/
+    margin: 5px 0;  /**Se declara una propiedad de margen con el valor "5px 0", ocasionando que el elemento tenga un margen de 5px arriba y abajo, y 0 a los lados.**/
+} /**Cierre de la declaracion de selector por clase**/
 
 /* !Pseudo elementos tablas!!! */
 

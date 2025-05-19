@@ -826,32 +826,32 @@
         </li>
         <li style="background-color: rgb(230, 230, 230); padding: 0px 20px; border: 4px outset;"> <!-- *Se declara un elemento <li> con estilos de fondo, padding y borde. -->
             <p style="text-align: center; font-weight: bold;">:nth-child</p> <!-- *Se declara un elemento de párrafo "p" centrado y en negrita, que indica el uso de la pseudoclase :nth-child. -->
-            <div style="border: 1px solid black;"> <!-- *Se declara un div con un borde solido de 1px de color negro. -->
+            <div style="border: 2px solid black;"> <!-- *Se declara un div con un borde solido de 1px de color negro. -->
                 <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
-                    <b>even: </b>Este es un elemento <code>div</code> dentro de un elemento <code>div</code>, en dicho elemento 
+                    Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en este caso no se aplica la pseudoclase <code>:nth-child(even)</code>, ya que este elemento no se encuentra en una posición par dentro del elemento padre. Por lo tanto, no se verá afectado por la pseudoclase <code>:nth-child(even)</code>. Esto significa que este elemento <code>p</code> no cumple la condición de ser un hijo en una posición par por lo que no presenta el estilo asignado a dicha pseudoclase.
+                </p>
+                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un elemento <code>p</code> con una pseudoclase :nth-child(even).* -->
+                    <b>:nth-child(even): </b>Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:nth-child(even)</code>, lo que ocasiona que el elemento <code>p</code> tenga un color de fondo cuando ocupe una posición par dentro del elemento padre. Esto significa que la pseudoclase <code>:nth-child(even)</code> solo afecta al elemento con dicha clase cuando es hijo en una posición par (por ejemplo, el segundo, cuarto, sexto, etc.) respecto a sus hermanos. Cabe destacar que esta pseudoclase no es para seleccionar los hijos pares dentro del elemento con dicha clase, sino que valida que el elemento con la pseudoclase sea uno de los hijos pares dentro del elemento padre. Por lo que en este caso se especifica un color de fondo, lo que ocasiona que este elemento <code>p</code>, al encontrarse en una posición par entre los hijos del contenedor, tenga un color de fondo.
                 </p>
                 <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
-                    f
+                    Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en este caso no se aplica la pseudoclase <code>:nth-child(even)</code>, ya que este elemento no se encuentra en una posición par dentro del elemento padre. Por lo tanto, no se verá afectado por la pseudoclase <code>:nth-child(even)</code>. Esto significa que este elemento <code>p</code> no cumple la condición de ser un hijo en una posición par por lo que no presenta el estilo asignado a dicha pseudoclase.
                 </p>
-                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
-                    g
-                </p>
-                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(even). -->
-                    f
+                <p class="elemento-con-pseudoclase-nth-child-even"> <!-- *Se declara un elemento <code>p</code> con una pseudoclase :nth-child(even).* -->
+                    <b>:nth-child(even): </b>Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:nth-child(even)</code>, lo que ocasiona que el elemento <code>p</code> tenga un color azul de fondo cuando ocupe una posición par dentro del elemento padre. Esto significa que la pseudoclase <code>:nth-child(even)</code> solo afecta al elemento con dicha clase cuando es hijo en una posición par (por ejemplo, el segundo, cuarto, sexto, etc.) respecto a sus hermanos. Cabe destacar que esta pseudoclase no es para seleccionar los hijos pares dentro del elemento con dicha clase, sino que valida que el elemento con la pseudoclase sea uno de los hijos pares dentro del elemento padre. Por lo que en este caso se especifica un color azul de fondo, lo que ocasiona que este elemento <code>p</code>, al encontrarse en una posición par entre los hijos del contenedor, tenga un color azul de fondo.
                 </p>
             </div>
-            <div style="border: 1px solid black; margin-top: 20px; margin-bottom: 20px;">
+            <div style="border: 2px solid black; margin-top: 20px; margin-bottom: 20px;">
                 <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
-                    <b>odd: </b>
+                    <b>:nth-child(odd): </b>Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:nth-child(odd)</code>, lo que ocasiona que el elemento <code>p</code> tenga un color amarillo de fondo cuando ocupe una posición impar dentro del elemento padre. Esto significa que la pseudoclase <code>:nth-child(odd)</code> solo afecta al elemento con dicha clase cuando es hijo en una posición impar (por ejemplo, el primero, tercero, quinto, etc.) respecto a sus hermanos. Cabe destacar que esta pseudoclase no es para seleccionar los hijos impares dentro del elemento con dicha clase, sino que valida que el elemento con la pseudoclase sea uno de los hijos impares dentro del elemento padre. Por lo que en este caso se especifica un color amarillo de fondo, lo que ocasiona que este elemento <code>p</code>, al encontrarse en una posición impar entre los hijos del contenedor, tenga un color amarillo de fondo.
                 </p>
                 <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
-                    f
+                    Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en este caso no se aplica la pseudoclase <code>:nth-child(odd)</code>, ya que este elemento no se encuentra en una posición impar dentro del elemento padre. Por lo tanto, no se verá afectado por la pseudoclase <code>:nth-child(odd)</code>. Esto significa que este elemento <code>p</code> no cumple la condición de ser un hijo en una posición impar, por lo que no presenta el estilo asignado a dicha pseudoclase.
                 </p>
                 <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
-                    g
+                    <b>:nth-child(odd): </b>Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:nth-child(odd)</code>, lo que ocasiona que el elemento <code>p</code> tenga un color amarillo de fondo cuando ocupe una posición impar dentro del elemento padre. Esto significa que la pseudoclase <code>:nth-child(odd)</code> solo afecta al elemento con dicha clase cuando es hijo en una posición impar (por ejemplo, el primero, tercero, quinto, etc.) respecto a sus hermanos. Cabe destacar que esta pseudoclase no es para seleccionar los hijos impares dentro del elemento con dicha clase, sino que valida que el elemento con la pseudoclase sea uno de los hijos impares dentro del elemento padre. Por lo que en este caso se especifica un color amarillo de fondo, lo que ocasiona que este elemento <code>p</code>, al encontrarse en una posición impar entre los hijos del contenedor, tenga un color amarillo de fondo.
                 </p>
                 <p class="elemento-con-pseudoclase-nth-child-odd"> <!-- *Se declara un div con una clase que aplica la pseudoclase :nth-child(odd). -->
-                    f
+                    Este es un elemento <code>p</code> dentro de un elemento <code>div</code>, en este caso no se aplica la pseudoclase <code>:nth-child(odd)</code>, ya que este elemento no se encuentra en una posición impar dentro del elemento padre. Por lo tanto, no se verá afectado por la pseudoclase <code>:nth-child(odd)</code>. Esto significa que este elemento <code>p</code> no cumple la condición de ser un hijo en una posición impar, por lo que no presenta el estilo asignado a dicha pseudoclase.
                 </p>
             </div>
         </li>
