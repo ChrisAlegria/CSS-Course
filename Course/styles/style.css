@@ -1063,10 +1063,14 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase**/
 
 /* &Focus */
-/* &Declara una pseudoclase */
+/* &Declara una pseudoclase de foco, la cual aplica estilos solo cuando un elemento recibe el foco. Esto ocurre, por ejemplo, al hacer clic sobre un input o al llegar a él usando el teclado (como con la tecla Tab). Esto significa que los estilos definidos dentro de :focus se activan solo cuando el usuario está interactuando con el elemento. */
 .elemento-con-pseudoclase-focus:focus{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-focus", donde ademas se le aplica una pseudoclase llamada "focus", la cual se activara cuando el elemento sea un input y se seleccione.**/
     background-color: rgb(255, 187, 187);  /**Se declara un color de fondo con el valor RGB "255, 187, 187".**/
 } /**Cierre de la declaracion de selector por clase**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Pseudoelementos */
+
 
 /* !Pseudo elementos tablas!!! */
 
