@@ -1062,6 +1062,12 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     margin: 5px 0;  /**Se declara una propiedad de margen con el valor "5px 0", ocasionando que el elemento tenga un margen de 5px arriba y abajo, y 0 a los lados.**/
 } /**Cierre de la declaracion de selector por clase**/
 
+/* &Focus */
+/* &Declara una pseudoclase */
+.elemento-con-pseudoclase-focus:focus{ /**Se declara un selector por clase llamado "elemento-con-pseudoclase-focus", donde ademas se le aplica una pseudoclase llamada "focus", la cual se activara cuando el elemento sea un input y se seleccione.**/
+    background-color: rgb(255, 187, 187);  /**Se declara un color de fondo con el valor RGB "255, 187, 187".**/
+} /**Cierre de la declaracion de selector por clase**/
+
 /* !Pseudo elementos tablas!!! */
 
 /*/////////////////////////////////////////////////////////z////////////////////////////////////////////////////////////////////////////////*/
