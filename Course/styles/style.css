@@ -1076,6 +1076,25 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Pseudoelementos */
+/* ~Los pseudoelementos son una forma de seleccionar y aplicar estilos a partes específicas de un elemento. Esto significa que los pseudoelementos permiten seleccionar y aplicar estilos a partes específicas de un elemento, como la primera letra o la primera línea de un párrafo. Los pseudoelementos pueden ser first-letter, first-line, before, after, entre otros. Esto significa que los pseudoelementos permiten aplicar estilos a partes específicas dentro de un elemento, como la primera letra o la primera línea de un párrafo. */
+/* Todo - Declaración de pseudoelementos: La forma de declarar un pseudoelemento es similar a la de una pseudoclase, pero en lugar de usar el símbolo de dos puntos (:) se utiliza dos puntos dobles (::), seguido del nombre del pseudoelemento. quedando la estructura como elemento:seudoelemento{propiedad:valor;}. Por ende para declarar un pseudoelemento se ingresa el nombre del elemento, clase o id seguido de dos puntos y el nombre del pseudoelemento el cual se desea aplicar, seguido de llaves donde se declaran las propiedades y valores que se desean aplicar al elemento. Dichos valores a declarar dentro seran los que se aplicaran al elemento cuando este cumpla con la condicion de la pseudoclase. */
+.declaracion-pseudoelemento:first-letter{ /**Se declara un selector por clase llamado "declaracion-pseudoelemento", donde ademas se le aplica un pseudoelemento llamado "first-letter", el cual se aplicara un estilo a la primera letra del elemento.**/
+    background-color: #ff8f2d; /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo de la primera letra del elemento sea de color naranja, debido a el pseudoelemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &First-line */
+/* &Declara un pseudoelemento de primera línea, lo que significa que las propiedades declaradas en el pseudoelemento se aplicaran unicamente a la primera línea del elemento. Esto significa que este pseudoelemento se debe definir en un elemento que tenga texto, ya que si no es asi no se aplicara el pseudoelemento, en este caso el pseudoelemento entra en el elemento y busca la primera línea de texto, aplicando los estilos definidos dentro del pseudoelemento. Cabe mencionar que se tomara la primera linea de la pagina web, mas no la declarada en el codigo html, por lo quue el tamaño de la primera linea dependera del tamaño de la pantalla y el tamaño de la fuente. */
+.elemento-con-pseudoelemento-first-line::first-line{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-first-line", donde ademas se le aplica un pseudoelemento llamado "first-line", el cual se aplicara un estilo a la primera línea del elemento.**/
+    background-color: red; /**Se declara un color de fondo con el valor "red", ocacionando que el fondo de la primera línea del elemento sea de color rojo, debido a el pseudoelemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &First-letter */
+/* &Declara un pseudoelemento de primera letra, lo que significa que las propiedades declaradas en el pseudoelemento se aplicaran unicamente a la primera letra del elemento. Esto significa que este pseudoelemento se debe definir en un elemento que tenga texto, ya que si no es asi no se aplicara el pseudoelemento, en este caso el pseudoelemento entra en el elemento y busca la primera letra de texto, aplicando los estilos definidos dentro del pseudoelemento. Cabe mencionar que se tomara la primera letra de la pagina web, mas no la declarada en el codigo html. Adicionalmente hay que destacar que si antes de la primera letra se encuentra un espacio, simbolo o cualquier otro elemento, a estos se les aplicara el pseudoelemento y se detendra en el primer caracter que no sea un espacio, simbolo o cualquier otro elemento. */
+.elemento-con-pseudoelemento-first-letter::first-letter{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-first-letter", donde ademas se le aplica un pseudoelemento llamado "first-letter", el cual se aplicara un estilo a la primera letra del elemento.**/
+    color: orange; /**Se declara un color de texto con el valor "orange", ocacionando que el color de la primera letra del elemento sea de color naranja, debido a el pseudoelemento.**/
+    font-size: 2rem; /**Se declara un tamaño de fuente con el valor "2rem", ocacionando que el tamaño de la primera letra del elemento sea de 2rem, debido a el pseudoelemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
 
 
 /* !Pseudo elementos tablas!!! */
