@@ -1095,6 +1095,11 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     font-size: 2rem; /**Se declara un tamaño de fuente con el valor "2rem", ocacionando que el tamaño de la primera letra del elemento sea de 2rem, debido a el pseudoelemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
+/* &Before */
+
+.elemento-con-pseudoelemento-before::before{
+    
+}
 
 
 /* !Pseudo elementos tablas!!! */
