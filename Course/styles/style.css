@@ -1077,7 +1077,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Pseudoelementos */
 /* ~Los pseudoelementos son una forma de seleccionar y aplicar estilos a partes específicas de un elemento. Esto significa que los pseudoelementos permiten seleccionar y aplicar estilos a partes específicas de un elemento, como la primera letra o la primera línea de un párrafo. Los pseudoelementos pueden ser first-letter, first-line, before, after, entre otros. Esto significa que los pseudoelementos permiten aplicar estilos a partes específicas dentro de un elemento, como la primera letra o la primera línea de un párrafo. */
-/* Todo - Declaración de pseudoelementos: La forma de declarar un pseudoelemento es similar a la de una pseudoclase, pero en lugar de usar el símbolo de dos puntos (:) se utiliza dos puntos dobles (::), seguido del nombre del pseudoelemento. quedando la estructura como elemento:seudoelemento{propiedad:valor;}. Por ende para declarar un pseudoelemento se ingresa el nombre del elemento, clase o id seguido de dos puntos y el nombre del pseudoelemento el cual se desea aplicar, seguido de llaves donde se declaran las propiedades y valores que se desean aplicar al elemento. Dichos valores a declarar dentro seran los que se aplicaran al elemento cuando este cumpla con la condicion de la pseudoclase. */
+/* Todo - Declaración de pseudoelementos: La forma de declarar un pseudoelemento es similar a la de una pseudoclase, pero en lugar de usar el símbolo de dos puntos (:) se utiliza dos puntos dobles (::), seguido del nombre del pseudoelemento. quedando la estructura como elemento:seudoelemento{propiedad:valor;}. Por ende para declarar un pseudoelemento se ingresa el nombre del elemento, clase o id seguido de dos puntos y el nombre del pseudoelemento el cual se desea aplicar, seguido de llaves donde se declaran las propiedades y valores que se desean aplicar al elemento. Dichos valores a declarar dentro seran los que se aplicaran al elemento cuando este cumpla con la condicion de la pseudoclase. Adicionalmente hay que mencionar que se pueden especificar pseudoelementos sin una clase, etiqueta, id o selector, lo que significa que se aplicara el pseudoelemento a todos los elementos de la pagina web, para esto se debe declarar el pseudoelemento sin un selector, etiqueta o id, por ejemplo "::first-letter" se aplicara a todos los elementos de la pagina web que tengan texto, donde la primera letra de cada etiqueta, contenedor o elemento de la pagina web tendra el estilo definido dentro del pseudoelemento. */
 .declaracion-pseudoelemento:first-letter{ /**Se declara un selector por clase llamado "declaracion-pseudoelemento", donde ademas se le aplica un pseudoelemento llamado "first-letter", el cual se aplicara un estilo a la primera letra del elemento.**/
     background-color: #ff8f2d; /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo de la primera letra del elemento sea de color naranja, debido a el pseudoelemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
@@ -1096,11 +1096,29 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Before */
+/* &El pseudoelemento de before se utiliza para insertar contenido antes del contenido real de un elemento, por lo que el pseudoelemento before permite agregar contenido antes del contenido dentro del elemento con el pseudoelemento. Esto significa que el pseudoelemento before se utiliza para agregar unicamente contenido como lo son texto, imagenes, con CSS, y dicho contenido se mostrara antes del contenido real del elemento. */
+.elemento-con-pseudoelemento-before::before{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-before", donde ademas se le aplica un pseudoelemento llamado "before", el cual se aplicara un estilo antes del elemento.**/
+    content: url(../assets/icons/Music_Icon.png); /**Se declara un contenido con el valor "url(../assets/icons/Music_Icon.png)", ocacionando que el contenido del elemento sea una imagen de un icono de musica, debido a el pseudoelemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
-.elemento-con-pseudoelemento-before::before{
-    
-}
+/* &After */
+/* &El pseudoelemento de after se utiliza para insertar contenido despues del contenido real de un elemento, por lo que el pseudoelemento after permite agregar contenido despues del contenido dentro del elemento con el pseudoelemento. Esto significa que el pseudoelemento after se utiliza para agregar unicamente contenido como lo son texto, imagenes, con CSS, y dicho contenido se mostrara despues del contenido real del elemento. Cabe mencionar que el contenido que se declare dentro del pseudoelemento after se mostrara dentro del elemento con el pseudoelemento, recorriendo al demas contenido*/
+.elemento-con-pseudoelemento-after::after{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-after", donde ademas se le aplica un pseudoelemento llamado "after", el cual se aplicara un estilo despues del elemento.**/
+    content: url(../assets/icons/Music_Icon.png); /**Se declara un contenido con el valor "url(../assets/icons/Music_Icon.png)", ocacionando que el contenido del elemento sea una imagen de un icono de musica, debido a el pseudoelemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
+/* &Marker*/ 
+/* &El pseudoelemento de marker se utiliza para seleccionar el marcador de un elemento, lo que significa que las propiedades declaradas en el pseudoelemento se aplicaran unicamente al marcador del elemento. Esto significa que este pseudoelemento se debe definir en un elemento que tenga un marcador, ya que si no es asi no se aplicara el pseudoelemento. */
+.elemento-con-pseudoelemento-marker::marker{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-marker", donde ademas se le aplica un pseudoelemento llamado "marker", el cual se aplicara un estilo al marcador del elemento.**/
+    color: rgb(34, 0, 255); /**Se declara un color de texto con el valor "rgb(34, 0, 255)", ocacionando que el color del marcador del elemento sea de color azul, debido a el pseudoelemento.**/
+    font-size: 25px; /**Se declara un tamaño de fuente con el valor "25px", ocacionando que el tamaño del marcador del elemento sea de 25px, debido a el pseudoelemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/* &Selection */
+/* &El pseudoelemento de selection se utiliza para seleccionar el texto seleccionado dentro de un elemento, lo que significa que las propiedades declaradas en el pseudoelemento se aplicaran unicamente al texto seleccionado dentro del elemento. Esto significa que este pseudoelemento se debe definir en un elemento que tenga texto, ya que si no es asi no se aplicara el pseudoelemento, donde las propiedades se veran reflejados en el texto cuando este se seleccione ya sea dando doble click y mantenido el click mientras se arrastra el mouse para seleccionar el texto. */
+.elemento-con-pseudoelemento-selection::selection{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-selection", donde ademas se le aplica un pseudoelemento llamado "selection", el cual se aplicara un estilo al texto seleccionado dentro del elemento.**/
+    background-color: rgb(94, 255, 0); /**Se declara un color de fondo con el valor "rgb(94, 255, 0)", ocacionando que el fondo del texto seleccionado dentro del elemento sea de color verde claro, debido a el pseudoelemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /* !Pseudo elementos tablas!!! */
 
