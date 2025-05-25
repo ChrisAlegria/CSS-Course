@@ -1120,6 +1120,16 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     background-color: rgb(94, 255, 0); /**Se declara un color de fondo con el valor "rgb(94, 255, 0)", ocacionando que el fondo del texto seleccionado dentro del elemento sea de color verde claro, debido a el pseudoelemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Opacidad */
+/* ~La propiedad de opacidad se utiliza para establecer la transparencia de un elemento, donde el valor de opacidad puede variar entre 0 (completamente transparente) y 1 (completamente opaco). Esto significa que la propiedad de opacidad permite controlar la visibilidad de un elemento en la página web, la cual al declararse en un elemento la opacidad afectara tanto al elemento padre como a los elementos hijos, por lo que si se declara una opacidad de 0.5 en un elemento padre, todos los elementos hijos dentro de este elemento padre tendran una opacidad de 0.5. */
+.elemento-con-opacidad{ /**Se declara un selector por clase llamado "elemento-con-opacidad".**/
+    opacity: 0.8; /**Se declara una propiedad de opacidad con el valor "0.8", ocacionando que el elemento tenga una opacidad de 0.8.**/
+    width: 20%; /**Se declara un ancho con el valor "20%", ocacionando que el elemento tenga un ancho de 20%.**/
+    position: absolute; /**Se declara una propiedad de posicion con el valor "absolute", ocacionando que el elemento tenga una posicion absoluta.**/
+    top: 0; /**Se declara una propiedad de posicion con el valor "0", ocacionando que el elemento tenga una posicion de 0px desde la parte superior.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
 /* !Pseudo elementos tablas!!! */
 
 /*/////////////////////////////////////////////////////////z////////////////////////////////////////////////////////////////////////////////*/
