@@ -1130,10 +1130,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     top: 0; /**Se declara una propiedad de posicion con el valor "0", ocacionando que el elemento tenga una posicion de 0px desde la parte superior.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
-/* !Pseudo elementos tablas!!! */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~NavBar */
 
-/*/////////////////////////////////////////////////////////z////////////////////////////////////////////////////////////////////////////////*/
-/* ~Glosario */
-/**
-    **RGB: red, green, blue.
-**/
+
