@@ -946,16 +946,26 @@
     <h1 style="text-align: center;">Selector de atributos</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
     <ul>
         <li>
-            <a class="elemento-con-selector-de-atributo" target="_blank"> <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo. -->
-                <b>[target]:</b> Este es un elemento <code>a</code> con el atributo <code>target="_blank"</code>, lo que hace que el enlace se abra en una nueva pestaña. Ademas en dicho elemento se aplica un selector de atributo en CSS para cambiar el color de fondo cuando el atributo <code>target</code> está presente. Esto significa que el selector de atributo se define con la clase, etiqueta o id, seguido de corchetes y de estos se define el atributo que se desea seleccionar. En este caso, el selector de atributo es <code>.elemento-con-selector-de-atributo[target]</code>, lo que significa que se selecciona cualquier elemento con la clase <code>elemento-con-selector-de-atributo</code> que tenga el atributo <code>target</code>. Por lo que en este caso se especifica un color de fondo amarillo, lo que ocaciona que el elemento <code>a</code> tenga un color de fondo amarillo cuando el atributo <code>target</code> está presente.
+            <a class="elemento-con-selector-de-atributo-sin-valor" target="_blank"> <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo. -->
+                <b>[target]:</b> Este es un elemento <code>a</code> con el atributo <code>target="_blank"</code>, lo que hace que el enlace se abra en una nueva pestaña. Ademas en dicho elemento se aplica un selector de atributo en CSS para cambiar el color de fondo cuando el atributo <code>target</code> está presente. Esto significa que el selector de atributo se define con la clase, etiqueta o id, seguido de corchetes y de estos se define el atributo que se desea seleccionar. En este caso, el selector de atributo es <code>.elemento-con-selector-de-atributo[target]</code>, lo que significa que se selecciona cualquier elemento con la clase <code>elemento-con-selector-de-atributo</code> que tenga el atributo <code>target</code>. Por lo que en este caso se especifica un color de fondo amarillo, lo que ocaciona que el elemento <code>a</code> tenga un color de fondo amarillo cuando el atributo <code>target</code> está presente. Cabe destacar que este es un selector de atributo sin valor, lo que significa que no se especifica un valor para el atributo <code>target</code>, por lo que se selecciona cualquier elemento con el atributo <code>target</code>, independientemente de su valor.
             </a>
         <br>
         </li>
         <li>
-            <a class="elemento-con-selector-de-atributo">  <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo, pero sin el atributo target. -->
+            <a  class="elemento-con-selector-de-atributo-sin-valor">  <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo, pero sin el atributo target. -->
                 Este es un elemento <code>a</code> con la clase <code>elemento-con-selector-de-atributo</code>, pero sin el atributo <code>target</code>, por lo que no se verá afectado por el selector de atributo. Esto significa que el selector de atributo no se aplicará a este elemento, ya que no tiene el atributo <code>target</code>. Por lo que en este caso no se especifica un color de fondo, lo que ocaciona que el elemento <code>a</code> no tenga un color de fondo amarillo.
             </a>
-        </li>       
+        </li> 
+        <li>
+            <a class="elemento-con-selector-de-atributo-con-valor" target="_blank">
+                <b>[target="_blank"]:</b> Este es un elemento <code>a</code> con el atributo <code>target="_blank"</code>, lo que hace que el enlace se abra en una nueva pestaña. Ademas en dicho elemento se aplica un selector de atributo en CSS para cambiar el color de fondo cuando el atributo <code>target</code> tiene el valor <code>"_blank"</code>. Esto significa que el selector de atributo se define con la clase, etiqueta o id, seguido de corchetes y de estos se define el atributo que se desea seleccionar con su valor. En este caso, el selector de atributo es <code>.elemento-con-selector-de-atributo[target="_blank"]</code>, lo que significa que se selecciona cualquier elemento con la clase <code>elemento-con-selector-de-atributo</code> que tenga el atributo <code>target</code> con el valor <code>"_blank"</code>. Por lo que en este caso se especifica un color de fondo verde, lo que ocaciona que el elemento <code>a</code> tenga un color de fondo verde cuando el atributo <code>target</code> tiene el valor <code>"_blank"</code>.
+            </a>
+        </li>
+        <li>
+            <a class="elemento-con-selector-de-atributo-con-valor" target="_top">
+                Este es un elemento <code>a</code> con la clase <code>elemento-con-selector-de-atributo</code>, pero con el atributo <code>target="_top"</code>, por lo que no se verá afectado por el selector de atributo. Esto significa que el selector de atributo no se aplicará a este elemento, ya que no tiene el atributo <code>target</code> con el valor <code>"_blank"</code>. Por lo que en este caso no se especifica un color de fondo, lo que ocaciona que el elemento <code>a</code> no tenga un color de fondo verde.
+            </a>
+        </li>
     </ul>
 </body>
 </html>  
