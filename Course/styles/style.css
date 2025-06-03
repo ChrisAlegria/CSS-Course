@@ -1074,6 +1074,12 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     background-color: rgb(255, 187, 187);  /**Se declara un color de fondo con el valor RGB "255, 187, 187".**/
 } /**Cierre de la declaracion de selector por clase**/
 
+/* &Negación (:not()) */
+/* &Declara una pseudoclase de negación, lo que significa que las propiedades declaradas se aplicarán a todos los elementos, excepto a los que coincidan con el selector especificado dentro de la pseudoclase. Esto significa que la pseudoclase :not() permite excluir ciertos elementos de un grupo al que se le quiere aplicar un estilo. Por ejemplo, si se desea aplicar un estilo a todos los elementos excepto a los enlaces, se puede usar :not(a). También se puede combinar con otras pseudoclases, por ejemplo, si se quiere aplicar un efecto hover a todos los elementos "li" de la página web, pero excluir aquellos que tengan la clase "no-hover", se puede declarar el selector como "li:not(.no-hover):hover". Esto significa que el estilo se aplicará al pasar el mouse sobre todos los "li", excepto a los que tengan la clase "no-hover". Cabe mencionar que esta pseudoclase no entra en las etiquetas si no que valida que el elemento con la pseudoclase no sea el elemento, clase  o id especificado dentro del not(). */
+.elemento-con-pseudoclase-not-hover li:not(.denegado):hover{  /**Se declara un selector por clase llamado "elemento-con-pseudoclase-not-hover", donde ademas se le aplica una pseudoclase llamada "not", la cual se activara cuando el elemento sea un li y no tenga la clase "denegado" al pasar el mouse por encima del elemento.**/
+    background-color: rgb(29, 52, 255);  /**Se declara un color de fondo con el valor RGB "64, 0, 255", ocacionando que el fondo del elemento sea de color morado al pasar el mouse por encima del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~Pseudoelementos */
 /* ~Los pseudoelementos son una forma de seleccionar y aplicar estilos a partes específicas de un elemento. Esto significa que los pseudoelementos permiten seleccionar y aplicar estilos a partes específicas de un elemento, como la primera letra o la primera línea de un párrafo. Los pseudoelementos pueden ser first-letter, first-line, before, after, entre otros. Esto significa que los pseudoelementos permiten aplicar estilos a partes específicas dentro de un elemento, como la primera letra o la primera línea de un párrafo. */
@@ -1132,5 +1138,39 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~NavBar */
+/* ~La barra de navegación es un elemento común en las páginas web que permite a los usuarios navegar por el sitio. Por lo general, se encuentra en la parte superior de la página y contiene enlaces a las diferentes secciones del sitio. La barra de navegación puede ser horizontal o vertical, y puede incluir elementos como logotipos, menús desplegables, iconos sociales, entre otros. En este caso con todo lo visto se hara un  ejemplo de una barra de navegación */
+.menu-navegacion ul{  /**Se declara un selector por etiqueta llamado "ul" dentro de la clase "menu-navegacion".**/
+    list-style-type: none;  /**Se declara una propiedad de tipo de lista con el valor "none", ocacionando que no se muestre ningun tipo de lista.**/ 
+    margin: 0;  /**Se declara una propiedad de margen con el valor "0", ocacionando que no se muestre ningun margen.**/
+    padding: 0;  /**Se declara una propiedad de relleno con el valor "0", ocacionando que no se muestre ningun relleno.**/
+    overflow: hidden;  /**Se declara una propiedad de desbordamiento con el valor "hidden", ocacionando que no se muestre ningun desbordamiento.**/
+    background-color: rgb(47, 47, 47);  /**Se declara un color de fondo con el valor "rgb(47, 47, 47)", ocacionando que el fondo del elemento sea de color gris oscuro.**/
+    color: white;  /**Se declara un color de texto con el valor "white", ocacionando que el texto del elemento sea de color blanco.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
+.menu-navegacion li{  /**Se declara un selector por etiqueta llamado "li" dentro de la clase "menu-navegacion".**/
+    float: left;  /**Se declara una propiedad de flotado con el valor "left", ocacionando que los elementos se alineen a la izquierda.**/
+    margin: 0;   /**Se declara una propiedad de margen con el valor "0", ocacionando que no se muestre ningun margen.**/
+    padding: 10px 20px;  /**Se declara una propiedad de relleno con el valor "10px 20px", ocacionando que se muestre un relleno de 10px en la parte superior e inferior y 20px en los lados.**/
+    border-right: 1px solid white;  /**Se declara una propiedad de borde derecho con el valor "1px solid white", ocacionando que se muestre un borde derecho de 1px de color blanco.**/
+    cursor: pointer; /**Se declara una propiedad de cursor con el valor "pointer", ocacionando que el cursor cambie a una mano al pasar por encima del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
+.menu-navegacion li:last-child{  /**Se declara un selector por etiqueta llamado "li" dentro de la clase "menu-navegacion" y se selecciona el ultimo elemento.**/
+    border-right: none;  /**Se declara una propiedad de borde derecho con el valor "none", ocacionando que no se muestre ningun borde derecho en el ultimo elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.menu-navegacion li:not(.active):hover{   /**Se declara un selector por etiqueta llamado "li" dentro de la clase "menu-navegacion" y se selecciona todos los elementos que no tengan la clase "active" al pasar el mouse por encima del elemento.**/
+    background-color: purple;  /**Se declara un color de fondo con el valor "purple", ocacionando que el fondo del elemento sea de color morado al pasar el mouse por encima del elemento.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.active{  /**Se declara un selector por clase llamado "active".**/
+    background-color: rgb(6, 97, 117);  /**Se declara un color de fondo con el valor "rgb(6, 97, 117)", ocacionando que el fondo del elemento sea de color azul oscuro.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Selector de atributos */
+/* ~Los selectores de atributos permiten seleccionar elementos HTML basados en la presencia o el valor de un atributo específico. Esto significa que los selectores de atributos permiten aplicar estilos a etiquetas, clases o id que tengan un atributo específico, como por ejemplo si un elemento "a" tiene un atributo "target", esto significa que el selector por atributo sirve para aplicar estilos a las etiquetas con  un atributo específico, donde la declaracion CSS validara si el elemento al que se hace refrecnai ya sea por clase, id o etiqueta tiene el atributo especificado dentro del selector. Por lo que para definir un selector por atributo se debe declarar el nombre del elemento, clase o id seguido de un corchete abierto, dentro del cual se declara el nombre del atributo, seguido de un corchete cerrado. Por ejemplo, para seleccionar todos los elementos "a" que tengan el atributo "target", se declararia "a[target]". */
+.elemento-con-selector-de-atributo[target]{  /**Se declara un selector por clase llamado "elemento-con-selector-de-atributo" y se selecciona todos los elementos que tengan el atributo "target".**/
+    background-color: rgb(255, 213, 0);  /**Se declara un color de fondo con el valor "rgb(255, 0, 0)", ocacionando que el fondo del elemento sea de color rojo.**/
+} /**Cierre de la declaracion de selector por clase.**/

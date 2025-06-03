@@ -801,6 +801,23 @@
             <p class="elemento-con-pseudoclase-hover"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
                 <b>:hover</b> Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:hover</code>, lo que ocaciona que el elemento <code>p</code> tenga un color de fondo morado cuando el mouse se encuentre encima de el. Esto significa que la pseudoclase <code>:hover</code> solo afecta al elemento con dicha clase cuando el mouse se encuentra encima de el. Por lo que en este caso se especifica un color de fondo morado, lo que ocaciona que el elemento <code>p</code> tenga un color de fondo morado cuando el mouse se encuentra encima de el.
         </li>
+        <li style="border: 1px solid black;">
+            <b>:not():</b> La pseudoclase <code>:not()</code> se usa para excluir ciertos elementos de un estilo. Dentro de los paréntesis se pone el selector que NO debe recibir el estilo. Por ejemplo, si a un elemento li se le aplican estilos, pero queremos que este estilo no se aplique a los elementos li que tengan la clase "denegado", se usaría <code>li:not(.denegado)</code>. Esto significa que todos los elementos <code>li</code> que no tengan la clase "denegado" recibirán el estilo, mientras que los que sí la tengan no lo harán. Cabe mencionar que la pseudoclase <code>:not()</code> sirve unicamente para validar que el elemento con la clase que contiene la pseudoclase no sea  el elemento que se especifica dentro de los paréntesis.
+            <ul class="elemento-con-pseudoclase-not-hover"> <!-- *Se declara un elemento <code>ul</code> con una clase que aplica una pseudoclase not hover. -->
+                <li  style="margin: 10px 5px; border: 1px solid grey;">
+                    Este es un elemento <code>li</code> dentro de un elemento <code>ul</code>, en el cual se ha establecido que todos los elementos <code>li</code> que no tengan la clase <code>denegado</code> dentro de un elemento con la clase <code>elemento-con-pseudoclase-not-hover li</code> tengan un color de fondo azul. El cual en<b>este es el caso ya que  este elemento <code>li</code> no tiene la clase <code>denegado</code>, por lo que si se aplicara el color de fondo azul.</b>
+                </li>
+                <li class="denegado" style="margin: 10px 5px; border: 1px solid grey;">
+                    <b>Este es un elemento <code>li</code> dentro de un elemento <code>ul</code>, en el cual se ha establecido que todos los elementos <code>li</code> que no tengan la clase <code>denegado</code> dentro de un elemento con la clase <code>elemento-con-pseudoclase-not-hover li</code> tengan un color de fondo azul. Esto significa que todos los elementos <code>li</code> dentro de este elemento, sin importar que estos esten dentro de otros elementos o no se encuentren en la raiz del elemento padre, tendran un color de fondo azul, pero no afectará a los elementos <code>li</code> que tengan la clase <code>denegado</code>. El cual en este caso no se aplicara el color de fondo azul, ya que este elemento <code>li</code> tiene la clase <code>denegado</code>, por lo que no se aplicara el color de fondo azul.</b>	
+                </li> 
+                <li style="margin: 10px 5px; border: 1px solid grey;">
+                    Este es un elemento <code>li</code> dentro de un elemento <code>ul</code>, en el cual se ha establecido que todos los elementos <code>li</code> que no tengan la clase <code>denegado</code> dentro de un elemento con la clase <code>elemento-con-pseudoclase-not-hover li</code> tengan un color de fondo azul. El cual en<b>este es el caso ya que  este elemento <code>li</code> no tiene la clase <code>denegado</code>, por lo que si se aplicara el color de fondo azul.</b>
+                </li>
+                <li style="margin: 10px 5px; border: 1px solid grey;">
+                    Este es un elemento <code>li</code> dentro de un elemento <code>ul</code>, en el cual se ha establecido que todos los elementos <code>li</code> que no tengan la clase <code>denegado</code> dentro de un elemento con la clase <code>elemento-con-pseudoclase-not-hover li</code> tengan un color de fondo azul. El cual en<b>este es el caso ya que  este elemento <code>li</code> no tiene la clase <code>denegado</code>, por lo que si se aplicara el color de fondo azul.</b>
+                </li>
+            </ul>
+        </li>
         <li>
             <p class="elemento-con-pseudoclase-active"> <!-- *Se declara un elemento <code>li</code> con un elemento <code>p</code> dentro de el. -->
                 <b>:active</b> Este es un elemento <code>p</code> dentro de un elemento <code>li</code>, en dicho elemento de párrafo se ha declarado una pseudoclase <code>:active</code>, lo que ocaciona que el elemento <code>p</code> tenga un color de fondo amarillo cuando se haga click sobre dicho elemento o cuandro se haga doble click en el elemento manteniendo el click. Esto significa que la pseudoclase <code>:active</code> solo afecta al elemento con dicha clase cuando se hace click sobre el o esta activo. Por lo que en este caso se especifica un color de fondo amarillo, lo que ocaciona que el elemento <code>p</code> tenga un color de fondo amarillo cuando se hace click sobre el.
@@ -911,10 +928,34 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~NavBar -->
     <hr>
-    <h1 style="text-align: center;">NavBar</h1>
+    <h1 style="text-align: center;">NavBar</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <header>
+        <nav class="menu-navegacion"> <!-- *Se declara un elemento <nav> con una clase que aplica estilos a la barra de navegación. -->
+            <ul>
+                <li class="active">Home</li> <!-- *Se declara un elemento <li> con una clase que aplica estilos a la barra de navegación. -->
+                <li>Preferencias</li>
+                <li>Audiovisuales</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
 
-
-
-    <!-- test -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <!-- ~Selector de atributos -->
+    <hr>
+    <h1 style="text-align: center;">Selector de atributos</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <ul>
+        <li>
+            <a class="elemento-con-selector-de-atributo" target="_blank"> <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo. -->
+                <b>[target]:</b> Este es un elemento <code>a</code> con el atributo <code>target="_blank"</code>, lo que hace que el enlace se abra en una nueva pestaña. Ademas en dicho elemento se aplica un selector de atributo en CSS para cambiar el color de fondo cuando el atributo <code>target</code> está presente. Esto significa que el selector de atributo se define con la clase, etiqueta o id, seguido de corchetes y de estos se define el atributo que se desea seleccionar. En este caso, el selector de atributo es <code>.elemento-con-selector-de-atributo[target]</code>, lo que significa que se selecciona cualquier elemento con la clase <code>elemento-con-selector-de-atributo</code> que tenga el atributo <code>target</code>. Por lo que en este caso se especifica un color de fondo amarillo, lo que ocaciona que el elemento <code>a</code> tenga un color de fondo amarillo cuando el atributo <code>target</code> está presente.
+            </a>
+        <br>
+        </li>
+        <li>
+            <a class="elemento-con-selector-de-atributo">  <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo, pero sin el atributo target. -->
+                Este es un elemento <code>a</code> con la clase <code>elemento-con-selector-de-atributo</code>, pero sin el atributo <code>target</code>, por lo que no se verá afectado por el selector de atributo. Esto significa que el selector de atributo no se aplicará a este elemento, ya que no tiene el atributo <code>target</code>. Por lo que en este caso no se especifica un color de fondo, lo que ocaciona que el elemento <code>a</code> no tenga un color de fondo amarillo.
+            </a>
+        </li>       
+    </ul>
 </body>
 </html>  
