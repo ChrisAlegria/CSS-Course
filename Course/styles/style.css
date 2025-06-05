@@ -1202,7 +1202,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
         opacity: 1;  /**Se declara una propiedad de opacidad con el valor "1", ocacionando que el elemento sea completamente visible al iniciar la animación.**/
     } /** Cierre de la declaracion de estado inicial.**/
     to{   /**Se declara el estado final de la animacion.**/
-        opacity: 0.3;  /**Se declara una propiedad de opacidad con el valor "0.3", ocacionando que el elemento sea parcialmente visible al finalizar la animación.**/
+        opacity: 0;  /**Se declara una propiedad de opacidad con el valor "0.3", ocacionando que el elemento sea parcialmente visible al finalizar la animación.**/
     } /** Cierre de la declaracion de estado final.**/
 } /** Cierre del keyframe. **/
 
