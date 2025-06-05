@@ -1177,9 +1177,21 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Selector de atributo con valor: Para poder declarar un selector de atributo con valor se utiliza el nombre del elemento, clase o id seguido de un corchete abierto, dentro del cual se declara el nombre del atributo, seguido de un signo igual y el valor del atributo entre comillas, seguido de un corchete cerrado. quedando la estructura como elemento[atributo="valor"]{propiedad:valor;}. Por ende para declarar un selector de atributo con valor se ingresa el nombre del elemento, clase o id seguido de un corchete abierto, dentro del cual se declara el nombre del atributo, seguido de un signo igual y el valor del atributo entre comillas, seguido de un corchete cerrado. Por lo que dicho selector seleccionara todos los elementos que tengan el atributo especificado dentro del selector con el valor especificado dentro del selector. */
-.elemento-con-selector-de-atributo-con-valor[target="_blank"]{
-    background-color: greenyellow;
-}
+.elemento-con-selector-de-atributo-con-valor[target="_blank"]{ /**Se declara un selector por clase llamado "elemento-con-selector-de-atributo-con-valor" y se selecciona todos los elementos que tengan el atributo "target" con el valor "_blank".**/
+    background-color: greenyellow;  /**Se declara un color de fondo con el valor "greenyellow", ocacionando que el fondo del elemento sea de color verde amarillento.**/
+} /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* ~!Important */
+/* ~El uso de !important no es recomendado y debe evitarse siempre que sea posible. Esto se debe a que !important anula cualquier otra regla de estilo aplicada a un elemento, saltándose la cascada natural de CSS y la especificidad. Esto puede dificultar la depuración y el mantenimiento del código, ya que al forzar un estilo, otros estilos definidos de forma correcta pueden dejar de aplicarse. Sin embargo, !important puede usarse como último recurso cuando un estilo específico no se aplica correctamente debido a la interferencia de otras reglas. Por ejemplo si todos los enlaces <a> tienen un fondo rojo por una regla global, pero se quiere que un enlace en particular tenga fondo azul sin que la regla global lo afecte, se puede usar `background-color: blue !important;` para forzar ese estilo. Aun así, es importante recordar que abusar de !important puede hacer que el código se vuelva difícil de mantener, entender o escalar. Por eso, se recomienda usarlo solo cuando sea estrictamente necesario.  */
+.contenedor-de-elementos-sin-important>div{ /**Se declara un selector por clase llamado "contenedor-de-elementos-sin-important" y se selecciona todos los elementos que sean div dentro de este contenedor.**/
+    background-color: rgb(255, 143, 143); /**Se declara un color de fondo con el valor "red", ocacionando que el fondo del elemento sea de color rojo.**/
+} /**Cierre de la declaracion de selector por clase.**/
+
+.contenedor-de-elementos-sin-important>.elemento-con-important{ /**Se declara un selector por clase llamado "contenedor-de-elementos-sin-important" y se selecciona todos los elementos que tengan la clase "elemento-con-important".**/
+    background-color: rgb(113, 113, 255) !important; /**Se declara un color de fondo con el valor "blue !important", ocacionando que el fondo del elemento sea de color azul y se aplique el estilo a pesar de que haya otras reglas que puedan interferir.**/
+    margin: 0.5% 0;
+} /**Cierre de la declaracion de selector por clase.**/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ~Animaciones */

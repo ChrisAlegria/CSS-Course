@@ -552,7 +552,7 @@
             <i class="glyphicon glyphicon-headphones"></i> Icono de auriculares (desabilitado por temas de estilos) <!-- *Se declara un elemento de la lista con un icono de Bootstrap. -->       
         </li>
     </p>
-  
+
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Listas -->
     <hr>
@@ -972,5 +972,24 @@
     <!-- ~!Important -->
     <hr>
     <h1 style="text-align: center;">!Important</h1>
+    <div class="contenedor-de-elementos-sin-important">
+        <div>
+            Este es un elemento sin <code>div</code> dentro de un contenedor padre code>div</code>, en el cual se ha establecido que todos los elementos <code>div</code> dentro de este contenedor padre tengan un color de fondo rosado. Esto significa que todos los elementos dentro de este contenedor padre tendrán un color de fondo azul, sin importar si tienen una clase o no. Por lo que en este caso se especifica un color de fondo rosado, lo que ocaciona que el elemento <code>div</code> tenga un color de fondo azul.
+        </div>
+        <div class="elemento-con-important">
+            <b>!important: </b>Este es un elemento con la clase <code>elemento-con-important</code>, en el cual se ha establecido que los elementos con la clase <code>elemento-con-important</code> dentro del contenedor padre con la clase <code>contenedor-de-elementos-sin-important</code> tengan un color de fondo azul. Esto significa que este elemento con la clase <code>elemento-con-important</code> aplica un color de fondo diferente a los demas, ya que <code>!important</code> se ha utilizado para forzar este estilo, pero el uso de esta regla debe evitar utilizarse en la medida de lo posible, ya que puede causar problemas de mantenimiento y legibilidad del código. Por lo que en este caso se especifica un color de fondo azul, lo que ocaciona que este elemento <code>div</code> tenga un color de fondo azul, a pesar de que el contenedor padre especifica que los hijos deben tener un color de fondo rosado.
+        </div>
+        <div>
+            Este es un elemento sin <code>div</code> dentro de un contenedor padre code>div</code>, en el cual se ha establecido que todos los elementos <code>div</code> dentro de este contenedor padre tengan un color de fondo rosado. Esto significa que todos los elementos dentro de este contenedor padre tendrán un color de fondo azul, sin importar si tienen una clase o no. Por lo que en este caso se especifica un color de fondo rosado, lo que ocaciona que el elemento <code>div</code> tenga un color de fondo azul.
+        </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <!-- ~Animaciones -->
+    <hr>
+    <h1 style="text-align: center;">Animaciones</h1>
+    <div>
+        
+    </div>
 </body>
 </html>  
