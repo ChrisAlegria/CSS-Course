@@ -994,5 +994,8 @@
             <b>Animación con @keyframes:</b> En este caso se está aplicando una animación a la imagen de la izquierda, la cual se activa al pasar el cursor por encima de dicha imagen. Esta animación hace que la opacidad de la imagen pase de un valor de 1 (totalmente visible) a un valor de 0 (completamente invisible) en 1 segundo. Para lograr esto, se utiliza una estructura llamada <code>@keyframes</code>, donde se declara el nombre de la animación seguido de las palabras clave <code>from</code> y <code>to</code>. En <code>from</code> se especifican las propiedades del estado inicial (en este caso, <code>opacity: 1</code>), y en <code>to</code> se definen las propiedades del estado final (en este caso, <code>opacity: 0</code>), lo que indica cómo se debe transformar el elemento durante la animación. Luego, para aplicar esta animación a la imagen, se utiliza un selector que apunta a la imagen usando la pseudoclase <code>:hover</code> para que la animación ocurra al pasar el mouse sobre el elemento. Dentro de este selector se declaran dos propiedades: <code>animation-name</code>, que indica el nombre del keyframe que se va a utilizar, y <code>animation-duration</code>, que define el tiempo que tardará la animación en completarse (en este caso <code>1s</code>, es decir, un segundo). Esto significa que, al pasar el cursor por encima de la imagen, esta cambiará su opacidad de 1 a 0 de forma suave en el lapso de un segundo, causando un efecto visual donde la imagen se desvanece. En caso de no especificar el nombre del keyframe o el tiempo de la animacion, la animación no se aplicará correctamente y no se verá el efecto deseado.
         </p>
     </div>
+    <div>
+        
+    </div>
 </body>
 </html>  
