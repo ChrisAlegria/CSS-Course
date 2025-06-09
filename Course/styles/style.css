@@ -1232,9 +1232,33 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     animation-duration: 1s; /**Se declara una propiedad de duracion de la animacion con el valor "1s", ocacionando que la animacion dure 1 segundo.**/
 } /** Cierre de la declaracion de selector por clase.**/
 
+.elemento-con-animaciones-porcentajes:hover{ /**Se declara un selector por clase llamado "elemento-con-animaciones-porcentajes" y se aplica una pseudoclase llamada "hover", la cual se activara cuando el elemento sea seleccionado.**/
+    animation-name: imagen-animation-por-porcentajes; /**Se declara una propiedad de animacion con el nombre del keyframe "imagen-animation-por-porcentajes", el cual se aplicara al elemento cuando este sea seleccionado.**/
+    animation-duration: 3.5s;  /**Se declara una propiedad de duracion de la animacion con el valor "3.5s", ocacionando que la animacion dure 3.5 segundos.**/
+} /** Cierre de la declaracion de selector por clase.**/
+
+
 /* Todo - Iteracion de la animacion (animation-iteration-count): La propiedad "animation-iteration-count" se utiliza para definir cuantas veces se repetira la animacion, donde el valor puede ser un numero entero o "infinite" para que la animacion se repita indefinidamente. Por lo que si se desea que la animacion se repita un numero especifico de veces, se debe declarar la propiedad "animation-iteration-count" con el valor del numero de veces que se desea que se repita la animacion. Cabe mencionar que si se declara en una etiqueta directamente se ejecutara la animacion cuando cargue la pagina o se recargue la misma, haciendo que si se delcara una animacion con un numero de iteraciones por ejemplo en 2, estas seran las veces que se ejecutara la animacion del keyframe al cargar la pagina, y si se declara en una pseudoclase como hover, la animacion se dicha cantidad de veces al mantener el mouse sobre el elemento, y al quitar el mouse esta se detendra. */
 .elemento-con-animaciones-con-contador-iteracion{ /**Se declara un selector por clase llamado "elemento-con-animaciones-con-contador-iteracion".**/
     animation-name: imagen-animation-por-porcentajes; /**Se declara una propiedad de animacion con el nombre del keyframe "imagen-animation-por-porcentajes", el cual se aplicara al elemento cuando este sea seleccionado.**/
     animation-duration: 3.5s; /**Se declara una propiedad de duracion de la animacion con el valor "3.5s", ocacionando que la animacion dure 3.5 segundos.**/
     animation-iteration-count: infinite; /**Se declara una propiedad de contador de iteracion con el valor "infinite", ocacionando que la animacion se repita indefinidamente.**/
 } /** Cierre de la declaracion de selector por clase.**/
+
+/* Todo - Restraso de la animación (animation-delay): La propiedad "animation-delay" se utiliza para definir un retraso antes de que comience la animación, donde el valor puede ser un tiempo en segundos "s", o milisegundos "ms". Esto significa que al declarar esta propiedad, se puede especificar un tiempo de espera antes de que la animación comience a ejecutarse. Por lo que si se desea que la animacion comience a ejecutarse despues de un tiempo especifico, se debe declarar la propiedad "animation-delay" con el valor del tiempo de espera que se desea antes de que la animacion comience a ejecutarse. Cabe mencionar que si se declara en un etiqueta directamente se ejecutara la animacion cuando cargue la pagina o se recargue la misma, haciendo que si se declara un animacion con un retrado de 2 segunfos, esta se ejecutara 2 segundos despues de que la pagina cargue. */
+@keyframes animacion-con-delay{
+    0%{
+        left: 79%;
+    }
+    50%{
+        left: 1%;
+    }
+    100%{
+        left: 79%;
+    }
+}
+.elemento-con-animaciones-con-delay:active{
+    animation-name: animacion-con-delay;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}

@@ -909,7 +909,7 @@
             <b>::marker: </b>Este es un elemento <code>li</code>, en dicho elemento de lista se ha declarado un pseudoelemento <code>::marker</code>, el cual solo afecta a los elementos de lista <code>li</code>, en este caso se ha declarado un color de fondo azul, lo que ocaciona que el marcador del elemento <code>li</code> tenga un color azul. Esto significa que el pseudoelemento <code>::marker</code> solo afecta al marcador dentro del elemento con dicha clase cuando es un elemento de lista. Por lo que en este caso se especifica un color de fondo azul, lo que ocaciona que el marcador del elemento <code>li</code> tenga un color azul. 
         </li>
     </ul>
-    <p class="elemento-con-pseudoelemento-selection"> 
+    <p class="elemento-con-pseudoelemento-selection"> <!-- *Se declara un elemento <code>p</code> con una pseudoclase <code>::selection</code>. -->
         <b>::selection: </b>Este es un elemento <code>p</code>, en dicho elemento de párrafo se ha declarado un pseudoelemento <code>::selection</code>, el cual las propiedades que se declaren dentro de el solo afectaran al texto seleccionado dentro del elemento con dicha clase, por lo que seleccionar consta en dar doble click y mantener el click sobre el texto seleccionando el texto. Ademas, por lo que para que el pseudoelemento <code>::selection</code> funcione, es necesario que ahiga texto en el elemento con dicha clase. En este caso se especifica un color de fondo verde, lo que ocaciona que el texto seleccionado dentro del elemento <code>p</code> tenga un color de fondo verde. 
     </p>
 
@@ -957,12 +957,12 @@
             </a>
         </li> 
         <li>
-            <a class="elemento-con-selector-de-atributo-con-valor" target="_blank">
+            <a class="elemento-con-selector-de-atributo-con-valor" target="_blank"> <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo con valor. -->
                 <b>[target="_blank"]:</b> Este es un elemento <code>a</code> con el atributo <code>target="_blank"</code>, lo que hace que el enlace se abra en una nueva pestaña. Ademas en dicho elemento se aplica un selector de atributo en CSS para cambiar el color de fondo cuando el atributo <code>target</code> tiene el valor <code>"_blank"</code>. Esto significa que el selector de atributo se define con la clase, etiqueta o id, seguido de corchetes y de estos se define el atributo que se desea seleccionar con su valor. En este caso, el selector de atributo es <code>.elemento-con-selector-de-atributo[target="_blank"]</code>, lo que significa que se selecciona cualquier elemento con la clase <code>elemento-con-selector-de-atributo</code> que tenga el atributo <code>target</code> con el valor <code>"_blank"</code>. Por lo que en este caso se especifica un color de fondo verde, lo que ocaciona que el elemento <code>a</code> tenga un color de fondo verde cuando el atributo <code>target</code> tiene el valor <code>"_blank"</code>.
             </a>
         </li>
         <li>
-            <a class="elemento-con-selector-de-atributo-con-valor" target="_top">
+            <a class="elemento-con-selector-de-atributo-con-valor" target="_top"> <!-- *Se declara un elemento <a> con una clase que aplica un selector de atributo con valor, pero con un valor diferente al del selector. -->
                 Este es un elemento <code>a</code> con la clase <code>elemento-con-selector-de-atributo</code>, pero con el atributo <code>target="_top"</code>, por lo que no se verá afectado por el selector de atributo. Esto significa que el selector de atributo no se aplicará a este elemento, ya que no tiene el atributo <code>target</code> con el valor <code>"_blank"</code>. Por lo que en este caso no se especifica un color de fondo, lo que ocaciona que el elemento <code>a</code> no tenga un color de fondo verde.
             </a>
         </li>
@@ -971,12 +971,12 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~!Important -->
     <hr>
-    <h1 style="text-align: center;">!Important</h1>
-    <div class="contenedor-de-elementos-sin-important">
+    <h1 style="text-align: center;">!Important</h1> <!-- *Se declara un encabezado de nivel 1 con un texto centrado. -->
+    <div class="contenedor-de-elementos-sin-important"> <!-- *Se declara un div con una clase que aplica estilos a los elementos sin !important. -->
         <div>
             Este es un elemento sin <code>div</code> dentro de un contenedor padre code>div</code>, en el cual se ha establecido que todos los elementos <code>div</code> dentro de este contenedor padre tengan un color de fondo rosado. Esto significa que todos los elementos dentro de este contenedor padre tendrán un color de fondo azul, sin importar si tienen una clase o no. Por lo que en este caso se especifica un color de fondo rosado, lo que ocaciona que el elemento <code>div</code> tenga un color de fondo azul.
         </div>
-        <div class="elemento-con-important">
+        <div class="elemento-con-important"> <!-- *Se declara un div con una clase que aplica estilos a los elementos con !important. -->
             <b>!important: </b>Este es un elemento con la clase <code>elemento-con-important</code>, en el cual se ha establecido que los elementos con la clase <code>elemento-con-important</code> dentro del contenedor padre con la clase <code>contenedor-de-elementos-sin-important</code> tengan un color de fondo azul. Esto significa que este elemento con la clase <code>elemento-con-important</code> aplica un color de fondo diferente a los demas, ya que <code>!important</code> se ha utilizado para forzar este estilo, pero el uso de esta regla debe evitar utilizarse en la medida de lo posible, ya que puede causar problemas de mantenimiento y legibilidad del código. Por lo que en este caso se especifica un color de fondo azul, lo que ocaciona que este elemento <code>div</code> tenga un color de fondo azul, a pesar de que el contenedor padre especifica que los hijos deben tener un color de fondo rosado.
         </div>
         <div>
@@ -994,14 +994,22 @@
             <b>Animación con @keyframes mediante "from-to"</b> En este caso se está aplicando una animación a la imagen de la izquierda, la cual se activa al pasar el cursor por encima de dicha imagen. Esta animación hace que la opacidad de la imagen pase de un valor de 1 (totalmente visible) a un valor de 0 (completamente invisible) en 1 segundo. Para lograr esto, se utiliza una estructura llamada <code>@keyframes</code>, donde se declara el nombre de la animación seguido de las palabras clave <code>from</code> y <code>to</code>. En <code>from</code> se especifican las propiedades del estado inicial (en este caso, <code>opacity: 1</code>), y en <code>to</code> se definen las propiedades del estado final (en este caso, <code>opacity: 0</code>), lo que indica cómo se debe transformar el elemento durante la animación. Este tipo de estructura solo permite definir dos estados: uno inicial y uno final, lo que la hace ideal para transiciones simples y directas. Luego, para aplicar esta animación a la imagen, se utiliza un selector que apunta a la imagen usando la pseudoclase <code>:hover</code> para que la animación ocurra al pasar el mouse sobre el elemento. Dentro de este selector se declaran dos propiedades: <code>animation-name</code>, que indica el nombre del keyframe que se va a utilizar, y <code>animation-duration</code>, que define el tiempo que tardará la animación en completarse (en este caso <code>1s</code>, es decir, un segundo). Esto significa que, al pasar el cursor por encima de la imagen, esta cambiará su opacidad de 1 a 0 de forma suave en el lapso de un segundo, causando un efecto visual donde la imagen se desvanece. En caso de no especificar el nombre del keyframe o el tiempo de la animación, la animación no se aplicará correctamente y no se verá el efecto deseado.
         </p>
         <p style="line-height: 150%; text-align: justify; margin-top: 2%; background-color: rgb(161, 255, 239);">
-            <img class="elemento-con-animaciones-con-contandor-iteracion" src="assets/images/bands/Rammstein.jpg" style="width: 20%; float: right; margin: 0 0 0 1%;">
+            <img class="elemento-con-animaciones-porcentajes" src="assets/images/bands/Rammstein_1.jpg" style="width: 20%; float: right; margin: 0 0 0 1%;">
             <b>Animación con @keyframes mediante "porcentajes"</b> En este caso se está aplicando una animación a la imagen de la derecha, la cual se activa al pasar el cursor por encima de dicha imagen. Esta animación hace que la opacidad de la imagen pase de un valor de 1 (totalmente visible), a 0.3 (parcialmente visible), y luego de vuelta a 1 (completamente visible) en 1 segundo. Para lograr esto, se utiliza una estructura llamada <code>@keyframes</code>, donde se declara el nombre de la animación seguido de una serie de porcentajes que representan momentos específicos durante el transcurso de la animación. En <code>0%</code> se especifican las propiedades del estado inicial (en este caso, <code>opacity: 1</code>), en <code>50%</code> se definen las propiedades del estado intermedio (en este caso, <code>opacity: 0.3</code>), y en <code>100%</code> se establecen las propiedades del estado final (en este caso, <code>opacity: 1</code>), lo que indica cómo se debe transformar el elemento durante el desarrollo de la animación. A diferencia de la estructura "from-to", esta técnica con porcentajes permite definir hasta 100 momentos diferentes a lo largo de la animación (desde <code>0%</code> hasta <code>100%</code>), lo cual brinda mayor control y precisión sobre cómo se comporta el elemento en cada parte del tiempo. Luego, para aplicar esta animación a la imagen, se utiliza un selector que apunta a la imagen usando la pseudoclase <code>:hover</code> para que la animación ocurra al pasar el mouse sobre el elemento. Dentro de este selector se declaran dos propiedades: <code>animation-name</code>, que indica el nombre del keyframe que se va a utilizar, y <code>animation-duration</code>, que define el tiempo que tardará la animación en completarse (en este caso <code>1s</code>, es decir, un segundo). Esto significa que, al pasar el cursor por encima de la imagen, esta cambiará su opacidad de 1 a 0.3 y luego volverá a 1 de forma suave en el lapso de un segundo, causando un efecto visual en el que la imagen se atenúa parcialmente y luego vuelve a su estado original. En caso de no especificar el nombre del keyframe o el tiempo de la animación, la animación no se aplicará correctamente y no se verá el efecto deseado.
         </p>
     </div>
-    <div style="border: 2px solid black; padding: 1%;">
+    <div style="border: 2px solid black; padding: 2%;">
         <img class="elemento-con-animaciones-con-contador-iteracion" src="assets/images/bands/Coldplay_2.jpg" style="width: 20%; float: left; margin: 0.5% 1% 0 0;">
         <p style="line-height: 150%; text-align: justify;">
             <b>animation-iteration-count:</b> En este caso se está aplicando una animación a la imagen de la izquierda, dicha animación hace que la opacidad de la imagen pase de un valor de 1 (totalmente visible), a 0.3 (parcialmente visible), y luego de vuelta a 1 (completamente visible) en 1 segundo. Sin embargo, a diferencia de los ejemplos anteriores, aquí se utiliza la propiedad <code>animation-iteration-count</code> para indicar cuántas veces debe repetirse la animación. En este caso, se ha establecido el valor en <code>infinite</code>, lo que significa que la animación se ejecutará de manera infinita. Además, a comparación de las anteriores, esta vez se aplicó la animación directamente en el elemento sin <code>:hover</code>, ocasionando que el elemento desde que la página carga comience a animarse automáticamente y de forma continua, sin necesidad de interacción del usuario.
+    </div>
+    <div style="position: relative; border: 2px solid black; margin-top: 2%; padding: 1%;">
+        <div class="elemento-con-animaciones-con-delay" style="position: absolute; width: 20%; left: 79%;">
+            <img src="assets/images/bands/Rammstein_2.jpg" style="width: 100%;">
+        </div>
+        <p>
+            <b>animation-delay: </b>
+        </p>
     </div>
 </body>
 </html>  
