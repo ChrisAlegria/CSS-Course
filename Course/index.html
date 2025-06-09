@@ -990,7 +990,7 @@
     <h1 style="text-align: center;">Animaciones</h1>
     <div style="padding: 1%; border: 2px solid black; margin-bottom: 1%;">
         <p style="line-height: 150%; text-align: justify; background-color: rgb(255, 244, 173);">
-            <img class="elemento-con-animaciones-from-to" src="assets/images/bands/Coldplay.jpg" style=" width: 20%; float: left; margin: 0 1% 0 0; ">
+            <img class="elemento-con-animaciones-from-to" src="assets/images/bands/Coldplay_1.jpg" style=" width: 20%; float: left; margin: 0 1% 0 0; ">
             <b>Animación con @keyframes mediante "from-to"</b> En este caso se está aplicando una animación a la imagen de la izquierda, la cual se activa al pasar el cursor por encima de dicha imagen. Esta animación hace que la opacidad de la imagen pase de un valor de 1 (totalmente visible) a un valor de 0 (completamente invisible) en 1 segundo. Para lograr esto, se utiliza una estructura llamada <code>@keyframes</code>, donde se declara el nombre de la animación seguido de las palabras clave <code>from</code> y <code>to</code>. En <code>from</code> se especifican las propiedades del estado inicial (en este caso, <code>opacity: 1</code>), y en <code>to</code> se definen las propiedades del estado final (en este caso, <code>opacity: 0</code>), lo que indica cómo se debe transformar el elemento durante la animación. Este tipo de estructura solo permite definir dos estados: uno inicial y uno final, lo que la hace ideal para transiciones simples y directas. Luego, para aplicar esta animación a la imagen, se utiliza un selector que apunta a la imagen usando la pseudoclase <code>:hover</code> para que la animación ocurra al pasar el mouse sobre el elemento. Dentro de este selector se declaran dos propiedades: <code>animation-name</code>, que indica el nombre del keyframe que se va a utilizar, y <code>animation-duration</code>, que define el tiempo que tardará la animación en completarse (en este caso <code>1s</code>, es decir, un segundo). Esto significa que, al pasar el cursor por encima de la imagen, esta cambiará su opacidad de 1 a 0 de forma suave en el lapso de un segundo, causando un efecto visual donde la imagen se desvanece. En caso de no especificar el nombre del keyframe o el tiempo de la animación, la animación no se aplicará correctamente y no se verá el efecto deseado.
         </p>
         <p style="line-height: 150%; text-align: justify; margin-top: 2%; background-color: rgb(161, 255, 239);">
@@ -999,8 +999,9 @@
         </p>
     </div>
     <div style="border: 2px solid black; padding: 1%;">
-        <img src="" alt="">
-        <p></p>
+        <img class="elemento-con-animaciones-con-contador-iteracion" src="assets/images/bands/Coldplay_2.jpg" style="width: 20%; float: left; margin: 0.5% 1% 0 0;">
+        <p style="line-height: 150%; text-align: justify;">
+            <b>animation-iteration-count:</b> En este caso se está aplicando una animación a la imagen de la izquierda, dicha animación hace que la opacidad de la imagen pase de un valor de 1 (totalmente visible), a 0.3 (parcialmente visible), y luego de vuelta a 1 (completamente visible) en 1 segundo. Sin embargo, a diferencia de los ejemplos anteriores, aquí se utiliza la propiedad <code>animation-iteration-count</code> para indicar cuántas veces debe repetirse la animación. En este caso, se ha establecido el valor en <code>infinite</code>, lo que significa que la animación se ejecutará de manera infinita. Además, a comparación de las anteriores, esta vez se aplicó la animación directamente en el elemento sin <code>:hover</code>, ocasionando que el elemento desde que la página carga comience a animarse automáticamente y de forma continua, sin necesidad de interacción del usuario.
     </div>
 </body>
 </html>  
