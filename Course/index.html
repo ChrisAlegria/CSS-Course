@@ -1004,12 +1004,15 @@
             <b>animation-iteration-count:</b> En este caso se está aplicando una animación a la imagen de la izquierda, dicha animación hace que la opacidad de la imagen pase de un valor de 1 (totalmente visible), a 0.3 (parcialmente visible), y luego de vuelta a 1 (completamente visible) en 1 segundo. Sin embargo, a diferencia de los ejemplos anteriores, aquí se utiliza la propiedad <code>animation-iteration-count</code> para indicar cuántas veces debe repetirse la animación. En este caso, se ha establecido el valor en <code>infinite</code>, lo que significa que la animación se ejecutará de manera infinita. Además, a comparación de las anteriores, esta vez se aplicó la animación directamente en el elemento sin <code>:hover</code>, ocasionando que el elemento desde que la página carga comience a animarse automáticamente y de forma continua, sin necesidad de interacción del usuario.
     </div>
     <div style="position: relative; border: 2px solid black; margin-top: 2%; padding: 1%;">
-        <div class="elemento-con-animaciones-con-delay" style="position: absolute; width: 20%; left: 79%;">
+        <div class="elemento-con-animaciones-con-delay" style="position: relative;float: right; width: 20%; margin: 0 0 0 1%;">
             <img src="assets/images/bands/Rammstein_2.jpg" style="width: 100%;">
         </div>
-        <p>
-            <b>animation-delay: </b>
+        <p style="text-align: justify; line-height: 150%;">
+        <b>animation-delay:</b> En este caso se está aplicando una animación a la imagen ubicada a la derecha. Esta animación no inicia de inmediato, sino que se retrasa 1 segundo después de que el usuario hace clic y mantiene dicho clic sobre la imagen (ya que se usa la pseudoclase <code>:active</code>). La animación hace que la imagen se desplace horizontalmente desde su posición original (<code>left: 0</code>) hacia la izquierda (<code>left: -80%</code>), y luego regrese a su posición original (<code>left: 0</code>) en un lapso total de 6 segundos. Gracias a la propiedad <code>animation-delay</code>, la animación espera ese segundo antes de comenzar el movimiento, permitiendo que se observe claramente el efecto del retraso en la ejecución. Esto significa que la propiedad <code>animation-delay</code> controla el tiempo de espera antes de que la animación se ejecute por primera vez. Si la animación está configurada para repetirse (por ejemplo, con <code>animation-iteration-count: infinite</code>), el retardo solo se aplica al inicio; las repeticiones posteriores seguirán el flujo normal sin retraso.
         </p>
+    </div>
+    <div style="border: 2px solid black; margin-top: 2%; padding: 1%;">
+        
     </div>
 </body>
 </html>  

@@ -1246,19 +1246,25 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /** Cierre de la declaracion de selector por clase.**/
 
 /* Todo - Restraso de la animación (animation-delay): La propiedad "animation-delay" se utiliza para definir un retraso antes de que comience la animación, donde el valor puede ser un tiempo en segundos "s", o milisegundos "ms". Esto significa que al declarar esta propiedad, se puede especificar un tiempo de espera antes de que la animación comience a ejecutarse. Por lo que si se desea que la animacion comience a ejecutarse despues de un tiempo especifico, se debe declarar la propiedad "animation-delay" con el valor del tiempo de espera que se desea antes de que la animacion comience a ejecutarse. Cabe mencionar que si se declara en un etiqueta directamente se ejecutara la animacion cuando cargue la pagina o se recargue la misma, haciendo que si se declara un animacion con un retrado de 2 segunfos, esta se ejecutara 2 segundos despues de que la pagina cargue. */
-@keyframes animacion-con-delay{
-    0%{
-        left: 79%;
-    }
-    50%{
-        left: 1%;
-    }
-    100%{
-        left: 79%;
-    }
-}
-.elemento-con-animaciones-con-delay:active{
-    animation-name: animacion-con-delay;
-    animation-duration: 6s;
-    animation-delay: 1s;
-}
+@keyframes animacion-con-delay{ /** Se declara un keyframe con el nombre "animacion-con-delay". **/
+    0%{ /** Se declara el estado inicial de la animación, correspondiente al 0% del tiempo transcurrido. **/
+        left: 0; /** Se establece la propiedad "left" con valor "0", lo que posiciona el elemento en su ubicación original horizontalmente. **/
+    } /** Cierre de la declaración del estado en 0%. **/
+
+    50%{ /** Se declara un estado intermedio de la animación, correspondiente al 50% del tiempo transcurrido. **/
+        left: -80%; /** Se establece la propiedad "left" con valor "-80%", desplazando el elemento hacia la izquierda. **/
+    } /** Cierre de la declaración del estado en 50%. **/
+
+    100%{ /** Se declara el estado final de la animación, correspondiente al 100% del tiempo transcurrido. **/
+        left: 0; /** Se establece nuevamente la propiedad "left" con valor "0", haciendo que el elemento regrese a su posición original. **/
+    } /** Cierre de la declaración del estado en 100%. **/
+} /** Cierre del keyframe "animacion-con-delay". **/
+
+.elemento-con-animaciones-con-delay:active{ /** Se declara un selector por clase llamado "elemento-con-animaciones-con-delay", acompañado de la pseudoclase ":active", que se activa cuando el usuario hace clic y mantiene presionado el clic sobre el elemento. **/
+    animation-name: animacion-con-delay; /** Se aplica la animación declarada anteriormente, especificando el nombre del keyframe "animacion-con-delay". **/
+    animation-duration: 6s; /** Se establece la duración total de la animación en 6 segundos. **/
+    animation-delay: 1s; /** Se establece un retardo de 1 segundo antes de que la animación comience a ejecutarse después de hacer clic. Esto significa que la propiedad "animation-delay" sirve para definir el tiempo de espera antes de que la animación inicie por primera vez. Si la animación está configurada para repetirse (por ejemplo, con "infinite"), este retardo solo se aplica la primera vez, y las repeticiones posteriores ocurren sin ese retraso. **/
+} /** Cierre de la declaración del selector. **/
+
+/* Todo - Función de tiempo de la animación (animation-timing-function): La propiedad "animation-timing-function" se utiliza para definir la velocidad del cambio de la animación a lo largo del tiempo. Es decir, especifica cómo se distribuyen los pasos de la animación durante su duración. Esta propiedad no cambia la duración total de la animación, pero sí cambia la manera en que esta se comporta mientras se ejecuta. Se pueden usar distintos valores como "linear" (constante), "ease" (inicio lento, rápido en el medio y final lento), "ease-in" (inicio lento), "ease-out" (final lento), "ease-in-out" (inicio y final lentos), o incluso funciones personalizadas como "cubic-bezier()". Por ejemplo, si se utiliza "ease-in", la animación comenzará lentamente y luego acelerará. Esta propiedad se declara dentro del selector junto con otras propiedades de animación como "animation-name" y "animation-duration", permitiendo un control más preciso del comportamiento visual. Cabe mencionar que si no se declara esta propiedad, el navegador usará el valor por defecto "ease", haciendo que la animación tenga un ritmo suave por defecto. *
+/* &linear */
