@@ -1265,53 +1265,54 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /** Cierre de la declaración del selector. **/
 
 /* Todo - Dirección de animación (animation-direction): La propiedad "animation-direction" se utiliza para controlar la dirección en la que se ejecuta una animación, permitiendo que esta se reproduzca de manera normal, invertida o alternada. Esto significa que se puede definir si la animación se ejecuta del inicio al final ("normal"), del final al inicio ("reverse"), o si alterna entre ambas direcciones en cada ciclo cuando la animación se repite ("alternate" y "alternate-reverse"). Por lo que si se desea que la animación regrese en sentido contrario después de finalizar, se debe usar un valor como "alternate". Cabe mencionar que esta propiedad funciona junto con la cantidad de iteraciones definidas en "animation-iteration-count", ya que afecta cómo se comporta la animación en cada repetición, haciendo que se pueda lograr un efecto de ida y vuelta suave y continuo. */
-@keyframes animacion-con-direction1{
-    from{
-        left: 0;
-    }
-    to{
-        left: 80%;
-    }
-} 
+@keyframes animacion-con-direction1{ /** Se declara un keyframe con el nombre "animacion-con-direction1". **/
+    from{ /** Se declara el estado inicial de la animación mediante la palabra clave "from". **/
+        left: 0; /** Se indica que la posición izquierda del elemento comienza en 0 (posición original). **/
+    } /** Cierre de la declaración del estado "from". **/
+    to{ /** Se declara el estado final de la animación mediante la palabra clave "to". **/
+        left: 80%; /** Se indica que la posición izquierda del elemento termina en 80%, desplazándolo hacia la derecha. **/
+    } /** Cierre de la declaración del estado "to". **/
+} /** Cierre del keyframe "animacion-con-direction1". **/
 
-@keyframes animacion-con-direction2{
-    from{
-        left: 0;
-    }
-    to{
-        left: -80%;
-    }
-} 
+@keyframes animacion-con-direction2{ /** Se declara un keyframe con el nombre "animacion-con-direction2". **/
+    from{ /** Se declara el estado inicial de la animación mediante la palabra clave "from". **/
+        left: 0; /** Se indica que la posición izquierda del elemento comienza en 0 (posición original). **/
+    } /** Cierre de la declaración del estado "from". **/
+    to{ /** Se declara el estado final de la animación mediante la palabra clave "to". **/
+        left: -80%; /** Se indica que la posición izquierda del elemento termina en -80%, desplazándolo hacia la izquierda. **/
+    } /** Cierre de la declaración del estado "to". **/
+} /** Cierre del keyframe "animacion-con-direction2". **/
 
-.animations-direction div:active{ 
-    animation-duration: 3s; 
-} 
+.animations-direction div:active{ /** Se define un selector que apunta a todos los divs dentro de la clase "animations-direction" cuando se encuentren activos (presionados con clic). **/
+    animation-duration: 3s; /** Se declara que la duración de la animación será de 3 segundos. **/
+} /** Cierre de la regla CSS para los divs activos dentro de "animations-direction". **/
 
 /* &Normal */
 /* &El valor de "normal" dentro de "animation-direction" es el valor que toda animación tiene por defecto, la cual se ejecuta en una sola dirección, es decir, desde el estado inicial (0%) hasta el estado final (100%) del keyframe. Esto significa que cada vez que se repite la animación, esta volverá a comenzar desde el inicio y terminará en el final, sin cambiar la dirección del movimiento o transformación. Este valor es útil cuando se desea que la animación mantenga un flujo constante y predecible, sin efectos de reversa ni ida y vuelta, por lo que es el más común en animaciones simples o unidireccionales. */
-.elemento-con-animation-direction-normal:active{
-    animation-name: animacion-con-direction1;
-    animation-direction: normal;
-}
+.elemento-con-animation-direction-normal:active{ /**Se declara un selector por clase llamado "elemento-con-animation-direction-normal", el cual aplica estilos cuando el elemento es activado mediante clic (pseudoclase :active).**/
+    animation-name: animacion-con-direction1; /**Se declara una propiedad de animación con el valor "animacion-con-direction1", el cual indica el nombre del keyframe que se aplicará al elemento.**/
+    animation-direction: normal; /**Se declara la dirección de la animación como "normal", lo que significa que la animación se reproducirá del inicio al final en cada repetición.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Reverse */
-
-.elemento-con-animation-direction-reverse:active{
-    animation-name: animacion-con-direction2;
-    animation-direction: reverse;
-}
+/* &El valor "reverse" dentro de "animation-direction" hace que la animación se reproduzca en dirección inversa, es decir, desde el estado final (100%) hasta el estado inicial (0%) del keyframe. Esto significa que al declarar este valor, la animación no comienza como normalmente lo haría, sino que empieza desde el punto final y retrocede hasta el inicio. Este valor es útil cuando se quiere dar un efecto visual diferente sin necesidad de crear un nuevo keyframe invertido. */
+.elemento-con-animation-direction-reverse:active{ /**Se declara un selector por clase llamado "elemento-con-animation-direction-reverse", el cual aplica estilos cuando el elemento es activado mediante clic (pseudoclase :active).**/
+    animation-name: animacion-con-direction2; /**Se declara una propiedad de animación con el valor "animacion-con-direction2", el cual indica el nombre del keyframe que se aplicará al elemento.**/
+    animation-direction: reverse; /**Se declara la dirección de la animación como "reverse", lo que hará que se ejecute desde el final hacia el inicio.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Alternate */
-
-.elemento-con-animation-direction-alternate:active{
-    animation-name: animacion-con-direction1;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
+/* &El valor "alternate" dentro de "animation-direction" hace que la animación se reproduzca de forma alternada, es decir, primero del inicio al final (ida), y luego del final al inicio (vuelta). Sin embargo, este comportamiento solo es visible si la animación se ejecuta más de una vez, ya sea mediante un número mayor a 1 en "animation-iteration-count" o con el valor "infinite". Esto significa que, si se desea que el efecto de ida y vuelta se mantenga continuamente, es necesario usar también "animation-iteration-count: infinite". */
+.elemento-con-animation-direction-alternate:active{ /**Se declara un selector por clase llamado "elemento-con-animation-direction-alternate", el cual aplica estilos cuando el elemento es activado mediante clic (pseudoclase :active).**/
+    animation-name: animacion-con-direction1; /**Se declara una propiedad de animación con el valor "animacion-con-direction1", el cual indica el nombre del keyframe que se aplicará al elemento.**/
+    animation-direction: alternate; /**Se declara la dirección de la animación como "alternate", haciendo que esta se reproduzca primero hacia adelante y luego hacia atrás.**/
+    animation-iteration-count: infinite; /**Se declara una propiedad de repetición de animación con el valor "infinite", lo que permite que el efecto de ida y vuelta ocurra de manera continua.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Alternate reverse */
-.elemento-con-animation-direction-alternate-reverse:active{
-    animation-name: animacion-con-direction2;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-}
+/* &El valor "alternate-reverse" dentro de "animation-direction" funciona de forma similar a "alternate", pero invierte el orden inicial. En este caso, la animación se ejecuta primero desde el final hacia el inicio (vuelta), y luego desde el inicio hacia el final (ida). Al igual que con "alternate", este comportamiento solo será visible si la animación se repite más de una vez, por ejemplo, usando "animation-iteration-count: infinite". Esto permite que la animación se repita de forma alternada y en reversa continuamente. */
+.elemento-con-animation-direction-alternate-reverse:active{ /**Se declara un selector por clase llamado "elemento-con-animation-direction-alternate-reverse", el cual aplica estilos cuando el elemento es activado mediante clic (pseudoclase :active).**/
+    animation-name: animacion-con-direction2; /**Se declara una propiedad de animación con el valor "animacion-con-direction2", el cual indica el nombre del keyframe que se aplicará al elemento.**/
+    animation-iteration-count: infinite; /**Se declara una propiedad de repetición de animación con el valor "infinite", lo que permite que el efecto se repita continuamente.**/
+    animation-direction: alternate-reverse; /**Se declara la dirección de la animación como "alternate-reverse", haciendo que esta se ejecute primero en reversa (del final al inicio) y luego en su orden normal.**/
+} /**Cierre de la declaración del selector por clase.**/
