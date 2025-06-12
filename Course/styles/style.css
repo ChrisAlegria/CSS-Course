@@ -1250,11 +1250,9 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     0%{ /** Se declara el estado inicial de la animación, correspondiente al 0% del tiempo transcurrido. **/
         left: 0; /** Se establece la propiedad "left" con valor "0", lo que posiciona el elemento en su ubicación original horizontalmente. **/
     } /** Cierre de la declaración del estado en 0%. **/
-
     50%{ /** Se declara un estado intermedio de la animación, correspondiente al 50% del tiempo transcurrido. **/
         left: -80%; /** Se establece la propiedad "left" con valor "-80%", desplazando el elemento hacia la izquierda. **/
     } /** Cierre de la declaración del estado en 50%. **/
-
     100%{ /** Se declara el estado final de la animación, correspondiente al 100% del tiempo transcurrido. **/
         left: 0; /** Se establece nuevamente la propiedad "left" con valor "0", haciendo que el elemento regrese a su posición original. **/
     } /** Cierre de la declaración del estado en 100%. **/
@@ -1266,6 +1264,54 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     animation-delay: 1s; /** Se establece un retardo de 1 segundo antes de que la animación comience a ejecutarse después de hacer clic. Esto significa que la propiedad "animation-delay" sirve para definir el tiempo de espera antes de que la animación inicie por primera vez. Si la animación está configurada para repetirse (por ejemplo, con "infinite"), este retardo solo se aplica la primera vez, y las repeticiones posteriores ocurren sin ese retraso. **/
 } /** Cierre de la declaración del selector. **/
 
-/* Todo - Función de tiempo de la animación (animation-timing-function): La propiedad "animation-timing-function" se utiliza para definir la velocidad del cambio de la animación a lo largo del tiempo. Es decir, especifica cómo se distribuyen los pasos de la animación durante su duración. Esta propiedad no cambia la duración total de la animación, pero sí cambia la manera en que esta se comporta mientras se ejecuta. Se pueden usar distintos valores como "linear" (constante), "ease" (inicio lento, rápido en el medio y final lento), "ease-in" (inicio lento), "ease-out" (final lento), "ease-in-out" (inicio y final lentos), o incluso funciones personalizadas como "cubic-bezier()". Por ejemplo, si se utiliza "ease-in", la animación comenzará lentamente y luego acelerará. Esta propiedad se declara dentro del selector junto con otras propiedades de animación como "animation-name" y "animation-duration", permitiendo un control más preciso del comportamiento visual. Cabe mencionar que si no se declara esta propiedad, el navegador usará el valor por defecto "ease", haciendo que la animación tenga un ritmo suave por defecto. *
-/* &linear */
-/* & */
+/* Todo - Dirección de animación (animation-direction): La propiedad "animation-direction" se utiliza para controlar la dirección en la que se ejecuta una animación, permitiendo que esta se reproduzca de manera normal, invertida o alternada. Esto significa que se puede definir si la animación se ejecuta del inicio al final ("normal"), del final al inicio ("reverse"), o si alterna entre ambas direcciones en cada ciclo cuando la animación se repite ("alternate" y "alternate-reverse"). Por lo que si se desea que la animación regrese en sentido contrario después de finalizar, se debe usar un valor como "alternate". Cabe mencionar que esta propiedad funciona junto con la cantidad de iteraciones definidas en "animation-iteration-count", ya que afecta cómo se comporta la animación en cada repetición, haciendo que se pueda lograr un efecto de ida y vuelta suave y continuo. */
+@keyframes animacion-con-direction1{
+    from{
+        left: 0;
+    }
+    to{
+        left: 80%;
+    }
+} 
+
+@keyframes animacion-con-direction2{
+    from{
+        left: 0;
+    }
+    to{
+        left: -80%;
+    }
+} 
+
+.animations-direction div:active{ 
+    animation-duration: 3s; 
+} 
+
+/* &Normal */
+/* &El valor de "normal" dentro de "animation-direction" es el valor que toda animación tiene por defecto, la cual se ejecuta en una sola dirección, es decir, desde el estado inicial (0%) hasta el estado final (100%) del keyframe. Esto significa que cada vez que se repite la animación, esta volverá a comenzar desde el inicio y terminará en el final, sin cambiar la dirección del movimiento o transformación. Este valor es útil cuando se desea que la animación mantenga un flujo constante y predecible, sin efectos de reversa ni ida y vuelta, por lo que es el más común en animaciones simples o unidireccionales. */
+.elemento-con-animation-direction-normal:active{
+    animation-name: animacion-con-direction1;
+    animation-direction: normal;
+}
+
+/* &Reverse */
+
+.elemento-con-animation-direction-reverse:active{
+    animation-name: animacion-con-direction2;
+    animation-direction: reverse;
+}
+
+/* &Alternate */
+
+.elemento-con-animation-direction-alternate:active{
+    animation-name: animacion-con-direction1;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* &Alternate reverse */
+.elemento-con-animation-direction-alternate-reverse:active{
+    animation-name: animacion-con-direction2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
