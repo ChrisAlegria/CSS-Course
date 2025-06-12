@@ -1316,3 +1316,32 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     animation-iteration-count: infinite; /**Se declara una propiedad de repetición de animación con el valor "infinite", lo que permite que el efecto se repita continuamente.**/
     animation-direction: alternate-reverse; /**Se declara la dirección de la animación como "alternate-reverse", haciendo que esta se ejecute primero en reversa (del final al inicio) y luego en su orden normal.**/
 } /**Cierre de la declaración del selector por clase.**/
+
+/* Todo - Funcion del tiempo de la animacion */
+@keyframes animacion-funcion-tiempo{
+    25%{
+        background-color: rgb(255, 227, 42);
+        left: 0;
+    }
+    50%{
+        background-color: rgb(40, 201, 255);
+    }
+    75%{
+        background-color: rgb(200, 61, 255);
+    }
+    100%{
+        background-color: rgb(113, 255, 36);
+        left: 80%;
+    }
+}
+.animaciones-con-funcion-del-tiempo>div>div{
+    animation-name: animacion-funcion-tiempo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* &Linear */
+.elemento-con-funcion-tiempo-linear{
+    animation-timing-function: linear;
+}
