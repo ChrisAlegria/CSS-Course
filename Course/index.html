@@ -1038,38 +1038,40 @@
                             </p>
         </div>
         <div>
-            <div class="elemento-con-animation-direction-alternate-reverse" style="position: relative; float: right; width: 20%; margin: 0 0 0 1%;">
-                <img src="assets/images/bands/Rammstein_4.jpg" style="width: 100%;">
+            <div class="elemento-con-animation-direction-alternate-reverse" style="position: relative; float: right; width: 20%; margin: 0 0 0 1%;"> <!-- *Se declara un div con clase que aplica una animación con dirección "alternate-reverse". Además, tiene posición relativa, flota a la derecha, ancho del 20% y margen izquierdo. -->
+                <img src="assets/images/bands/Rammstein_4.jpg" style="width: 100%;"> <!-- *Se declara una imagen que ocupa el 100% del ancho del contenedor padre. -->
             </div>
-            <p style="line-height: 150%; text-align: justify; margin-top: 2%; background-color: rgb(161, 253, 255);">
+            <p style="line-height: 150%; text-align: justify; margin-top: 2%; background-color: rgb(161, 253, 255);"> <!-- *Se declara un párrafo con interlineado del 150%, texto justificado, margen superior y fondo celeste claro. -->
                 <b>alternate-reverse:</b> En este caso se está aplicando una animación a la imagen ubicada a la derecha. Esta animación se activa cuando el usuario hace clic y mantiene presionado sobre la imagen (usando la pseudoclase <code>:active</code>). La animación está diseñada para mover la imagen desde una posición final (<code>left: -80%</code>) hasta una posición inicial (<code>left: 0</code>), y luego de nuevo hacia la posición final. El valor <code>alternate-reverse</code> combina los efectos de <code>alternate</code> y <code>reverse</code>. Esto significa que la animación también alterna su dirección en cada iteración (ida y vuelta), pero empieza desde el final en lugar del inicio. Así, en la primera vuelta se ejecuta en sentido inverso (de fin a inicio), en la segunda vuelta se reproduce en orden normal (inicio a fin), y continúa alternando así sucesivamente. <b>Al igual que con <code>alternate</code>, este efecto de ida y vuelta solo es visible si se usa la propiedad <code>animation-iteration-count</code> con un valor mayor a 1</b>. Si no se declara correctamente esta propiedad, el efecto alterno no se mostrará y la animación solo se ejecutará una vez en reversa.
             </p>
         </div>
     </div>
     <div class="animaciones-con-funcion-del-tiempo" style="border: 2px solid black; margin-top: 2%; padding: 1%; position: relative;">
-        <h3 style="text-align: center;">animation-timing-function</h3>
-        <p style="text-align: justify;">
+        <h3 style="text-align: center;">animation-timing-function</h3> <!-- *Se declara un div con clase que agrupa ejemplos de la propiedad "animation-timing-function". Tiene borde sólido negro, margen superior, relleno interno y posición relativa. -->
+        <p style="text-align: justify;"> <!-- *Se declara un subtítulo h3 centrado. -->
             La propiedad <b>animation-timing-function</b> controla cómo progresa la velocidad de una animación durante su ejecución, es decir, define el ritmo o la curva de velocidad con la que se mueve un elemento desde el inicio hasta el final. Esto no cambia la duración total de la animación, pero sí cómo se distribuye el movimiento en ese tiempo. Existen varios valores que permiten ajustar el efecto visual según lo que se quiera lograr. Por ejemplo, <b>linear</b> genera una animación con velocidad constante, haciendo que el movimiento sea uniforme y sin aceleraciones ni desaceleraciones. El valor <b>ease</b> (valor por defecto) comienza lento, acelera en el medio y desacelera al final, dando un efecto suave y natural. Otros valores como <b>ease-in</b> hacen que la animación inicie lenta y luego acelere, mientras que <b>ease-out</b> empieza rápido y termina lento. Por último, <b>ease-in-out</b> combina ambos comportamientos, iniciando y terminando despacio, pero acelerando en la mitad, ideal para transiciones balanceadas. Gracias a esta propiedad podemos controlar la sensación que transmite la animación, haciéndola más realista, dinámica o sutil según se necesite.
         </p>
-        <div style="border-top: 1px solid grey; margin-top: 1%;">
+        <div style="border-top: 1px solid grey; margin-top: 1%;"> <!-- *Se declara un contenedor con borde superior gris y margen superior. -->
             <p><b>linear:</b></p>
-            <div class="elemento-con-funcion-tiempo-linear" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> 
+            <div class="elemento-con-funcion-tiempo-linear" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> <!-- *Se declara un div con clase que aplica animación con función de tiempo "linear". Tiene posición relativa, se desplaza 1% desde la izquierda, y dimensiones en viewport. -->
         </div>
-        <div style="border-top: 1px solid grey; margin-top: 1%;">
+        <div style="border-top: 1px solid grey; margin-top: 1%;"> <!-- *Se declara un contenedor con borde superior gris y margen superior. -->
             <p><b>ease:</b></p>
-            <div class="elemento-con-funcion-tiempo-ease" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> 
+            <div class="elemento-con-funcion-tiempo-ease" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> <!-- *Se declara un div con clase que aplica animación con función de tiempo "ease". Tiene posición relativa, desplazamiento lateral y tamaño fijo. -->
+
         </div>
-        <div style="border-top: 1px solid grey; margin-top: 1%;">
+        <div style="border-top: 1px solid grey; margin-top: 1%;"> <!-- *Se declara un contenedor con borde superior gris y margen superior. -->
             <p><b>ease-in:</b></p>
-            <div class="elemento-con-funcion-tiempo-ease-in" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> 
+            <div class="elemento-con-funcion-tiempo-ease-in" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> <!-- *Se declara un div con clase que aplica animación con función de tiempo "ease-in". Tiene posición relativa, desplazamiento lateral y tamaño fijo. -->
         </div>
-        <div style="border-top: 1px solid grey; margin-top: 1%;">
+        <div style="border-top: 1px solid grey; margin-top: 1%;"> <!-- *Se declara un contenedor con borde superior gris y margen superior. -->
             <p><b>ease-in-out:</b></p>
-            <div class="elemento-con-funcion-tiempo-ease-in-out" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> 
+            <div class="elemento-con-funcion-tiempo-ease-in-out" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> <!-- *Se declara un div con clase que aplica animación con función de tiempo "ease-in-out". Tiene posición relativa, desplazamiento lateral y tamaño fijo. -->
         </div>
-        <div style="border-top: 1px solid grey; margin-top: 1%;">
+        <div style="border-top: 1px solid grey; margin-top: 1%;"> <!-- *Se declara un contenedor con borde superior gris y margen superior. -->
             <p><b>ease-out:</b></p>
-            <div class="elemento-con-funcion-tiempo-ease-out" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> 
+            <div class="elemento-con-funcion-tiempo-ease-out" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> <!-- *Se declara un div con clase que aplica animación con función de tiempo "ease-out". Tiene posición relativa, desplazamiento lateral y tamaño fijo. -->
+
         </div>
     </div>
 </body>
