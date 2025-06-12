@@ -1319,24 +1319,28 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /* Todo - Funcion del tiempo de la animacion */
 @keyframes animacion-funcion-tiempo{
+    0%{
+        background-color: #ff2929;
+        left: 1%;
+    }
     25%{
-        background-color: rgb(255, 227, 42);
-        left: 0;
+        background-color: rgb(89, 255, 0);
     }
     50%{
-        background-color: rgb(40, 201, 255);
+        background-color: rgb(0, 191, 255);
     }
     75%{
-        background-color: rgb(200, 61, 255);
+        background-color: rgb(183, 0, 255);
     }
     100%{
-        background-color: rgb(113, 255, 36);
-        left: 80%;
+        background-color: rgb(255, 221, 0);
+        left: 94%;
     }
 }
+
 .animaciones-con-funcion-del-tiempo>div>div{
     animation-name: animacion-funcion-tiempo;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -1344,4 +1348,24 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Linear */
 .elemento-con-funcion-tiempo-linear{
     animation-timing-function: linear;
+}
+
+/* &Ease */
+.elemento-con-funcion-tiempo-ease{
+    animation-timing-function: ease;
+}
+
+/* &Ease-in */
+.elemento-con-funcion-tiempo-ease-in{
+    animation-timing-function: ease-in;
+}
+
+/* &Ease-in-out */
+.elemento-con-funcion-tiempo-ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+
+/* &Ease-out */
+.elemento-con-funcion-tiempo-ease-out{
+    animation-timing-function: ease-out;
 }
