@@ -1376,6 +1376,33 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaración del selector por clase.**/
 
 /* Todo - Shorthand de animaciones: () */
+@keyframes animacion-shorthand{
+    0%{
+        left: 0;
+        top: 0;
+        background-color: #007bff;
+    }
+    25%{
+        left: 98%;
+        top: 0;
+    }
+    50%{
+        left: 98%;
+        top: 37%;
+    }
+    75%{
+        left: 0;
+        top: 37%;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+.elemento-con-animacion-shorthand{
+    animation: animacion-shorthand 7s alternate 3s infinite;
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*  ~Animaciones */
