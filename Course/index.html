@@ -1085,6 +1085,16 @@
     <!-- ~Transiciones -->
     <hr>
     <h1 style="text-align: center;">Transiciones</h1>
-    
+    <div>
+        <div class="elemento-con-transicion">
+            <b>transition-property / transition-duration:</b> Este es un contenedor en bloque <code>div</code> al cual se le aplica un color de fondo usando la propiedad <code>background-color</code>, y al pasar el cursor por encima del elemento (evento <code>:hover</code>), este cambia a otro color de forma suave. Esto es posible gracias a la propiedad <code>transition</code>, que permite que el cambio no sea instantáneo, sino progresivo. En este caso se usa la subpropiedad <code>transition-property</code> para indicar que la transición solo se aplicará al fondo (<code>background</code>), y se especifica un <code>transition-duration</code> de 3 segundos, lo que define cuánto tiempo tomará el cambio de color. Esto significa que al colocar el cursor sobre el elemento, este cambiará su color de fondo gradualmente de verde a azul, y cuando se retire el cursor, el color también volverá al original de forma suave, ya que la transición fue declarada en el estado base del elemento, permitiendo transiciones tanto al ir al estado modificado como al regresar.
+        </div>
+        <div class="elemento-con-tiempo-de-transicion" style="margin-top: 2%; padding: 1%;">
+            <b>transition-timing-function:</b> Este es un contenedor en bloque <code>div</code> al que se le aplica un contorno con la propiedad <code>outline</code> de 3 píxeles de grosor y color rosa neón. Al pasar el cursor por encima del elemento (evento <code>:hover</code>), el grosor del contorno cambia de 3px a 5px y el color cambia a anaranjado. Para que este cambio no ocurra de forma brusca, se usa la propiedad <code>transition</code>, la cual permite que el cambio se realice de forma progresiva. En este caso se utiliza la subpropiedad <code>transition-property</code> para especificar que la transición solo se aplicará al <code>outline</code>, <code>transition-duration</code> para indicar que el cambio durará 1 segundo, y <code>transition-timing-function</code> para definir el ritmo con el que se desarrollará la transición. El valor <code>ease-in</code> significa que la transición comenzará lentamente y luego acelerará, generando un efecto visual donde el contorno inicia el cambio de forma suave y luego se acelera. Esta función de tiempo mejora la fluidez del cambio visual, haciendo la transición más estética y natural.
+        </div>
+        <div style="margin-top: 2%; padding: 1%;">
+            f
+        </div>
+    </div>
 </body>
 </html>
