@@ -1102,13 +1102,13 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Before */
-/* &El pseudoelemento de before se utiliza para insertar contenido antes del contenido real de un elemento, por lo que el pseudoelemento before permite agregar contenido antes del contenido dentro del elemento con el pseudoelemento. Esto significa que el pseudoelemento before se utiliza para agregar unicamente contenido como lo son texto, imagenes, con CSS, y dicho contenido se mostrara antes del contenido real del elemento. */
+/* &El pseudoelemento de before se utiliza para insertar contenido antes del contenido real de un elemento, por lo que el pseudoelemento before permite agregar contenido antes del contenido dentro del elemento con el pseudoelemento. Esto significa que el pseudoelemento before se utiliza para agregar unicamente contenido como lo son texto, imagenes, con CSS, y dicho contenido se mostrara antes del contenido real del elemento. Cabe mencionar que el elemento after para ser mostrado se debera especificar como minimo un "conten: ''" */
 .elemento-con-pseudoelemento-before::before{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-before", donde ademas se le aplica un pseudoelemento llamado "before", el cual se aplicara un estilo antes del elemento.**/
     content: url(../assets/icons/Music_Icon.png); /**Se declara un contenido con el valor "url(../assets/icons/Music_Icon.png)", ocacionando que el contenido del elemento sea una imagen de un icono de musica, debido a el pseudoelemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &After */
-/* &El pseudoelemento de after se utiliza para insertar contenido despues del contenido real de un elemento, por lo que el pseudoelemento after permite agregar contenido despues del contenido dentro del elemento con el pseudoelemento. Esto significa que el pseudoelemento after se utiliza para agregar unicamente contenido como lo son texto, imagenes, con CSS, y dicho contenido se mostrara despues del contenido real del elemento. Cabe mencionar que el contenido que se declare dentro del pseudoelemento after se mostrara dentro del elemento con el pseudoelemento, recorriendo al demas contenido*/
+/* &El pseudoelemento de after se utiliza para insertar contenido despues del contenido real de un elemento, por lo que el pseudoelemento after permite agregar contenido despues del contenido dentro del elemento con el pseudoelemento. Esto significa que el pseudoelemento after se utiliza para agregar unicamente contenido como lo son texto, imagenes, con CSS, y dicho contenido se mostrara despues del contenido real del elemento. Cabe mencionar que el contenido que se declare dentro del pseudoelemento after se mostrara dentro del elemento con el pseudoelemento, recorriendo al demas contenido. Cabe mencionar que el elemento after para ser mostrado se debera especificar como minimo un "conten: ''" */
 .elemento-con-pseudoelemento-after::after{ /**Se declara un selector por clase llamado "elemento-con-pseudoelemento-after", donde ademas se le aplica un pseudoelemento llamado "after", el cual se aplicara un estilo despues del elemento.**/
     content: url(../assets/icons/Music_Icon.png); /**Se declara un contenido con el valor "url(../assets/icons/Music_Icon.png)", ocacionando que el contenido del elemento sea una imagen de un icono de musica, debido a el pseudoelemento.**/
 } /**Cierre de la declaracion de selector por clase.**/
@@ -1194,7 +1194,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
+/*  ~Animaciones */
 /*  ~Las animaciones en CSS permiten crear efectos visuales dinámicos y atractivos al cambiar las propiedades de un elemento a lo largo del tiempo. Esto significa que las animaciones permiten aplicar cambios graduales a las propiedades de un elemento, como el color, la posición, el tamaño, entre otros, creando una transición suave entre los estados inicial y final. Las animaciones se definen mediante keyframes, a los que se les asigna un nombre. Dentro de las llaves se definen los estados de la animación, los cuales pueden hacerse de dos formas: la primera, si solo se quiere que el elemento pase de un estado base a otro mediante una animación suave de un estado a otro, se usa "from" y "to". Esto significa que a lo largo de la animación solo se tendrán 2 estados: el estado base (que es el que tiene el elemento por defecto) y el estado final (que es al que llegará al terminar la animación). La segunda forma es si se quieren hacer más cambios durante la animación, para eso se usan porcentajes, desde 0% que es el inicio hasta 100% que es el final, y entre esos porcentajes se pueden ir aplicando distintos estilos en diferentes momentos. Esto significa que se quieren aplicar más de 2 estados en la animación, por ejemplo que un elemento no pase directamente de un color a otro o de una transparencia a otra, sino que al inicio tenga un valor, a la mitad cambie a otro distinto, y al final vuelva al original, generando así una animación con múltiples etapas definidas dentro del recorrido total del efecto. */
 /* Todo - Estructura General Keyframes: La estructura base de un keyframe en CSS se declara utilizando "@keyframes" seguido del nombre que le queramos dar a la animación. Luego se abren llaves { }, y dentro de estas se definen los estados de la animación. Estos estados pueden escribirse de dos formas: usando "from" y "to" si solo se quiere un estado inicial y uno final, o usando porcentajes (por ejemplo: 0%, 50%, 100%) si se quieren más pasos intermedios durante la animación. Cada uno de estos estados se define abriendo llaves y escribiendo dentro las propiedades CSS que se desean aplicar en ese momento de la animación. Más adelante explicaremos con detalle cada forma por separado (from-to y porcentajes), por ahora solo se muestra la estructura general del keyframe. Cabe mencionar que un keyframe por defecto unicamente se reproducira una vez. */
 @keyframes nombre-keyframe{ /**Se declara un keyframe con el nombre "nombre-keyframe".**/
@@ -1317,55 +1317,66 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     animation-direction: alternate-reverse; /**Se declara la dirección de la animación como "alternate-reverse", haciendo que esta se ejecute primero en reversa (del final al inicio) y luego en su orden normal.**/
 } /**Cierre de la declaración del selector por clase.**/
 
-/* Todo - Funcion del tiempo de la animacion */
-@keyframes animacion-funcion-tiempo{
-    0%{
-        background-color: #ff2929;
-        left: 1%;
-    }
-    25%{
-        background-color: rgb(89, 255, 0);
-    }
-    50%{
-        background-color: rgb(0, 191, 255);
-    }
-    75%{
-        background-color: rgb(183, 0, 255);
-    }
-    100%{
-        background-color: rgb(255, 221, 0);
-        left: 94%;
-    }
-}
+/* Todo - Función del tiempo de la animación (animation-timing-function): La propiedad "animation-timing-function" se utiliza para definir la velocidad con la que progresa una animación a lo largo del tiempo. No afecta la duración total de la animación, sino cómo se distribuye el movimiento en ese periodo. Por ejemplo, puede hacer que el movimiento sea constante ("linear"), que comience lento y luego acelere ("ease-in"), o que inicie rápido y termine lentamente ("ease-out"). También existen combinaciones como "ease-in-out", que inicia y finaliza lento pero acelera en la mitad. Estos valores afectan visualmente la fluidez y el ritmo de las transiciones animadas, permitiendo hacerlas más realistas o estéticas. Aunque esta propiedad no se declara dentro de los keyframes, su efecto se manifiesta en cómo se interpretan los cambios entre los estados definidos en ellos. El siguiente keyframe es utilizado para probar cómo se comportan estos distintos valores al aplicarse. */
+@keyframes animacion-funcion-tiempo { /** Se declara un conjunto de keyframes con el nombre "animacion-funcion-tiempo". **/
+    0% { /** Se define el primer estado de la animación al 0% del tiempo total (inicio). **/
+        background-color: #ff2929; /** El color de fondo comienza en rojo brillante. **/
+        left: 1%; /** El elemento inicia desplazado hacia la izquierda (1% desde el borde izquierdo del contenedor). **/
+    } /** Cierre del bloque del 0%. **/
+    25% { /** Se define el estado al 25% del tiempo total de la animación. **/
+        background-color: rgb(89, 255, 0); /** El fondo cambia a un tono verde fosforescente. Ademas que no se especifica "left", por lo tanto mantiene la posición del paso anterior. */
+    } /** Cierre del bloque del 25%. **/
+    50% { /** Se define el estado al 50% del tiempo total. **/
+        background-color: rgb(0, 191, 255); /** El fondo cambia a un azul brillante. **/
+    } /** Cierre del bloque del 50%. **/
+    75% { /** Se define el estado al 75% del tiempo total. **/
+        background-color: rgb(183, 0, 255); /** El fondo pasa a un color púrpura intenso. **/
+    } /** Cierre del bloque del 75%. **/
+    100% { /** Se define el estado final de la animación al 100% del tiempo total. **/
+        background-color: rgb(255, 221, 0); /** El fondo termina en un amarillo vibrante. **/
+        left: 94%; /** El elemento se mueve hacia la derecha, posicionándose en un 94% desde el borde izquierdo del contenedor. **/
+    } /** Cierre del bloque del 100%. **/
+} /** Cierre completo del keyframe "animacion-funcion-tiempo". **/
 
-.animaciones-con-funcion-del-tiempo>div>div{
-    animation-name: animacion-funcion-tiempo;
-    animation-duration: 3.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+.animaciones-con-funcion-del-tiempo>div>div{ /**Se declara un selector que selecciona todos los <div> que están dentro de otro <div>, el cual a su vez está dentro de un elemento con la clase "animaciones-con-funcion-del-tiempo".**/
+    animation-name: animacion-funcion-tiempo; /**Se declara la propiedad "animation-name" con el valor "animacion-funcion-tiempo", lo que indica que se aplicará al elemento el keyframe con ese nombre.**/
+    animation-duration: 3.5s; /**Se establece una duración de 3.5 segundos para completar un ciclo completo de la animación.**/
+    animation-iteration-count: infinite; /**Se indica que la animación debe repetirse infinitamente, sin detenerse.**/
+    animation-direction: alternate; /**Se especifica que la animación debe alternar su dirección, es decir, se reproduce primero hacia adelante y luego hacia atrás en cada ciclo.**/
+} /**Cierre de la declaración del selector descendente.**/
 
 /* &Linear */
-.elemento-con-funcion-tiempo-linear{
-    animation-timing-function: linear;
-}
+/* &El valor "linear" dentro de la propiedad "animation-timing-function" produce una animación con velocidad constante desde el inicio hasta el final. No hay aceleraciones ni desaceleraciones, lo que da como resultado un movimiento uniforme durante toda la duración de la animación. Ademas este es el valor por defecto de toda keyframe. */
+.elemento-con-funcion-tiempo-linear{ /**Se declara un selector por clase llamado "elemento-con-funcion-tiempo-linear".**/
+    animation-timing-function: linear; /**Se aplica la función de tiempo "linear", haciendo que la animación avance a una velocidad constante en todo momento.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Ease */
-.elemento-con-funcion-tiempo-ease{
-    animation-timing-function: ease;
-}
+/* &El valor "ease" es el valor por defecto de "animation-timing-function". Este tipo de animación inicia lentamente, luego acelera en el medio y termina disminuyendo la velocidad. Es útil para dar un efecto natural y suave a las animaciones. */
+.elemento-con-funcion-tiempo-ease{ /**Se declara un selector por clase llamado "elemento-con-funcion-tiempo-ease".**/
+    animation-timing-function: ease; /**Se aplica la función de tiempo "ease", la cual genera un efecto suave comenzando lento, acelerando y luego desacelerando hacia el final.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Ease-in */
-.elemento-con-funcion-tiempo-ease-in{
-    animation-timing-function: ease-in;
-}
+/* &El valor "ease-in" hace que la animación comience lentamente y luego aumente su velocidad progresivamente. Es ideal cuando se desea un arranque sutil que se vuelve más rápido con el tiempo. */
+.elemento-con-funcion-tiempo-ease-in{ /**Se declara un selector por clase llamado "elemento-con-funcion-tiempo-ease-in".**/
+    animation-timing-function: ease-in; /**Se aplica la función de tiempo "ease-in", haciendo que la animación comience despacio y luego acelere.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Ease-in-out */
-.elemento-con-funcion-tiempo-ease-in-out{
-    animation-timing-function: ease-in-out;
-}
+/* &El valor "ease-in-out" combina los efectos de "ease-in" y "ease-out". La animación comienza lentamente, acelera en el medio y luego desacelera al final. Este valor es ideal para animaciones balanceadas y naturales. */
+.elemento-con-funcion-tiempo-ease-in-out{ /**Se declara un selector por clase llamado "elemento-con-funcion-tiempo-ease-in-out".**/
+    animation-timing-function: ease-in-out; /**Se aplica la función de tiempo "ease-in-out", haciendo que la animación empiece y termine despacio, acelerando solo en el centro.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Ease-out */
-.elemento-con-funcion-tiempo-ease-out{
-    animation-timing-function: ease-out;
-}
+/* &El valor "ease-out" hace que la animación comience rápidamente y luego se desacelere hacia el final. Es útil cuando se desea que la animación termine de manera suave. */
+.elemento-con-funcion-tiempo-ease-out{ /**Se declara un selector por clase llamado "elemento-con-funcion-tiempo-ease-out".**/
+    animation-timing-function: ease-out; /**Se aplica la función de tiempo "ease-out", haciendo que la animación empiece rápido y termine lentamente.**/
+} /**Cierre de la declaración del selector por clase.**/
+
+/* Todo - Shorthand de animaciones: () */
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*  ~Animaciones */
+/*  ~ */
