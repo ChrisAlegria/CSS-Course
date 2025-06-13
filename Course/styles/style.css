@@ -1375,37 +1375,37 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     animation-timing-function: ease-out; /**Se aplica la función de tiempo "ease-out", haciendo que la animación empiece rápido y termine lentamente.**/
 } /**Cierre de la declaración del selector por clase.**/
 
-/* Todo - Shorthand de animaciones: () */
-@keyframes animacion-shorthand{
-    0%{
-        background-color: rgb(0, 191, 255);
-        left: 0;
-        top: 0;
-    }
-    25%{
-        background-color: rgb(183, 0, 255); 
-        left: 98%;
-        top: 0;
-    }
-    50%{
-        background-color: #ff2929;
-        left: 98%;
-        top: 37%;
-    }
-    75%{
-        background-color: rgb(89, 255, 0); 
-        left: 0;
-        top: 37%;
-    }
-    100%{
-        background-color: rgb(0, 191, 255); 
-        left: 0;
-        top: 0;
-    }
-}
+/* Todo - Shorthand de animaciones (animation{}): Es una propiedad abreviada que permite declarar múltiples propiedades de animación en una sola línea. Con esta shorthand se pueden definir el nombre del keyframe, la duración, la función de tiempo, el retraso, la cantidad de repeticiones, la dirección, el modo de llenado (fill mode) y si la animación es o no pausada. El orden sugerido para declarar estas propiedades dentro del shorthand es: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state. Usar esta propiedad facilita la escritura y lectura del código, ya que se pueden evitar múltiples líneas declarando propiedades por separado. Además, no es obligatorio declarar todas las propiedades; se pueden omitir las que no se necesiten. Un ejemplo completo del uso del shorthand podría ser: animation: mover 3s ease-in 1s infinite alternate both running; lo que indica que la animación llamada "mover" durará 3 segundos, iniciará con un retraso de 1 segundo, se repetirá infinitamente, cambiará de dirección en cada ciclo, mantendrá el estilo aplicado cuando termine, y estará en estado de reproducción. */
+@keyframes animacion-shorthand { /** Se declara un conjunto de keyframes con el nombre "animacion-shorthand". **/
+    0% { /** Se define el estado inicial de la animación, al 0% del tiempo total. **/
+        background-color: rgb(0, 191, 255); /** El color de fondo comienza en un tono azul brillante. **/
+        left: 0; /** La posición izquierda del elemento inicia en 0, es decir, pegado al borde izquierdo del contenedor. **/
+        top: 0; /** La posición superior del elemento también comienza en 0, es decir, en la parte superior del contenedor. **/
+    } /** Cierre del bloque del 0%. **/
+    25% { /** Se define el estado al 25% del tiempo total. **/
+        background-color: rgb(183, 0, 255); /** El fondo cambia a un púrpura intenso. **/
+        left: 98%; /** El elemento se mueve casi completamente hacia la derecha del contenedor (98% desde el borde izquierdo). **/
+        top: 0; /** La posición superior permanece en la parte superior. **/
+    } /** Cierre del bloque del 25%. **/
+    50% { /** Se define el estado al 50% del tiempo total. **/
+        background-color: #ff2929; /** El color de fondo cambia a rojo brillante. **/
+        left: 98%; /** El elemento se mantiene en el borde derecho. **/
+        top: 37%; /** El elemento se desplaza hacia abajo en un 37% desde la parte superior del contenedor. **/
+    } /** Cierre del bloque del 50%. **/
+    75% { /** Se define el estado al 75% del tiempo total. **/
+        background-color: rgb(89, 255, 0); /** El fondo cambia a un verde fosforescente. **/
+        left: 0; /** El elemento regresa al borde izquierdo. **/
+        top: 37%; /** La posición superior se mantiene en 37%. **/
+    } /** Cierre del bloque del 75%. **/
+    100% { /** Se define el estado final de la animación, al 100% del tiempo total. **/
+        background-color: rgb(0, 191, 255); /** El fondo vuelve al azul brillante, como al inicio. **/
+        left: 0; /** La posición izquierda vuelve a 0. **/
+        top: 0; /** La posición superior también vuelve a 0. **/
+    } /** Cierre del bloque del 100%. **/
+} /** Cierre completo del keyframe "animacion-shorthand". **/
 
-.elemento-con-animacion-shorthand{
-    animation: animacion-shorthand 7s alternate 3s infinite;
+.elemento-con-animacion-shorthand { /** Se declara un selector por clase llamado "elemento-con-animacion-shorthand". **/
+    animation: animacion-shorthand 6s linear 3s infinite alternate; /** Se utiliza la propiedad shorthand "animation" para definir múltiples valores en una sola línea, se declara el nombre del keyframe a utilizar, se indica que la animación completa dura 6 segundos, que la función de tiempo es lineal, que la animación inicia después de 3 segundos, que se repite infinitamente y que alterna la dirección en cada ciclo. **/
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
