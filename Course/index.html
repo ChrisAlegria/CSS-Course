@@ -1073,9 +1073,9 @@
             <div class="elemento-con-funcion-tiempo-ease-out" style="left: 1%; position: relative; width: 5vw; height: 10vh;"></div> <!-- *Se declara un div con clase que aplica animación con función de tiempo "ease-out". Tiene posición relativa, desplazamiento lateral y tamaño fijo. -->
         </div>
     </div>
-    <div style="border: 2px solid black; margin-top: 2%; padding: 1%; position: relative; height: 20vh; width: 98%;">
+    <div style="border: 2px solid black; margin-top: 2%; padding: 1%; position: relative; height: 20vh; width: 98%;"> <!-- *Se declara un contenedor con borde negro de 2px, margen superior, relleno interno (padding), posición relativa y dimensiones definidas. -->
         <h3 style="text-align: center;">Animacion Shorthand</h3>
-        <div class="elemento-con-animacion-shorthand" style="position: relative; width: 2vw; height: 4.5vh; background-color: rgb(0, 191, 255); float: left; margin-right: 1%; top: 0; left: 0;"></div>
+        <div class="elemento-con-animacion-shorthand" style="position: relative; width: 2vw; height: 4.5vh; background-color: rgb(0, 191, 255); float: left; margin-right: 1%; top: 0; left: 0;"></div></div> <!-- *Se declara un div con clase que aplicará animación mediante la notación shorthand. Tiene posición relativa, tamaño fijo, color de fondo celeste, se posiciona flotando a la izquierda y con separación a la derecha. -->
         <p>
             <b>Animation Shorthand: </b> <code>animation</code> dentro de un <code>div</code> con la clase <code>elemento-con-animacion-shorthand</code>, por lo que en dicho <code>div</code> se especifican varios valores: un nombre de animación <code>animacion-shorthand</code>, una duración de <code>6s</code>, una función de tiempo <code>linear</code>, un retraso de inicio de <code>3s</code>, un número de repeticiones <code>infinite</code> y una dirección <code>alternate</code>. Por lo tanto, esta declaración resume en una sola línea todo el comportamiento de la animación aplicada al elemento, permitiendo definir cómo inicia, cuánto dura, cuándo se activa, cuántas veces se repite y en qué dirección se ejecuta, logrando así una animación fluida, cíclica y controlada desde una única propiedad.
         </p>
@@ -1084,19 +1084,19 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Transiciones -->
     <hr>
-    <h1 style="text-align: center;">Transiciones</h1>
-    <div>
-        <div class="elemento-con-transicion">
+    <h1 style="text-align: center;">Transiciones</h1> <!-- *Se declara un encabezado de nivel 1 (<h1>) con el texto centrado. -->
+    <div> 
+        <div class="elemento-con-transicion"> <!-- *Se declara un div con clase que aplica una transición suave al cambiar el color de fondo cuando se activa el estado :hover. -->
             <b>transition-property / transition-duration:</b> Este es un contenedor en bloque <code>div</code> al cual se le aplica un color de fondo usando la propiedad <code>background-color</code>, y al pasar el cursor por encima del elemento (evento <code>:hover</code>), este cambia a otro color de forma suave. Esto es posible gracias a la propiedad <code>transition</code>, que permite que el cambio no sea instantáneo, sino progresivo. En este caso se usa la subpropiedad <code>transition-property</code> para indicar que la transición solo se aplicará al fondo (<code>background</code>), y se especifica un <code>transition-duration</code> de 3 segundos, lo que define cuánto tiempo tomará el cambio de color. Esto significa que al colocar el cursor sobre el elemento, este cambiará su color de fondo gradualmente de verde a azul, y cuando se retire el cursor, el color también volverá al original de forma suave, ya que la transición fue declarada en el estado base del elemento, permitiendo transiciones tanto al ir al estado modificado como al regresar.
         </div>
-        <div class="elemento-con-tiempo-de-transicion" style="margin-top: 2%; padding: 1%;">
+        <div class="elemento-con-tiempo-de-transicion" style="margin-top: 2%; padding: 1%;"> <!-- *Se declara un div con clase que aplica una transición con función de tiempo (timing function). También se le aplica un margen superior y un relleno interno para separar y espaciar el contenido. -->
             <b>transition-timing-function:</b> Este es un contenedor en bloque <code>div</code> al que se le aplica un contorno con la propiedad <code>outline</code> de 3 píxeles de grosor y color rosa neón. Al pasar el cursor por encima del elemento (evento <code>:hover</code>), el grosor del contorno cambia de 3px a 5px y el color cambia a anaranjado. Para que este cambio no ocurra de forma brusca, se usa la propiedad <code>transition</code>, la cual permite que el cambio se realice de forma progresiva. En este caso se utiliza la subpropiedad <code>transition-property</code> para especificar que la transición solo se aplicará al <code>outline</code>, <code>transition-duration</code> para indicar que el cambio durará 1 segundo, y <code>transition-timing-function</code> para definir el ritmo con el que se desarrollará la transición. El valor <code>ease-in</code> significa que la transición comenzará lentamente y luego acelerará, generando un efecto visual donde el contorno inicia el cambio de forma suave y luego se acelera. Esta función de tiempo mejora la fluidez del cambio visual, haciendo la transición más estética y natural.
         </div>
-        <div class="elemento-con-transicion-con-delay" style="margin-top: 2%; padding: 1%; width: 100%; border: 2px solid black;">
+        <div class="elemento-con-transicion-con-delay" style="margin-top: 2%; padding: 1%; width: 100%; border: 2px solid black;"> <!-- *Se declara un div con clase que aplica una transición con retardo (delay). También se le asignan estilos en línea: margen superior, relleno interno, ancho completo y un borde negro de 2 píxeles. -->
             <b>transition-delay:</b> Este es un contenedor en bloque <code>div</code> al cual se le aplica una imagen de fondo utilizando la propiedad <code>background</code>, combinando valores como <code>no-repeat</code>, <code>top</code> y <code>cover</code> para evitar repeticiones, posicionar la imagen en la parte superior y cubrir todo el contenedor. Además, el color del texto del elemento se establece en blanco mediante la propiedad <code>color</code>. Cuando se pasa el cursor por encima del elemento (evento <code>:hover</code>), la imagen de fondo se cambia por otra diferente y el color del texto cambia a negro. Para que estos cambios no ocurran de manera inmediata, se utilizan propiedades de transición: <code>transition-property</code> para indicar que los cambios aplicarán tanto a <code>background</code> como a <code>color</code>, <code>transition-duration</code> para establecer que los cambios duren 2 segundos, y <code>transition-delay</code> para especificar que debe haber un retraso de 1 segundo antes de que inicie la transición. Esto significa que al colocar el cursor sobre el elemento, no se verá el cambio de inmediato, sino que esperará un segundo antes de comenzar el cambio visual, el cual tomará 2 segundos en completarse. Este pequeño retraso puede ser útil para crear efectos más pausados o coordinados, haciendo que las transiciones no comiencen de forma abrupta sino con un ligero tiempo de espera, aportando una sensación más natural y controlada al diseño.
         </div>
-        <div>
-            
+        <div class="elemento-con-transition-shorthand" style="margin-top: 2%; padding: 1%; border: 2px solid black;">
+            f
         </div>
     </div>
 </body>

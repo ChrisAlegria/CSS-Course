@@ -1412,38 +1412,38 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /*  ~Transiciones */
 /*  ~Las transiciones en CSS permiten aplicar cambios graduales a una o varias propiedades de un elemento cuando este cambia de estado, como por ejemplo al hacer hover, focus o activar un botón. Esto quiere decir que en lugar de que el cambio ocurra de forma instantánea, se puede hacer que suceda de manera progresiva y suave, generando una experiencia visual más agradable. Para lograrlo se utiliza la propiedad "transition", en la cual se puede especificar qué propiedad se quiere que cambie, cuánto tiempo debe durar el cambio, la función de aceleración (como ease o linear), y un posible retraso antes de comenzar. A diferencia de las animaciones, las transiciones no utilizan keyframes ni múltiples etapas, ya que solo definen un cambio entre dos estados: el estado inicial (por defecto) y el estado final (activado por una interacción como hover o focus). Es decir, si un botón tiene un color de fondo rojo y se le aplica una transición junto con un estilo hover con fondo azul, al pasar el cursor por encima el cambio de rojo a azul será suave y no instantáneo. Sin embargo, una vez que el cursor se retira, el elemento volverá a su estado inicial también con un cambio gradual. Es importante notar que las transiciones solo se activan cuando ocurre un cambio en el estado del elemento y duran únicamente el tiempo indicado; no se repiten por sí solas como las animaciones, y no permiten definir múltiples pasos intermedios. Por ello, son ideales para efectos simples y rápidos como desvanecimientos, cambios de color, tamaño o posición durante una interacción, pero no para secuencias complejas o automatizadas. Cabe resaltar que para poder aplicar transiciones se necesitan dos estados: una que define el estado base del elemento y otra que define el estado modificado (por ejemplo, usando la pseudoclase :hover). Por lo tanto, es importante tener en cuenta que si las propiedades de transición se declaran **en el estado base** del elemento, como por ejemplo `.miElemento`, el cambio hacia el estado `:hover` y el regreso al estado original serán ambos suaves. Pero si se declaran solo dentro del estado `:hover`, la transición se aplicará **solo al entrar** en el hover, y **el regreso al estado base será inmediato** (sin efecto visual), ya que el elemento ya no está bajo las reglas de `:hover` */
 /* Todo - Estructura de propiedad para aplicar una transición: La estructura para aplicar una transición correctamente es la siguiente: selector { transition-property: propiedad; transition-duration: tiempo; }. Primero se declara el selector al que se le aplicará la transición, ya sea una etiqueta, clase o id. Luego se declara la propiedad "transition-property", donde se especifica qué propiedad o propiedades deben ser afectadas por la transición (por ejemplo, "background-color", "opacity", "transform", etc.). Es importante declarar esta propiedad, ya que si no se indica, los cambios en otras propiedades no serán animados y simplemente aparecerán de forma repentina. Después se declara "transition-duration", donde se establece cuánto tiempo debe durar la transición. Este valor se define generalmente en segundos usando "s" (por ejemplo: 1s). Si no se especifica un tiempo de duración, aunque se haya indicado la propiedad a animar, el cambio también ocurrirá de forma instantánea, sin ningún efecto visual gradual. Por lo tanto, para que una transición funcione correctamente y se vea el cambio suave entre dos estados, como por ejemplo al pasar el cursor sobre un elemento, se deben declarar **tanto** "transition-property" como "transition-duration" en el estado base del elemento. Esto asegura que al cambiar de estado (como al aplicar ":hover"), la transición se aplique solo a las propiedades deseadas, con la duración especificada, y se genere un efecto visual atractivo y controlado. */
-.elemento-con-transicion {
-    background-color: rgb(128, 255, 0);
-    transition-property: background;
-    transition-duration: 3s;
-}
+.elemento-con-transicion { /**Se declara un selector por clase llamado "elemento-con-transicion", el cual aplica estilos al estado base del elemento.**/
+    background-color: rgb(128, 255, 0); /**Se aplica un color de fondo verde fosforescente mediante la propiedad "background-color".**/
+    transition-property: background; /**Se especifica que solo la propiedad "background" será la que tendrá una transición.**/
+    transition-duration: 3s; /**Se define que la duración de la transición será de 3 segundos.**/
+} /**Cierre de la declaración del selector por clase.**/
 
-.elemento-con-transicion:hover {
-    background-color: rgb(0, 221, 255);
-}
+.elemento-con-transicion:hover { /**Se declara una regla para la pseudoclase ":hover", que se activa cuando el cursor pasa sobre el elemento.**/
+    background-color: rgb(0, 221, 255); /**Se cambia el color de fondo a un azul celeste, lo cual se hará de forma suave gracias a la transición.**/
+} /**Cierre de la declaración de la pseudoclase ":hover".**/
 
 /* Todo - Función del tiempo de la transición (transition-timing-function):  Al igual que en las animaciones, existe la propiedad "transition-timing-function" en las transiciones, la cual define la velocidad con la que progresa el cambio de una propiedad a lo largo del tiempo. Esta propiedad no afecta la duración total de la transición, sino la forma en que el cambio se distribuye dentro de ese tiempo. Por ejemplo, el valor "linear" hace que el cambio ocurra a velocidad constante durante toda la transición. El valor "ease-in" hace que el cambio comience lento y luego acelere hacia el final. Por otro lado, "ease-out" hace que el cambio inicie rápido y termine lentamente, mientras que "ease-in-out" combina ambas, iniciando y terminando lento pero acelerando en la mitad del proceso. Estos valores permiten controlar la fluidez y la sensación visual de la transición, haciendo que los cambios sean más naturales, suaves o dinámicos según se desee. Para ver las diferencias de forma mas entendible visualiza la pagina en el navegaro y ve a la seccion de "animation-timing-function" */
-.elemento-con-tiempo-de-transicion{
-    outline: 3px solid rgb(255, 0, 204);
-    transition-property: outline;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-}
+.elemento-con-tiempo-de-transicion { /**Se declara un selector por clase llamado "elemento-con-tiempo-de-transicion", el cual aplica estilos al estado base del elemento.**/
+    outline: 3px solid rgb(255, 0, 204); /**Se aplica un contorno (outline) de 3 píxeles de grosor y color rosa neón alrededor del elemento.**/
+    transition-property: outline; /**Se especifica que solo la propiedad "outline" será afectada por la transición.**/
+    transition-duration: 1s; /**Se define que la transición tendrá una duración de 1 segundo.**/
+    transition-timing-function: ease-in; /**Se declara la función de tiempo como "ease-in", lo que significa que la transición comenzará lentamente y acelerará hacia el final.**/
+} /**Cierre de la declaración del selector por clase.**/
 
-.elemento-con-tiempo-de-transicion:hover{
-    outline: 5px solid orangered;
-}
+.elemento-con-tiempo-de-transicion:hover { /**Se declara una regla para la pseudoclase ":hover", que se activa cuando el cursor pasa sobre el elemento.**/
+    outline: 5px solid orangered; /**Se cambia el contorno a 5 píxeles de grosor y color naranja, lo cual ocurrirá de forma suave gracias a la transición definida en el estado base.**/
+} /**Cierre de la declaración de la pseudoclase ":hover".**/
 
 /* Todo - Retraso en la transición (transition-delay):  Al igual que en las animaciones, en las transiciones también existe la propiedad "transition-delay", la cual permite establecer un tiempo de espera antes de que comience el cambio de una propiedad. Esta propiedad no modifica ni la duración ni la velocidad del cambio, sino que retrasa su inicio una vez que se activa la transición (por ejemplo, al pasar el cursor con :hover). Por ejemplo, si se establece un delay de "2s", la transición esperará dos segundos antes de comenzar a ejecutarse desde el momento en que se activa el evento. Esto resulta útil cuando se desea crear un efecto más pausado o cuando se quieren coordinar múltiples transiciones en diferentes elementos para que ocurran de manera escalonada. Al igual que con las animaciones, los valores de "transition-delay" se expresan en segundos (s) o milisegundos (ms). */
-.elemento-con-transicion-con-delay{
-    background: url('../assets/images/backgrounds/Background_Image_7.jpg') no-repeat top/cover;
-    color: white;
-    transition-property: background color;
-    transition-duration: 2s;
-    transition-delay: 1s;
-}
+.elemento-con-transicion-con-delay { /**Se declara un selector por clase llamado "elemento-con-transicion-con-delay", el cual aplica estilos al estado base del elemento.**/
+    background: url('../assets/images/backgrounds/Background_Image_7.jpg') no-repeat top/cover; /**Se aplica una imagen de fondo desde la ruta indicada, sin repetición (no-repeat), alineada arriba (top) y ajustada para cubrir todo el contenedor (cover).**/
+    color: white; /**Se define el color del texto como blanco.**/
+    transition-property: background color; /**Se especifica que las propiedades "background" y "color" serán afectadas por la transición.**/
+    transition-duration: 2s; /**Se establece que la duración de la transición será de 2 segundos.**/
+    transition-delay: 1s; /**Se indica que la transición tendrá un retraso de 1 segundo antes de comenzar a ejecutarse.**/
+} /**Cierre de la declaración del selector por clase.**/
 
-.elemento-con-transicion-con-delay:hover{
-    background: url('../assets/images/backgrounds/Background_Image_8.jpg') no-repeat top/cover;
-    color: black;
-}
+.elemento-con-transicion-con-delay:hover { /**Se declara una regla para la pseudoclase ":hover", que se activa cuando el cursor pasa sobre el elemento.**/
+    background: url('../assets/images/backgrounds/Background_Image_8.jpg') no-repeat top/cover; /**Se cambia la imagen de fondo por otra, manteniendo la alineación, repetición y ajuste anteriores.**/
+    color: black; /**Se cambia el color del texto a negro, y este cambio también será afectado por la transición con retardo.**/
+} /**Cierre de la declaración de la pseudoclase ":hover".**/
