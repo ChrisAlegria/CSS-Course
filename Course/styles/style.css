@@ -1438,7 +1438,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 .elemento-con-transicion-con-delay { /**Se declara un selector por clase llamado "elemento-con-transicion-con-delay", el cual aplica estilos al estado base del elemento.**/
     background: url('../assets/images/backgrounds/Background_Image_7.jpg') no-repeat top/cover; /**Se aplica una imagen de fondo desde la ruta indicada, sin repetición (no-repeat), alineada arriba (top) y ajustada para cubrir todo el contenedor (cover).**/
     color: white; /**Se define el color del texto como blanco.**/
-    transition-property: background color; /**Se especifica que las propiedades "background" y "color" serán afectadas por la transición.**/
+    transition-property: background, color; /**Se especifica que las propiedades "background" y "color" serán afectadas por la transición.**/
     transition-duration: 2s; /**Se establece que la duración de la transición será de 2 segundos.**/
     transition-delay: 1s; /**Se indica que la transición tendrá un retraso de 1 segundo antes de comenzar a ejecutarse.**/
 } /**Cierre de la declaración del selector por clase.**/
@@ -1449,11 +1449,11 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaración de la pseudoclase ":hover".**/
 
 /* Todo - Shorthand de transiciones (transition): Esta propiedad abreviada permite definir varias características de una transición en una sola línea, facilitando la escritura y lectura del código. Con el shorthand se pueden especificar las propiedades que cambiarán (transition-property), la duración de la transición (transition-duration), la función de tiempo que controla la velocidad del cambio (transition-timing-function) y el retraso antes de iniciar la transición (transition-delay). El orden recomendado para declarar estas subpropiedades en el shorthand es: transition-property, transition-duration, transition-timing-function, transition-delay. No es obligatorio declarar todas, se pueden omitir las que no se requieran. Por ejemplo: transition: background-color 2s ease-in 0.5s; indica que la propiedad background-color cambiará en 2 segundos, con una aceleración inicial lenta (ease-in) y comenzará medio segundo después de activarse. Usar esta shorthand permite un código más limpio y organizado, evitando múltiples líneas separadas para cada subpropiedad de la transición. */
-.elemento-con-transicion-shorthand>img{
-    opacity: 0.3;
-    transition: opacity 1s linear 1s;
-}
+.elemento-con-transicion-shorthand > img { /** Se declara un selector que apunta a las imágenes hijas directas del elemento con clase "elemento-con-transicion-shorthand". **/
+    opacity: 0.3; /** Se establece la opacidad inicial de la imagen en 0.3, haciendo que se vea parcialmente transparente. **/
+    transition: opacity 1s linear 1s; /** Se define una transición para la propiedad "opacity" que durará 1 segundo, con una función de tiempo lineal, y un retraso de 1 segundo antes de iniciar la transición. **/
+} /** Cierre de la declaración del selector para la imagen. **/
 
-.elemento-con-transicion-shorthand>img:hover{
-    opacity: 1;
-}
+.elemento-con-transicion-shorthand > img:hover { /** Se declara una regla para la pseudoclase ":hover" que se activa cuando el cursor pasa sobre la imagen dentro del elemento con clase "elemento-con-transicion-shorthand". **/
+    opacity: 1; /** Se cambia la opacidad de la imagen a 1 (totalmente visible) cuando se pasa el cursor por encima, aplicando la transición definida anteriormente para que el cambio sea suave. **/
+} /** Cierre de la declaración de la pseudoclase ":hover" para la imagen. **/
