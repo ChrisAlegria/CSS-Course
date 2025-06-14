@@ -1459,3 +1459,6 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     opacity: 1; /** Se cambia la opacidad de la imagen a 1 (totalmente visible) cuando se pasa el cursor por encima, aplicando la transición definida anteriormente para que el cambio sea suave. **/
     width: 130px; /** Se aumenta el ancho de la imagen a 130 píxeles al pasar el cursor, utilizando la transición definida para un cambio gradual. **/
 } /** Cierre de la declaración de la pseudoclase ":hover" para la imagen. **/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*  ~MediaQueries */
