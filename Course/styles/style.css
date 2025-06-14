@@ -1433,3 +1433,17 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 .elemento-con-tiempo-de-transicion:hover{
     outline: 5px solid orangered;
 }
+
+/* Todo - Retraso en la transición (transition-delay):  Al igual que en las animaciones, en las transiciones también existe la propiedad "transition-delay", la cual permite establecer un tiempo de espera antes de que comience el cambio de una propiedad. Esta propiedad no modifica ni la duración ni la velocidad del cambio, sino que retrasa su inicio una vez que se activa la transición (por ejemplo, al pasar el cursor con :hover). Por ejemplo, si se establece un delay de "2s", la transición esperará dos segundos antes de comenzar a ejecutarse desde el momento en que se activa el evento. Esto resulta útil cuando se desea crear un efecto más pausado o cuando se quieren coordinar múltiples transiciones en diferentes elementos para que ocurran de manera escalonada. Al igual que con las animaciones, los valores de "transition-delay" se expresan en segundos (s) o milisegundos (ms). */
+.elemento-con-transicion-con-delay{
+    background: url('../assets/images/backgrounds/Background_Image_7.jpg') no-repeat top/cover;
+    color: white;
+    transition-property: background color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.elemento-con-transicion-con-delay:hover{
+    background: url('../assets/images/backgrounds/Background_Image_8.jpg') no-repeat top/cover;
+    color: black;
+}
