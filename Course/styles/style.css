@@ -1462,3 +1462,38 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*  ~MediaQueries */
+.elemento-con-mediaqueries{
+    background-color: rgb(106, 153, 255);
+    color: black;
+    text-align: justify;  
+}
+
+.elemento-con-mediaqueries>img{
+    width: 20%;
+    margin-right: 1.6%;
+    float: left; 
+}
+
+@media (max-width: 450px){
+    .elemento-con-mediaqueries{
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    .elemento-con-mediaqueries>img{
+        width: 100%;
+        position: none;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 800px){
+    .elemento-con-mediaqueries{
+        background-color: rgb(170, 73, 255);
+        color: black;
+    }
+
+    .elemento-con-mediaqueries>img{
+        width: 50%; 
+        float: right;
+    }
+}
