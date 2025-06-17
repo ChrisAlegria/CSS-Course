@@ -1178,7 +1178,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /* Todo - Selector de atributo con valor: Para poder declarar un selector de atributo con valor se utiliza el nombre del elemento, clase o id seguido de un corchete abierto, dentro del cual se declara el nombre del atributo, seguido de un signo igual y el valor del atributo entre comillas, seguido de un corchete cerrado. quedando la estructura como elemento[atributo="valor"]{propiedad:valor;}. Por ende para declarar un selector de atributo con valor se ingresa el nombre del elemento, clase o id seguido de un corchete abierto, dentro del cual se declara el nombre del atributo, seguido de un signo igual y el valor del atributo entre comillas, seguido de un corchete cerrado. Por lo que dicho selector seleccionara todos los elementos que tengan el atributo especificado dentro del selector con el valor especificado dentro del selector. */
 .elemento-con-selector-de-atributo-con-valor[target="_blank"]{ /**Se declara un selector por clase llamado "elemento-con-selector-de-atributo-con-valor" y se selecciona todos los elementos que tengan el atributo "target" con el valor "_blank".**/
-    background-color: greenyellow;  /**Se declara un color de fondo con el valor "greenyellow", ocacionando que el fondo del elemento sea de color verde amarillento.**/
+    background-color: greenyellow; /**Se declara un color de fondo con el valor "greenyellow", ocacionando que el fondo del elemento sea de color verde amarillento.**/
 } /**Cierre de la declaracion de selector por clase.**/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
