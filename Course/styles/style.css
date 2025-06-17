@@ -1509,3 +1509,29 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*  ~FlexBox */
+
+/* Todo - Direccion del flex */
+/* &Row */
+.elemento-con-flex-direction-row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* &Row-reverse */
+.elemento-con-flex-direction-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* &Column */
+.elemento-con-flex-direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* &Column-reverse */
+.elemento-con-flex-direction-column-reverse{
+    display: flex;
+    flex-direction: column-reverse  ;
+}
+
