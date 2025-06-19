@@ -1035,7 +1035,7 @@
             </div>
             <p style="line-height: 150%; text-align: justify; background-color: rgb(255, 204, 116);"> <!-- *Se declara un párrafo con interlineado del 150%, texto justificado y fondo naranja claro. -->
                 <b>alternate:</b> En este caso se está aplicando una animación a la imagen ubicada a la izquierda. Esta animación se activa cuando el usuario hace clic y mantiene presionado sobre la imagen (mediante la pseudoclase <code>:active</code>). En la animación, la imagen se desplaza desde su punto inicial (por ejemplo, <code>left: 0</code>) hasta un punto final (por ejemplo, <code>left: -80%</code>). Cuando se utiliza el valor <code>alternate</code> en la propiedad <code>animation-direction</code>, la animación cambia de dirección en cada repetición: en la primera iteración va del inicio al fin (como una animación normal), y en la siguiente va del fin al inicio (como si fuera <code>reverse</code>), luego de nuevo al inicio, y así sucesivamente. <b>Es importante mencionar que este efecto de ida y vuelta solo se hace visible si se utiliza también la propiedad <code>animation-iteration-count</code> con un valor mayor a 1</b>, como <code>infinite</code> o <code>2</code>. Si no se indica un número de repeticiones mayor a uno, solo se ejecutará la animación en una dirección (como si fuera <code>normal</code>). Este valor es ideal cuando se quiere crear un efecto continuo o pulsante que regrese a su estado original sin cortar bruscamente.
-                            </p>
+            </p>
         </div>
         <div>
             <div class="elemento-con-animation-direction-alternate-reverse" style="position: relative; float: right; width: 20%; margin: 0 0 0 1%;"> <!-- *Se declara un div con clase que aplica una animación con dirección "alternate-reverse". Además, tiene posición relativa, flota a la derecha, ancho del 20% y margen izquierdo. -->
@@ -1106,10 +1106,10 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~MediaQueries -->
     <hr>
-    <h1 style="text-align: center;">MediaQueries</h1>
-    <div class="elemento-con-mediaqueries">
-        <img src="assets/images/animals/Guinea Pig.jpg">
-        <p>
+    <h1 style="text-align: center;">MediaQueries</h1> <!-- *Se declara un encabezado de nivel 1 centrado horizontalmente. -->
+    <div class="elemento-con-mediaqueries"> <!-- *Se declara un contenedor con clase que aplica estilos adaptativos mediante media queries. -->
+        <img src="assets/images/animals/Guinea Pig.jpg"> <!-- *Se inserta una imagen desde la ruta especificada, en este caso una imagen de un conejillo de indias. -->
+    <p> <!-- *Se declara un párrafo donde se puede agregar contenido textual relacionado con la imagen o el tema. -->
             <b>MediaQueries: </b>En este ejemplo se aplican estilos base a un contenedor con clase <code>elemento-con-mediaqueries</code> y a su imagen hija, que se usan por defecto en cualquier tamaño de pantalla. Luego, para que el diseño se adapte a diferentes dispositivos, se utilizan <code>@media</code> queries con condiciones basadas en el ancho de la pantalla. Por ejemplo, cuando el ancho es igual o menor a 450 píxeles (<code>max-width: 450px</code>), los estilos dentro de esa media query se aplican: el fondo cambia a negro, el texto se vuelve blanco para mejorar el contraste, y la imagen se ajusta para ocupar todo el ancho disponible, eliminando su flotado. Cuando el ancho está entre 450 y 800 píxeles (<code>min-width: 450px</code> y <code>max-width: 800px</code>), se cambia el fondo a un tono morado, el texto vuelve a negro, y la imagen se hace más pequeña (50% de ancho) y flota hacia la derecha. Estas media queries permiten que el diseño se adapte progresivamente según el tamaño de la pantalla, mejorando la legibilidad y la disposición visual.  Es importante notar que dentro de cada media query solo se declaran las propiedades que se desean modificar respecto a los estilos base; el resto de las propiedades permanecen iguales, haciendo el código más limpio y fácil de mantener. Así, los estilos base funcionan como una base general, y las media queries actúan como ajustes específicos para diferentes tamaños de pantalla, garantizando una experiencia óptima en dispositivos móviles, tablets y escritorios. Para visualizar cómo cambian los estilos según el tamaño de pantalla, puedes simplemente reducir el ancho de la pestaña del navegador arrastrando uno de sus bordes. También puedes hacer clic derecho y seleccionar <b>“Inspeccionar”</b> (o presionar <code>F12</code>) para abrir las herramientas de desarrollo, y luego activar el modo de vista adaptable (ícono de dispositivo móvil en la parte superior). Esto te permitirá simular diferentes resoluciones y ver cómo las media queries afectan al diseño en tiempo real.
         </p>
     </div>
@@ -1117,76 +1117,76 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~FlexBox -->   
     <hr>
-    <h1 style="text-align: center;">FlexBox</h1>
-    <div style="padding: 2% 2% 1% 2%; border: 2px solid black;">
-        <h3 style="text-align: center; margin: 0 0 2% 0;">float-direction</h3>
-        <div style="display: flex; justify-content: center; margin-bottom: 25px;"> 
-            <div style="width: 15px; height: 15px; background-color: rgb(255, 213, 0); margin-right: 10px;"></div>
-            <span style="margin-right: 20px;">row</span> 
-            <div style="width: 15px; height: 15px; background-color: greenyellow; margin-right: 10px;"></div>
-            <span style="margin-right: 20px;">row-reverse</span> 
-            <div style="width: 15px; height: 15px; background-color: #d0a2ff; margin-right: 10px;"></div>
-            <span style="margin-right: 20px;">column</span>
-            <div style="width: 15px; height: 15px; background-color: rgb(255, 98, 98); margin-right: 10px;"></div> 
-            <span style="margin-right: 20px;">column-reverse</span> 
+    <h1 style="text-align: center;">FlexBox</h1> <!-- *Se declara un encabezado de nivel 1 centrado horizontalmente, que introduce la sección sobre FlexBox. -->
+    <div style="padding: 2% 2% 1% 2%; border: 2px solid black;"> <!-- *Se declara un contenedor con relleno interno (padding) y borde negro de 2px. -->
+        <h3 style="text-align: center; margin: 0 0 2% 0;">float-direction</h3> <!-- *Se declara un subtítulo centrado que introduce la dirección de los elementos en FlexBox. -->
+        <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un contenedor flex que centra horizontalmente su contenido. Tiene un margen inferior para separación visual. -->
+            <div style="width: 15px; height: 15px; background-color: rgb(255, 213, 0); margin-right: 10px;"></div> <!-- *Elemento cuadrado con color amarillo que representa la dirección "row". -->
+            <span style="margin-right: 20px;">row</span> <!-- *Texto descriptivo que indica que el color anterior representa "row". -->
+            <div style="width: 15px; height: 15px; background-color: greenyellow; margin-right: 10px;"></div> <!-- *Elemento cuadrado con color verde que representa "row-reverse". -->
+            <span style="margin-right: 20px;">row-reverse</span> <!-- *Texto descriptivo que indica que el color anterior representa "row-reverse". -->
+            <div style="width: 15px; height: 15px; background-color: #d0a2ff; margin-right: 10px;"></div> <!-- *Elemento cuadrado con color morado claro que representa "column". -->
+            <span style="margin-right: 20px;">column</span> <!-- *Texto descriptivo que indica que el color anterior representa "column". -->
+            <div style="width: 15px; height: 15px; background-color: rgb(255, 98, 98); margin-right: 10px;"></div> <!-- *Elemento cuadrado con color rojo claro que representa "column-reverse". -->
+            <span style="margin-right: 20px;">column-reverse</span> <!-- *Texto descriptivo que indica que el color anterior representa "column-reverse". -->
         </div>
-        <p style="text-align: justify; margin: 3% 0;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempore blanditiis ratione iste assumenda necessitatibus nulla, sint odit id quae, beatae corrupti enim modi quas ipsam minima. Repellendus, magnam similique. Modi doloremque beatae tenetur veritatis perferendis fugiat vero, doloribus in necessitatibus dolorem rerum dignissimos voluptatum distinctio, provident voluptas accusamus. Dignissimos accusantium debitis officia eligendi laudantium ullam. Quisquam non adipisci iure? Labore aspernatur quas molestias dolore! Voluptatibus assumenda repellat consequatur, distinctio maxime consectetur ex. Ipsum sequi repudiandae delectus, asperiores libero sunt iusto doloremque et neque voluptatibus, laudantium, nihil quidem totam? Illum. Nobis ullam placeat optio suscipit. Minima aliquam eligendi voluptates rem iure natus, aut, temporibus dignissimos nostrum blanditiis assumenda perferendis ducimus aliquid nobis porro laboriosam ea quo. Architecto autem at dignissimos.
+        <p style="text-align: justify; margin: 3% 0;"> <!-- *Se declara un párrafo justificado con márgenes verticales, donde se puede explicar el comportamiento de las direcciones en FlexBox. -->
+            La propiedad <b>flex-direction</b> define la dirección en la que se organizan los elementos hijos dentro de un contenedor con <code>display: flex</code>. Esta propiedad establece el eje principal sobre el cual se distribuirán los elementos, lo cual afecta su orientación y orden visual. Por defecto, los elementos se colocan en fila de izquierda a derecha, pero esto se puede modificar usando distintos valores según lo que se necesite lograr en el diseño. Por ejemplo, <b>row</b> (valor por defecto) organiza los elementos horizontalmente de izquierda a derecha, siguiendo el orden natural del HTML. El valor <b>row-reverse</b> también los coloca en fila horizontal, pero invierte el orden, mostrando el primer elemento al final y el último al inicio, alineados de derecha a izquierda. Si se quiere cambiar la orientación de horizontal a vertical, se puede usar <b>column</b>, que alinea los elementos de arriba hacia abajo. Y si se desea invertir ese orden, <b>column-reverse</b> coloca los elementos verticalmente pero de abajo hacia arriba, haciendo que el último elemento en el HTML aparezca primero visualmente. Gracias a esta propiedad, es posible reorganizar la forma en que se distribuyen los elementos sin tener que modificar el HTML,adaptando así la estructura a distintas necesidades visuales o responsivas.        
         </p>
-        <div class="elemento-con-flex-direction-row" style="background-color: rgb(255, 213, 0); margin-bottom: 2%; border: 2px solid black;">
+        <div class="elemento-con-flex-direction-row" style="background-color: rgb(255, 213, 0); margin-bottom: 2%; border: 2px solid black; font-size: 80%;"> <!-- *Contenedor con clase que aplica `flex-direction: row`. Tiene fondo amarillo, margen inferior, borde negro y texto reducido al 80% de su tamaño. -->
             <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+                Este es el <b>primer elemento</b> definido en el código HTML, dentro de un contenedor padre con <code>display: flex</code> y <code>flex-direction: row</code>, lo cual organiza los elementos hijos en fila de izquierda a derecha.
             </div>
-            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con fondo blanco, margen vertical del 2% y lateral de 0.7%. Ancho de 15%, alto de 20%, y borde negro fino. -->
+                Este es el <b>segundo elemento</b> en el orden del HTML. Se ubica justo después del primero, respetando el flujo horizontal de izquierda a derecha definido por <code>flex-direction: row</code>.
             </div>
-            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con fondo blanco, margen vertical del 2% y lateral de 0.7%. Ancho de 15%, alto de 20%, y borde negro fino. -->
+                Este es el <b>tercer elemento</b>, alineado horizontalmente a la derecha del segundo, manteniendo el orden natural gracias al uso de <code>row</code> como dirección, respetando asi la direccion de <code>row</code>.
             </div>
-            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                df
+            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con fondo blanco, margen vertical del 2% y lateral de 0.7%. Ancho de 15%, alto de 20%, y borde negro fino. -->
+                Este es el <b>cuarto y último elemento</b> escrito en el HTML. Aparece al final de la fila, porque con <code>flex-direction: row</code> se respeta el orden original de los elementos de <code>row</code>.
             </div>
         </div>
-        <div class="elemento-con-flex-direction-row-reverse" style="background-color: greenyellow; margin-bottom: 2%; border: 2px solid black;">
-            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+        <div class="elemento-con-flex-direction-row-reverse" style="background-color: greenyellow; margin-bottom: 2%; border: 2px solid black; font-size: 80%;"> <!-- *Contenedor con clase que aplica `flex-direction: row-reverse`. Tiene fondo verde fosforescente, margen inferior, borde negro y texto al 80% del tamaño. -->
+            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con fondo blanco, márgenes y dimensiones iguales al bloque anterior. Se posiciona en orden invertido gracias al contenedor padre. -->
+                Este es el <b>primer elemento</b> escrito en el HTML, pero con <code>flex-direction: row-reverse</code> se posiciona visualmente al final de la fila, es decir, en el extremo derecho del elemento.
             </div>
-            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con fondo blanco, márgenes y dimensiones iguales al bloque anterior. Se posiciona en orden invertido gracias al contenedor padre. -->
+                Este es el <b>segundo elemento</b> en el código HTML, pero se muestra justo antes del primero, moviéndose de derecha a izquierda debido al valor <code>row-reverse</code> que ordena de derecha a izquierda .
             </div>
-            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con fondo blanco, márgenes y dimensiones iguales al bloque anterior. Se posiciona en orden invertido gracias al contenedor padre. -->
+                Este es el <b>tercer elemento</b>, que se posiciona aún más a la izquierda. Todos los elementos siguen un flujo invertido gracias a <code>flex-direction: row-reverse</code>, el cual es de derecha a izquierda.
             </div>
-            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                df
-            </div>
-        </div>
-        <div class="elemento-con-flex-direction-column" style="background-color: #d0a2ff; margin-bottom: 2%; border: 2px solid black;">
-            <div style="background-color: white; margin: 2% 0.7% 0.7% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
-            </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
-            </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
-            </div>
-            <div style="background-color: white; margin: 0.7% 0.7% 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                df
+            <div style="background-color: white; margin: 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con fondo blanco, márgenes y dimensiones iguales al bloque anterior. Se posiciona en orden invertido gracias al contenedor padre. -->
+                Este es el <b>cuarto y último elemento</b> en el HTML, pero aparece al inicio de la fila, en el extremo izquierdo, ya que el orden visual se invierte completamente y este al ser el ultimo sera el primero.
             </div>
         </div>
-        <div class="elemento-con-flex-direction-column-reverse" style="background-color: rgb(255, 98, 98); margin-bottom: 2%; border: 2px solid black;">
-            <div style="background-color: white; margin: 0.7% 0.7% 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+        <div class="elemento-con-flex-direction-column" style="background-color: #d0a2ff; margin-bottom: 2%; border: 2px solid black; font-size: 80%;"> <!-- *Contenedor con clase que aplica `flex-direction: column`. Fondo morado claro, margen inferior, borde negro y texto al 80%. -->
+            <div style="background-color: white; margin: 2% 0.7% 0.7% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Primer elemento con fondo blanco. Tiene margen superior del 2%, resto 0.7%. Dimensiones iguales a los anteriores y borde negro fino. -->
+                Este es el <b>primer elemento</b> escrito en el HTML, y con <code>flex-direction: column</code> se posiciona al inicio de la columna, es decir, en la parte superior del contenedor.]
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con márgenes uniformes de 0.7%, fondo blanco, dimensiones y borde iguales al resto. -->
+                Este es el <b>segundo elemento</b>, el cual se muestra justo debajo del primero, respetando el flujo vertical que establece <code>column</code>.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                f
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con márgenes uniformes de 0.7%, fondo blanco, dimensiones y borde iguales al resto. -->
+                Este es el <b>tercer elemento</b>, alineado también en dirección vertical, uno debajo del otro.
             </div>
-            <div style="background-color: white; margin: 2% 0.7% 0.7% 0.7%; width: 15%; height: 20%; border: 1px solid black;">
-                df
+            <div style="background-color: white; margin: 0.7% 0.7% 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Primer elemento con fondo blanco. Tiene margen superior del 2%, resto 0.7%. Dimensiones iguales a los anteriores y borde negro fino. -->
+                Este es el <b>cuarto y último elemento</b>, el cual aparece en la parte inferior de la columna, ya que <code>flex-direction: column</code> organiza todos los elementos hijos de arriba hacia abajo.    
+            </div>
+        </div>
+        <div class="elemento-con-flex-direction-column-reverse" style="background-color: rgb(255, 98, 98); margin-bottom: 2%; border: 2px solid black; font-size: 80%;"> <!-- *Contenedor con clase que aplica `flex-direction: column-reverse`. Fondo rojo claro, margen inferior, borde negro y texto reducido. -->
+            <div style="background-color: white; margin: 0.7% 0.7% 2% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Primer elemento con margen inferior de 2%, resto 0.7%. Fondo blanco, borde negro y dimensiones iguales. -->
+                Este es el <b>primer elemento</b> escrito en el HTML, pero al tener <code>flex-direction: column-reverse</code>, se posiciona visualmente al <b>final</b> del contenedor (en la parte inferior).
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con márgenes uniformes de 0.7%, fondo blanco, y estilo visual igual a los demás. -->
+                Este es el <b>segundo elemento</b>, el cual aparece <b>encima</b> del anterior debido a que los elementos se alinean de <b>abajo hacia arriba</b> con <code>column-reverse</code>.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Elemento hijo con márgenes uniformes de 0.7%, fondo blanco, y estilo visual igual a los demás. -->
+                Este es el <b>tercer elemento</b>, que continúa el flujo en orden invertido, ubicándose más arriba en la columna.
+            </div>
+            <div style="background-color: white; margin: 2% 0.7% 0.7% 0.7%; width: 15%; height: 20%; border: 1px solid black;"> <!-- *Último elemento con margen superior de 2%, resto 0.7%. Fondo blanco, borde negro y mismo tamaño. -->
+                Este es el <b>cuarto y último elemento</b> escrito en el HTML, pero gracias a <code>column-reverse</code>, se muestra en la parte <b>superior</b> del contenedor.
             </div>
         </div>
     </div>
