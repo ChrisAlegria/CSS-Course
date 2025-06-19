@@ -1540,3 +1540,20 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 }
 
 /* Todo - Envoltura del flex (flex-wrap): */
+/* &Nowrap */
+.elemento-com-flex-wrap-nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* &Wrap */
+.elemento-con-flex-wrap-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* &Wrap-reverse */
+.elemento-con-flex-wrap-wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
