@@ -1513,47 +1513,50 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* Todo - Dirección del flex (flex-direction):   La propiedad "flex-direction" se utiliza para controlar la dirección en la que se organizan los elementos hijos dentro de un contenedor que tiene aplicado "display: flex". Esto significa que define si los elementos se distribuyen en fila o columna, y también el orden en que se presentan dentro de ese eje.   Por defecto, los elementos se organizan en una fila horizontal de izquierda a derecha ("row"), que es el comportamiento estándar en la mayoría de los casos. Sin embargo, con "flex-direction" se puede cambiar esta dirección para que los elementos se dispongan en columna vertical ("column"), o invertir el orden de los elementos ya sea en fila ("row-reverse") o en columna ("column-reverse").   Así, esta propiedad permite adaptar fácilmente la estructura visual y el flujo del contenido dentro de un contenedor flexible, sin necesidad de cambiar el HTML. Es importante recordar que "flex-direction" solo funciona cuando el contenedor tiene "display: flex", y es una de las propiedades fundamentales para controlar la disposición de los elementos dentro del modelo Flexbox. */
 /* &Row */
 /* &El valor "row" dentro de "flex-direction" es el valor predeterminado que se aplica cuando se usa "display: flex" en un contenedor. Este valor organiza todos los elementos hijos en una sola fila, colocándolos de izquierda a derecha según el orden en que aparecen en el HTML. Esto significa que, sin necesidad de declarar explícitamente "flex-direction: row", los elementos ya se disponen en línea horizontal de forma natural. Este comportamiento es útil para estructuras de navegación, barras de herramientas o cualquier diseño donde los elementos deban ir uno al lado del otro en un mismo renglón. Además, este valor respeta el flujo natural del documento, por lo que es ideal cuando no se requiere una reorganización compleja del contenido. En resumen, "row" ofrece una distribución clara y directa, lo que lo convierte en el valor más utilizado al trabajar con Flexbox en diseños horizontales. */
-.elemento-con-flex-direction-row{
-    display: flex;
-    flex-direction: row;
-}
+.elemento-con-flex-direction-row { /** Se declara un selector por clase llamado "elemento-con-flex-direction-row", que aplicará estilos a un contenedor flexible. **/
+    display: flex; /** Activa el modelo Flexbox en el contenedor, permitiendo organizar a los elementos hijos de manera flexible. **/
+    flex-direction: row; /** Establece la dirección principal de los elementos hijos en una fila horizontal, de izquierda a derecha (valor por defecto). **/
+} /** Cierre de la declaración del selector por clase. **/
 
 /* &Row-reverse */
 /* &El valor "row-reverse" en la propiedad "flex-direction" organiza los elementos hijos en una fila (horizontal), pero a diferencia de "row", estos se muestran en dirección de derecha a izquierda. Esto significa que el primer elemento escrito en el HTML se colocará visualmente al final (a la derecha), el segundo un lugar antes, y así sucesivamente, invirtiendo su orden natural. Este comportamiento solo se activa cuando el contenedor tiene la propiedad "display: flex", lo que hace que todos los elementos hijos se acomoden en una sola línea (por defecto en horizontal). Al aplicar "row-reverse", el flujo visual cambia: los elementos siguen alineados horizontalmente, pero su dirección es opuesta. Es importante mencionar que esta propiedad solo cambia la forma en que los elementos se muestran visualmente, no el orden real en que están escritos en el HTML. */
-.elemento-con-flex-direction-row-reverse{
-    display: flex;
-    flex-direction: row-reverse;
-}
+.elemento-con-flex-direction-row-reverse{ /** Se declara un selector por clase llamado "elemento-con-flex-direction-row-reverse", que aplicará estilos a un contenedor flexible. **/
+    display: flex; /** Activa el modelo Flexbox en el contenedor, permitiendo organizar a los elementos hijos de manera flexible. **/
+    flex-direction: row-reverse; /** Establece la dirección principal de los elementos hijos en una fila horizontal, de deracha a izquierda. **/
+} /** Cierre de la declaración del selector por clase. **/
 
 /* &Column  
 /* &El valor "column" en la propiedad "flex-direction" organiza los elementos hijos en una columna (vertical), colocándolos uno debajo del otro, de arriba hacia abajo, según el orden en que están escritos en el HTML. Esto significa que el primer elemento aparecerá en la parte superior, el segundo justo debajo, y así sucesivamente, formando una pila vertical. Este comportamiento solo se aplica cuando el contenedor tiene la propiedad "display: flex", ya que esta activa el modelo de caja flexible. A diferencia del valor por defecto "row" (que alinea los elementos en una fila horizontal), "column" cambia completamente el eje principal, haciendo que la distribución de los elementos ocurra de forma vertical. Cabe destacar que "column" no altera el orden natural del HTML**, simplemente cambia la dirección en la que se acomodan los elementos visualmente. */
-.elemento-con-flex-direction-column{
-    display: flex;
-    flex-direction: column;
-}
+.elemento-con-flex-direction-column{ /** Se declara un selector por clase llamado "elemento-con-flex-direction-column", que aplicará estilos a un contenedor flexible. **/
+    display: flex; /** Activa el modelo Flexbox en el contenedor, permitiendo organizar a los elementos hijos de manera flexible. **/
+    flex-direction: column; /** Establece la dirección principal de los elementos hijos en una columna vertical, de arriba  hacia abajo. **/
+} /** Cierre de la declaración del selector por clase. **/
 
 /* &Column-reverse  
 /* &El valor "column-reverse" en la propiedad "flex-direction" organiza los elementos hijos en una columna (vertical), pero en orden invertido, es decir, de abajo hacia arriba.  Esto significa que el primer elemento escrito en el HTML aparecerá visualmente en la parte inferior, el segundo un lugar más arriba, y así sucesivamente, invirtiendo el orden natural de los elementos. Este efecto solo se activa si el contenedor tiene la propiedad "display: flex", ya que es parte del modelo de caja flexible. A diferencia de "column", que los organiza de arriba a abajo, "column-reverse" invierte la dirección del eje principal, colocando los elementos desde el final hacia el inicio en una disposición vertical. Es importante señalar que esta propiedad solo afecta la forma en que los elementos se presentan visualmente**, pero **no modifica el orden real en el que están escritos en el HTML. */
-.elemento-con-flex-direction-column-reverse{
-    display: flex;
-    flex-direction: column-reverse  ;
-}
+.elemento-con-flex-direction-column-reverse{ /** Se declara un selector por clase llamado "elemento-con-flex-direction-column-reverse", que aplicará estilos a un contenedor flexible. **/
+    display: flex; /** Activa el modelo Flexbox en el contenedor, permitiendo organizar a los elementos hijos de manera flexible. **/
+    flex-direction: column-reverse; /**Establece la dirección principal de los elementos hijos en una columna vertical, de abajo hacia arriba. **/
+} /** Cierre de la declaración del selector por clase. **/
 
-/* Todo - Envoltura del flex (flex-wrap): */
+/* Todo - Envoltura del flex (flex-wrap): La propiedad "flex-wrap" se utiliza para definir si los elementos hijos dentro de un contenedor con "display: flex" deben mantenerse en una sola línea o pueden moverse a otra cuando no quepan en la dirección principal del flex (por defecto, horizontal). Esto es especialmente importante cuando los elementos hijos tienen tamaños no responsivos respecto al contenedor, como valores en píxeles o porcentajes altos que superan el 100%. En estos casos, si se reduce el tamaño de la pantalla (achicando la pestaña o usando herramientas de inspección), los elementos pueden salirse del contenedor o incluso desbordarse del área visible, afectando la apariencia y usabilidad del sitio. Por defecto, `flex` tiene el valor "nowrap", lo que significa que todos los elementos se mantienen en una sola línea, sin importar si caben o no. Esto puede provocar que se compriman excesivamente o se salgan del contenedor si el espacio es insuficiente. Al aplicar el valor "wrap", se permite que los elementos se acomoden automáticamente en múltiples líneas, descendiendo (si el eje es horizontal) o desplazándose lateralmente (si el eje es vertical), lo cual ayuda a mantener una distribución clara y ordenada incluso en tamaños de pantalla pequeños.Existe también el valor "wrap-reverse", que funciona igual que "wrap", pero invierte la dirección en la que se acomodan las líneas: en vez de bajar hacia abajo, los nuevos elementos suben hacia arriba (si están en eje horizontal), o se colocan a la izquierda (si el eje es vertical). Cabe resaltar que "flex-wrap" solo tiene efecto cuando el contenedor tiene `display: flex`, y solo se activa si los elementos exceden el espacio disponible en la dirección definida por `flex-direction`. Si hay suficiente espacio, aunque se haya definido "wrap", los elementos seguirán en una sola línea. En resumen, esta propiedad es clave para construir estructuras más adaptables y evitar problemas de desbordamiento visual en diseños responsivos. */
 /* &Nowrap */
-.elemento-com-flex-wrap-nowrap{
-    display: flex;
-    flex-wrap: nowrap;
-}
+/* &El valor "nowrap" dentro de la propiedad "flex-wrap" indica que los elementos hijos de un contenedor con "display: flex" deben mantenerse en una sola línea, sin permitir que se acomoden en múltiples filas aunque no quepan dentro del espacio disponible. Este es el valor por defecto en Flexbox, lo que significa que incluso si no se declara explícitamente, los elementos se comportarán de esta manera: permanecerán alineados uno al lado del otro horizontalmente (si "flex-direction" es "row") o verticalmente (si es "column"), y si no hay suficiente espacio, se comprimirán o se saldrán del contenedor. Este comportamiento puede provocar que los elementos se desborden, se solapen o afecten el diseño si sus tamaños no se adaptan de forma responsiva al ancho o alto del contenedor. "nowrap" es útil cuando se desea mantener todos los elementos en una única fila o columna sin importar el tamaño del contenedor, por ejemplo, en barras de navegación fijas o menús horizontales donde no se quiere que los elementos salten de línea. */
+.elemento-com-flex-wrap-nowrap { /**Se declara un selector por clase llamado "elemento-com-flex-wrap-nowrap", que aplicará estilos a un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox en el contenedor, lo que permite organizar a los elementos hijos de manera flexible.**/
+    flex-wrap: nowrap; /**Establece que los elementos hijos no se moverán a una nueva línea o columna aunque no quepan, manteniéndose siempre en una sola fila o columna según la dirección del flex.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Wrap */
-.elemento-con-flex-wrap-wrap{
-    display: flex;
-    flex-wrap: wrap;
-}
+/* &El valor "wrap" en la propiedad "flex-wrap" permite que los elementos hijos de un contenedor con "display: flex" se acomoden en múltiples líneas si no caben en una sola. Esto significa que cuando los elementos exceden el espacio disponible del contenedor principal (ya sea en ancho o en alto, dependiendo de la dirección del flex), en lugar de comprimirse o desbordarse, se irán bajando automáticamente a la siguiente línea. Este comportamiento es especialmente útil cuando se trabaja con elementos que no tienen tamaños completamente responsivos respecto al contenedor (por ejemplo, con tamaños fijos o porcentuales grandes). Al activar "wrap", se asegura que el contenido no se salga del contenedor ni se superponga, ya que se reorganiza de manera automática para mantener el orden y la legibilidad. Esta propiedad es clave para construir diseños flexibles y adaptables en diferentes resoluciones de pantalla. */
+.elemento-con-flex-wrap-wrap { /**Se declara un selector por clase llamado "elemento-con-flex-wrap-wrap", el cual define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox en el contenedor, permitiendo distribuir los elementos hijos de manera flexible.**/
+    flex-wrap: wrap; /**Permite que los elementos hijos que no quepan dentro del contenedor se ajusten automáticamente a otra línea o columna, según la dirección del eje principal (definido con flex-direction).**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Wrap-reverse */
-.elemento-con-flex-wrap-wrap-reverse{
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
+/* &El valor "wrap-reverse" en la propiedad "flex-wrap" permite que los elementos hijos de un contenedor con "display: flex" se acomoden en múltiples líneas cuando no caben al igual que el valor "wrap", pero lo hacen en dirección inversa. Es decir, en lugar de bajar a la siguiente línea como lo haría con "wrap", los elementos se colocan en líneas superiores. Este comportamiento visual hace que el contenido se expanda hacia arriba (o hacia la izquierda, si se usa "flex-direction: column"), lo cual invierte la dirección en que las filas adicionales son añadidas. Es importante destacar que este valor no cambia el orden de los elementos en sí, solo modifica la dirección del flujo cuando hay desbordamiento. "wrap-reverse" puede ser útil en diseños donde se desea un efecto visual ascendente o cuando se necesita mantener alineaciones específicas en interfaces más complejas. */
+.elemento-con-flex-wrap-wrap-reverse { /**Se declara un selector por clase llamado "elemento-con-flex-wrap-wrap-reverse", el cual define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox en el contenedor, permitiendo que sus elementos hijos se distribuyan de forma flexible.**/
+    flex-wrap: wrap-reverse; /**Permite que los elementos hijos que no quepan dentro del contenedor se ajusten automáticamente a otra línea o columna, pero en dirección inversa (por ejemplo, de abajo hacia arriba si el eje principal es vertical, o de derecha a izquierda si es horizontal).**/
+} /**Cierre de la declaración del selector por clase.**/

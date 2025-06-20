@@ -1201,35 +1201,67 @@
             <span style="margin-right: 20px;">wrap-reverse</span> <!-- *Texto descriptivo que indica que el color anterior representa "wrap-reverse". -->
         </div>
         <p style="text-align: justify; margin: 3% 0;"> <!-- *Se declara un párrafo justificado con márgenes verticales, donde se puede explicar el comportamiento de las direcciones en FlexBox. --> 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde numquam culpa impedit inventore maxime quae provident, obcaecati quibusdam iste. Blanditiis rem, voluptate soluta quos nisi earum deserunt nobis officia quo.
-            Accusamus, enim corrupti. Molestias at consectetur quod, a nam quaerat, dicta quisquam omnis veritatis illum sed maiores nesciunt, dolorem hic reiciendis illo accusantium numquam commodi nobis culpa odio. Architecto, iure?
-            Voluptatem eos voluptas, numquam deserunt consectetur qui mollitia facilis temporibus ab corrupti? Ex quasi voluptate reprehenderit excepturi sequi nesciunt. Quas, dicta? Perspiciatis reprehenderit placeat quis neque aspernatur voluptates aliquam recusandae?
-            Unde ducimus alias, debitis nostrum autem libero deleniti voluptate quo provident nobis, ea et illum nemo ipsum aliquam qui? Amet laborum, ipsam sapiente repellat minus quod eveniet sunt quo nesciunt.
-            Beatae illum animi veniam minima iusto laudantium id enim, nesciunt officiis doloremque quia corporis porro quas maxime aliquam. Eligendi omnis quibusdam possimus magnam illo, veniam architecto exercitationem sequi repudiandae laboriosam?
+            La propiedad <b>flex-wrap</b> permite controlar si los elementos hijos dentro de un contenedor con <code>display: flex</code> deben mantenerse en una sola línea o pueden "envolverse" a la siguiente cuando no haya suficiente espacio horizontal. Por defecto, los elementos se organizan en una única fila sin permitir saltos de línea, lo cual puede provocar que se compriman o incluso se salgan del contenedor si ocupan más espacio del disponible. Este comportamiento predeterminado se define con el valor <b>nowrap</b>, que obliga a todos los elementos a estar en una sola línea, ajustando sus tamaños si es necesario. Cuando se desea que los elementos se acomoden automáticamente en varias líneas (por ejemplo, en diseños más responsivos), se puede utilizar el valor <b>wrap</b>. Este permite que los elementos que no quepan en la primera fila se desplacen a la siguiente, manteniendo sus dimensiones y mejorando la legibilidad o la estética del diseño. También existe el valor <b>wrap-reverse</b>, que funciona igual que <b>wrap</b>, pero invierte el orden de las líneas: en lugar de que las nuevas filas aparezcan debajo, aparecen por encima de la primera. Gracias a esta propiedad, es posible controlar cómo se comportan los elementos cuando el espacio horizontal es limitado, permitiendo estructuras más flexibles y adaptables, especialmente útiles en dispositivos móviles o diseños fluidos.
         </p>
-        <div class="elemento-com-flex-wrap-nowrap" style="background-color: rgb(0, 247, 255); border: 2px solid black; margin-bottom: 2%;">
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">1</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">2</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">3</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">4</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">5</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">6</div>
+        <div class="elemento-com-flex-wrap-nowrap" style="background-color: rgb(0, 247, 255); border: 2px solid black; margin-bottom: 2%; font-size: 80%;">
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>primer elemento</b>, y con <code>flex-wrap: nowrap</code> (valor por defecto), los elementos se colocan en una sola línea sin importar si caben o no dentro del contenedor. Si los elementos exceden el tamaño disponible en el eje principal (definido por <code>flex-direction</code>), no se ajustarán automáticamente, sino que se desbordarán del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>segundo elemento</b>, y con <code>flex-wrap: nowrap</code> (valor por defecto), los elementos se colocan en una sola línea sin importar si caben o no dentro del contenedor. Si los elementos exceden el tamaño disponible en el eje principal (definido por <code>flex-direction</code>), no se ajustarán automáticamente, sino que se desbordarán del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>tercer elemento</b>, y con <code>flex-wrap: nowrap</code> (valor por defecto), los elementos se colocan en una sola línea sin importar si caben o no dentro del contenedor. Si los elementos exceden el tamaño disponible en el eje principal (definido por <code>flex-direction</code>), no se ajustarán automáticamente, sino que se desbordarán del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>cuarto elemento</b>, y con <code>flex-wrap: nowrap</code> (valor por defecto), los elementos se colocan en una sola línea sin importar si caben o no dentro del contenedor. Si los elementos exceden el tamaño disponible en el eje principal (definido por <code>flex-direction</code>), no se ajustarán automáticamente, sino que se desbordarán del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>quinto elemento</b>, y con <code>flex-wrap: nowrap</code> (valor por defecto), los elementos se colocan en una sola línea sin importar si caben o no dentro del contenedor. Si los elementos exceden el tamaño disponible en el eje principal (definido por <code>flex-direction</code>), no se ajustarán automáticamente, sino que se desbordarán del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>sexto elemento</b>, y con <code>flex-wrap: nowrap</code> (valor por defecto), los elementos se colocan en una sola línea sin importar si caben o no dentro del contenedor. Si los elementos exceden el tamaño disponible en el eje principal (definido por <code>flex-direction</code>), no se ajustarán automáticamente, sino que se desbordarán del contenedor.
+            </div>
         </div>
-        <div class="elemento-con-flex-wrap-wrap" style="background-color: rgb(255, 46, 213); border: 2px solid black; margin-bottom: 2%;">
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">1</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">2</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">3</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">4</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">5</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">6</div>
+        <div class="elemento-con-flex-wrap-wrap" style="background-color: rgb(255, 46, 213); border: 2px solid black; margin-bottom: 2%; font-size: 80%;">
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>primer elemento</b>, y con <code>flex-wrap: wrap</code>, los elementos que no quepan dentro del contenedor se moverán automáticamente a otra línea o columna, según la dirección del eje principal definida por <code>flex-direction</code>. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" para observar cómo los elementos que no caben se ajustan a la siguiente línea o columna.
+                </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>segundo elemento</b>, y con <code>flex-wrap: wrap</code>, los elementos que no quepan dentro del contenedor se moverán automáticamente a otra línea o columna, según la dirección del eje principal definida por <code>flex-direction</code>. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" para observar cómo los elementos que no caben se ajustan a la siguiente línea o columna.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>tercer <br> elemento</b>, y con <code>flex-wrap: wrap</code>, los elementos que no quepan dentro del contenedor se moverán automáticamente a otra línea o columna, según la dirección del eje principal definida por <code>flex-direction</code>. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" para observar cómo los elementos que no caben se ajustan a la siguiente línea o columna.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>cuarto elemento</b>, y con <code>flex-wrap: wrap</code>, los elementos que no quepan dentro del contenedor se moverán automáticamente a otra línea o columna, según la dirección del eje principal definida por <code>flex-direction</code>. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" para observar cómo los elementos que no caben se ajustan a la siguiente línea o columna.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>quinto elemento</b>, y con <code>flex-wrap: wrap</code>, los elementos que no quepan dentro del contenedor se moverán automáticamente a otra línea o columna, según la dirección del eje principal definida por <code>flex-direction</code>. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" para observar cómo los elementos que no caben se ajustan a la siguiente línea o columna.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>sexto <br> elemento</b>, y con <code>flex-wrap: wrap</code>, los elementos que no quepan dentro del contenedor se moverán automáticamente a otra línea o columna, según la dirección del eje principal definida por <code>flex-direction</code>. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" para observar cómo los elementos que no caben se ajustan a la siguiente línea o columna.
+            </div>
         </div>
-        <div class="elemento-con-flex-wrap-wrap-reverse" style="background-color: #ff8800; border: 2px solid black;">
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">1</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">2</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">3</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">4</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">5</div>
-            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">6</div>
+        <div class="elemento-con-flex-wrap-wrap-reverse" style="background-color: #ff8800; border: 2px solid black;  font-size: 80%;">
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>primer elemento</b>, y con <code>flex-wrap: wrap-reverse</code>, los elementos que no quepan también se ajustan automáticamente, pero las nuevas líneas o columnas se generan en la dirección contraria del eje cruzado. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" y observa cómo las líneas nuevas aparecen en la dirección opuesta.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>segundo elemento</b>, y con <code>flex-wrap: wrap-reverse</code>, los elementos que no quepan también se ajustan automáticamente, pero las nuevas líneas o columnas se generan en la dirección contraria del eje cruzado. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" y observa cómo las líneas nuevas aparecen en la dirección opuesta.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>tercer <br> elemento</b>, y con <code>flex-wrap: wrap-reverse</code>, los elementos que no quepan también se ajustan automáticamente, pero las nuevas líneas o columnas se generan en la dirección contraria del eje cruzado. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" y observa cómo las líneas nuevas aparecen en la dirección opuesta.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>cuarto elemento</b>, y con <code>flex-wrap: wrap-reverse</code>, los elementos que no quepan también se ajustan automáticamente, pero las nuevas líneas o columnas se generan en la dirección contraria del eje cruzado. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" y observa cómo las líneas nuevas aparecen en la dirección opuesta.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>quinto elemento</b>, y con <code>flex-wrap: wrap-reverse</code>, los elementos que no quepan también se ajustan automáticamente, pero las nuevas líneas o columnas se generan en la dirección contraria del eje cruzado. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" y observa cómo las líneas nuevas aparecen en la dirección opuesta.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 174px; height: 20%; border: 1px solid black; padding: 0.5%;">
+                Este es el <b>sexto <br> elemento</b>, y con <code>flex-wrap: wrap-reverse</code>, los elementos que no quepan también se ajustan automáticamente, pero las nuevas líneas o columnas se generan en la dirección contraria del eje cruzado. Para ver esta función, reduce el tamaño de la ventana o usa la herramienta "Inspeccionar" y observa cómo las líneas nuevas aparecen en la dirección opuesta.
+            </div>
         </div>
     </div>
 </body>
