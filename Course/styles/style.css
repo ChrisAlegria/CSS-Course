@@ -1561,15 +1561,45 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     flex-wrap: wrap-reverse; /**Permite que los elementos hijos que no quepan dentro del contenedor se ajusten automáticamente a otra línea o columna, pero en dirección inversa (por ejemplo, de abajo hacia arriba si el eje principal es vertical, o de derecha a izquierda si es horizontal).**/
 } /**Cierre de la declaración del selector por clase.**/
 
-/* Todo - Justificacion del contenido de flex (justify-content): */
+/* Todo - Justificación del contenido en Flexbox (justify-content): La propiedad "justify-content" se utiliza para definir cómo se distribuyen y alinean los elementos hijos dentro de un contenedor con "display: flex" a lo largo del eje principal (por defecto, horizontal). Esta propiedad controla la separación y posición de los elementos cuando hay espacio extra disponible en el contenedor. Por defecto, "justify-content" tiene el valor "flex-start", lo que significa que todos los elementos se agrupan al inicio del eje principal (a la izquierda si el eje es horizontal), sin espacios entre ellos salvo márgenes definidos manualmente. Otros valores comunes incluyen "flex-end" (alinea los elementos al final del eje principal), "center" (centra los elementos), "space-between" (distribuye el espacio disponible entre los elementos, dejando el primero y último pegados a los bordes), "space-around" (espacio igual alrededor de cada elemento) y "space-evenly" (espacio uniforme entre todos los elementos y los bordes). Esta propiedad es esencial para diseñar layouts flexibles y visualmente equilibrados, ya que permite controlar cómo se aprovecha el espacio extra en el contenedor sin alterar el orden de los elementos. "justify-content" solo funciona dentro de un contenedor con "display: flex" y afecta únicamente el eje principal definido por "flex-direction". En resumen, es fundamental para distribuir elementos en línea o columna de forma adaptativa y estética en diseños responsivos. */
 /* &Flex-start */
-.elemento-con-justify-content-flex-start{
-    display: flex;
-    justify-content: flex-start;
-}
+/* &El valor "flex-start" en la propiedad "justify-content" alinea todos los elementos hijos hacia el inicio del eje principal del contenedor con "display: flex". Si el eje principal es horizontal (por defecto con "flex-direction: row"), los elementos se agrupan en la parte izquierda del contenedor. Este es el valor por defecto en Flexbox, por lo tanto, si no se declara explícitamente, los elementos se comportan así: se alinean uno junto al otro en la parte inicial del eje, sin espacios entre ellos (a menos que se definan márgenes manualmente). Este valor es útil cuando se desea que los elementos comiencen siempre desde el borde inicial del contenedor, conservando un orden natural y compacto. */
+.elemento-con-justify-content-flex-start { /**Se declara un selector por clase llamado "elemento-con-justify-content-flex-start", el cual define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox en el contenedor, permitiendo que sus elementos hijos se distribuyan de forma flexible.**/
+    justify-content: flex-start; /**Justifica los elementos hijos alineándolos al inicio del eje principal del contenedor. Este es el valor por defecto de Flexbox, por lo que todos los elementos se agrupan a la izquierda si el eje es horizontal.**/
+} /**Cierre de la declaración del selector por clase.**/
 
-/*&Flex-end */
-.elemento-con-justify-content-flex-end{
-    display: flex;
-    justify-content: flex-end;
-}
+/* &Flex-end */
+/* &El valor "flex-end" en la propiedad "justify-content" alinea todos los elementos hijos hacia el final del eje principal del contenedor. En un contenedor horizontal, esto significa que todos los elementos se agrupan en el borde derecho. A diferencia de "flex-start", los elementos se posicionan al final, dejando espacio vacío antes de ellos. Esto es útil cuando se busca un diseño alineado al borde opuesto del inicio, por ejemplo, para colocar botones al final de una barra o menú. */
+.elemento-con-justify-content-flex-end { /**Contenedor con justificación al final del eje principal, agrupando elementos al borde derecho si el eje es horizontal.**/
+    display: flex; /**Activa Flexbox.**/
+    justify-content: flex-end; /**Alinea los elementos hijos al final del eje principal.**/
+} /**Cierre de la declaración del selector por clase.**/
+
+/* &Center */
+/* &El valor "center" en la propiedad "justify-content" centra todos los elementos hijos horizontalmente (si el eje principal es horizontal) dentro del contenedor. Esto crea espacio igual a ambos lados del grupo de elementos. Es útil cuando se desea destacar un conjunto de elementos de manera visualmente equilibrada, y es especialmente común en interfaces que requieren diseño simétrico o enfocado al centro. */
+.elemento-con-justify-content-center { /**Contenedor que centra horizontalmente los elementos hijos en el eje principal.**/
+    display: flex; /**Activa Flexbox.**/
+    justify-content: center; /**Centra los elementos hijos con el mismo espacio a ambos lados.**/
+} /**Cierre de la declaración del selector por clase.**/
+
+/* &Space-between */
+/* &El valor "space-between" distribuye los elementos hijos dentro del contenedor con el mayor espacio posible entre ellos. El primer y el último elemento se alinean en los extremos del eje, y los elementos restantes se distribuyen con espacios iguales en medio. Este valor es útil para separar contenido equitativamente y aprovechar al máximo el espacio disponible, como en barras de navegación o menús distribuidos de manera uniforme. */
+.elemento-con-justify-content-space-between { /**Contenedor que reparte el espacio máximo entre elementos hijos.**/
+    display: flex; /**Activa Flexbox.**/
+    justify-content: space-between; /**Distribuye los elementos con el máximo espacio entre ellos, colocando el primero y último en los extremos.**/
+} /**Cierre de la declaración del selector por clase.**/
+
+/* &Space-around */
+/* &El valor "space-around" en "justify-content" aplica espacio igual alrededor de cada elemento hijo, lo que significa que cada uno tiene márgenes laterales iguales. Como resultado, el espacio entre los elementos es mayor que el espacio en los bordes externos del contenedor. Este valor genera una distribución equilibrada, aunque no completamente uniforme en comparación con "space-evenly", y puede ser útil para crear separación visual sin alinear los elementos estrictamente a los bordes. */
+.elemento-con-justify-content-space-around { /**Contenedor que reparte espacio igual alrededor de cada elemento hijo.**/
+    display: flex; /**Activa Flexbox.**/
+    justify-content: space-around; /**Agrega espacios iguales a ambos lados de cada elemento, generando separación entre todos.**/
+} /**Cierre de la declaración del selector por clase.**/
+
+/* &Space-evently */
+/* &El valor "space-evenly" distribuye el espacio de forma totalmente uniforme: el espacio entre todos los elementos, así como entre los elementos y los bordes del contenedor, es exactamente el mismo. Esto genera una distribución perfectamente simétrica y es útil cuando se busca una organización balanceada y proporcional sin necesidad de calcular manualmente los márgenes o espacios. */
+.elemento-con-justify-content-space-evently { /**Contenedor que reparte el espacio de forma totalmente uniforme entre todos los elementos e incluso los bordes.**/
+    display: flex; /**Activa Flexbox.**/
+    justify-content: space-evenly; /**Distribuye los elementos y los espacios de forma completamente equitativa en todo el eje.**/
+} /**Cierre de la declaración del selector por clase.**/

@@ -1280,70 +1280,73 @@
             <div style="width: 15px; height: 15px; background-color: #ff35ab; margin-right: 10px;"></div> <!-- *Elemento cuadrado con color rosa que representa "space-evently". -->
             <span style="margin-right: 20px;">space-evently</span> <!-- *Texto descriptivo que indica que el color anterior representa "space-evently". -->
         </div>
-        <div class="elemento-con-justify-content-flex-start" style="background-color: rgb(255, 65, 65); border: 2px solid black; font-size: 80%; margin-bottom: 2%"> 
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                de
+        <p style="text-align: justify; margin: 3% 0;"> <!-- *Se declara un párrafo justificado con márgenes verticales, donde se puede explicar el comportamiento de las direcciones en FlexBox. --> 
+            La propiedad <b>justify-content</b> permite alinear los elementos hijos dentro de un contenedor con <code>display: flex</code> a lo largo del eje principal definido por <code>flex-direction</code>. Es decir, controla cómo se distribuyen los espacios entre los elementos o alrededor de ellos dentro del contenedor, ya sea en filas (si <code>flex-direction</code> es <b>row</b>) o en columnas (si <b>column</b>). Por defecto, su valor es <b>flex-start</b>, lo que significa que todos los elementos se alinean al inicio del eje principal. Si se desea que estén alineados al final del eje, se puede usar <b>flex-end</b>. Para centrar los elementos en el eje principal, se utiliza <b>center</b>, lo cual es útil para lograr un diseño equilibrado sin importar cuántos elementos haya. Además, existen valores como <b>space-between</b>, que distribuye los elementos de forma que el primero esté pegado al inicio y el último al final, dejando espacios iguales entre los elementos intermedios. Por otro lado, <b>space-around</b> coloca un espacio igual alrededor de cada elemento, y <b>space-evenly</b> reparte el espacio de forma equitativa entre todos, incluyendo los extremos. Esta propiedad es fundamental para controlar la distribución horizontal o vertical (según el eje principal) de los elementos, y es especialmente útil en diseños responsivos donde se busca mantener orden visual sin importar el número o tamaño de los elementos.
+        </p>
+        <div class="elemento-con-justify-content-flex-start" style="background-color: rgb(255, 65, 65); border: 2px solid black; font-size: 80%; margin-bottom: 2%"> <!-- *Contenedor con clase que aplica "justify-content: flex-start". Tiene fondo rojo, borde negro, texto reducido al 80% y margen inferior para separación. -->
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor que tiene <code>display: flex</code>. Por defecto, esto alinea todos los elementos hijos <b>horizontalmente en fila</b>, <b>pegados entre sí</b> y <b>al inicio (izquierda)</b> del contenedor, siempre que los hijos no tengan márgenes definidos. En este caso, como se aplica <code>justify-content: flex-start</code> que es el valor <b>por defecto</b>, los elementos se mantienen alineados al inicio sin ningún espacio adicional entre ellos.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor que tiene <code>display: flex</code>. Por defecto, esto alinea todos los elementos hijos <b>horizontalmente en fila</b>, <b>pegados entre sí</b> y <b>al inicio (izquierda)</b> del contenedor, siempre que los hijos no tengan márgenes definidos. En este caso, como se aplica <code>justify-content: flex-start</code> que es el valor <b>por defecto</b>, los elementos se mantienen alineados al inicio sin ningún espacio adicional entre ellos.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
-            </div>
-        </div>
-        <div style="background-color: rgb(255, 217, 49); border: 2px solid black; font-size: 80%; margin-bottom: 2%">
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                de
-            </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
-            </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor que tiene <code>display: flex</code>. Por defecto, esto alinea todos los elementos hijos <b>horizontalmente en fila</b>, <b>pegados entre sí</b> y <b>al inicio (izquierda)</b> del contenedor, siempre que los hijos no tengan márgenes definidos. En este caso, como se aplica <code>justify-content: flex-start</code> que es el valor <b>por defecto</b>, los elementos se mantienen alineados al inicio sin ningún espacio adicional entre ellos.
             </div>
         </div>
-        <div style="background-color: #80ff36; border: 2px solid black; font-size: 80%; margin-bottom: 2%">
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                de
+        <div class="elemento-con-justify-content-flex-end" style="background-color: rgb(255, 217, 49); border: 2px solid black; font-size: 80%; margin-bottom: 2%"> <!-- *Contenedor con clase que aplica "justify-content: flex-end". Tiene fondo amarillo, borde negro, texto reducido y margen inferior del 2%. -->
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor que tiene <code>display: flex</code>. Por defecto, los elementos se alinean en fila hacia la izquierda, sin espacio entre ellos. Sin embargo, al aplicar <code>justify-content: flex-end</code>, los elementos se alinean al <b>final (derecha)</b> del contenedor, desplazando todo el grupo de elementos hacia ese lado.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor que tiene <code>display: flex</code>. Por defecto, los elementos se alinean en fila hacia la izquierda, sin espacio entre ellos. Sin embargo, al aplicar <code>justify-content: flex-end</code>, los elementos se alinean al <b>final (derecha)</b> del contenedor, desplazando todo el grupo de elementos hacia ese lado.
             </div>
             <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
-            </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
-            </div>
-        </div>
-        <div style="background-color: #4ff6ff; border: 2px solid black; font-size: 80%; margin-bottom: 2%">
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                de
-            </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
-            </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
+                Este es un <b>elemento hijo</b> dentro de un contenedor que tiene <code>display: flex</code>. Por defecto, los elementos se alinean en fila hacia la izquierda, sin espacio entre ellos. Sin embargo, al aplicar <code>justify-content: flex-end</code>, los elementos se alinean al <b>final (derecha)</b> del contenedor, desplazando todo el grupo de elementos hacia ese lado.
             </div>
         </div>
-        <div style="background-color: #b732ff; border: 2px solid black; font-size: 80%; margin-bottom: 2%">
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                de
+        <div class="elemento-con-justify-content-center" style="background-color: #80ff36; border: 2px solid black; font-size: 80%; margin-bottom: 2%"> <!-- *Contenedor con clase que aplica "justify-content: center". Fondo verde claro, borde negro, texto al 80% y margen inferior para separación visual. -->
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Por defecto, los elementos se alinean a la izquierda. En este caso, al usarse <code>justify-content: center</code>, todos los elementos se agrupan y se alinean en el <b>centro horizontal</b> del contenedor, dejando espacio a los lados de forma equitativa.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Por defecto, los elementos se alinean a la izquierda. En este caso, al usarse <code>justify-content: center</code>, todos los elementos se agrupan y se alinean en el <b>centro horizontal</b> del contenedor, dejando espacio a los lados de forma equitativa.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Por defecto, los elementos se alinean a la izquierda. En este caso, al usarse <code>justify-content: center</code>, todos los elementos se agrupan y se alinean en el <b>centro horizontal</b> del contenedor, dejando espacio a los lados de forma equitativa.
             </div>
         </div>
-        <div style="background-color: #ff35ab; border: 2px solid black; font-size: 80%;">
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                de
+        <div class="elemento-con-justify-content-space-between" style="background-color: #4ff6ff; border: 2px solid black; font-size: 80%; margin-bottom: 2%"> <!-- *Contenedor con clase que aplica "justify-content: space-between". Fondo celeste, borde negro, fuente pequeña y margen inferior. -->
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>, el cual por defecto alinea los elementos a la izquierda y juntos. Pero al aplicar <code>justify-content: space-between</code>, el espacio disponible se distribuye de forma que <b>el primer y último elemento queden en los extremos</b> del contenedor, y los elementos intermedios tengan <b>el mismo espacio entre ellos</b>.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>, el cual por defecto alinea los elementos a la izquierda y juntos. Pero al aplicar <code>justify-content: space-between</code>, el espacio disponible se distribuye de forma que <b>el primer y último elemento queden en los extremos</b> del contenedor, y los elementos intermedios tengan <b>el mismo espacio entre ellos</b>.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> 
-                d
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>, el cual por defecto alinea los elementos a la izquierda y juntos. Pero al aplicar <code>justify-content: space-between</code>, el espacio disponible se distribuye de forma que <b>el primer y último elemento queden en los extremos</b> del contenedor, y los elementos intermedios tengan <b>el mismo espacio entre ellos</b>.
+            </div>
+        </div>
+        <div class="elemento-con-justify-content-space-around" style="background-color: #b732ff; border: 2px solid black; font-size: 80%; margin-bottom: 2%"> <!-- *Contenedor con clase que aplica "justify-content: space-around". Tiene fondo morado intenso, borde negro, texto reducido y separación inferior. -->
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Normalmente los elementos se agrupan al inicio, pero con <code>justify-content: space-around</code>, se crea <b>espacio igual alrededor de cada elemento</b>, es decir, tanto a la izquierda como a la derecha de cada uno, incluyendo bordes exteriores del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Normalmente los elementos se agrupan al inicio, pero con <code>justify-content: space-around</code>, se crea <b>espacio igual alrededor de cada elemento</b>, es decir, tanto a la izquierda como a la derecha de cada uno, incluyendo bordes exteriores del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Normalmente los elementos se agrupan al inicio, pero con <code>justify-content: space-around</code>, se crea <b>espacio igual alrededor de cada elemento</b>, es decir, tanto a la izquierda como a la derecha de cada uno, incluyendo bordes exteriores del contenedor.
+            </div>
+        </div>
+        <div class="elemento-con-justify-content-space-evently" style="background-color: #ff35ab; border: 2px solid black; font-size: 80%;"> <!-- *Contenedor con clase que aplica "justify-content: space-evenly". Fondo rosa fuerte, borde negro y texto reducido al 80%. -->
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Por defecto los elementos se agrupan al inicio, pero con <code>justify-content: space-evenly</code> el espacio disponible se reparte de forma totalmente <b>uniforme entre todos los elementos y los bordes</b>, generando una separación equitativa entre todos.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Por defecto los elementos se agrupan al inicio, pero con <code>justify-content: space-evenly</code> el espacio disponible se reparte de forma totalmente <b>uniforme entre todos los elementos y los bordes</b>, generando una separación equitativa entre todos.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 15%; height: 20%; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen externo del 0.7%, tamaño fijo del 15% de ancho y 20% de alto, borde negro delgado y espacio interno (padding) de 0.5%. Representa un bloque visual dentro del contenedor flexible. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Por defecto los elementos se agrupan al inicio, pero con <code>justify-content: space-evenly</code> el espacio disponible se reparte de forma totalmente <b>uniforme entre todos los elementos y los bordes</b>, generando una separación equitativa entre todos.
             </div>
         </div>
     </div>
