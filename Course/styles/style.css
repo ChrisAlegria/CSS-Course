@@ -1603,3 +1603,39 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     display: flex; /**Activa Flexbox.**/
     justify-content: space-evenly; /**Distribuye los elementos y los espacios de forma completamente equitativa en todo el eje.**/
 } /**Cierre de la declaración del selector por clase.**/
+
+/* Todo - Align Items */
+/* &flex-start */
+.elemento-con-align-items-flex-start{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/* &Flex-end */
+.elemento-con-align-items-flex-end{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+/* &Center */
+.elemento-con-align-items-center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* &Strech */
+.elemento-con-align-items-stretch{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+/* &Baseline */
+.elemento-con-align-items-baseline{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
