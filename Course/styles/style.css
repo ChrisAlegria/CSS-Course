@@ -1604,38 +1604,43 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     justify-content: space-evenly; /**Distribuye los elementos y los espacios de forma completamente equitativa en todo el eje.**/
 } /**Cierre de la declaración del selector por clase.**/
 
-/* Todo - Align Items */
-/* &flex-start */
-.elemento-con-align-items-flex-start{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
+/* Todo - Alineamiento de elementos (align-items): La propiedad "align-items" se utiliza para definir cómo se alinean los elementos hijos dentro de un contenedor con "display: flex" según el eje perpendicular al principal (es decir, el eje cruzado). Por ejemplo, si el eje principal es horizontal (flex-direction: row), los elementos se alinean verticalmente. Al aplicar align-items, todos los elementos se alinean según el eje perpendicular al principal (hacia la parte superior si el eje principal es horizontal). A diferencia de justify-content, que controla la posición y el espaciado en el eje principal, esta propiedad no modifica la posición horizontal ni el espacio entre los elementos, solo su alineación vertical dentro del contenedor. Por defecto, "align-items" tiene el valor "stretch", que hace que los elementos se extiendan para llenar el espacio disponible en el eje cruzado (si no tienen una altura o ancho fijo). Otros valores comunes son "flex-start" (alinea al inicio del eje cruzado), "flex-end" (al final), "center" (centra los elementos) y "baseline" (alinea según la línea base del texto). Por ejemplo, al usar align-items: baseline, los elementos se alinean según la línea base del texto que contienen, lo que es útil cuando los elementos tienen diferentes tamaños de fuente, asegurando una alineación visual precisa. En resumen, "align-items" controla la alineación vertical (o en el eje cruzado) de los elementos hijos, siendo fundamental para mantener un diseño limpio y ordenado dentro de contenedores flexibles. */
+/* &Flex-start */
+/* &El valor "flex-start" en la propiedad "align-items" alinea todos los elementos hijos al inicio del eje cruzado (es decir, el eje perpendicular al principal). Si el contenedor tiene dirección horizontal (flex-direction: row), esto significa que los elementos se alinean hacia la parte superior del contenedor. Es útil cuando se desea que todos los elementos se ubiquen en la parte superior, independientemente de sus alturas. */
+.elemento-con-align-items-flex-start { /**Se declara un selector por clase llamado "elemento-con-align-items-flex-start", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox en el contenedor, permitiendo organizar los elementos hijos de forma flexible.**/
+    justify-content: space-evenly; /**Distribuye los elementos hijos con espacios iguales entre ellos y también entre los bordes del contenedor.**/
+    align-items: flex-start; /**Alinea todos los elementos hijos al inicio del eje cruzado (parte superior si el eje principal es horizontal), independientemente de su altura.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Flex-end */
-.elemento-con-align-items-flex-end{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
+/* &El valor "flex-end" en la propiedad "align-items" posiciona todos los elementos hijos al final del eje cruzado. En un contenedor horizontal, esto significa que los elementos se alinean en la parte inferior del contenedor. Este valor es útil cuando se quiere crear una base visual común, alineando los elementos hacia abajo sin importar su altura. */
+.elemento-con-align-items-flex-end { /**Se declara un selector por clase llamado "elemento-con-align-items-flex-end", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox en el contenedor, permitiendo distribuir los elementos hijos de forma flexible.**/
+    justify-content: space-evenly; /**Distribuye los elementos hijos con espacios iguales entre ellos y también entre los bordes del contenedor.**/
+    align-items: flex-end; /**Alinea todos los elementos hijos al final del eje cruzado (parte inferior si el eje principal es horizontal).**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Center */
-.elemento-con-align-items-center{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+/* &El valor "center" en "align-items" centra verticalmente (o en el eje cruzado) todos los elementos hijos dentro del contenedor. Si el eje principal es horizontal, los elementos se posicionan al centro verticalmente. Es útil para lograr una presentación visual balanceada, especialmente cuando los elementos tienen diferentes alturas y se quiere un alineamiento uniforme en el centro. */
+.elemento-con-align-items-center { /**Se declara un selector por clase llamado "elemento-con-align-items-center", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox, permitiendo organizar a los elementos hijos con mayor control.**/
+    justify-content: space-evenly; /**Distribuye los elementos hijos de manera uniforme, dejando el mismo espacio entre todos los elementos y los bordes.**/
+    align-items: center; /**Centra verticalmente los elementos hijos dentro del contenedor, si el eje principal es horizontal.**/
+} /**Cierre de la declaración del selector por clase.**/
 
-/* &Strech */
-.elemento-con-align-items-stretch{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-}
+/* &Stretch */
+/* &El valor "stretch" es el valor por defecto en la propiedad "align-items". Hace que los elementos hijos se estiren automáticamente para ocupar todo el espacio disponible en el eje cruzado, siempre que no tengan una altura definida. Este comportamiento es útil para lograr que los elementos llenen la altura completa del contenedor, creando bloques del mismo tamaño de forma automática. */
+.elemento-con-align-items-stretch { /**Se declara un selector por clase llamado "elemento-con-align-items-stretch", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox para distribuir y alinear los elementos hijos de forma dinámica.**/
+    justify-content: space-evenly; /**Coloca espacios iguales entre todos los elementos hijos y los bordes del contenedor.**/
+    align-items: stretch; /**Hace que los elementos hijos se estiren para ocupar todo el espacio disponible en el eje cruzado (vertical si flex-direction es row), siempre que no tengan una altura fija.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Baseline */
-.elemento-con-align-items-baseline{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
+/* &El valor "baseline" alinea todos los elementos hijos según la línea base del texto que contienen. Esto resulta especialmente útil cuando los elementos tienen tamaños de fuente diferentes o estructuras textuales variadas, ya que asegura que el texto se alinee de manera precisa en una misma línea base, manteniendo una presentación coherente y profesional. */
+.elemento-con-align-items-baseline { /**Se declara un selector por clase llamado "elemento-con-align-items-baseline", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox, permitiendo mayor control en la disposición de los elementos hijos.**/
+    justify-content: space-evenly; /**Distribuye los elementos con espacios uniformes entre ellos y los bordes del contenedor.**/
+    align-items: baseline; /**Alinea los elementos hijos según la línea base del texto que contienen, útil para alineación precisa cuando hay diferentes tamaños de fuente.**/
+} /**Cierre de la declaración del selector por clase.**/

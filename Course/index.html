@@ -1350,44 +1350,77 @@
             </div>
         </div>
     </div>
-    <div style="margin-top: 5%; border: 2px solid black; padding: 2%;">
-        <h3 style="text-align: center; margin: 0 0 2% 0;">align-items</h3>
-        <div style="display: flex; justify-content: center; margin-bottom: 25px;"> 
-            <div style="width: 15px; height: 15px; background-color: #6d1615; margin-right: 10px;"></div> 
-            <span style="margin-right: 20px;">flex-start</span> 
-            <div style="width: 15px; height: 15px; background-color: #d0b9ba; margin-right: 10px;"></div> 
-            <span style="margin-right: 20px;">flex-end</span> 
-            <div style="width: 15px; height: 15px; background-color: #096266; margin-right: 10px;"></div> 
-            <span style="margin-right: 20px;">center</span> 
-            <div style="width: 15px; height: 15px; background-color: #dc8079; margin-right: 10px;"></div>
-            <span style="margin-right: 20px;">stretch</span> 
-            <div style="width: 15px; height: 15px; background-color: #da9832; margin-right: 10px;"></div> 
-            <span style="margin-right: 20px;">baseline</span> 
+    <div style="margin-top: 5%; border: 2px solid black; padding: 2%;"> <!-- *Se declara un div externo con borde sólido negro, padding del 2% y margen superior amplio. -->   
+        <h3 style="text-align: center; margin: 0 0 2% 0;">align-items</h3> <!-- *Se declara un subtítulo h3 centrado con márgenes verticales. -->
+        <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un contenedor con display flex que centra horizontalmente su contenido. Tiene un margen inferior para separación visual. -->
+            <div style="width: 15px; height: 15px; background-color: #6d1615; margin-right: 10px;"></div> <!-- *Se declara un cuadrado de 15x15px con fondo rojo oscuro (#6d1615) que representa el valor "flex-start" en la leyenda visual. -->
+            <span style="margin-right: 20px;">flex-start</span> <!-- *Se declara un texto que indica el valor "flex-start", con margen derecho para separación. -->
+            <div style="width: 15px; height: 15px; background-color: #d0b9ba; margin-right: 10px;"></div> <!-- *Se declara un cuadrado de 15x15px con fondo rosa claro (#d0b9ba) que representa "flex-end" en la leyenda visual. -->
+            <span style="margin-right: 20px;">flex-end</span> <!-- *Se declara un texto que indica el valor "flex-end", con margen derecho para separación. -->
+            <div style="width: 15px; height: 15px; background-color: #096266; margin-right: 10px;"></div> <!-- *Se declara un cuadrado de 15x15px con fondo azul petróleo (#096266) que representa "center" en la leyenda visual. -->
+            <span style="margin-right: 20px;">center</span> <!-- *Se declara un texto que indica el valor "center", con margen derecho para separación. --> 
+            <div style="width: 15px; height: 15px; background-color: #dc8079; margin-right: 10px;"></div> <!-- *Se declara un cuadrado de 15x15px con fondo salmón claro (#dc8079) que representa "stretch" en la leyenda visual. -->
+            <span style="margin-right: 20px;">stretch</span> <!-- *Se declara un texto que indica el valor "stretch", con margen derecho para separación. -->
+            <div style="width: 15px; height: 15px; background-color: #da9832; margin-right: 10px;"></div> <!-- *Se declara un cuadrado de 15x15px con fondo mostaza (#da9832) que representa "baseline" en la leyenda visual. -->
+            <span style="margin-right: 20px;">baseline</span> <!-- *Se declara un texto que indica el valor "baseline", con margen derecho para separación. -->
         </div>
-        <div class="elemento-con-align-items-flex-start" style="background-color: #6d1615; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;">
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
+        <p style="text-align: justify; margin: 3% 0;"> <!-- *Se declara un párrafo con texto justificado y márgenes verticales del 3%. Este será usado para explicar la propiedad "align-items". -->
+            La
+        </p>
+        <div class="elemento-con-align-items-flex-start" style="background-color: #6d1615; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;"> <!-- *Se declara un contenedor con clase que aplica "align-items: flex-start". Tiene fondo rojo oscuro, borde negro, tamaño de fuente reducido, altura del 70% del viewport y un margen inferior. -->
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;">     <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: flex-start</code>, todos los elementos se alinean al <b>inicio del eje perpendicular</b> al principal (es decir, hacia la parte superior si <code>flex-direction</code> es horizontal). A diferencia de <code>justify-content</code>, esta propiedad no cambia la posición horizontal ni el espaciado entre los elementos, solo su alineación vertical dentro del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: flex-start</code>, todos los elementos se alinean al <b>inicio del eje perpendicular</b> al principal (es decir, hacia la parte superior si <code>flex-direction</code> es horizontal). A diferencia de <code>justify-content</code>, esta propiedad no cambia la posición horizontal ni el espaciado entre los elementos, solo su alineación vertical dentro del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: flex-start</code>, todos los elementos se alinean al <b>inicio del eje perpendicular</b> al principal (es decir, hacia la parte superior si <code>flex-direction</code> es horizontal). A diferencia de <code>justify-content</code>, esta propiedad no cambia la posición horizontal ni el espaciado entre los elementos, solo su alineación vertical dentro del contenedor.
+            </div>
         </div>
-        <div class="elemento-con-align-items-flex-end" style="background-color: #d0b9ba; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;">
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
+        <div class="elemento-con-align-items-flex-end" style="background-color: #d0b9ba; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;"> <!-- *Se declara un contenedor con clase que aplica "align-items: flex-end". Tiene fondo rosa claro, borde negro, tamaño de fuente reducido, altura del 70% del viewport y un margen inferior. -->
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Con <code>align-items: flex-end</code>, los elementos se alinean hacia el <b>final del eje perpendicular</b> (parte inferior si <code>flex-direction</code> es horizontal). No se modifica el espacio entre los elementos, solo su posición vertical dentro del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Con <code>align-items: flex-end</code>, los elementos se alinean hacia el <b>final del eje perpendicular</b> (parte inferior si <code>flex-direction</code> es horizontal). No se modifica el espacio entre los elementos, solo su posición vertical dentro del contenedor.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code>. Con <code>align-items: flex-end</code>, los elementos se alinean hacia el <b>final del eje perpendicular</b> (parte inferior si <code>flex-direction</code> es horizontal). No se modifica el espacio entre los elementos, solo su posición vertical dentro del contenedor.
+            </div>
         </div>
-        <div class="elemento-con-align-items-center" style="background-color: #096266; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;">
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
+        <div class="elemento-con-align-items-center" style="background-color: #096266; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;"> <!-- *Se declara un contenedor con clase que aplica "align-items: center". Tiene fondo azul petróleo, borde negro, tamaño de fuente reducido, altura del 70% del viewport y un margen inferior. -->
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: center</code>, los elementos se alinean verticalmente al <b>centro del eje cruzado</b>, posicionándose en medio del contenedor. A diferencia de <code>justify-content: center</code>, que alinea horizontalmente si el eje principal es en fila, aquí la alineación es en el eje perpendicular.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: center</code>, los elementos se alinean verticalmente al <b>centro del eje cruzado</b>, posicionándose en medio del contenedor. A diferencia de <code>justify-content: center</code>, que alinea horizontalmente si el eje principal es en fila, aquí la alineación es en el eje perpendicular.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: center</code>, los elementos se alinean verticalmente al <b>centro del eje cruzado</b>, posicionándose en medio del contenedor. A diferencia de <code>justify-content: center</code>, que alinea horizontalmente si el eje principal es en fila, aquí la alineación es en el eje perpendicular.
+            </div>
         </div>
-        <div class="elemento-con-align-items-stretch" style="background-color: #dc8079; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;">
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
+        <div class="elemento-con-align-items-stretch" style="background-color: #dc8079; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;"> <!-- *Se declara un contenedor con clase que aplica "align-items: stretch". Tiene fondo salmón claro, borde negro, tamaño de fuente reducido, altura del 70% del viewport y un margen inferior. -->
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. <code>align-items: stretch</code> es el valor por defecto y hace que los elementos se <b>extiendan automáticamente</b> en el eje cruzado para llenar el espacio disponible, siempre que no tengan una altura definida. Esto no afecta el espaciado entre los elementos, solo su altura individual.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. <code>align-items: stretch</code> es el valor por defecto y hace que los elementos se <b>extiendan automáticamente</b> en el eje cruzado para llenar el espacio disponible, siempre que no tengan una altura definida. Esto no afecta el espaciado entre los elementos, solo su altura individual.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. <code>align-items: stretch</code> es el valor por defecto y hace que los elementos se <b>extiendan automáticamente</b> en el eje cruzado para llenar el espacio disponible, siempre que no tengan una altura definida. Esto no afecta el espaciado entre los elementos, solo su altura individual.
+            </div>
         </div>
-        <div class="elemento-con-align-items-baseline" style="background-color: #da9832; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;">
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
-            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"></div>
+        <div class="elemento-con-align-items-baseline" style="background-color: #da9832; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 70vh;"> <!-- *Se declara un contenedor con clase que aplica "align-items: baseline". Tiene fondo mostaza, borde negro, tamaño de fuente reducido, altura del 70% del viewport y un margen inferior. -->
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: baseline</code>, los elementos se alinean de acuerdo con la <b>línea base del texto</b> que contengan. Esto resulta útil cuando se trabaja con distintos tamaños de texto, ya que asegura que el contenido textual se vea alineado de forma precisa, aunque los elementos tengan alturas distintas.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: baseline</code>, los elementos se alinean de acuerdo con la <b>línea base del texto</b> que contengan. Esto resulta útil cuando se trabaja con distintos tamaños de texto, ya que asegura que el contenido textual se vea alineado de forma precisa, aunque los elementos tengan alturas distintas.
+            </div>
+            <div style="background-color: white; margin: 0.7%; width: 25%; border: 1px solid black; padding: 0.5%;"> <!-- *Se declara un elemento hijo con fondo blanco, márgenes laterales, ancho del 25%, borde negro y relleno interno. -->
+                Este es un <b>elemento hijo</b> en un contenedor con <code>display: flex</code>. Al aplicar <code>align-items: baseline</code>, los elementos se alinean de acuerdo con la <b>línea base del texto</b> que contengan. Esto resulta útil cuando se trabaja con distintos tamaños de texto, ya que asegura que el contenido textual se vea alineado de forma precisa, aunque los elementos tengan alturas distintas.
+            </div>
         </div>
     </div>
 </body>
