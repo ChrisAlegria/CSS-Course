@@ -1649,6 +1649,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &Flex-start */
 .elemento-con-align-content-flex-start{
     display: flex;
+    align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
 }
@@ -1657,5 +1658,37 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 .elemento-con-align-content-flex-end{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     align-content: flex-end;
+}
+
+/* &Center */
+.elemento-con-align-content-center{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+}
+
+/* &Space-between */
+.elemento-con-align-content-space-between{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+/* &Space-around */
+.elemento-con-align-content-space-around{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around;
+}
+/* &stretch */
+.elemento-con-align-content-stretch{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: stretch;
 }
