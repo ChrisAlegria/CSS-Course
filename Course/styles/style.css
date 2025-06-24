@@ -1685,6 +1685,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     align-items: flex-start;
     align-content: space-around;
 }
+
 /* &stretch */
 .elemento-con-align-content-stretch{
     display: flex;
