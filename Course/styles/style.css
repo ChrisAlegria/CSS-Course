@@ -1561,7 +1561,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     flex-wrap: wrap-reverse; /**Permite que los elementos hijos que no quepan dentro del contenedor se ajusten automáticamente a otra línea o columna, pero en dirección inversa (por ejemplo, de abajo hacia arriba si el eje principal es vertical, o de derecha a izquierda si es horizontal).**/
 } /**Cierre de la declaración del selector por clase.**/
 
-/* Todo - Justificación del contenido en Flexbox (justify-content): La propiedad "justify-content" se utiliza para definir cómo se distribuyen y alinean los elementos hijos dentro de un contenedor con "display: flex" a lo largo del eje principal (por defecto, horizontal). Esta propiedad controla la separación y posición de los elementos cuando hay espacio extra disponible en el contenedor. Por defecto, "justify-content" tiene el valor "flex-start", lo que significa que todos los elementos se agrupan al inicio del eje principal (a la izquierda si el eje es horizontal), sin espacios entre ellos salvo márgenes definidos manualmente. Otros valores comunes incluyen "flex-end" (alinea los elementos al final del eje principal), "center" (centra los elementos), "space-between" (distribuye el espacio disponible entre los elementos, dejando el primero y último pegados a los bordes), "space-around" (espacio igual alrededor de cada elemento) y "space-evenly" (espacio uniforme entre todos los elementos y los bordes). Esta propiedad es esencial para diseñar layouts flexibles y visualmente equilibrados, ya que permite controlar cómo se aprovecha el espacio extra en el contenedor sin alterar el orden de los elementos. "justify-content" solo funciona dentro de un contenedor con "display: flex" y afecta únicamente el eje principal definido por "flex-direction". En resumen, es fundamental para distribuir elementos en línea o columna de forma adaptativa y estética en diseños responsivos. */
+/* Todo - Justificación del contenido en Flexbox (justify-content): La propiedad "justify-content" se utiliza para definir cómo se distribuyen y alinean los elementos hijos dentro de un contenedor con "display: flex" a lo largo del eje principal (por defecto, horizontal). Esta propiedad controla la separación y posición de los elementos cuando hay espacio extra disponible en el contenedor. Por defecto, "justify-content" tiene el valor "flex-start", lo que significa que todos los elementos se agrupan al inicio del eje principal (a la izquierda si el eje es horizontal), sin espacios entre ellos salvo márgenes definidos manualmente. Otros valores comunes incluyen "flex-end" (alinea los elementos al final del eje principal), "center" (centra los elementos), "space-between" (distribuye el espacio disponible entre los elementos, dejando el primero y último pegados a los bordes), "space-around" (espacio igual alrededor de cada elemento) y "space-evenly" (espacio uniforme entre todos los elementos y los bordes). Esta propiedad es esencial para diseñar layouts flexibles y visualmente equilibrados, ya que permite controlar cómo se aprovecha el espacio extra en el contenedor sin alterar el orden de los elementos. "justify-content" solo funciona dentro de un contenedor con "display: flex" y afecta únicamente el eje principal definido por "flex-direction". En resumen, es fundamental para distribuir elementos en línea o columna de forma adaptativa y estética en diseños responsivos. Además, cuando se combina con "flex-wrap: wrap", la propiedad sigue actuando sobre los elementos dentro de cada fila, alineándolos según su posición horizontal dentro de esa fila específica, no en relación con el contenedor completo. */
 /* &Flex-start */
 /* &El valor "flex-start" en la propiedad "justify-content" alinea todos los elementos hijos hacia el inicio del eje principal del contenedor con "display: flex". Si el eje principal es horizontal (por defecto con "flex-direction: row"), los elementos se agrupan en la parte izquierda del contenedor. Este es el valor por defecto en Flexbox, por lo tanto, si no se declara explícitamente, los elementos se comportan así: se alinean uno junto al otro en la parte inicial del eje, sin espacios entre ellos (a menos que se definan márgenes manualmente). Este valor es útil cuando se desea que los elementos comiencen siempre desde el borde inicial del contenedor, conservando un orden natural y compacto. */
 .elemento-con-justify-content-flex-start { /**Se declara un selector por clase llamado "elemento-con-justify-content-flex-start", el cual define un contenedor flexible.**/
@@ -1609,7 +1609,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &El valor "flex-start" en la propiedad "align-items" alinea todos los elementos hijos al inicio del eje cruzado (es decir, el eje perpendicular al principal). Si el contenedor tiene dirección horizontal (flex-direction: row), esto significa que los elementos se alinean hacia la parte superior del contenedor. Es útil cuando se desea que todos los elementos se ubiquen en la parte superior, independientemente de sus alturas. */
 .elemento-con-align-items-flex-start { /**Se declara un selector por clase llamado "elemento-con-align-items-flex-start", que define un contenedor flexible.**/
     display: flex; /**Activa el modelo Flexbox en el contenedor, permitiendo organizar los elementos hijos de forma flexible.**/
-    justify-content: space-evenly; /**Distribuye los elementos hijos con espacios iguales entre ellos y también entre los bordes del contenedor.**/
+    flex-wrap: wrap; /**Permite que los elementos hijos se acomoden en múltiples líneas si no caben en una sola fila.**/
     align-items: flex-start; /**Alinea todos los elementos hijos al inicio del eje cruzado (parte superior si el eje principal es horizontal), independientemente de su altura.**/
 } /**Cierre de la declaración del selector por clase.**/
 
@@ -1617,7 +1617,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &El valor "flex-end" en la propiedad "align-items" posiciona todos los elementos hijos al final del eje cruzado. En un contenedor horizontal, esto significa que los elementos se alinean en la parte inferior del contenedor. Este valor es útil cuando se quiere crear una base visual común, alineando los elementos hacia abajo sin importar su altura. */
 .elemento-con-align-items-flex-end { /**Se declara un selector por clase llamado "elemento-con-align-items-flex-end", que define un contenedor flexible.**/
     display: flex; /**Activa el modelo Flexbox en el contenedor, permitiendo distribuir los elementos hijos de forma flexible.**/
-    justify-content: space-evenly; /**Distribuye los elementos hijos con espacios iguales entre ellos y también entre los bordes del contenedor.**/
+    flex-wrap: wrap; /**Permite que los elementos hijos se acomoden en múltiples líneas si no caben en una sola fila.**/
     align-items: flex-end; /**Alinea todos los elementos hijos al final del eje cruzado (parte inferior si el eje principal es horizontal).**/
 } /**Cierre de la declaración del selector por clase.**/
 
@@ -1625,7 +1625,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &El valor "center" en "align-items" centra verticalmente (o en el eje cruzado) todos los elementos hijos dentro del contenedor. Si el eje principal es horizontal, los elementos se posicionan al centro verticalmente. Es útil para lograr una presentación visual balanceada, especialmente cuando los elementos tienen diferentes alturas y se quiere un alineamiento uniforme en el centro. */
 .elemento-con-align-items-center { /**Se declara un selector por clase llamado "elemento-con-align-items-center", que define un contenedor flexible.**/
     display: flex; /**Activa el modelo Flexbox, permitiendo organizar a los elementos hijos con mayor control.**/
-    justify-content: space-evenly; /**Distribuye los elementos hijos de manera uniforme, dejando el mismo espacio entre todos los elementos y los bordes.**/
+    flex-wrap: wrap; /**Permite que los elementos hijos se acomoden en múltiples líneas si no caben en una sola fila.**/
     align-items: center; /**Centra verticalmente los elementos hijos dentro del contenedor, si el eje principal es horizontal.**/
 } /**Cierre de la declaración del selector por clase.**/
 
@@ -1633,7 +1633,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &El valor "stretch" es el valor por defecto en la propiedad "align-items". Hace que los elementos hijos se estiren automáticamente para ocupar todo el espacio disponible en el eje cruzado, siempre que no tengan una altura definida. Este comportamiento es útil para lograr que los elementos llenen la altura completa del contenedor, creando bloques del mismo tamaño de forma automática. */
 .elemento-con-align-items-stretch { /**Se declara un selector por clase llamado "elemento-con-align-items-stretch", que define un contenedor flexible.**/
     display: flex; /**Activa el modelo Flexbox para distribuir y alinear los elementos hijos de forma dinámica.**/
-    justify-content: space-evenly; /**Coloca espacios iguales entre todos los elementos hijos y los bordes del contenedor.**/
+    flex-wrap: wrap; /**Permite que los elementos hijos se acomoden en múltiples líneas si no caben en una sola fila.**/
     align-items: stretch; /**Hace que los elementos hijos se estiren para ocupar todo el espacio disponible en el eje cruzado (vertical si flex-direction es row), siempre que no tengan una altura fija.**/
 } /**Cierre de la declaración del selector por clase.**/
 
@@ -1641,6 +1641,21 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* &El valor "baseline" alinea todos los elementos hijos según la línea base del texto que contienen. Esto resulta especialmente útil cuando los elementos tienen tamaños de fuente diferentes o estructuras textuales variadas, ya que asegura que el texto se alinee de manera precisa en una misma línea base, manteniendo una presentación coherente y profesional. */
 .elemento-con-align-items-baseline { /**Se declara un selector por clase llamado "elemento-con-align-items-baseline", que define un contenedor flexible.**/
     display: flex; /**Activa el modelo Flexbox, permitiendo mayor control en la disposición de los elementos hijos.**/
-    justify-content: space-evenly; /**Distribuye los elementos con espacios uniformes entre ellos y los bordes del contenedor.**/
+    flex-wrap: wrap; /**Permite que los elementos hijos se acomoden en múltiples líneas si no caben en una sola fila.**/
     align-items: baseline; /**Alinea los elementos hijos según la línea base del texto que contienen, útil para alineación precisa cuando hay diferentes tamaños de fuente.**/
 } /**Cierre de la declaración del selector por clase.**/
+
+/* Todo - Alineamiento de contenido */
+/* &Flex-start */
+.elemento-con-align-content-flex-start{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* &Flex-end */
+.elemento-con-align-content-flex-end{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
