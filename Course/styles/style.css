@@ -1642,54 +1642,60 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 .elemento-con-align-items-baseline { /**Se declara un selector por clase llamado "elemento-con-align-items-baseline", que define un contenedor flexible.**/
     display: flex; /**Activa el modelo Flexbox, permitiendo mayor control en la disposición de los elementos hijos.**/
     flex-wrap: wrap; /**Permite que los elementos hijos se acomoden en múltiples líneas si no caben en una sola fila.**/
-    align-items: baseline; /**Alinea los elementos hijos según la línea base del texto que contienen, útil para alineación precisa cuando hay diferentes tamaños de fuente.**/
+    align-items: baseline; /**Alinea los elementos hijos según la línea base del texto que contienen, útil para alineación precisa cuando hay diferentes tamaños de fuente.**/  
 } /**Cierre de la declaración del selector por clase.**/
 
-/* Todo - Alineamiento de contenido */
+/* Todo - Alineamiento de contenido (align-content): La propiedad "align-content" se usa en contenedores con "display: flex" y "flex-wrap: wrap" para controlar cómo se agrupan y alinean todas las filas (o bloques) de elementos a lo largo del eje perpendicular al principal (eje cruzado). A diferencia de "align-items", que alinea cada elemento dentro de su propia fila, "align-content" alinea todas las filas como un conjunto dentro del contenedor. Por ejemplo, si el eje principal es horizontal (flex-direction: row), "align-content" controla la distribución vertical de las filas. Los valores más comunes son: "flex-start" (agrupa todas las filas hacia el inicio del eje cruzado, arriba), "flex-end" (las filas se agrupan hacia el final, abajo), "center" (las filas se centran en el contenedor), "space-between" (espacio uniforme entre filas, primera arriba y última abajo), "space-around" (espacio uniforme alrededor de todas las filas) y "stretch" (valor por defecto, las filas se estiran para llenar todo el espacio disponible). Es importante que "align-content" solo funciona cuando hay varias filas (es decir, con "flex-wrap: wrap") y afecta el espacio total que ocupan las filas dentro del contenedor, no la alineación individual de cada elemento dentro de su fila. En resumen, "align-content" ayuda a distribuir y alinear todas las filas o bloques dentro del contenedor flexible para un diseño más organizado y equilibrado cuando se trabaja con múltiples filas. */
 /* &Flex-start */
-.elemento-con-align-content-flex-start{
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-}
+/* &El valor "flex-start" en la propiedad "align-content" alinea todas las filas o bloques de elementos hacia el inicio del eje cruzado (parte superior si el eje principal es horizontal). Esto es útil cuando se quiere que las filas comiencen desde la parte superior del contenedor, dejando espacio libre en la parte inferior si no se llena todo el alto. */
+.elemento-con-align-content-flex-start { /**Se declara un selector por clase llamado "elemento-con-align-content-flex-start", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox para distribuir los elementos hijos.**/
+    align-items: flex-start; /**Alinea cada elemento dentro de su fila hacia el inicio del eje cruzado.**/
+    align-content: flex-start; /**Alinea todas las filas o bloques de elementos hacia la parte superior del contenedor.**/
+    flex-wrap: wrap; /**Permite que los elementos se dividan en múltiples filas si es necesario.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Flex-end */
-.elemento-con-align-content-flex-end{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-end;
-}
+/* &El valor "flex-end" en la propiedad "align-content" alinea todas las filas hacia el final del eje cruzado (parte inferior si el eje principal es horizontal). Es útil cuando se desea que el contenido ocupe la parte baja del contenedor, dejando espacio vacío arriba si no se llena completamente. */
+.elemento-con-align-content-flex-end { /**Se declara un selector por clase llamado "elemento-con-align-content-flex-end", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox para controlar la distribución de los elementos.**/
+    flex-wrap: wrap; /**Permite el salto automático de los elementos a nuevas filas si no caben en una sola línea.**/
+    align-items: flex-start; /**Alinea los elementos dentro de su fila al inicio del eje cruzado.**/
+    align-content: flex-end; /**Agrupa todas las filas hacia la parte inferior del contenedor.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Center */
-.elemento-con-align-content-center{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: center;
-}
+/* &El valor "center" en "align-content" agrupa todas las filas en el centro del eje cruzado, creando un espacio superior e inferior simétrico dentro del contenedor. Es útil para centrar visualmente todo el contenido si hay espacio disponible. */
+.elemento-con-align-content-center { /**Se declara un selector por clase llamado "elemento-con-align-content-center", que define un contenedor flexible.**/
+    display: flex; /**Activa Flexbox en el contenedor.**/
+    flex-wrap: wrap; /**Permite que los elementos se acomoden en múltiples líneas si es necesario.**/
+    align-items: flex-start; /**Alinea individualmente los elementos al inicio del eje cruzado.**/
+    align-content: center; /**Centra todas las filas en el eje cruzado dentro del contenedor.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Space-between */
-.elemento-con-align-content-space-between{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-between;
-}
+/* &El valor "space-between" en "align-content" distribuye las filas de modo que el espacio entre ellas sea uniforme, dejando la primera fila arriba y la última abajo. Es útil para una separación balanceada entre bloques dentro del contenedor. */
+.elemento-con-align-content-space-between { /**Se declara un selector por clase llamado "elemento-con-align-content-space-between", que define un contenedor flexible.**/
+    display: flex; /**Activa Flexbox, permitiendo un diseño adaptable.**/
+    flex-wrap: wrap; /**Permite el salto a nuevas filas cuando no hay espacio horizontal suficiente.**/
+    align-items: flex-start; /**Alinea cada elemento dentro de su fila hacia arriba.**/
+    align-content: space-between; /**Distribuye las filas con espacio uniforme entre ellas, primera arriba y última abajo.**/
+} /**Cierre de la declaración del selector por clase.**/
 
 /* &Space-around */
-.elemento-con-align-content-space-around{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-around;
-}
+/* &El valor "space-around" en "align-content" distribuye las filas dejando un espacio igual por arriba y por debajo de cada una. Esto crea espacios equilibrados alrededor de todas las filas dentro del eje cruzado. */
+.elemento-con-align-content-space-around { /**Se declara un selector por clase llamado "elemento-con-align-content-space-around", que define un contenedor flexible.**/
+    display: flex; /**Activa el modelo Flexbox para organizar el contenido de forma flexible.**/
+    flex-wrap: wrap; /**Permite que los elementos hijos se acomoden en varias filas si es necesario.**/
+    align-items: flex-start; /**Alinea verticalmente cada elemento al inicio de su fila.**/
+    align-content: space-around; /**Distribuye las filas dejando espacio uniforme alrededor de cada una.**/
+} /**Cierre de la declaración del selector por clase.**/
 
-/* &stretch */
-.elemento-con-align-content-stretch{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: stretch;
-}
+/* &Stretch */
+/* &El valor "stretch" es el valor por defecto de "align-content". Hace que todas las filas se estiren para ocupar todo el espacio disponible en el eje cruzado, lo cual puede provocar que se ajusten automáticamente su altura. Funciona solo si hay espacio extra y las filas no tienen una altura definida. */
+.elemento-con-align-content-stretch { /**Se declara un selector por clase llamado "elemento-con-align-content-stretch", que define un contenedor flexible.**/
+    display: flex; /**Activa Flexbox para permitir diseño flexible y dinámico.**/
+    flex-wrap: wrap; /**Permite que los elementos se distribuyan en múltiples filas cuando no caben en una sola.**/
+    align-items: flex-start; /**Alinea los elementos individualmente hacia el inicio de su fila.**/
+    align-content: stretch; /**Estira las filas para llenar todo el espacio disponible en el eje cruzado.**/
+} /**Cierre de la declaración del selector por clase.**/

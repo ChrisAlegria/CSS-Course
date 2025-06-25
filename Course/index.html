@@ -1468,142 +1468,142 @@
             </div>
         </div>
     </div>
-    <div style="margin-top: 5%; border: 2px solid black; padding: 2%;">
-        <h3 style="text-align: center; margin: 0 0 2% 0;">align-content</h3>
-        <div style="display: flex; justify-content: center; margin-bottom: 25px;">
-            <div style="width: 15px; height: 15px; background-color: #212738; margin-right: 10px;"></div>
+    <div style="margin-top: 5%; border: 2px solid black; padding: 2%;"> <!-- *Se declara un contenedor con margen superior del 5%, borde negro de 2px y relleno interno del 2%. -->
+        <h3 style="text-align: center; margin: 0 0 2% 0;">align-content</h3> <!-- *Se declara un encabezado nivel 3 centrado horizontalmente, con un margen inferior del 2% y sin márgenes laterales ni superiores. -->
+        <div style="display: flex; justify-content: center; margin-bottom: 25px;"> <!-- *Se declara un contenedor flexible con los elementos centrados horizontalmente y un margen inferior de 25px. -->
+        <div style="width: 15px; height: 15px; background-color: #212738; margin-right: 10px;"></div> <!-- *Se declara un cuadro de 15x15px con color de fondo #212738 y margen derecho de 10px. -->
             <span style="margin-right: 20px;">flex-start</span> 
-            <div style="width: 15px; height: 15px; background-color: #d1d646; margin-right: 10px;"></div> 
+            <div style="width: 15px; height: 15px; background-color: #d1d646; margin-right: 10px;"></div> <!-- *Se declara un cuadro de 15x15px con color de fondo #d1d646 y margen derecho de 10px. -->
             <span style="margin-right: 20px;">flex-end</span> 
-            <div style="width: 15px; height: 15px; background-color: #d4d4d4; margin-right: 10px;"></div> 
+            <div style="width: 15px; height: 15px; background-color: #d4d4d4; margin-right: 10px;"></div> <!-- *Se declara un cuadro de 15x15px con color de fondo #d4d4d4 y margen derecho de 10px. -->
             <span style="margin-right: 20px;">center</span> 
-            <div style="width: 15px; height: 15px; background-color: #57c4e5; margin-right: 10px;"></div> 
+            <div style="width: 15px; height: 15px; background-color: #57c4e5; margin-right: 10px;"></div> <!-- *Se declara un cuadro de 15x15px con color de fondo #57c4e5 y margen derecho de 10px. -->
             <span style="margin-right: 20px;">space-between</span> 
-            <div style="width: 15px; height: 15px; background-color: #b39e53; margin-right: 10px;"></div> 
+            <div style="width: 15px; height: 15px; background-color: #b39e53; margin-right: 10px;"></div> <!-- *Se declara un cuadro de 15x15px con color de fondo #b39e53 y margen derecho de 10px. -->
             <span style="margin-right: 20px;">space-around</span>
-            <div style="width: 15px; height: 15px; background-color: #8497b5; margin-right: 10px;"></div> 
+            <div style="width: 15px; height: 15px; background-color: #8497b5; margin-right: 10px;"></div> <!-- *Se declara un cuadro de 15x15px con color de fondo #8497b5 y margen derecho de 10px. -->
             <span style="margin-right: 20px;">stretch</span>
         </div>
-        <p style="text-align: justify; margin: 3% 0;">
+        <p style="text-align: justify; margin: 3% 0;"> <!-- *Se declara un párrafo con alineación justificada y márgenes superior e inferior del 3%, sin márgenes laterales. -->
             La propiedad <b>align-content</b> se utiliza en contenedores con <code>display: flex</code> cuando hay <b>múltiples filas</b> (es decir, cuando se usa <code>flex-wrap: wrap</code>) y permite alinear el <b>conjunto de filas</b> dentro del <b>contenedor padre</b> a lo largo del <b>eje perpendicular</b> al principal (también llamado <i>eje cruzado</i>). A diferencia de <b>align-items</b>, que alinea los <i>elementos individuales dentro de su propia fila</i>, <b>align-content</b> alinea todas las filas en conjunto dentro del contenedor. Por ejemplo, con el valor <b>flex-start</b>, todas las filas se agrupan y alinean hacia el inicio del eje cruzado (como la parte superior del contenedor si el eje principal es horizontal). Con <b>flex-end</b>, las filas se alinean hacia el final (parte inferior).El valor <b>center</b> agrupa las filas y las centra dentro del contenedor, mientras que <b>space-between</b> y s<b>space-around</b> distribuyen el espacio sobrante entre las filas de forma diferente. El valor <b>stretch</b> (por defecto) hace que las filas se estiren automáticamente para ocupar todo el espacio disponible verticalmente, <b>siempre y cuando no haya suficiente contenido o altura definida que ya lo esté llenando</b>.
         </p>
-        <div class="elemento-con-align-content-flex-start" style="background-color: #212738; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;">
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+        <div class="elemento-con-align-content-flex-start" style="background-color: #212738; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;"> <!-- *Contenedor con clase "elemento-con-align-content-flex-start", fondo #212738, borde negro de 2px, tamaño de fuente al 80%, margen inferior del 2% y altura de pantalla completa (100vh). -->
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: flex-start</code>, todas las filas de elementos se agrupan y alinean hacia el <b>inicio del eje perpendicular</b> al principal (parte superior si el eje principal es horizontal). Esto significa que todas las filas se apilan al principio del contenedor, dejando espacio vacío abajo si sobra espacio.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: flex-start</code>, todas las filas de elementos se agrupan y alinean hacia el <b>inicio del eje perpendicular</b> al principal (parte superior si el eje principal es horizontal). Esto significa que todas las filas se apilan al principio del contenedor, dejando espacio vacío abajo si sobra espacio.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: flex-start</code>, todas las filas de elementos se agrupan y alinean hacia el <b>inicio del eje perpendicular</b> al principal (parte superior si el eje principal es horizontal). Esto significa que todas las filas se apilan al principio del contenedor, dejando espacio vacío abajo si sobra espacio.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: flex-start</code>, todas las filas de elementos se agrupan y alinean hacia el <b>inicio del eje perpendicular</b> al principal (parte superior si el eje principal es horizontal). Esto significa que todas las filas se apilan al principio del contenedor, dejando espacio vacío abajo si sobra espacio.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px;  height: 30vh; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: flex-start</code>, todas las filas de elementos se agrupan y alinean hacia el <b>inicio del eje perpendicular</b> al principal (parte superior si el eje principal es horizontal). Esto significa que todas las filas se apilan al principio del contenedor, dejando espacio vacío abajo si sobra espacio.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: flex-start</code>, todas las filas de elementos se agrupan y alinean hacia el <b>inicio del eje perpendicular</b> al principal (parte superior si el eje principal es horizontal). Esto significa que todas las filas se apilan al principio del contenedor, dejando espacio vacío abajo si sobra espacio.
             </div>
         </div>
-        <div class="elemento-con-align-content-flex-end" style="background-color: #d1d646; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;">
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> 
+        <div class="elemento-con-align-content-flex-end" style="background-color: #d1d646; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;"> <!-- *Contenedor con clase "elemento-con-align-content-flex-end", fondo #d1d646, borde negro de 2px, tamaño de fuente al 80%, margen inferior del 2% y altura completa (100vh). -->
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al aplicar <code>align-content: flex-end</code>, todas las filas se agrupan y alinean hacia el <b>final del eje perpendicular</b> (parte inferior si el eje principal es horizontal), dejando espacio vacío arriba si hay espacio sobrante.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al aplicar <code>align-content: flex-end</code>, todas las filas se agrupan y alinean hacia el <b>final del eje perpendicular</b> (parte inferior si el eje principal es horizontal), dejando espacio vacío arriba si hay espacio sobrante.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al aplicar <code>align-content: flex-end</code>, todas las filas se agrupan y alinean hacia el <b>final del eje perpendicular</b> (parte inferior si el eje principal es horizontal), dejando espacio vacío arriba si hay espacio sobrante.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al aplicar <code>align-content: flex-end</code>, todas las filas se agrupan y alinean hacia el <b>final del eje perpendicular</b> (parte inferior si el eje principal es horizontal), dejando espacio vacío arriba si hay espacio sobrante.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px;  height: 30vh; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al aplicar <code>align-content: flex-end</code>, todas las filas se agrupan y alinean hacia el <b>final del eje perpendicular</b> (parte inferior si el eje principal es horizontal), dejando espacio vacío arriba si hay espacio sobrante.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> 
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al aplicar <code>align-content: flex-end</code>, todas las filas se agrupan y alinean hacia el <b>final del eje perpendicular</b> (parte inferior si el eje principal es horizontal), dejando espacio vacío arriba si hay espacio sobrante.
             </div>
         </div>
-        <div class="elemento-con-align-content-center" style="background-color: #d4d4d4; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;">
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+        <div class="elemento-con-align-content-center" style="background-color: #d4d4d4; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;"> <!-- *Contenedor con clase "elemento-con-align-content-center", fondo #d1d646, borde negro de 2px, tamaño de fuente al 80%, margen inferior del 2% y altura completa (100vh). -->
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: center</code>, todas las filas se agrupan y se centran verticalmente dentro del contenedor, distribuyendo el espacio sobrante tanto arriba como abajo para que las filas queden en el centro del eje perpendicular.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: center</code>, todas las filas se agrupan y se centran verticalmente dentro del contenedor, distribuyendo el espacio sobrante tanto arriba como abajo para que las filas queden en el centro del eje perpendicular. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: center</code>, todas las filas se agrupan y se centran verticalmente dentro del contenedor, distribuyendo el espacio sobrante tanto arriba como abajo para que las filas queden en el centro del eje perpendicular. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: center</code>, todas las filas se agrupan y se centran verticalmente dentro del contenedor, distribuyendo el espacio sobrante tanto arriba como abajo para que las filas queden en el centro del eje perpendicular. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: center</code>, todas las filas se agrupan y se centran verticalmente dentro del contenedor, distribuyendo el espacio sobrante tanto arriba como abajo para que las filas queden en el centro del eje perpendicular. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: center</code>, todas las filas se agrupan y se centran verticalmente dentro del contenedor, distribuyendo el espacio sobrante tanto arriba como abajo para que las filas queden en el centro del eje perpendicular. 
             </div>
         </div>
-        <div class="elemento-con-align-content-space-between" style="background-color: #57c4e5; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;">
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+        <div class="elemento-con-align-content-space-between" style="background-color: #57c4e5; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;"> <!-- *Contenedor con clase "elemento-con-align-content-space-between", fondo #d1d646, borde negro de 2px, tamaño de fuente al 80%, margen inferior del 2% y altura completa (100vh). -->
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al usar <code>align-content: space-between</code>, las filas se distribuyen para que la primera quede pegada al inicio y la última al final del contenedor, dejando el espacio restante dividido de forma uniforme entre las filas.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al usar <code>align-content: space-between</code>, las filas se distribuyen para que la primera quede pegada al inicio y la última al final del contenedor, dejando el espacio restante dividido de forma uniforme entre las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al usar <code>align-content: space-between</code>, las filas se distribuyen para que la primera quede pegada al inicio y la última al final del contenedor, dejando el espacio restante dividido de forma uniforme entre las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al usar <code>align-content: space-between</code>, las filas se distribuyen para que la primera quede pegada al inicio y la última al final del contenedor, dejando el espacio restante dividido de forma uniforme entre las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al usar <code>align-content: space-between</code>, las filas se distribuyen para que la primera quede pegada al inicio y la última al final del contenedor, dejando el espacio restante dividido de forma uniforme entre las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Al usar <code>align-content: space-between</code>, las filas se distribuyen para que la primera quede pegada al inicio y la última al final del contenedor, dejando el espacio restante dividido de forma uniforme entre las filas. 
             </div>
         </div>
-        <div class="elemento-con-align-content-space-around" style="background-color: #b39e53; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;">
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+        <div class="elemento-con-align-content-space-around" style="background-color: #b39e53; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;"> <!-- *Contenedor con clase "elemento-con-align-content-space-around", fondo #d1d646, borde negro de 2px, tamaño de fuente al 80%, margen inferior del 2% y altura completa (100vh). -->
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: space-around</code>, las filas se distribuyen con espacios iguales antes, entre y después de cada fila, creando un espaciado uniforme alrededor de todas las filas.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: space-around</code>, las filas se distribuyen con espacios iguales antes, entre y después de cada fila, creando un espaciado uniforme alrededor de todas las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: space-around</code>, las filas se distribuyen con espacios iguales antes, entre y después de cada fila, creando un espaciado uniforme alrededor de todas las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: space-around</code>, las filas se distribuyen con espacios iguales antes, entre y después de cada fila, creando un espaciado uniforme alrededor de todas las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: space-around</code>, las filas se distribuyen con espacios iguales antes, entre y después de cada fila, creando un espaciado uniforme alrededor de todas las filas. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: space-around</code>, las filas se distribuyen con espacios iguales antes, entre y después de cada fila, creando un espaciado uniforme alrededor de todas las filas. 
             </div>
         </div>
-        <div class="elemento-con-align-content-stretch" style="background-color: #8497b5; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;">
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+        <div class="elemento-con-align-content-stretch" style="background-color: #8497b5; border: 2px solid black; font-size: 80%; margin-bottom: 2%; height: 100vh;"> <!-- *Contenedor con clase "elemento-con-align-content-stretch", fondo #d1d646, borde negro de 2px, tamaño de fuente al 80%, margen inferior del 2% y altura completa (100vh). -->
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: stretch</code> (valor por defecto), las filas se estiran para ocupar todo el espacio disponible en el eje perpendicular, ajustando su altura para llenar el contenedor completo, siempre que no tengan altura fija definida.
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: stretch</code> (valor por defecto), las filas se estiran para ocupar todo el espacio disponible en el eje perpendicular, ajustando su altura para llenar el contenedor completo, siempre que no tengan altura fija definida. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: stretch</code> (valor por defecto), las filas se estiran para ocupar todo el espacio disponible en el eje perpendicular, ajustando su altura para llenar el contenedor completo, siempre que no tengan altura fija definida. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: stretch</code> (valor por defecto), las filas se estiran para ocupar todo el espacio disponible en el eje perpendicular, ajustando su altura para llenar el contenedor completo, siempre que no tengan altura fija definida. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; height: 30vh; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, altura de 30vh, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: stretch</code> (valor por defecto), las filas se estiran para ocupar todo el espacio disponible en el eje perpendicular, ajustando su altura para llenar el contenedor completo, siempre que no tengan altura fija definida. 
             </div>
-            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;">
+            <div style="background-color: white; margin: 0.7%; width: 300px; border: 1px solid black; padding: 0.5%;"> <!-- *Elemento hijo con fondo blanco, margen de 0.7%, ancho de 300px, borde negro de 1px y relleno del 0.5%. -->
                 Este es un <b>elemento hijo</b> dentro de un contenedor con <code>display: flex</code> y <code>flex-wrap: wrap</code>. Con <code>align-content: stretch</code> (valor por defecto), las filas se estiran para ocupar todo el espacio disponible en el eje perpendicular, ajustando su altura para llenar el contenedor completo, siempre que no tengan altura fija definida. 
             </div>
         </div>
