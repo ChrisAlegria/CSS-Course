@@ -1722,9 +1722,35 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     grid-template-rows: repeat(4, 20%); /** Define cuatro filas, cada una con un 20% de la altura total del contenedor, distribuyendo los elementos verticalmente en estas filas. **/
 } /** Cierre de la declaración del selector por clase. **/
 
+/* Todo - Justifucación de elementos en grid (justify-items) */
+/* &Start */
 .elemento-con-grid-justify-items-start{
     display: grid;
-    grid-template-columns: repeat(2, 25%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4,25%);
     justify-items: start;
+}
+
+/* &End */
+.elemento-con-grid-justify-items-end{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4,25%);
+    justify-items: end;
+}
+
+/* &Center */
+.elemento-con-grid-justify-items-center{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4,25%);
+    justify-items: center;
+}
+
+/* &Stretch */
+.elemento-con-grid-justify-items-stretch{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4,25%);
+    justify-items: stretch;
 }

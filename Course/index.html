@@ -1669,27 +1669,53 @@
         <p style="margin: 2% 2% 2% 2%;">
             La propiedad <b>grid-template-rows</b> se utiliza en contenedores con <code>display: grid</code> para definir <b>cuántas filas</b> tendrá la cuadrícula y <b>qué altura tendrá cada una</b>. Esta propiedad permite dividir el contenedor padre en filas específicas y controlar cómo se distribuyen los elementos hijos verticalmente. Por ejemplo, al usar <code>grid-template-rows: 100px 200px 1fr;</code>, se crean tres filas: la primera con 100 píxeles de alto, la segunda con 200 píxeles y la tercera que ocupa el espacio restante disponible. También se puede usar <code>repeat()</code>, como en <code>repeat(3, 1fr)</code>, para generar tres filas del mismo tamaño que se ajustan automáticamente al espacio vertical disponible. Esta propiedad es útil para construir diseños en forma de cuadrícula, ya que determina cómo se <b>organizan verticalmente</b> los elementos dentro del contenedor. Si se definen, por ejemplo, solo dos filas y hay más elementos hijos de los que caben, los elementos adicionales se colocarán automáticamente en filas nuevas fuera de lo definido, lo que puede causar que se salgan del espacio del contenedor padre. Además, si se especifican tamaños de fila que no suman el 100% del alto del contenedor, los elementos podrían autoajustarse para ocupar todo el espacio vertical. En resumen, <b>grid-template-rows</b> sirve para establecer la estructura vertical del grid, permitiendo distribuir los elementos hijos de forma ordenada de arriba hacia abajo según las alturas definidas.
         </p>
-        <hr style="margin: 1%">
-        <h4 style="text-align: center; background-color: #c53fff;">start</h3>
-        <div class="elemento-con-grid-justify-items-start" style="border: 2px dashed  rgb(86, 86, 86); margin-bottom: 5%;">
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 1</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 2</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 3</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 4</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 5</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 6</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 7</div>
+        <div style=" margin: 1%; background-color: #5b3434; padding: 0.1% 0 5% 0;">
+            <h4 style="text-align: center; color: white;">start</h3>
+            <div class="elemento-con-grid-justify-items-start" style="border: 2px dashed rgb(86, 86, 86); background-color: white;">
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div>
+            </div>
         </div>
-        <hr style="margin: 1%">
-        <h4 style="text-align: center;">end</h3>
-        <div class="elemento-con-grid-justify-items-start" style="border: 2px dashed  rgb(86, 86, 86); margin-bottom: 5%;">
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 1</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 2</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 3</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 4</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 5</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 6</div>
-            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 7</div>
+        <div style=" margin: 1%; background-color: #595b34; padding: 0.1% 0 5% 0;">
+            <h4 style="text-align: center; color: white;">end</h3>
+            <div class="elemento-con-grid-justify-items-end" style="border: 2px dashed rgb(86, 86, 86); background-color: white;">
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div>
+            </div>
+        </div>
+        <div style=" margin: 1%; background-color: #345b51; padding: 0.1% 0 5% 0;">
+            <h4 style="text-align: center; color: white;">center</h3>
+            <div class="elemento-con-grid-justify-items-center" style="border: 2px dashed rgb(86, 86, 86); background-color: white;">
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div>
+            </div>
+        </div>
+        <div style=" margin: 1%; background-color: #343e5b; padding: 0.1% 0 5% 0;">
+            <h4 style="text-align: center; color: white;">stretch</h3>
+            <div class="elemento-con-grid-justify-items-stretch" style="border: 2px dashed rgb(86, 86, 86); background-color: white;">
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div>
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div>
+            </div>
         </div>
     </div>
 </body>
