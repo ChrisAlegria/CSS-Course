@@ -1686,7 +1686,7 @@
         </div>
         <div style=" margin: 1%; background-color: #595b34; padding: 0.1% 0 5% 0;"> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
             <h4 style="text-align: center; color: white;">end</h3> <!-- *Encabezado de nivel 4 centrado, con texto blanco, que indica el valor "end" de justify-items. -->
-            <p style="color: rgb(207, 207, 207); margin: 0 1% 2% 1%"> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+            <p style="color: rgb(207, 207, 207); margin: 0 1% 2% 1%">  <!-- *Párrafo explicativo sobre cómo actúa justify-items: end en un contenedor grid. -->
                 En un contenedor con <code>display: grid</code> y columnas/filas definidas mediante <code>grid-template-columns</code> y <code>grid-template-rows</code>, se crean celdas que alojan a los elementos hijos. Al usar <b>justify-items: end</b>, cada elemento dentro de su celda se alinea horizontalmente hacia el <b>lado derecho</b> de esa celda. Si el elemento no tiene un ancho definido, se ajustará a su contenido y quedará pegado al borde derecho, quitando el estiramiento automático por defecto.
             </p>
             <div class="elemento-con-grid-justify-items-end" style="border: 2px dashed rgb(86, 86, 86); background-color: white;"> <!-- *Contenedor con clase "elemento-con-grid-justify-items-end", borde punteado gris oscuro y fondo blanco. -->
@@ -1720,6 +1720,72 @@
                 Por defecto, en un contenedor con <code>display: grid</code> y una cuadrícula definida mediante <code>grid-template-columns</code> y <code>grid-template-rows</code>, se aplica <b>justify-items: stretch</b>. Esto hace que cada elemento se <b>expanda horizontalmente</b> para llenar todo el ancho de la celda en la que se encuentra, siempre que no tenga un ancho específico definido. Este comportamiento permite que los elementos ocupen todo el espacio disponible sin necesidad de ajustar su tamaño manualmente.
             </p>
             <div class="elemento-con-grid-justify-items-stretch" style="border: 2px dashed rgb(86, 86, 86); background-color: white;"> <!-- *Contenedor con clase "elemento-con-grid-justify-items-stretch", borde punteado gris oscuro y fondo blanco. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+            </div>
+        </div>
+    </div>
+    <div style="border: 2px solid black; padding: 0 0 2% 0; margin-top: 5%;"> <!-- *Contenedor con borde negro de 2px, relleno inferior del 2% y un margen superior del 5%. -->
+        <h3 style="text-align: center">align-items</h3> <!-- *Contenedor con borde negro de 2px, relleno inferior del 2% y un margen superior del 5%. -->
+        <p style="margin: 2% 2% 2% 2%;"> <!-- *Párrafo con márgenes del 2% en todos los lados, que explica el funcionamiento de la propiedad align-items en Grid. -->
+            La 
+        </p>
+        <div style=" margin: 1%; background-color: #51345b; padding: 0.1% 0 5% 0;"> <!-- *Contenedor visual para el ejemplo con fondo #51345b, margen del 1% y relleno en la parte inferior del 5%. -->
+            <h4 style="text-align: center; color: white;">start</h3> <!-- *Encabezado de nivel 4 centrado, con texto blanco, que indica el valor "start" de align-items. -->
+            <p style="color: rgb(207, 207, 207); margin: 0 1% 2% 1%"> <!-- *Párrafo explicativo sobre cómo actúa align-items: start en un contenedor grid. -->
+                En un contenedor con <code>display: grid</code> que define su estructura con <code>grid-template-columns</code> y <code>grid-template-rows</code>, se crean celdas donde se ubican los elementos hijos. Al usar <b>justify-items: start</b>, cada elemento dentro de su celda se alinea horizontalmente al <b>borde izquierdo</b> de esa celda. Si el elemento no tiene un ancho definido, se ajustará automáticamente a su contenido, manteniéndose alineado al inicio de la celda y desactivando el comportamiento por defecto de estiramiento (<code>stretch</code>).
+            </p>
+            <div class="elemento-con-grid-align-items-start" style="height: 80vh; border: 2px dashed rgb(86, 86, 86); background-color: white;"> <!-- *Contenedor con clase "elemento-con-grid-align-items-start", borde punteado gris oscuro y fondo blanco. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+            </div>
+        </div>
+        <div style=" margin: 1%; background-color: #903030; padding: 0.1% 0 5% 0;"> <!-- *Contenedor visual para el ejemplo con fondo #903030, margen del 1% y relleno en la parte inferior del 5%. -->
+            <h4 style="text-align: center; color: white;">end</h3> <!-- *Encabezado de nivel 4 centrado, con texto blanco, que indica el valor "end" de align-items. -->
+            <p style="color: rgb(207, 207, 207); margin: 0 1% 2% 1%">  <!-- *Párrafo explicativo sobre cómo actúa align-items: end en un contenedor grid. -->
+                En un contenedor con <code>display: grid</code> y columnas/filas definidas mediante <code>grid-template-columns</code> y <code>grid-template-rows</code>, se crean celdas que alojan a los elementos hijos. Al usar <b>justify-items: end</b>, cada elemento dentro de su celda se alinea horizontalmente hacia el <b>lado derecho</b> de esa celda. Si el elemento no tiene un ancho definido, se ajustará a su contenido y quedará pegado al borde derecho, quitando el estiramiento automático por defecto.
+            </p>
+            <div class="elemento-con-grid-align-items-end" style="height: 80vh; border: 2px dashed rgb(86, 86, 86); background-color: white;"> <!-- *Contenedor con clase "elemento-con-grid-align-items-end", borde punteado gris oscuro y fondo blanco. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+            </div>
+        </div>
+        <div style=" margin: 1%; background-color: #907e30; padding: 0.1% 0 5% 0;"> <!-- *Contenedor visual para el ejemplo con fondo #907e30, margen del 1% y relleno en la parte inferior del 5%. -->
+            <h4 style="text-align: center; color: white;">center</h3> <!-- *Encabezado de nivel 4 centrado, con texto blanco, que indica el valor "center" de align-items. -->
+            <p style="color: rgb(207, 207, 207); margin: 0 1% 2% 1%"> <!-- *Párrafo explicativo sobre cómo actúa align-items: center en un contenedor grid. -->
+                Cuando se define una cuadrícula con <code>grid-template-columns</code> y <code>grid-template-rows</code>, los elementos hijos se colocan dentro de celdas individuales. Al aplicar <b>justify-items: center</b>, cada elemento se posiciona en el <b>centro horizontal</b> de su celda. Si el elemento no tiene ancho fijo, se ajusta a su contenido y se mantiene centrado dentro del espacio disponible de la celda.
+            </p>
+            <div class="elemento-con-grid-align-items-center" style="height: 80vh; border: 2px dashed rgb(86, 86, 86); background-color: white;"> <!-- *Contenedor con clase "elemento-con-grid-align-items-center", borde punteado gris oscuro y fondo blanco. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 4</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 5</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 6</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+                <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 7</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
+            </div>
+        </div>
+        <div style=" margin: 1%; background-color: #1a5c5c; padding: 0.1% 0 5% 0;"> <!-- *Contenedor visual para el ejemplo con fondo #1a5c5c, margen del 1% y relleno en la parte inferior del 5%. -->
+            <h4 style="text-align: center; color: white;">stretch</h3> <!-- *Encabezado de nivel 4 centrado, con texto blanco, que indica el valor "stretch" de align-items. -->
+            <p style="color: rgb(207, 207, 207); margin: 0 1% 2% 1%"> <!-- *Párrafo explicativo sobre cómo actúa align-items: stretch en un contenedor grid. -->
+                Por defecto, en un contenedor con <code>display: grid</code> y una cuadrícula definida mediante <code>grid-template-columns</code> y <code>grid-template-rows</code>, se aplica <b>justify-items: stretch</b>. Esto hace que cada elemento se <b>expanda horizontalmente</b> para llenar todo el ancho de la celda en la que se encuentra, siempre que no tenga un ancho específico definido. Este comportamiento permite que los elementos ocupen todo el espacio disponible sin necesidad de ajustar su tamaño manualmente.
+            </p>
+            <div class="elemento-con-grid-align-items-stretch" style="height: 80vh; border: 2px dashed rgb(86, 86, 86); background-color: white;"> <!-- *Contenedor con clase "elemento-con-grid-align-items-stretch", borde punteado gris oscuro y fondo blanco. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 1</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 2</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: #b8b8b8; padding: 1%">Elemento 3</div> <!-- *Contenedor visual para el ejemplo con fondo #595b34, margen del 1% y relleno en la parte inferior del 5%. -->

@@ -1752,9 +1752,46 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 
 /* &Stretch */
 /* &El valor "stretch" es el valor por defecto de "justify-items". Hace que cada elemento hijo se estire horizontalmente para llenar completamente el ancho de su celda en el contenedor grid, siempre que no tenga un ancho fijo definido. Esto facilita que el contenido ocupe todo el espacio disponible sin necesidad de ajustar manualmente el tamaño. */
-.elemento-con-grid-justify-items-stretch { /** Se declara un selector por clase llamado "elemento-con-grid-justify-items-stretch", que define un contenedor con cuadrícula. **/
+.elemento-con-grid-justify-items-stretch{ /** Se declara un selector por clase llamado "elemento-con-grid-justify-items-stretch", que define un contenedor con cuadrícula. **/
     display: grid; /** Activa el modelo Grid. **/
     grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales que ocupan la mitad del ancho cada una. **/
     grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
     justify-items: stretch; /** Estira horizontalmente cada elemento para llenar toda la celda. **/
+} /** Cierre de la declaración del selector por clase. **/
+
+/* Todo - Alineación de elementos en grid (align-items): La propiedad "align-items" se utiliza en contenedores con "display: grid" para controlar la alineación vertical de todos los elementos hijos dentro de sus respectivas celdas. A diferencia de "justify-items", que se encarga de la alineación horizontal, "align-items" define cómo se posiciona el contenido de cada elemento en el eje vertical dentro de su celda. Por defecto, su valor es "stretch", lo que hace que los elementos se expandan verticalmente para ocupar toda la altura de la celda, siempre que no tengan una altura fija definida. Si se usa "start", los elementos se alinean al borde superior de su celda; con "center", se centran verticalmente; y con "end", se alinean al borde inferior. Esta propiedad es especialmente útil cuando los elementos no llenan completamente el alto de la celda y se desea controlar visualmente su ubicación dentro del espacio disponible. En resumen, "align-items" permite definir la posición vertical del contenido dentro de cada celda del grid, brindando control preciso y consistencia visual en la distribución de elementos dentro de una cuadrícula CSS. */
+/* &Start */
+/* &El valor "start" en la propiedad "align-items" alinea verticalmente el contenido de cada elemento hijo hacia el borde superior de su celda dentro del contenedor grid. Es útil cuando se desea que el contenido comience desde arriba, especialmente si el alto del elemento no llena toda la celda. */
+.elemento-con-grid-align-items-start{ /** Se declara un selector por clase llamado "elemento-con-grid-align-items-start", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales al 50% del ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
+    align-items: start; /** Alinea horizontalmente cada elemento al final (parte superior) de su celda. **/
+} /** Cierre de la declaración del selector por clase. **/
+
+/* &End */
+/* &El valor "end" en la propiedad "align-items" coloca verticalmente cada elemento hijo hacia el borde inferior de su celda. Es útil para alinear contenidos hacia abajo dentro de cada celda, creando una sensación de anclaje inferior cuando no se desea que el contenido flote o se centre. */
+.elemento-con-grid-align-items-end{ /** Se declara un selector por clase llamado "elemento-con-grid-align-items-end", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales al 50% del ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
+    align-items: end; /** Alinea horizontalmente cada elemento al final (parte inferior) de su celda. **/
+} /** Cierre de la declaración del selector por clase. **/
+
+/* &End */
+/* &El valor "center" en la propiedad "align-items" centra verticalmente el contenido de cada elemento hijo dentro de su celda. Es ideal para lograr una alineación balanceada cuando el contenido no ocupa toda la altura disponible de la celda. */
+.elemento-con-grid-align-items-center{ /** Se declara un selector por clase llamado "elemento-con-grid-align-items-center", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales al 50% del ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
+    align-items: center; /** Alinea horizontalmente cada elemento al final (parte intermedia) de su celda. **/
+} /** Cierre de la declaración del selector por clase. **/
+
+/* &Stretch */
+/* &El valor "stretch" es el valor por defecto de "align-items". Hace que el contenido de cada celda se expanda verticalmente para ocupar toda la altura disponible, siempre que no se haya definido un alto fijo en el elemento. Esto permite que los elementos llenen completamente sus celdas de manera uniforme. */
+.elemento-con-grid-align-items-stretch{ /** Se declara un selector por clase llamado "elemento-con-grid-align-items-stretch", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales al 50% del ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
+    align-items: stretch; /** Ocaciona que los elementos se estiren si no tienen un tamaño definido para avarcar todo el espacio de su celda. **/
 } /** Cierre de la declaración del selector por clase. **/
