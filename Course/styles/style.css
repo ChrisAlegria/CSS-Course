@@ -1722,35 +1722,39 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     grid-template-rows: repeat(4, 20%); /** Define cuatro filas, cada una con un 20% de la altura total del contenedor, distribuyendo los elementos verticalmente en estas filas. **/
 } /** Cierre de la declaración del selector por clase. **/
 
-/* Todo - Justifucación de elementos en grid (justify-items) */
+/* Todo - Justificación de elementos en grid (justify-items): La propiedad "justify-items" se utiliza en contenedores con "display: grid" para controlar la alineación horizontal de cada elemento hijo dentro de su celda individual en la cuadrícula. Esta propiedad afecta cómo se posiciona el contenido dentro de la celda, no la posición de la celda en sí dentro del grid. Por defecto, su valor es "stretch", lo que hace que los elementos se expandan para llenar completamente el ancho de su celda. Sin embargo, si se usan valores como "start", "center" o "end", el contenido del elemento se alinea respectivamente al borde izquierdo, centro o borde derecho de la celda, siempre respetando el tamaño del contenido si no se especifica un ancho fijo. Esto es útil para controlar visualmente cómo se presentan los elementos cuando no ocupan todo el espacio disponible en la celda, proporcionando flexibilidad en el diseño. En resumen, "justify-items" permite definir la posición horizontal del contenido dentro de cada celda del grid, facilitando un control fino y preciso sobre la presentación visual en diseños con cuadrícula CSS. */
 /* &Start */
-.elemento-con-grid-justify-items-start{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4,25%);
-    justify-items: start;
-}
+/* &El valor "start" en la propiedad "justify-items" alinea cada elemento hijo dentro de su celda al borde izquierdo (inicio) de dicha celda en un contenedor con "display: grid". Esto es útil cuando se quiere que el contenido quede pegado al inicio horizontal del área asignada, respetando el tamaño del contenido si no tiene ancho fijo. */
+.elemento-con-grid-justify-items-start { /** Se declara un selector por clase llamado "elemento-con-grid-justify-items-start", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid en el contenedor, permitiendo la distribución en filas y columnas. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales que ocupan el 50% del ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales que ocupan el 25% del alto cada una. **/
+    justify-items: start; /** Alinea horizontalmente cada elemento al inicio (lado izquierdo) de su celda. **/
+} /** Cierre de la declaración del selector por clase. **/
 
 /* &End */
-.elemento-con-grid-justify-items-end{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4,25%);
-    justify-items: end;
-}
+/* &El valor "end" en la propiedad "justify-items" alinea cada elemento hijo dentro de su celda al borde derecho (final) de dicha celda en un contenedor grid. Es útil para posicionar contenido pegado al final horizontal del espacio asignado, ajustándose al tamaño del contenido si no tiene ancho fijo. */
+.elemento-con-grid-justify-items-end { /** Se declara un selector por clase llamado "elemento-con-grid-justify-items-end", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales al 50% del ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
+    justify-items: end; /** Alinea horizontalmente cada elemento al final (lado derecho) de su celda. **/
+} /** Cierre de la declaración del selector por clase. **/
 
 /* &Center */
-.elemento-con-grid-justify-items-center{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4,25%);
-    justify-items: center;
-}
+/* &El valor "center" en la propiedad "justify-items" centra horizontalmente cada elemento hijo dentro de su celda en el contenedor grid. Esto es útil para mantener el contenido visualmente equilibrado cuando no ocupa todo el ancho disponible en la celda. */
+.elemento-con-grid-justify-items-center { /** Se declara un selector por clase llamado "elemento-con-grid-justify-items-center", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales del 50% de ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales del 25% del alto cada una. **/
+    justify-items: center; /** Centra horizontalmente cada elemento dentro de su celda. **/
+} /** Cierre de la declaración del selector por clase. **/
 
 /* &Stretch */
-.elemento-con-grid-justify-items-stretch{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4,25%);
-    justify-items: stretch;
-}
+/* &El valor "stretch" es el valor por defecto de "justify-items". Hace que cada elemento hijo se estire horizontalmente para llenar completamente el ancho de su celda en el contenedor grid, siempre que no tenga un ancho fijo definido. Esto facilita que el contenido ocupe todo el espacio disponible sin necesidad de ajustar manualmente el tamaño. */
+.elemento-con-grid-justify-items-stretch { /** Se declara un selector por clase llamado "elemento-con-grid-justify-items-stretch", que define un contenedor con cuadrícula. **/
+    display: grid; /** Activa el modelo Grid. **/
+    grid-template-columns: repeat(2, 50%); /** Define dos columnas iguales que ocupan la mitad del ancho cada una. **/
+    grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
+    justify-items: stretch; /** Estira horizontalmente cada elemento para llenar toda la celda. **/
+} /** Cierre de la declaración del selector por clase. **/
