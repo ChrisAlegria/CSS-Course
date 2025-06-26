@@ -1632,6 +1632,65 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
     <!-- ~Grid -->   
     <hr>
-    <h1 style="text-align:center">Grid</h1>
+    <h1 style="text-align:center">Grid</h1> <!-- *Encabezado nivel 1 centrado horizontalmente con el texto "Grid". -->
+    <div class="elemento-con-grid-template-columns" style="border: 2px solid black; padding: 0 0 2% 0"> <!-- *Contenedor con clase "elemento-con-grid-template-columns", con borde negro de 2px y padding inferior del 2%. -->
+        <h3 style="text-align: center">grid-template-columns</h3> <!-- *Encabezado nivel 3 centrado horizontalmente con texto "grid-template-columns". -->
+        <p style="margin: 2% 2% 2% 2%;"> <!-- *Párrafo con margen del 2% en todos sus lados que explica la propiedad grid-template-columns. -->
+            La propiedad <b>grid-template-columns</b> se utiliza en contenedores con <code>display: grid</code> para definir <b>cuántas columnas</b> tendrá la cuadrícula y <b>qué ancho tendrá cada una</b>. Esta propiedad permite dividir el contenedor padre en columnas específicas y controlar cómo se distribuyen los elementos hijos horizontalmente. Por ejemplo, al usar <code>grid-template-columns: 1fr 1fr 1fr;</code>, se crean tres columnas del mismo tamaño que se reparten el ancho total del contenedor en partes iguales. También se pueden usar valores fijos como <code>grid-template-columns: 200px 100px 1fr;</code>, donde la primera columna mide 200 píxeles, la segunda 100 píxeles, y la tercera ocupa el espacio restante. Además, se puede usar la función <code>repeat()</code> para simplificar la escritura, como en <code>repeat(3, 1fr)</code>, que genera tres columnas iguales automáticamente. Esta propiedad es fundamental para construir diseños en forma de tabla o cuadrícula, ya que determina cómo se <b>organizan horizontalmente</b> los elementos hijos dentro del contenedor grid. Si hay más elementos de los que caben en una sola fila, estos continuarán en la siguiente fila, respetando la cantidad de columnas definida. En resumen, <b>grid-template-columns</b> permite distribuir los elementos hijos en columnas organizadas dentro de un diseño de cuadrícula, facilitando el control visual y estructural de las interfaces.
+        </p>
+        <div style="border: 2px dashed  rgb(86, 86, 86);"> <!-- *Contenedor con borde punteado gris oscuro que muestra los elementos distribuidos en columnas definidas por grid-template-columns. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: rgb(255, 117, 117);">Elemento 1</div> <!-- *Elemento con borde negro, margen del 1% y fondo rojo claro. --> 
+            <div style="border: 1px solid black; margin: 1%; background-color: rgb(255, 117, 117);">Elemento 2</div> <!-- *Elemento con borde negro, margen del 1% y fondo rojo claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: rgb(255, 117, 117);">Elemento 3</div> <!-- *Elemento con borde negro, margen del 1% y fondo rojo claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: rgb(255, 117, 117);">Elemento 4</div> <!-- *Elemento con borde negro, margen del 1% y fondo rojo claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: rgb(255, 117, 117);">Elemento 5</div> <!-- *Elemento con borde negro, margen del 1% y fondo rojo claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: rgb(255, 117, 117);">Elemento 6</div> <!-- *Elemento con borde negro, margen del 1% y fondo rojo claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: rgb(255, 117, 117);">Elemento 7</div> <!-- *Elemento con borde negro, margen del 1% y fondo rojo claro. -->
+        </div>
+    </div>
+    <div class="elemento-con-grid-template-rows" style="border: 2px solid black; padding: 0 0 2% 0; margin-top: 5%;"> <!-- *Contenedor con clase "elemento-con-grid-template-rows", borde negro de 2px, padding inferior del 2% y margen superior del 5%. -->
+        <h3 style="text-align: center">grid-template-rows</h3> <!-- *Encabezado nivel 3 centrado con texto "grid-template-rows". -->
+        <p style="margin: 2% 2% 2% 2%;"> <!-- *Párrafo con margen del 2% que explica la propiedad grid-template-rows. -->
+            La propiedad <b>grid-template-rows</b> se utiliza en contenedores con <code>display: grid</code> para definir <b>cuántas filas</b> tendrá la cuadrícula y <b>qué altura tendrá cada una</b>. Esta propiedad permite dividir el contenedor padre en filas específicas y controlar cómo se distribuyen los elementos hijos verticalmente. Por ejemplo, al usar <code>grid-template-rows: 100px 200px 1fr;</code>, se crean tres filas: la primera con 100 píxeles de alto, la segunda con 200 píxeles y la tercera que ocupa el espacio restante disponible. También se puede usar <code>repeat()</code>, como en <code>repeat(3, 1fr)</code>, para generar tres filas del mismo tamaño que se ajustan automáticamente al espacio vertical disponible. Esta propiedad es útil para construir diseños en forma de cuadrícula, ya que determina cómo se <b>organizan verticalmente</b> los elementos dentro del contenedor. Si se definen, por ejemplo, solo dos filas y hay más elementos hijos de los que caben, los elementos adicionales se colocarán automáticamente en filas nuevas fuera de lo definido, lo que puede causar que se salgan del espacio del contenedor padre. Además, si se especifican tamaños de fila que no suman el 100% del alto del contenedor, los elementos podrían autoajustarse para ocupar todo el espacio vertical. En resumen, <b>grid-template-rows</b> sirve para establecer la estructura vertical del grid, permitiendo distribuir los elementos hijos de forma ordenada de arriba hacia abajo según las alturas definidas.
+        </p>
+        <div style="border: 2px dashed  rgb(86, 86, 86);"> <!-- *Contenedor con borde punteado gris oscuro que muestra los elementos distribuidos en filas definidas por grid-template-rows. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: #86ff3f;">Elemento 1</div> <!-- *Elemento con borde negro, margen del 1% y fondo verde claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: #86ff3f;">Elemento 2</div> <!-- *Elemento con borde negro, margen del 1% y fondo verde claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: #86ff3f;">Elemento 3</div> <!-- *Elemento con borde negro, margen del 1% y fondo verde claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: #86ff3f;">Elemento 4</div> <!-- *Elemento con borde negro, margen del 1% y fondo verde claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: #86ff3f;">Elemento 5</div> <!-- *Elemento con borde negro, margen del 1% y fondo verde claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: #86ff3f;">Elemento 6</div> <!-- *Elemento con borde negro, margen del 1% y fondo verde claro. -->
+            <div style="border: 1px solid black; margin: 1%; background-color: #86ff3f;">Elemento 7</div> <!-- *Elemento con borde negro, margen del 1% y fondo verde claro. -->
+        </div>
+        <br><br><br><br>
+    </div>
+    <div style="border: 2px solid black; padding: 0 0 2% 0; margin-top: 5%;">
+        <h3 style="text-align: center">justify-items</h3>
+        <p style="margin: 2% 2% 2% 2%;">
+            La propiedad <b>grid-template-rows</b> se utiliza en contenedores con <code>display: grid</code> para definir <b>cuántas filas</b> tendrá la cuadrícula y <b>qué altura tendrá cada una</b>. Esta propiedad permite dividir el contenedor padre en filas específicas y controlar cómo se distribuyen los elementos hijos verticalmente. Por ejemplo, al usar <code>grid-template-rows: 100px 200px 1fr;</code>, se crean tres filas: la primera con 100 píxeles de alto, la segunda con 200 píxeles y la tercera que ocupa el espacio restante disponible. También se puede usar <code>repeat()</code>, como en <code>repeat(3, 1fr)</code>, para generar tres filas del mismo tamaño que se ajustan automáticamente al espacio vertical disponible. Esta propiedad es útil para construir diseños en forma de cuadrícula, ya que determina cómo se <b>organizan verticalmente</b> los elementos dentro del contenedor. Si se definen, por ejemplo, solo dos filas y hay más elementos hijos de los que caben, los elementos adicionales se colocarán automáticamente en filas nuevas fuera de lo definido, lo que puede causar que se salgan del espacio del contenedor padre. Además, si se especifican tamaños de fila que no suman el 100% del alto del contenedor, los elementos podrían autoajustarse para ocupar todo el espacio vertical. En resumen, <b>grid-template-rows</b> sirve para establecer la estructura vertical del grid, permitiendo distribuir los elementos hijos de forma ordenada de arriba hacia abajo según las alturas definidas.
+        </p>
+        <hr style="margin: 1%">
+        <h4 style="text-align: center; background-color: #c53fff;">start</h3>
+        <div class="elemento-con-grid-justify-items-start" style="border: 2px dashed  rgb(86, 86, 86); margin-bottom: 5%;">
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 1</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 2</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 3</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 4</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 5</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 6</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 7</div>
+        </div>
+        <hr style="margin: 1%">
+        <h4 style="text-align: center;">end</h3>
+        <div class="elemento-con-grid-justify-items-start" style="border: 2px dashed  rgb(86, 86, 86); margin-bottom: 5%;">
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 1</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 2</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 3</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 4</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 5</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 6</div>
+            <div style="border: 1px solid black; margin: 1%; background-color: #c53fff; padding: 1%">Elemento 7</div>
+        </div>
+    </div>
 </body>
 </html> 
