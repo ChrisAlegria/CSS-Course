@@ -794,14 +794,14 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 /* Todo - Display (display{}): La propiedad `display{}` se utiliza para definir la forma en que se muestra un elemento HTML. Donde mediante valores podemos definir el comportamiento que se desea aplicar a un elemento podiendo forzar a un elemento en bloque a ser un elemento en linea, en bloque o ninguno ocacionando que el elemento no se muestre y no ocupe espacio (similar a como si no se ubiera declarado). */
 /* &Block */
 /* &Declara un elemento en bloque, lo que significa que el elemento ocupará todo el ancho disponible y comenzará en una nueva línea. */
-.elemento-con-display-inline{
+.elemento-con-display-flex{ /**Se declara un selector por clase llamado "elemento-con-display-flex".**/
     background-color: rgb(128, 255, 0); /**Se declara un color de fondo con el valor "rgb(128, 255, 0)", ocacionando que el fondo del elemento sea de color verde.**/
     display: inline; /**Se declara una propiedad de visualizacion con el valor "inline", ocacionando que el elemento ocupe solo el ancho necesario y no comience en una nueva linea.**/
-}
+} /**Cierre de la declaracion de selector por clase.**/
 
 /* &Inline */  
 /* &Declara un elemento en linea, lo que significa que el elemento ocupará solo el ancho necesario y no comenzará en una nueva línea. */
-.elemento-con-display-block{
+.elemento-con-display-block{ /**Se declara un selector por clase llamado "elemento-con-display-block".**/
     width: 17vw; /**Se declara un ancho con el valor "17vw", ocacionando que el elemento tenga un ancho de 15vw.**/
     height: 17vh; /**Se declara un ancho con el valor "17vw", ocacionando que el elemento tenga un ancho de 15vw.**/
     margin-top: 3vh; /**Se declara un margen superior con el valor "3vh", ocacionando que el elemento tenga un margen superior de 3vh.**/
@@ -811,11 +811,18 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Se declara una propiedad de visualizacion con el valor "block", ocacionando que el elemento ocupe todo el ancho disponible y comience en una nueva linea.**/
 
 /* &Flex */
-/* &Declara un elemento flexible, lo que significa que el elemento se comportará como un contenedor flexible y sus elementos secundarios se organizarán en una fila o columna. */
+/* &La propiedad "display: flex" convierte al elemento en un contenedor flexible. Esto hace que sus elementos hijos se acomoden en una fila horizontal (por defecto), uno junto al otro. Además, permite usar propiedades de Flexbox como justify-content o align-items para controlar la alineación y distribución. Si se usa junto con "flex-wrap: wrap", los elementos hijos pueden pasar a múltiples filas si no caben en una sola línea, haciendo que el diseño sea más adaptable y ordenado. En resumen, "display: flex" sirve para acomodar los elementos hijos por filas de forma flexible. */
 .elemento-con-display-flex{ /**Se declara un selector por clase llamado "elemento-con-display-flex".**/
     display: flex; /**Se declara una propiedad de visualizacion con el valor "flex", ocacionando que el elemento se comporte como un contenedor flexible y sus elementos secundarios se organicen en una fila o columna.**/
     background-color: #ff8f2d; /**Se declara un color de fondo con el valor "rgb(255, 143, 45)", ocacionando que el fondo del elemento sea de color naranja.**/
 } /**Cierre de la declaracion de selector por clase.**/
+
+/* &Grid */
+.elemento-con-display-grid{
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(3,30%)
+}
 
 /* &None */
 /* &Declara un elemento que no se mostrará y no ocupará espacio en la página. */
