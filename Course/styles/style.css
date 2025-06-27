@@ -1796,59 +1796,67 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     align-items: stretch; /** Ocaciona que los elementos se estiren si no tienen un tamaño definido para avarcar todo el espacio de su celda. **/
 } /** Cierre de la declaración del selector por clase. **/
 
-/* Todo - Justificacion de contenido en grid (justify-content) */
+/* Todo - Justificación de contenido en grid (justify-content): La propiedad "justify-content" se utiliza en contenedores con "display: grid" para controlar la alineación horizontal del conjunto completo de la cuadrícula dentro del área del contenedor. Es decir, no afecta cómo se alinean los elementos dentro de sus celdas (eso lo hace "justify-items"), sino cómo se distribuye el bloque total de columnas generado por el grid en el eje horizontal. Esta propiedad es especialmente útil cuando el tamaño total del grid (por ejemplo, el número de columnas o su ancho combinado) es menor que el ancho disponible del contenedor. En estos casos, "justify-content" permite decidir cómo se reparte el espacio sobrante. Por defecto, su valor es "start", lo que significa que la cuadrícula se alinea al borde izquierdo del contenedor. Si se usa "center", el grid se centra horizontalmente; con "end", se alinea al borde derecho. Otros valores como "space-between", "space-around" y "space-evenly" permiten distribuir el espacio restante entre, alrededor o de forma uniforme entre las columnas y los bordes del contenedor. */
 /* &Start */
-.elemento-con-grid-justify-content-start{
-    display: grid;
-    grid-template-columns: repeat(4,10%);
-    grid-template-rows: repeat(4,7%);
-    justify-content: start;
-}
+/* &El valor "start" en la propiedad "justify-content" alinea todo el bloque de columnas al borde izquierdo del contenedor. Esto deja el espacio sobrante (si lo hay) acumulado a la derecha. Es el valor por defecto. */
+.elemento-con-grid-justify-content-start { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-start". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    justify-content: start; /** Alinea el bloque de columnas al borde izquierdo del contenedor. **/
+} /** Cierre del selector por clase. **/
 
 /* &End */
-.elemento-con-grid-justify-content-end{
-    display: grid;
-    grid-template-columns: repeat(4,10%);
-    grid-template-rows: repeat(4,7%);
-    justify-content: end;
-}
+/* &El valor "end" alinea todo el conjunto de columnas al borde derecho del contenedor, dejando el espacio sobrante a la izquierda. Es útil cuando se desea posicionar el contenido pegado al lado derecho. */
+.elemento-con-grid-justify-content-end { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-end". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    justify-content: end; /** Alinea horizontalmente las columnas al borde derecho del contenedor. **/
+} /** Cierre del selector por clase. **/
 
 /* &Center */
-.elemento-con-grid-justify-content-center{
-    display: grid;
-    grid-template-columns: repeat(4,10%);
-    grid-template-rows: repeat(4,7%);
-    justify-content: center;
-}
+/* &El valor "center" centra horizontalmente el bloque completo de columnas dentro del contenedor, dejando espacios iguales a ambos lados. Ideal para una distribución balanceada en el eje horizontal. */
+.elemento-con-grid-justify-content-center { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-center". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    justify-content: center; /** Centra horizontalmente todas las columnas dentro del contenedor. **/
+} /** Cierre del selector por clase. **/
 
 /* &Stretch */
-.elemento-con-grid-justify-content-stretch{
-    display: grid;
-    grid-template-columns: repeat(4,10%);
-    grid-template-rows: repeat(4,7%);
-    justify-content: stretch;
-}
+/* &El valor "stretch" expande el bloque de columnas para ocupar todo el espacio horizontal disponible. Funciona correctamente solo si las columnas pueden estirarse, es decir, si no tienen un ancho fijo. */
+.elemento-con-grid-justify-content-stretch { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-stretch". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    justify-content: stretch; /** Estira el bloque de columnas para que ocupe todo el ancho disponible del contenedor. **/
+} /** Cierre del selector por clase. **/
 
-/* &Space-evently */
-.elemento-con-grid-justify-content-space-evenly{
-    display: grid;
-    grid-template-columns: repeat(4,10%);
-    grid-template-rows: repeat(4,7%);
-    justify-content: space-evenly;
-}
+/* &Space-evenly */
+/* &El valor "space-evenly" distribuye el espacio sobrante de forma totalmente equitativa entre todas las columnas, incluyendo los bordes izquierdo y derecho. Cada espacio es exactamente igual. */
+.elemento-con-grid-justify-content-space-evenly { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-space-evenly". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    justify-content: space-evenly; /** Distribuye el espacio de forma uniforme entre todas las columnas y los bordes del contenedor. **/
+} /** Cierre del selector por clase. **/
 
 /* &Space-around */
-.elemento-con-grid-justify-content-space-around{
-    display: grid;
-    grid-template-columns: repeat(4,10%);
-    grid-template-rows: repeat(4,7%);
-    justify-content: space-around;
-}
+/* &El valor "space-around" distribuye espacio igual alrededor de cada columna, 
+lo que significa que los espacios en los extremos (bordes del contenedor) serán la mitad que los espacios entre columnas. */
+.elemento-con-grid-justify-content-space-around { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-space-around". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    justify-content: space-around; /** Distribuye espacio alrededor de las columnas con márgenes externos más pequeños. **/
+} /** Cierre del selector por clase. **/
 
 /* &Space-between */
-.elemento-con-grid-justify-content-space-between{
-    display: grid;
-    grid-template-columns: repeat(4,10%);
-    grid-template-rows: repeat(4,7%);
-    justify-content: space-between;
-}
+/* &El valor "space-between" coloca la primera columna pegada al borde izquierdo y la última al borde derecho,  mientras que las columnas intermedias se separan con espacios iguales entre ellas. No hay espacio en los extremos. */
+.elemento-con-grid-justify-content-space-between { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-space-between". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    justify-content: space-between; /** Coloca las columnas en línea con espacios iguales entre ellas, sin espacio en los extremos. **/
+} /** Cierre del selector por clase. **/
