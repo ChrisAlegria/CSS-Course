@@ -1795,3 +1795,60 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     grid-template-rows: repeat(4, 25%); /** Define cuatro filas iguales con 25% del alto cada una. **/
     align-items: stretch; /** Ocaciona que los elementos se estiren si no tienen un tamaño definido para avarcar todo el espacio de su celda. **/
 } /** Cierre de la declaración del selector por clase. **/
+
+/* Todo - Justificacion de contenido en grid (justify-content) */
+/* &Start */
+.elemento-con-grid-justify-content-start{
+    display: grid;
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(4,7%);
+    justify-content: start;
+}
+
+/* &End */
+.elemento-con-grid-justify-content-end{
+    display: grid;
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(4,7%);
+    justify-content: end;
+}
+
+/* &Center */
+.elemento-con-grid-justify-content-center{
+    display: grid;
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(4,7%);
+    justify-content: center;
+}
+
+/* &Stretch */
+.elemento-con-grid-justify-content-stretch{
+    display: grid;
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(4,7%);
+    justify-content: stretch;
+}
+
+/* &Space-evently */
+.elemento-con-grid-justify-content-space-evenly{
+    display: grid;
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(4,7%);
+    justify-content: space-evenly;
+}
+
+/* &Space-around */
+.elemento-con-grid-justify-content-space-around{
+    display: grid;
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(4,7%);
+    justify-content: space-around;
+}
+
+/* &Space-between */
+.elemento-con-grid-justify-content-space-between{
+    display: grid;
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(4,7%);
+    justify-content: space-between;
+}
