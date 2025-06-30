@@ -1986,9 +1986,9 @@
         <div style=" margin: 1%; border: 10px solid #375e97; padding: 0.1% 0 0 0;"> <!-- *Contenedor con borde de color, margen de 1% y padding superior del 0.1% -->
             <h4 style="text-align: center;">start</h3> <!-- *Subtítulo centrado. -->
             <p style="margin: 0 1% 2% 1%;"> <!-- *Párrafo con márgenes horizontales del 1% y margen inferior del 2%. -->
-                Por defecto, en un contenedor con <code>display: grid</code>, si el ancho total de las columnas generadas es menor que el del contenedor, <b>justify-content: start</b> alinea todo el bloque de la cuadrícula al <b>borde izquierdo</b> del contenedor. El espacio sobrante queda completamente a la derecha.
+                Por defecto, en un contenedor con <code>display: grid</code>, si la altura total de las filas generadas es menor que la del contenedor, <b>align-content: start</b> alinea todo el bloque de la cuadrícula al <b>borde superior</b> del contenedor. El espacio sobrante queda completamente en la parte inferior.
             </p>
-            <div class="elemento-con-grid-justify-content-start" style="height: 60vh; border: 2px dashed black; background-color: #375e97;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para justify content. -->
+            <div class="elemento-con-grid-align-content-start" style="height: 60vh; border: 2px dashed black; background-color: #375e97;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para align content. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 1</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 2</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%.-->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 3</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%.-->
@@ -2009,9 +2009,9 @@
         <div style=" margin: 1%; border: 10px solid #8d3797; padding: 0.1% 0 0 0;"> <!-- *Contenedor con borde de color, margen de 1% y padding superior del 0.1% -->
             <h4 style="text-align: center;">end</h3> <!-- *Subtítulo centrado. -->
             <p style="margin: 0 1% 2% 1%;"> <!-- *Párrafo con márgenes horizontales del 1% y margen inferior del 2% -->
-                Con <b>justify-content: end</b>, la cuadrícula se alinea al <b>borde derecho</b> del contenedor, dejando el espacio vacío acumulado a la izquierda. Este valor es útil cuando se desea que el contenido se presente pegado al extremo derecho del layout.
+                Con <b>align-content: end</b>, la cuadrícula se alinea al <b>borde inferior</b> del contenedor, dejando el espacio vacío acumulado en la parte superior. Este valor es útil cuando se desea que el contenido se presente pegado al fondo del layout.
             </p>
-            <div class="elemento-con-grid-justify-content-end" style="height: 60vh; border: 2px dashed black; background-color: #8d3797;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para justify content. -->
+            <div class="elemento-con-grid-align-content-end" style="height: 60vh; border: 2px dashed black; background-color: #8d3797;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para align content. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 1</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 2</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 3</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
@@ -2033,9 +2033,9 @@
         <div style=" margin: 1%; border: 10px solid #379783; padding: 0.1% 0 0 0;"> <!-- *Contenedor con borde de color, margen de 1% y padding superior del 0.1% -->
             <h4 style="text-align: center;">center</h3> <!-- *Subtítulo centrado. -->
             <p style="margin: 0 1% 2% 1%;"> <!-- *Párrafo con márgenes horizontales del 1% y margen inferior del 2%. -->
-                El valor <b>justify-content: center</b> centra todo el conjunto de columnas horizontalmente dentro del contenedor. Esto genera un espacio igual tanto a la izquierda como a la derecha del bloque de la cuadrícula, creando un efecto visual más equilibrado.
+                El valor <b>align-content: center</b> centra verticalmente todo el conjunto de filas dentro del contenedor. Esto genera un espacio igual tanto arriba como abajo del bloque de la cuadrícula, proporcionando una alineación visualmente equilibrada.
             </p>
-            <div class="elemento-con-grid-justify-content-center" style="height: 60vh; border: 2px dashed black; background-color: #379783;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para justify content. -->
+            <div class="elemento-con-grid-align-content-center" style="height: 60vh; border: 2px dashed black; background-color: #379783;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para align content. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 1</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. --> 
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 2</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 3</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
@@ -2057,9 +2057,9 @@
         <div style=" margin: 1%; border: 10px solid #977737; padding: 0.1% 0 0 0;"> <!-- *Contenedor con borde de color, margen de 1% y padding superior del 0.1% -->
             <h4 style="text-align: center;">stretch</h3> <!-- *Subtítulo centrado. -->
             <p style="margin: 0 1% 2% 1%;"> <!-- *Párrafo con márgenes horizontales del 1% y margen inferior del 2%. -->
-                Aunque no es tan común como valor explícito en justify-content, el valor <b>stretch</b> intenta expandir las columnas para que <b>ocupen todo el espacio horizontal disponible</b>. Funciona solo si el tamaño de las columnas puede ajustarse (por ejemplo, con <code>auto</code> o <code>fr</code>), y no hay un ancho fijo que lo impida.
+                Aunque no suele especificarse explícitamente, el valor <b>stretch</b> es el valor por defecto de <code>align-content</code> y hace que <b>las filas se expandan verticalmente</b> para ocupar toda la altura disponible del contenedor. Esto solo funciona si las filas pueden ajustarse (por ejemplo, con <code>auto</code> o unidades <code>fr</code>), y no tienen una altura fija.
             </p>
-            <div class="elemento-con-grid-justify-content-stretch" style="height: 60vh; border: 2px dashed black; background-color: #977737;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para justify content. -->
+            <div class="elemento-con-grid-align-content-stretch" style="height: 60vh; border: 2px dashed black; background-color: #977737;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para align content. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 1</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 2</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 3</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
@@ -2081,9 +2081,9 @@
         <div style=" margin: 1%; border: 10px solid #619737; padding: 0.1% 0 0 0;"> <!-- *Contenedor con borde de color, margen de 1% y padding superior del 0.1% -->
             <h4 style="text-align: center;">space-evently</h3> <!-- *Subtítulo centrado. -->
             <p style="margin: 0 1% 2% 1%;"> <!-- *Párrafo con márgenes horizontales del 1% y margen inferior del 2%. -->
-                Con <b>justify-content: space-evenly</b>, el espacio entre <b>todas las columnas</b> (incluidos los bordes laterales del contenedor) es exactamente el mismo. Esto produce una distribución perfectamente equitativa del contenido dentro del contenedor grid.
+                Con <b>align-content: space-evenly</b>, el espacio entre <b>todas las filas</b> (incluidos los bordes superior e inferior del contenedor) es exactamente el mismo. Esta opción proporciona una distribución vertical completamente equitativa del contenido dentro del contenedor grid.
             </p>
-            <div class="elemento-con-grid-justify-content-space-evenly" style="height: 60vh; border: 2px dashed black; background-color: #619737;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para justify content. -->
+            <div class="elemento-con-grid-align-content-space-evenly" style="height: 60vh; border: 2px dashed black; background-color: #619737;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para align content. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 1</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 2</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 3</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
@@ -2105,9 +2105,9 @@
         <div style=" margin: 1%; border: 10px solid #97376b; padding: 0.1% 0 0 0;"> <!-- *Contenedor con borde de color, margen de 1% y padding superior del 0.1% -->
             <h4 style="text-align: center;">space-around</h3> <!-- *Subtítulo centrado. -->
             <p style="margin: 0 1% 2% 1%;"> <!-- *Párrafo con márgenes horizontales del 1% y margen inferior del 2%. -->
-                El valor <b>space-around</b> genera <b>espacio igual alrededor de cada columna</b>, incluyendo los bordes exteriores. Esto significa que habrá la mitad de espacio en los extremos en comparación con el espacio entre columnas.
+                El valor <b>space-around</b> genera <b>espacio igual alrededor de cada fila</b>, incluyendo los bordes exteriores. Eso significa que habrá la mitad de espacio en los extremos (arriba y abajo) en comparación con el espacio entre filas.
             </p>
-            <div class="elemento-con-grid-justify-content-space-around" style="height: 60vh; border: 2px dashed black; background-color: #97376b;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para justify content. -->
+            <div class="elemento-con-grid-align-content-space-around" style="height: 60vh; border: 2px dashed black; background-color: #97376b;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para align content. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 1</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 2</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 3</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
@@ -2129,9 +2129,9 @@
         <div style=" margin: 1%; border: 10px solid #212631; padding: 0.1% 0 0 0;"> <!-- *Contenedor con borde de color, margen de 1% y padding superior del 0.1% -->
             <h4 style="text-align: center;">space-between</h3> <!-- *Subtítulo centrado. -->
             <p style="margin: 0 1% 2% 1%;"> <!-- *Párrafo con márgenes horizontales del 1% y margen inferior del 2%. -->
-                Con <b>justify-content: space-between</b>, la primera columna se alinea al borde izquierdo y la última al borde derecho del contenedor. Las columnas intermedias se distribuyen con <b>espacios iguales entre ellas</b>, pero sin espacio en los extremos.
+                Con <b>align-content: space-between</b>, la primera fila se alinea al borde superior y la última al borde inferior del contenedor. Las filas intermedias se distribuyen con <b>espacios iguales entre ellas</b>, pero sin espacio adicional en los extremos.
             </p>
-            <div class="elemento-con-grid-justify-content-space-between" style="height: 60vh; border: 2px dashed black; background-color: #212631;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para justify content. -->
+            <div class="elemento-con-grid-align-content-space-between" style="height: 60vh; border: 2px dashed black; background-color: #212631;"> <!-- *Contenedor grid con altura del 60% del viewport, borde punteado negro, fondo azul y clase para align content. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 1</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 2</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
                 <div style="border: 1px solid black; margin: 1%; background-color: white; padding: 1%">Elemento 3</div> <!-- *Elemento visual con fondo blanco, borde negro, margen del 1% y relleno del 1%. -->
@@ -2153,4 +2153,3 @@
     </div>
 </body>
 </html>
- 

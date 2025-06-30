@@ -1843,8 +1843,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /** Cierre del selector por clase. **/
 
 /* &Space-around */
-/* &El valor "space-around" distribuye espacio igual alrededor de cada columna, 
-lo que significa que los espacios en los extremos (bordes del contenedor) serán la mitad que los espacios entre columnas. */
+/* &El valor "space-around" distribuye espacio igual alrededor de cada columna, lo que significa que los espacios en los extremos (bordes del contenedor) serán la mitad que los espacios entre columnas. */
 .elemento-con-grid-justify-content-space-around { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-space-around". **/
     display: grid; /** Activa el modelo Grid en el contenedor. **/
     grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
@@ -1853,10 +1852,74 @@ lo que significa que los espacios en los extremos (bordes del contenedor) serán
 } /** Cierre del selector por clase. **/
 
 /* &Space-between */
-/* &El valor "space-between" coloca la primera columna pegada al borde izquierdo y la última al borde derecho,  mientras que las columnas intermedias se separan con espacios iguales entre ellas. No hay espacio en los extremos. */
+/* &El valor "space-between" coloca la primera columna pegada al borde izquierdo y la última al borde derecho, mientras que las columnas intermedias se separan con espacios iguales entre ellas. No hay espacio en los extremos. */
 .elemento-con-grid-justify-content-space-between { /** Se declara un selector por clase llamado "elemento-con-grid-justify-content-space-between". **/
     display: grid; /** Activa el modelo Grid en el contenedor. **/
     grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
     grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
     justify-content: space-between; /** Coloca las columnas en línea con espacios iguales entre ellas, sin espacio en los extremos. **/
+} /** Cierre del selector por clase. **/
+
+/* Todo - Alineación de contenido en grid (align-content): La propiedad "align-content" se utiliza en contenedores con "display: grid" para controlar la alineación vertical del bloque completo de la cuadrícula dentro del área del contenedor. Es decir, no afecta la posición del contenido dentro de cada celda individual (eso lo hace "align-items"), sino cómo se distribuyen todas las filas del grid como un conjunto a lo largo del eje vertical. Esta propiedad se vuelve útil cuando la altura total de las filas generadas por el grid es menor que la altura del contenedor. En esos casos, "align-content" permite decidir cómo se reparte el espacio vertical restante. Por ejemplo, con el valor "start", la cuadrícula se alinea al borde superior; con "center", se posiciona en el centro del contenedor; y con "end", se alinea al borde inferior. También existen valores como "space-between", "space-around" y "space-evenly", que permiten distribuir el espacio sobrante entre las filas o entre las filas y los bordes del contenedor, logrando diferentes tipos de separación vertical visualmente equilibrados. El valor por defecto es "stretch", que expande el bloque de filas para ocupar toda la altura disponible, siempre que las filas puedan adaptarse (por ejemplo, usando "auto" o "fr"). */
+/* &Start */
+/* &El valor "start" en la propiedad "align-content" alinea el bloque completo de filas al borde superior del contenedor. Esto deja el espacio sobrante (si lo hay) acumulado en la parte inferior. Es útil para mantener el contenido alineado arriba. */
+.elemento-con-grid-align-content-start { /** Se declara un selector por clase llamado "elemento-con-grid-align-content-start". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    align-content: start; /** Alinea el bloque de filas al borde superior del contenedor. **/
+} /** Cierre del selector por clase. **/
+
+/* &End */
+/* &El valor "end" alinea el bloque de filas al borde inferior del contenedor. Todo el espacio extra que no usen las filas se acumula en la parte superior. */
+.elemento-con-grid-align-content-end { /** Se declara un selector por clase llamado "elemento-con-grid-align-content-end". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    align-content: end; /** Alinea el bloque de filas al borde inferior del contenedor. **/
+} /** Cierre del selector por clase. **/
+
+/* &Center */
+/* &El valor "center" centra verticalmente el bloque de filas dentro del contenedor. Esto genera espacios iguales arriba y abajo de la cuadrícula. */
+.elemento-con-grid-align-content-center { /** Se declara un selector por clase llamado "elemento-con-grid-align-content-center". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    align-content: center; /** Centra el bloque de filas verticalmente dentro del contenedor. **/
+} /** Cierre del selector por clase. **/
+
+/* &Stretch */
+/* &El valor "stretch" es el valor por defecto de "align-content". Hace que las filas se estiren para llenar toda la altura disponible del contenedor, siempre que no tengan una altura fija (por ejemplo, usando "auto" o "fr"). */
+.elemento-con-grid-align-content-stretch { /** Se declara un selector por clase llamado "elemento-con-grid-align-content-stretch". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, auto); /** Define 4 filas con altura automática para que puedan estirarse. **/
+    align-content: stretch; /** Estira el bloque de filas para ocupar toda la altura del contenedor. **/
+} /** Cierre del selector por clase. **/
+
+/* &Space-evenly */
+/* &El valor "space-evenly" distribuye el espacio sobrante de forma completamente uniforme entre todas las filas y también entre los bordes superior e inferior del contenedor. Cada espacio es del mismo tamaño. */
+.elemento-con-grid-align-content-space-evenly { /** Se declara un selector por clase llamado "elemento-con-grid-align-content-space-evenly". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    align-content: space-evenly; /** Distribuye el espacio de manera uniforme entre todas las filas y los bordes verticales del contenedor. **/
+} /** Cierre del selector por clase. **/
+
+/* &Space-around */
+/* &El valor "space-around" genera espacio igual alrededor de cada fila. Eso significa que el espacio entre filas será el doble que el de los extremos (arriba y abajo). */
+.elemento-con-grid-align-content-space-around { /** Se declara un selector por clase llamado "elemento-con-grid-align-content-space-around". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    align-content: space-around; /** Agrega espacio alrededor de cada fila, con la mitad del espacio en los bordes verticales. **/
+} /** Cierre del selector por clase. **/
+
+/* &Space-between */
+/* &El valor "space-between" alinea la primera fila al borde superior y la última al borde inferior del contenedor, distribuyendo el espacio sobrante únicamente entre las filas intermedias. No hay espacio en los bordes. */
+.elemento-con-grid-align-content-space-between { /** Se declara un selector por clase llamado "elemento-con-grid-align-content-space-between". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 10%); /** Define 4 columnas, cada una con un ancho del 10%. **/
+    grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
+    align-content: space-between; /** Distribuye espacio entre las filas, sin agregar espacio en los extremos superior e inferior. **/
 } /** Cierre del selector por clase. **/
