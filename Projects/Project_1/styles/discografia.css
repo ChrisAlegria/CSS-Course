@@ -19,7 +19,7 @@ table{
 
 th{
     color: white;
-        background-color: rgb(12, 12, 12);
+    background-color: rgb(12, 12, 12);
 
 }
 
@@ -27,4 +27,8 @@ th,td{
     width: 20vw;
     text-align: center;
     padding: 0.7% 5% ;
+}
+
+th{
+    padding: 2.5vh;
 }
