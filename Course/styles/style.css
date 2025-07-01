@@ -1923,3 +1923,20 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
     grid-template-rows: repeat(4, 7%); /** Define 4 filas, cada una con una altura del 7%. **/
     align-content: space-between; /** Distribuye espacio entre las filas, sin agregar espacio en los extremos superior e inferior. **/
 } /** Cierre del selector por clase. **/
+
+/* Todo - Autoflujo de grid (grid-auto-flow): La propiedad "grid-auto-flow" se utiliza en contenedores con "display: grid" para controlar en qué dirección se colocarán automáticamente los elementos que no han sido ubicados explícitamente mediante "grid-row" o "grid-column". Esta propiedad define si los elementos se insertan por filas (row) o por columnas (column).  Por defecto, su valor es "row", lo que significa que los elementos se acomodarán de izquierda a derecha y luego saltarán a la siguiente fila.  Es importante tener en cuenta que para que el valor de "grid-auto-flow" funcione correctamente, se debe especificar la dimensión contrari en el grid template.  Por ejemplo, si se utiliza "grid-auto-flow: column", es necesario definir explícitamente las filas con "grid-template-rows", ya que las columnas se generarán automáticamente. Si no se define el tamaño de la dimensión opuesta, el grid no podrá expandirse en esa dirección y no se verá el comportamiento esperado. Esta propiedad es muy útil cuando se desea controlar el orden natural de los elementos en función del flujo sin tener que posicionarlos uno por uno. Es especialmente efectiva para crear diseños dinámicos o automatizados, como listas, tableros o columnas que crecen automáticamente. */
+/* &Row */
+/* &El valor "row" en "grid-auto-flow" es el valor por defecto. Hace que los elementos se acomoden de izquierda a derecha, formando filas  Una vez que se llena una fila, los siguientes elementos se colocan en la siguiente fila. */
+.elemento-con-grid-auto-flow-row { /** Se declara un selector por clase llamado "elemento-con-grid-auto-flow-row". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-columns: repeat(4, 25%); /** Define 4 columnas de 25% de ancho cada una. Las filas se generarán automáticamente si es necesario. **/
+    grid-auto-flow: row; /** Hace que los elementos se acomoden en filas, de izquierda a derecha. **/
+} /** Cierre del selector por clase. **/
+
+/* &Column */
+/* &El valor "column" hace que los elementos se acomoden de arriba hacia abajo, llenando primero una columna y luego avanzando a la siguiente. Para que este comportamiento funcione, se debe definir "grid-template-rows", ya que las columnas se generarán automáticamente. */
+.elemento-con-grid-auto-flow-column { /** Se declara un selector por clase llamado "elemento-con-grid-auto-flow-column". **/
+    display: grid; /** Activa el modelo Grid en el contenedor. **/
+    grid-template-rows: repeat(4, 25%); /** Define 4 filas de 25% de altura cada una. Las columnas se generarán automáticamente conforme se necesiten. **/
+    grid-auto-flow: column; /** Hace que los elementos se acomoden de arriba hacia abajo, por columnas. **/
+} /** Cierre del selector por clase. **/
