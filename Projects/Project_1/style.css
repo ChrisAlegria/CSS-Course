@@ -7,6 +7,10 @@ body{
     color: rgb(178, 178, 178);
 }       
 
+h2,h3,b{
+    color: white;
+}
+
 header{
     text-align: center;
 }

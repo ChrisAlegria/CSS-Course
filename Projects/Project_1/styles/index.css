@@ -2,10 +2,6 @@ img{
     width: 25%;
 }
 
-h3, b{
-    color: white;
-}
-
 .subtitulo{
     margin: 2%;
     padding: 0;
@@ -17,7 +13,6 @@ h3, b{
     margin: 0 auto;
     padding: 20px;
 }
-
 
 .imagen{
     float: right;

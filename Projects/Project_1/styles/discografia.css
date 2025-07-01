@@ -1,0 +1,30 @@
+.subtitulo{
+    margin: 2%;
+    padding: 0;
+    color: white;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid rgb(12, 12, 12);
+}
+
+th{
+    color: white;
+        background-color: rgb(12, 12, 12);
+
+}
+
+th,td{
+    width: 20vw;
+    text-align: center;
+    padding: 0.7% 5% ;
+}
