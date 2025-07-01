@@ -1,0 +1,30 @@
+img{
+    width: 25%;
+}
+
+h3, b{
+    color: white;
+}
+
+.subtitulo{
+    margin: 2%;
+    padding: 0;
+    color: white;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.imagen{
+    float: right;
+    margin: 0 0 0 1.3%;
+}
+
+.imagenDiferente{
+    float: left;    
+    margin: 0 1.3% 0 0;
+}
