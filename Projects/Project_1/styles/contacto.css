@@ -28,6 +28,11 @@ textarea{
     padding: 2%;
 }
 
+input:focus,
+textarea:focus{
+    background-color: rgb(219, 219, 219);
+}
+
 label{
     margin: 6% 0 1.5% 0;
     font-weight: bold;
