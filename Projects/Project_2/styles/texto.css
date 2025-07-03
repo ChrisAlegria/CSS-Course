@@ -1,0 +1,72 @@
+h5,h4{
+    text-align: center;
+}
+
+.primer-grid{
+    background-color: rgb(220, 163, 255);   
+}
+
+.segundo-grid{
+    background-color: rgb(255, 163, 174);   
+}
+
+.tercer-grid{
+    background-color: rgb(163, 191, 255);   
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+.grid-container > div{
+    background-color: white;
+    margin: 15px ;
+    padding: 15px;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.line-throught{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.overline-underline{
+    text-decoration: overline underline;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
