@@ -1,4 +1,4 @@
-# 🎨 Proyecto de Conceptos CSS
+# 🖼️ Proyecto de Conceptos CSS
 
 ## 📖 Descripción del Proyecto  
 Este repositorio contiene uno de los proyectos realizados como parte del curso de **CSS** de **SergieCode**. En este curso, primero se aprendieron los conceptos básicos y prácticos de CSS, y luego se desarrollaron proyectos inspirados en los realizados por SergieCode.  
