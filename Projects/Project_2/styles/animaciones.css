@@ -1,0 +1,66 @@
+h4{
+    margin: 3% 0 2% 0;
+}
+
+.cajita{
+    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+    margin: 0 25px;
+    position: relative;
+}
+
+@keyframes ejemplo{
+    from{
+        left: 0;
+        background-color: rgb(26, 228, 255);
+    }
+    to{
+        left: 90%;
+    }
+}
+
+.linear{
+    animation-name: ejemplo;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-color: red;
+}
+
+.ease{
+    animation-name: ejemplo;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-color: yellow;
+}
+
+.ease-in{
+    animation-name: ejemplo;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-color: chartreuse;
+}
+
+.ease-out{
+    animation-name: ejemplo;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-color: blue;
+}
+
+.ease-in-out{
+    animation-name: ejemplo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-color: blueviolet;
+}
