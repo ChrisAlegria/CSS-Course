@@ -1,0 +1,33 @@
+h5,h4{
+    text-align: center;
+}
+
+.primer-grid{
+    background-color: rgb(255, 221, 163);   
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.grid-container > div{
+    margin: 15px ;
+    padding: 15px;
+}
+
+.plano{
+    background-color: rgb(255, 125, 255);
+}
+
+.gradiente{
+    background: linear-gradient(to right, rgb(189, 255, 150), rgb(130, 211, 255), rgb(255, 99, 151));
+}
+
+.imagen{
+    background-image: url('../assets/img/fondo.jpg');
+    background-size: cover;
+}
