@@ -1,4 +1,4 @@
-# 📁 Carpeta Projects
+# 📁 Carpeta de proyectos
 
 ## 📖 Descripción  
 Esta carpeta agrupa los proyectos principales desarrollados como parte del curso de **CSS** de **SergieCode**. Cada proyecto representa una aplicación práctica de los conocimientos teóricos y prácticos adquiridos durante el curso, permitiendo consolidar conceptos, experimentar con estilos y explorar diferentes formas de presentación web.
