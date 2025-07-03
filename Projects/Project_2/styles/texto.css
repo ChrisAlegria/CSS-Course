@@ -14,6 +14,10 @@ h5,h4{
     background-color: rgb(163, 191, 255);   
 }
 
+.cuarto-grid{
+    background-color: rgb(177, 255, 163);   
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -69,4 +73,24 @@ h5,h4{
 
 .capitalize{
     text-transform: capitalize;
+}
+
+.serif{
+    font-family: serif;     
+}
+
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
 }
