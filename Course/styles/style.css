@@ -818,6 +818,7 @@ table,th,tr,td{ /**Se declaran los selectores por etiqueta de la tabla, el encab
 } /**Cierre de la declaracion de selector por clase.**/
 
 /* &Grid */
+/* &La propiedad "display: grid" convierte al elemento en un contenedor de cuadrícula. Esto permite organizar sus elementos hijos en filas y columnas, creando una estructura de cuadrícula. Los elementos hijos pueden ocupar varias celdas de la cuadrícula y se pueden alinear fácilmente usando propiedades como grid-template-columns o grid-template-rows. Además, se pueden aplicar propiedades de alineación y distribución para controlar cómo se distribuyen los elementos dentro de la cuadrícula. En resumen, "display: grid" sirve para crear diseños complejos y estructurados utilizando una cuadrícula. */
 .elemento-con-display-grid{
     display: grid;
     background-color: red;
